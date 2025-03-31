@@ -1,0 +1,140 @@
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+
+# #####################################################################
+
+# src not included
+
+##  RELAX NG Schema for HTML 5: Advanced Embedded Content             #
+# #####################################################################
+## Attributes Common to Media Elements
+media.attrs =
+  media.attrs.autoplay?
+  & media.attrs.preload?
+  & media.attrs.controls?
+  & media.attrs.loop?
+  & media.attrs.muted?
+  & embedded.content.attrs.crossorigin?
+media.attrs.autoplay = attribute autoplay { string "autoplay" | string "" }
+media.attrs.preload =
+  attribute preload { string "none" | string "metadata" | string "auto" | string "" }
+media.attrs.controls = attribute controls { string "controls" | string "" }
+media.attrs.loop = attribute loop { string "loop" | string "" }
+media.attrs.muted = attribute muted { string "muted" | string "" }
+
+## Source: <source>
+source.elem = element source { source.inner & source.attrs }
+source.attrs =
+  common.attrs
+  & source.attrs.src
+  & source.attrs.type?
+  & (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+source.attrs.src =
+  attribute src {
+    # common.data.uri.non-empty
+    xsd:anyURI
+  }
+source.attrs.type =
+  attribute type {
+    # common.data.mimetype
+    xsd:string { pattern = ".[^ ]+/.[^ ]+" }
+  }
+source.inner = empty
+
+## Media Source
+media.source = media.attrs.src | source.elem*
+media.attrs.src =
+  attribute src {
+    # common.data.uri.non-empty
+    xsd:anyURI
+  }
+
+## Video: <video>
+video.elem.flow = element video { video.inner.flow & video.attrs }
+video.elem.phrasing = element video { video.inner.phrasing & video.attrs }
+video.attrs =
+  common.attrs
+  & media.attrs
+  & video.attrs.poster?
+  & video.attrs.height?
+  & video.attrs.width?
+  & video.attrs.playsinline?
+  & common.attrs.aria.landmark.application?
+video.attrs.poster =
+  attribute poster {
+    # common.data.uri.non-empty
+    xsd:anyURI
+  }
+video.attrs.height =
+  attribute height {
+    # common.data.integer.non-negative
+    xsd:string { pattern = "[0-9]+" }
+  }
+video.attrs.width =
+  attribute width {
+    # common.data.integer.non-negative
+    xsd:string { pattern = "[0-9]+" }
+  }
+video.attrs.playsinline = attribute playsinline { string "playsinline" | string "" }
+video.inner.flow = media.source, track.elem*, common.inner.transparent.flow
+video.inner.phrasing = media.source, track.elem*, common.inner.phrasing
+
+## Audio: <audio>
+audio.elem.flow = element audio { audio.inner.flow & audio.attrs }
+audio.elem.phrasing = element audio { audio.inner.phrasing & audio.attrs }
+audio.attrs = common.attrs & media.attrs & common.attrs.aria.landmark.application?
+audio.inner.flow = media.source, track.elem*, common.inner.transparent.flow
+audio.inner.phrasing = media.source, track.elem*, common.inner.phrasing
+#
+
+## supplementary media track: <track>
+track.elem = element track { track.inner & track.attrs }
+track.attrs =
+  common.attrs
+  & track.attrs.kind?
+  & track.attrs.src
+  & track.attrs.srclang?
+  & track.attrs.label?
+  & track.attrs.default?
+  & (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+track.attrs.kind =
+  attribute kind {
+    string "subtitles"
+    | string "captions"
+    | string "descriptions"
+    | string "chapters"
+    | string "metadata"
+  }
+track.attrs.src =
+  attribute src {
+    # common.data.uri.non-empty
+    xsd:anyURI
+  }
+track.attrs.srclang =
+  attribute srclang {
+    # common.data.langcode
+    string ""
+    | xsd:string { pattern = "([a-zA-Z]{2}|[iI]-[a-zA-Z]+|[xX]-[a-zA-Z]{1,8})(-[a-zA-Z]{1,8})*" }
+  }
+track.attrs.label =
+  attribute label {
+    string
+    # must be non-empty value; check is in assertions code
+    
+  }
+track.attrs.default = attribute default { string "default" | string "" }
+track.inner = empty
+
+## Captioned Content: <figure>
+figure.elem = element figure { figure.inner & figure.attrs }
+figure.attrs =
+  common.attrs,
+  (common.attrs.aria.implicit.figure
+   | common.attrs.aria.role.presentation
+   | common.attrs.aria.role.group)?
+figure.inner = figcaption.elem? & common.inner.flow
+
+## Figure caption: <figcaption>
+figcaption.elem = element figcaption { figcaption.inner & figcaption.attrs }
+figcaption.attrs =
+  common.attrs & (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+figcaption.inner = common.inner.flow

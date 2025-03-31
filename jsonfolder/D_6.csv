@@ -1,0 +1,71 @@
+JSON Schema 5.0 Data Field,Value from the Source or as determined by Supplier,
+fundingBodyAwardId,not found,0
+grantType,RESEARCH,1
+title ,Semaglutide improves atherosclerosis via an anti-inflammatory action independent of weight loss,2
+startDate,01-01-2024,3
+endDate,not found,4
+noticeDate,not found,5
+homePage/link,https://www.drwf.org.uk/drwf-research/funded-research/,6
+homepage/modifiedDate,not found,7
+homepage/publishedDate,not found,8
+synopsis,"The majority of people with diabetes live also with overweight or obesity. One third of people living with diabetes are affected by cardiovascular disease, namely heart attacks and strokes. This is due to build up of atherosclerosis plaques (accumulations of fats, cholesterol and immune cells) in artery walls. These plaques can cause arteries to narrow, blocking the blood flow and leading to a lack of blood supply e.g. to the heart (causing heart attacks) or to the brain (causing strokes). Semaglutide is a medication based on gut hormones and it was initially approved for the treatment of diabetes.Semaglutide is now also licensed for weight loss. Some studies have shown beneficial effects for the cardiovascular system although the exact mechanism is not fully understood. Inflammation, where the immune system is activated to get rid of irritants and infection, is a normal process that exists to get rid of these irritants. Low grade inflammation is also associated with obesity, type 2 diabetes and atherosclerosis.  My hypothesis is that semaglutide has a beneficial cardiovascular profile via reducing inflammation and thereby slowing down atherosclerosis and that this is a direct effect of semaglutide and not merely a consequence of weight loss.",9
+keyword,not found,10
+fundingDetail/fundingTotal/amount,19985,11
+fundingDetail/fundingTotal/currency,GBP,12
+fundingDetail/installment,not found,13
+funderSchemeType,Funded Research,14
+classification/ ASJC code,"2705,,2704,,2403,,3004,,1310",15
+classification/ other codes,not found,16
+classification/ Orgspecific,"Cardiology and Cardiovascular Medicine,,Diabetes and Metabolism,,Immunology,,Pharmacology,,Endocrinology",17
+awardeeDetail/name,Imperial College London,18
+awardeeDetail/fundingBodyOrganizationId,not found,19
+awardeeDetail/role,COORDINATOR,20
+awardeeDetail/departmentName,not found,21
+awardeeDetail/activityType,research organization,22
+awardeeDetail/fundingTotal/amount,0,23
+awardeeDetail/fundingTotal/currency,GBP,24
+awardeeDetail/hasPostalAddress,not found,25
+awardeeDetail/link,not found,26
+awardeeDetail/identifier,ROR,27
+awardeeDetail/vatNumber,not found,28
+awardeeDetail/awardeeAffiliationId,not found,29
+awardeeDetail/affiliationOf/initials,K.,30
+awardeeDetail/affiliationOf/name,Kleopatra Alexiadou,31
+awardeeDetail/affiliationOf/givenName,Kleopatra,32
+awardeeDetail/affiliationOf/familyName,Alexiadou,33
+awardeeDetail/affiliationOf/role,PI,34
+awardeeDetail/affiliationOf/emailAddress,not found,35
+awardeeDetail/affiliationOf/identifier/id/orcid,not found,36
+awardeeDetail/affiliationOf/fundingBodyPersonId,not found,37
+awardeeDetail/affiliationOf/awardeePersonId,not found,38
+licenceInformation/link,https://www.drwf.org.uk/privacy-and-cookie-policy/,39
+relatedFunder/leadFunder,Diabetes Research and Wellness Foundation,40
+relatedFunder/hasFunder,Diabetes Research and Wellness Foundation,41
+relatedOpportunity/grantOpportunityId,not found,42
+relatedOpportunity/title,not found,43
+relatedOpportunity/description,not found,44
+relatedOpportunity/fundingBodyOpportunityId,not found,45
+funds/fundingProjectId,not found,46
+funds/acronym,not found,47
+funds/hasPart/budget,not found,48
+funds/hasPart/fundingBodyProjectId,not found,49
+funds/title,not found,50
+funds/startDate,not found,51
+funds/endDate,not found,52
+funds/link,not found,53
+funds/hasPostalAddress,not found,54
+funds/status,CLOSE,55
+awardee country,GBR,56
+awardee addressLocality,not found,57
+awardee addressPostalCode,not found,58
+awardee addressRegion,not found,59
+awardee postOfficeBoxNumber,not found,60
+awardee streetAddress,not found,61
+funding country,GBR,62
+funding addressLocality,not found,63
+funding addressPostalCode,not found,64
+funding addressRegion,not found,65
+funding postOfficeBoxNumber,not found,66
+funding streetAddress,not found,67
+licenceInformation value,Privacy and Cookie Policy,68
+createdON,1/27/2025,69

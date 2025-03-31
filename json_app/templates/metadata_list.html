@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON File Metadata</title>
+</head>
+<body>
+    <h1>File Metadata Table</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Batch ID</th>
+                <th>File Name</th>
+                <th>Version</th>
+                <th>Uploaded At</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for file in files %}
+            <tr>
+                <td>{{ file.batch_id }}</td>
+                <td>{{ file.file_name }}</td>
+                <td>{{ file.version }}</td>
+                <td>{{ file.uploaded_at }}</td>
+                <td>
+                    <a href="{% url 'fetch_json_file' batch_id=file.batch_id %}">Edit</a>
+                    <form action="{% url 'update_json_file' %}" method="POST" enctype="multipart/form-data" style="display:inline;">
+                        {% csrf_token %}
+                        <input type="hidden" name="batch_id" value="{{ file.batch_id }}">
+                        <input type="file" name="file" required>
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

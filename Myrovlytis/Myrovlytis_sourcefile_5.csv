@@ -1,0 +1,71 @@
+JSON Schema 5.0 Data Field,Value from the Source or as determined by Supplier,
+fundingBodyAwardId,not found,0
+grantType,RESEARCH,1
+title ,CRISPR Cas9 mediated unbiased genome wide screening to target both tumour cell autonomous and tumour microenvironmental factors in FLCN deficient RCC cells,2
+startDate,01-01-2021,3
+endDate,01-01-2027,4
+noticeDate,not found,5
+homePage/link,https://myrovlytistrust.org/currently-funded-research-bhd,6
+homepage/modifiedDate,not found,7
+homepage/publishedDate,not found,8
+synopsis,"Birt Hogg Dube syndrome predisposes patients to develop lung cysts, benign skin tumors and kidney cancer. I am particularly interested in kidney cancer because I used to see kidney cancer patients as a urologist. Birt Hogg Dube syndrome is caused by mutation in the FLCN gene. So we have been working to clarify how FLCN deficiency leads to the development of kidney cancer. FLCN deficient cells are known to exhibit alteration in gene expression, enzyme activity and cellular metabolism. Despite these important findings, key molecules to target for BHD kidney cancer therapy have not been identified. In this research project, we will identify molecules and signaling pathways that are specifically essential for FLCN deficient cells to survive and to form clinically significant tumours. To achieve this goal, we will conduct genome wide searches for genes that are necessary for tumour formation in FLCN deficient tissues using state of the art technology. This research will provide the basis for the development of more effective BHD kidney cancer specific therapeutics with fewer side effects",9
+keyword,not found,10
+fundingDetail/fundingTotal/amount,not found,11
+fundingDetail/fundingTotal/currency,GBP,12
+fundingDetail/installment,not found,13
+funderSchemeType,Funded Research,14
+classification/ ASJC code,"2730,,1311,,1312,,1307,,3004,,2723",15
+classification/ other codes,not found,16
+classification/ Orgspecific,"Oncology,,Genetics,,Molecular Biology,,Cell Biology,,Pharmacology,,Immunology and Allergy",17
+awardeeDetail/name,"Kumamoto University,Japan",18
+awardeeDetail/fundingBodyOrganizationId,not found,19
+awardeeDetail/role,COORDINATOR,20
+awardeeDetail/departmentName,not found,21
+awardeeDetail/activityType,Research organization,22
+awardeeDetail/fundingTotal/amount,not found,23
+awardeeDetail/fundingTotal/currency,GBP,24
+awardeeDetail/hasPostalAddress,not found,25
+awardeeDetail/link,not found,26
+awardeeDetail/identifier,not found,27
+awardeeDetail/vatNumber,not found,28
+awardeeDetail/awardeeAffiliationId,not found,29
+awardeeDetail/affiliationOf/initials,M.,30
+awardeeDetail/affiliationOf/name,Masaya Baba,31
+awardeeDetail/affiliationOf/givenName,Masaya,32
+awardeeDetail/affiliationOf/familyName,Baba,33
+awardeeDetail/affiliationOf/role,PI,34
+awardeeDetail/affiliationOf/emailAddress,not found,35
+awardeeDetail/affiliationOf/identifier/id/orcid,not found,36
+awardeeDetail/affiliationOf/fundingBodyPersonId,not found,37
+awardeeDetail/affiliationOf/awardeePersonId,not found,38
+licenceInformation/link,https://myrovlytistrust.org/privacy-policy/,39
+relatedFunder/leadFunder,not found,40
+relatedFunder/hasFunder,not found,41
+relatedOpportunity/grantOpportunityId,not found,42
+relatedOpportunity/title,not found,43
+relatedOpportunity/description,not found,44
+relatedOpportunity/fundingBodyOpportunityId,not found,45
+funds/fundingProjectId,not found,46
+funds/acronym,not found,47
+funds/hasPart/budget,not found,48
+funds/hasPart/fundingBodyProjectId,not found,49
+funds/title,not found,50
+funds/startDate,not found,51
+funds/endDate,not found,52
+funds/link,not found,53
+funds/hasPostalAddress,not found,54
+funds/status,not found,55
+awardee country,GBR,56
+awardee addressLocality,not found,57
+awardee addressPostalCode,not found,58
+awardee addressRegion,not found,59
+awardee postOfficeBoxNumber,not found,60
+awardee streetAddress,not found,61
+funding country,GBR,62
+funding addressLocality,not found,63
+funding addressPostalCode,not found,64
+funding addressRegion,not found,65
+funding postOfficeBoxNumber,not found,66
+funding streetAddress,not found,67
+licenceInformation value,© myrovlytis trust,68
+createdON,2/22/2025,69

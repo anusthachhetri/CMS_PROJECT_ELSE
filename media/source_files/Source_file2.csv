@@ -1,0 +1,71 @@
+JSON Schema 5.0 Data Field,Value from the Source or as determined by Supplier
+fundingBodyAwardId,not found
+grantType,RESEARCH
+title ,Investigating molecular mechanisms of an autosomal recessive FLCN-related disorder resembling biallelic FNIP1 disorder
+startDate,not found
+endDate,not found
+noticeDate,not found
+homePage/link,https://myrovlytistrust.org/dr-fulya-taylan/
+homepage/modifiedDate,not found
+homepage/publishedDate,not found
+synopsis,"Some diseases are very rare and can affect just one person or a small group of people worldwide. Birt-Hogg-Dubé syndrome is one of these diseases. It makes people more likely to get certain types of cancer and can cause other problems like lung cysts and skin tumors in adulthood.We have approximately 20 000 genes and most of them are found in two copies, including a gene called Folliculin (FLCN). In individuals with Birt-Hogg-Dubé syndrome (BHDS), one of the copies of the FLCN gene is missing or not functioning properly. We, on the other side, want to know if there is a new disease where both copies of the FLCN gene are not functioning properly, and this is what we are investigating in our project.A young male patient with an unknown syndrome came to our attention. He presented mainly problems with his immune system, learning difficulties, and developmental delay. He also developed leukemia at age 1 year. We analyzed his entire genome and identified a very rare variant in both copies of the FLCN gene. Both his parents have one copy of the gene with this rare variant, but they don’t have the same problems as their son and they don’t have any signs of BHDS.We know that Folliculin is important for the development and maintenance of the inner balance of the cells. When we searched for the scientific literature, we found out that there were animal models lacking two copies of FLCN and they have problems with development and growth as well as the immune system which are similar to what we observe in our patient. In our project, we study cells from our patient and compare them with cells from individuals that have two healthy copies of FLCN. We use different methods to understand how different genes and proteins inside the patient cells behave in the presence of two affected copies of FLCN when compared to healthy controls.We hope that by studying the patient cells, we can learn more about how the FLCN gene works and how it causes a new syndrome that shows different signs compared to BHDS. Our research may also help us understand more about BHDS."
+keyword,not found
+fundingDetail/fundingTotal/amount,0
+fundingDetail/fundingTotal/currency,not found
+fundingDetail/installment,not found
+funderSchemeType,not found
+classification/ ASJC code,"1311 ,1312 ,2730 ,1309,1307,2720,2701"
+classification/ other codes,not found
+classification/ Orgspecific,"Genetics,Molecular Biology,Oncology,Developmental Biology,Cell Biology,Hematology,Medicine (miscellaneous)"
+awardeeDetail/name,Karolinska Institute Stockholm Sweden
+awardeeDetail/fundingBodyOrganizationId,not found
+awardeeDetail/role,not found
+awardeeDetail/departmentName,not found
+awardeeDetail/activityType,research organization
+awardeeDetail/fundingTotal/amount,0
+awardeeDetail/fundingTotal/currency,not found
+awardeeDetail/hasPostalAddress,not found
+awardeeDetail/link,https://myrovlytistrust.org/dr-fulya-taylan/
+awardeeDetail/identifier,ROR
+awardeeDetail/vatNumber,not found
+awardeeDetail/awardeeAffiliationId,not found
+awardeeDetail/affiliationOf/initials,F.T.
+awardeeDetail/affiliationOf/name,Fulya Taylan
+awardeeDetail/affiliationOf/givenName,Fulya 
+awardeeDetail/affiliationOf/familyName,Taylan
+awardeeDetail/affiliationOf/role,PI
+awardeeDetail/affiliationOf/emailAddress,not found
+awardeeDetail/affiliationOf/identifier,not found
+awardeeDetail/affiliationOf/fundingBodyPersonId,not found
+awardeeDetail/affiliationOf/awardeePersonId,not found
+licenceInformation/link,https://myrovlytistrust.org/privacy-policy/
+relatedFunder/leadFunder,Myrovlytis Trust
+relatedFunder/hasFunder,Myrovlytis Trust
+relatedOpportunity/grantOpportunityId,not found
+relatedOpportunity/title,not found
+relatedOpportunity/description,not found
+relatedOpportunity/fundingBodyOpportunityId,not found
+funds/fundingProjectId,not found
+funds/acronym,not found
+funds/hasPart/budget,not found
+funds/hasPart/fundingBodyProjectId,not found
+funds/title,not found
+funds/startDate,not found
+funds/endDate,not found
+funds/link,https://myrovlytistrust.org/dr-fulya-taylan/
+funds/hasPostalAddress,"26 Cadogan Square, LONDON,SW1X OJP"
+funds/status,not found
+awardee country,GBR
+awardee addressLocality,not found
+awardee addressPostalCode,not found
+awardee addressRegion,not found
+awardee postOfficeBoxNumber,not found
+awardee streetAddress,not found
+funding country,GBR
+funding addressLocality,London
+funding addressPostalCode,EC2V 7QN
+funding addressRegion,SW1X OJP
+funding postOfficeBoxNumber,Not found
+funding streetAddress,26 Cadogan Square
+licenceInformation value,© myrovlytis trust
+createdON,1/7/2025

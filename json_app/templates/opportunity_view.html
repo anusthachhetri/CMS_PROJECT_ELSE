@@ -1,0 +1,191 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Data</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            background-color: #f5a142; /* Orange background */
+            color: white; /* White text */
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .table {
+            width: 100%; /* Full-width table */
+            margin: auto; /* Center the table */
+        }
+        .table-hover tbody tr:hover {
+            background-color: #f9cfae; /* Light orange hover effect */
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #fff7e6; /* Light peach background for odd rows */
+        }
+        tbody tr:nth-child(even) {
+            background-color: #fffaee; /* Slightly lighter background for even rows */
+        }
+        .head{
+            background-color:#f5a142;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        Opportunity Data
+    </header>
+
+    <!-- Table Section -->
+    {% if files %}
+        <table class="table table-hover table-striped table-bordered">
+            <thead class="head">
+                <tr>
+                    <th>Serial No</th>
+                    <th>Ingestion ID</th>
+                    <th>Uploader Name</th>
+                    <th>File Type</th>
+                    <th>Unique Grant ID</th>
+                    <th>Batch ID</th>
+                    <th>Version</th>
+                    <th>Uploaded At</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for file in files %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td> <!-- Serial No -->
+                        <td>{{ file.ingestion_id }}</td>
+                        <td>{{ file.uploader_name }}</td>
+                        <td>{{ file.file_type }}</td>
+                        <td>{{ file.unique_grant_id }}</td>
+                        <td>{{ file.batch_id }}</td>
+                        <td>{{ file.version }}</td>
+                        <td>{{ file.uploaded_at }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <div class="alert alert-warning text-center" role="alert">
+            No opportunity data found.
+        </div>
+    {% endif %}
+
+    <!-- Bootstrap JS (optional for interactive components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Data</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            background-color: #f5a142; /* Orange background */
+            color: white; /* White text */
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+        }
+        .table {
+            width: 100%; /* Full-width table */
+            margin: auto; /* Center the table */
+        }
+        .table-hover tbody tr:hover {
+            background-color: #f9cfae; /* Light orange hover effect */
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #fff7e6; /* Light peach background for odd rows */
+        }
+        tbody tr:nth-child(even) {
+            background-color: #fffaee; /* Slightly lighter background for even rows */
+        }
+        .head {
+            background-color: #f5a142;
+        }
+        .back-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+        .back-icon:hover {
+            color: #ffcc80; /* Lighter orange on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+   
+    <header>
+        <a href="{% url 'opportunity' %}" class="back-icon">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        Opportunity Data
+    </header>
+
+    <!-- Table Section -->
+    {% if files %}
+        <table class="table table-hover table-striped table-bordered">
+            <thead class="head">
+                <tr>
+                    <th>Serial No</th>
+                    <th>MPS ID</th>
+                    <th>Uploader Name</th>
+                    <th>File Type</th>
+                    <th>Unique Grant ID</th>
+                  <!--- <th>Batch ID</th>-->
+                    <th>Version</th>
+                    <th>Uploaded At</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for file in files %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td> <!-- Serial No -->
+                        <td>{{ file.ingestion_id }}</td>
+                        <td>{{ file.uploader_name }}</td>
+                        <td>{{ file.file_type }}</td>
+                        <td>{{ file.unique_grant_id }}</td>
+                       <!---<td>{{ file.batch_id }}</td>-->
+                        <td>{{ file.version }}</td>
+                        <td>{{ file.uploaded_at }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <div class="alert alert-warning text-center" role="alert">
+            No opportunity data found.
+        </div>
+    {% endif %}
+
+    <!-- Bootstrap JS (optional for interactive components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

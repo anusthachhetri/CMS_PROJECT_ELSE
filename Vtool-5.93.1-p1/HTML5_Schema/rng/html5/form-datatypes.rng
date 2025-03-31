@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
+  xmlns="http://relaxng.org/ns/structure/1.0" 
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <define name="form.data.mimetypelist">
+    <a:documentation> RELAX NG Schema for HTML 5: Datatypes related to forms</a:documentation>
+    <a:documentation>MIME types</a:documentation>
+    <list>
+      <data type="token">
+        <param name="pattern">.[^ ]+/.[^ ]+</param>
+      </data>
+    </list>
+  </define>
+  <define name="form.data.charsetlist">
+    <data type="string" datatypeLibrary=""/>
+  </define>
+  <!--
+    FIXME should be a "a space- and/or comma-delimited 
+    list of charset values"
+  -->
+  <define name="form.data.pattern">
+    <a:documentation>ECMAScript Regular Expression</a:documentation>
+    <data type="string">
+      <param name="pattern">.*$</param>
+    </data>
+  </define>
+  <define name="form.data.datetime-local">
+    <a:documentation>Temporal</a:documentation>
+    <!-- w:datetime-local -->
+    <data type="dateTime"/>
+  </define>
+  <define name="form.data.date">
+    <data type="date"/>
+  </define>
+  <define name="form.data.month">
+    <data type="gMonth"/>    
+  </define>
+  <define name="form.data.week">
+    <data type="string">
+      <param name="pattern">^([0-9]{4,})-W([0-9]{2})$</param>
+    </data>
+  </define>
+  <define name="form.data.time">
+    <!-- w:time -->
+        <data type="dateTime"/>
+  </define>
+  <define name="form.data.emailaddress">
+    <a:documentation>Email</a:documentation>
+    <data type="string"/>
+    <!-- TODO -->
+  </define>
+  <define name="form.data.emailaddresslist">
+    <data type="string"/>
+    <!-- TODO -->
+  </define>
+  <define name="form.data.color">
+    <a:documentation>Color</a:documentation>
+    <data type="token">
+      <param name="pattern">#[a-fA-F0-9]{6}</param>
+    </data>
+  </define>
+  <define name="form.data.stringwithoutlinebreaks">
+    <a:documentation>Text without line breaks</a:documentation>
+    <data type="string">
+      <param name="pattern">(.[^\n\r]*)?</param>
+    </data>
+  </define>
+  <define name="form.data.nonemptystring">
+    <a:documentation>Non-empty string</a:documentation>
+    <data type="string">
+      <param name="pattern">(.+)</param>
+    </data>
+  </define>
+</grammar>

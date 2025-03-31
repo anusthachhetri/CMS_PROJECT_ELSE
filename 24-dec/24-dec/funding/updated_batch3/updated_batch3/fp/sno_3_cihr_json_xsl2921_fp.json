@@ -1,0 +1,28 @@
+{"fingerprints": {
+    "signature": "546f2643f52bc9f4fffac12ec71dfdaa",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "sno_3_cihr.json",
+            "checksum": "ff2d8b5a25fe0d558dfea5044d582eb3"
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "total-errors": 0
+        },
+        "info": {
+            "date": "2024/12/24",
+            "os": "Windows 10 version 10.0",
+            "time": "17:48",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.92.1",
+                "specset-version": "2.92.1"
+            },
+            "ingestion-version": "6.6.0",
+            "commandline": "-Xmx1024m -DentityExpansionLimit=200000 -file \"D:\\ML\\files\\JSOn\\latest\\24-dec\\updated_batch3\\updated_batch3\\sno_3_cihr.json\" -log \"D:\\ML\\files\\JSOn\\latest\\24-dec\\updated_batch3\\updated_batch3\\sno_3_cihr.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS in Clinical Investigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #00457c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #ffffff;
+            max-width: 600px; /* Slightly increased form width */
+            width: 95%; /* Ensures responsiveness on smaller screens */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            font-size: 18px;
+        }
+        @media (max-width: 768px) {
+            form {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MS in Clinical Investigation</h1>
+</header>
+
+<form>
+    <div class="section">
+        <h2>Basic Information</h2>
+        <label for="batchId">Batch ID:</label>
+        <input type="text" id="batchId" value="7780b6ce-4959-4a1d-b7fc-be2ecdfba6fa" readonly>
+
+        <label for="ingestionId">Ingestion ID:</label>
+        <input type="text" id="ingestionId" value="2024308f-7782-40ba-a518-2e5c557ac9d5" readonly>
+
+        <label for="grantOpportunityId">Grant Opportunity ID:</label>
+        <input type="text" id="grantOpportunityId" value="300024469" readonly>
+
+        <label for="status">Status:</label>
+        <input type="text" id="status" value="INACTIVE" readonly>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" value="MS in Clinical Investigation" readonly>
+
+        <label for="grantType">Grant Type:</label>
+        <input type="text" id="grantType" value="RESEARCH" readonly>
+
+        <label for="funderSchemeType">Funder Scheme Type:</label>
+        <input type="text" id="funderSchemeType" value="GRADUATE PROGRAM IN CLINICAL INVESTIGATION" readonly>
+    </div>
+
+    <div class="section">
+        <h2>Opportunity Dates</h2>
+        <label for="cycle1">Cycle 1 Proposal Date:</label>
+        <input type="text" id="cycle1" value="2022-02-01" readonly>
+
+        <label for="cycle2">Cycle 2 Proposal Date:</label>
+        <input type="text" id="cycle2" value="2024-02-01" readonly>
+    </div>
+
+    <div class="section">
+        <h2>Subject Matter</h2>
+        <textarea rows="8" readonly>
+Lead to translation of research among the laboratory, clinic and population through technological or systems innovations, including but not limited to drug therapies, medical devices, biological materials, clinical processes, and/or behavioral interventions.
+Are appropriately patient-oriented.
+Draw on the expertise of collaborators in multiple disciplines.
+Integrate clinical and translational science across multiple departments, schools and colleges, clinical and research institutes, and healthcare delivery organizations.
+Determine when it is appropriate to use a patient-oriented research design to investigate a translational clinical problem.
+Understand the principles of multidisciplinary patient-oriented clinical research protocols.
+Analyze, interpret and report research findings of clinical studies through peer-reviewed scientific channels and to a lay audience.
+Apply and foster professional, ethical and responsible conduct of clinical research.
+        </textarea>
+    </div>
+
+    <div class="section">
+        <h2>Contact Information</h2>
+        <label for="contactPerson">Contact Person:</label>
+        <input type="text" id="contactPerson" value="Sally Wedde" readonly>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" value="studentinquiry@ictr.wisc.edu" readonly>
+
+        <label for="address">Address:</label>
+        <textarea id="address" rows="3" readonly>
+750 Highland Avenue
+Madison, WI 53705
+USA
+        </textarea>
+    </div>
+
+    <div class="section">
+        <h2>Program Details</h2>
+        <label for="programSynopsis">Synopsis:</label>
+        <textarea id="programSynopsis" rows="6" readonly>
+The ICTR Graduate Program in Clinical Investigation includes a PhD program in Clinical Investigation (PhD CI), an MS in Clinical Investigation, and a PhD minor in Clinical Investigations also known as a PhD with a Clinical and Translational Science focus (PhDCTS). All students share a common didactic foundation encompassing biostatistics, epidemiology, clinical study design, clinical trials conduct, and the ethical and responsible conduct of research.
+        </textarea>
+
+        <label for="programDetails">Details:</label>
+        <textarea id="programDetails" rows="6" readonly>
+The PhD CI is an applied degree in which trainees focus on the creation of novel methodologies and tools for translational science within the context of a specific biomedical discipline. The PhDCTS leverages the core curriculum to give trainees in other degree programs the skills and tools necessary to move their biomedical research along the translational pathway.
+        </textarea>
+    </div>
+
+    <div class="section">
+        <h2>Provenance</h2>
+        <label for="createdOn">Created On:</label>
+        <input type="text" id="createdOn" value="2011-01-25" readonly>
+
+        <label for="lastUpdateOn">Last Updated On:</label>
+        <input type="text" id="lastUpdateOn" value="2024-02-02" readonly>
+
+        <label for="version">Version:</label>
+        <input type="text" id="version" value="26" readonly>
+    </div>
+</form>
+
+</body>
+</html>

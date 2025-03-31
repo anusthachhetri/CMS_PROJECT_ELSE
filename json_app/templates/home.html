@@ -1,0 +1,235 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 150px;
+            background-color: #f0ad1d; /* Sidebar color */
+            color: white;
+            padding: 20px 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar img {
+            width: 70px; /* Logo size in the sidebar 60 earlier */
+            height: auto;
+            margin-bottom: 20px; /* Space below the logo */
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #d4edda;
+            color: #333;
+        }
+
+         
+        header {
+            background-color: #f5a142;
+            color: white;
+            padding: 10px 20px;
+            flex: 1;
+            margin-left: 150px; /* Aligns with the sidebar width */
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centers the content horizontally */
+            font-size: 24px;
+            font-weight: bold;
+            height: 50px;
+            position: relative;
+        }
+        
+        header h3 {
+            margin: 0; /* Removes default margin */
+        }
+        
+        header nav {
+            position: absolute;
+            right: 20px; /* Positions navigation links on the right */
+        }
+        
+        
+        header h3:hover {
+            color: #ffcc80; /* Change text color on hover */
+            transform: scale(1.1); /* Slightly enlarge the text on hover */
+        }
+
+        .sub-header {
+            background-color: #f0ad1d;
+            color: white;
+            padding: 5px 20px; /* Less padding to fit directly under header */
+            margin-left: 150px; /* Align with sidebar */
+            font-size: 18px;
+            text-align: center;
+            margin-top: 0; /* Remove space between main header and sub-header */
+            height: 50px;
+            margin-bottom: 170px;
+        }
+
+        .main-content {
+            margin-left: 170px; /* Added extra margin to separate grid from the sidebar */
+            flex: 1;
+            padding: 20px;
+            margin-bottom: 50px; /* Pull grid closer to the sub-header */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        .grid-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        footer {
+            background-color: #f5a142;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+        /* new code at 20-1-2025  */
+        .user-info {
+            margin-right: 20px;
+            font-size: 14px;
+            font-weight: normal;
+            color: #ffffff;
+        }
+
+        .user-info span {
+            font-weight: bold;
+        }
+          /* new code at 20-1-2025 */
+    </style>
+</head>
+<body>
+    
+    <div class="sidebar">
+        <img src="{% static 'images/logimage.png' %}" alt="Logo">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="{% url 'funding_body' %}">Funding Body</a></li>
+            <li><a href="{% url 'opportunity' %}">Opportunity</a></li>
+            <li><a href="{% url 'awards' %}">Awards</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <header>
+            <h3>CMS FOR ELSEVIER</h3>
+            <nav>
+                
+                {% if user.is_authenticated %}
+                <!--new code at 20-1-2025-->
+                <div class="user-info">
+                    Logged in as: <span>{{ user.username }}</span>
+                </div>
+                 <!--new code   close at 20-1-2025-->
+                    <a href="{% url 'account_logout' %}" style="color: white; text-decoration: none;">Logout</a>
+                {% else %}
+                    <a href="{% url 'login' %}" style="color: white; text-decoration: none;">Login</a>
+                {% endif %}
+            </nav>
+        </header>
+    </div>
+
+    <div class="sub-header">
+        <h2>MANAGE YOUR DATA</h2>
+    </div>
+
+    <div class="main-content">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="{% url 'funding_body' %}">
+                    <h3>Funding Body</h3>
+                    <p>Navigate to Funding Body</p>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="{% url 'awards' %}">
+                    <h3>Awards</h3>
+                    <p>Navigate to Awards</p>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="{% url 'opportunity' %}">
+                    <h3>Opportunity</h3>
+                    <p>Navigate to Opportunity</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 JSON App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

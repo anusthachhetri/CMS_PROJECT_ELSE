@@ -1,0 +1,294 @@
+[
+    {
+        "batchId": "",
+        "ingestionId": "",
+        "grantAwardId": 86557445,
+        "fundingBodyAwardId": "not found",
+        "hasInstallment": [
+            0
+        ],
+        "hasWorkPackage": [
+            0
+        ],
+        "title": [
+            {
+                "language": "en",
+                "value": "Does partial inhibition of glucokinase protect human pancreatic beta-cells against glucotoxicity and glucolipotoxicity?",
+                "hasProvenance": {
+                    "createdOn": "2025-01-27T00:00:00",
+                    "createdBy": "MPS",
+                    "createdWith": "MPS SERVICES"
+                }
+            }
+        ],
+        "identifier": [
+            {
+                "type": "DOI",
+                "value": "not found"
+            }
+        ],
+        "startDate": "01-01-2024",
+        "grantType": "RESEARCH",
+        "funderSchemeType": "Funded Research",
+        "homePage": {
+            "link": "https://www.drwf.org.uk/drwf-research/funded-research/"
+        },
+        "synopsis": [
+            {
+                "abstract": {
+                    "language": "en",
+                    "value": "All forms of diabetes are characterised by a chronically elevated level of blood glucose (chronic hyperglycaemia), which results from insufficient secretion of insulin from the ?-cells of the pancreas. Type 2 diabetes (T2D) is a progressive disease in which elevated blood glucose gradually damages the ?-cell so that they release even less insulin, which leads to higher blood glucose levels and therefore further ?-cell damage. At time of T2D diagnosis, it is often found that an individuals capacity to produce adequate amounts of insulin in order to maintain healthy blood glucose levels has declined by as much as 50%. This inexorable decline in ?-cell function leads to devastating secondary complications, such as heart, eye and kidney disease.Although the current therapeutic strategies available for T2D can reduce blood glucose either by enhancing insulin release (sulphonylureas, GLP-1 receptor agonists) or by increasing glucose clearance from the blood (insulin, metformin), none of these therapies provide any long-term benefit with regard to maintaining ?-cell health and insulin secretion. In people without diabetes, a rise in blood glucose causes glucose from the blood to be taken up by the ?-cell where it is broken down by metabolism to produce a molecule called ATP, which is needed to stimulate insulin release. In contrast, when blood glucose is chronically elevated, too much glucose is metabolised by the ?-cell and eventually causes blockages in the metabolic pathway. These blockages mean that glucose can no longer be metabolised to produce enough ATP to cause insulin secretion. Thus, this proposal will investigate if the ?-cell can be protected against the detrimental effects of chronic hyperglycaemia by lowering the amount of glucose which is metabolised by the cell down to the same level as which occurs in people without diabetes. This novel approach will prioritise maintaining, or restoring, ?-cell health and insulin secretion which will greatly reduce the risk of developing debilitating secondary complications.",
+                    "hasProvenance": {
+                        "createdOn": "2025-01-27T00:00:00",
+                        "createdBy": "MPS",
+                        "createdWith": "MPS SERVICES"
+                    }
+                },
+                "source": "https://www.drwf.org.uk/drwf-research/funded-research/"
+            }
+        ],
+        "keyword": [
+            {
+                "language": "en",
+                "value": "not found",
+                "hasProvenance": {
+                    "createdOn": "2025-01-27T00:00:00",
+                    "createdBy": "MPS",
+                    "createdWith": "MPS SERVICES"
+                }
+            }
+        ],
+        "licenseInformation": [
+            {
+                "abstract": {
+                    "language": "en",
+                    "hasProvenance": {
+                        "createdOn": "2025-01-27T00:00:00",
+                        "createdBy": "MPS",
+                        "createdWith": "MPS SERVICES"
+                    },
+                    "value": "Privacy and Cookie Policy"
+                },
+                "source": "https://www.drwf.org.uk/privacy-and-cookie-policy/"
+            }
+        ],
+        "funds": [
+            {
+                "fundingBodyProjectId": "not found",
+                "hasPart": [
+                    {
+                        "fundingBodyProjectId": "not found",
+                        "budget": [
+                            {
+                                "currency": "GBP",
+                                "amount": 0
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "language": "en",
+                        "value": "Does partial inhibition of glucokinase protect human pancreatic beta-cells against glucotoxicity and glucolipotoxicity?",
+                        "hasProvenance": {
+                            "createdOn": "2025-01-27T00:00:00",
+                            "createdBy": "MPS",
+                            "createdWith": "MPS SERVICES"
+                        }
+                    }
+                ],
+                "acronym": "not found",
+                "hasPostalAddress": {
+                    "addressCountry": "GBR",
+                    "addressRegion": "not found",
+                    "addressLocality": "not found",
+                    "addressPostalCode": "not found",
+                    "postOfficeBoxNumber": "not found",
+                    "streetAddress": "not found"
+                },
+                "link": "not found",
+                "budget": [
+                    {
+                        "currency": "GBP",
+                        "amount": 0
+                    }
+                ],
+                "status": "CLOSE"
+            }
+        ],
+        "fundingDetail": {
+            "installment": [
+                {
+                    "index": 0,
+                    "grantAwardInstallmentId": 1,
+                    "financialYearStart": 0,
+                    "financialYearEnd": 0,
+                    "fundedAmount": [
+                        {
+                            "currency": "GBP",
+                            "amount": 0
+                        }
+                    ]
+                }
+            ],
+            "fundingTotal": [
+                {
+                    "currency": "GBP",
+                    "amount": 20000
+                }
+            ]
+        },
+        "awardeeDetail": [
+            {
+                "activityType": "research organization",
+                "affiliationOf": [
+                    {
+                        "awardeePersonId": "86557445_P_0",
+                        "emailAddress": "not found",
+                        "familyName": "Haythorne",
+                        "fundingBodyPersonId": "not found",
+                        "givenName": "Elizabeth",
+                        "identifier": [
+                            {
+                                "type": "ORCID",
+                                "value": "not found"
+                            }
+                        ],
+                        "initials": "E.",
+                        "name": [
+                            {
+                                "language": "en",
+                                "value": "Elizabeth Haythorne"
+                            }
+                        ],
+                        "role": "PI",
+                        "sourceRole": "not found"
+                    }
+                ],
+                "awardeeAffiliationId": "86557445_A_0",
+                "departmentName": [
+                    {
+                        "language": "en",
+                        "value": "not found",
+                        "hasProvenance": {
+                            "createdOn": "2025-01-27T00:00:00",
+                            "createdBy": "MPS",
+                            "createdWith": "MPS SERVICES"
+                        }
+                    }
+                ],
+                "fundingBodyOrganizationId": "not found",
+                "fundingTotal": [
+                    {
+                        "amount": 0,
+                        "currency": "GBP"
+                    }
+                ],
+                "hasPostalAddress": {
+                    "addressCountry": "GBR",
+                    "addressLocality": "not found",
+                    "addressPostalCode": "not found",
+                    "addressRegion": "not found",
+                    "postOfficeBoxNumber": "not found",
+                    "streetAddress": "not found"
+                },
+                "identifier": [
+                    {
+                        "type": "ROR",
+                        "value": "not found"
+                    }
+                ],
+                "link": "not found",
+                "name": [
+                    {
+                        "language": "en",
+                        "value": "Edinburgh University"
+                    }
+                ],
+                "role": "COORDINATOR",
+                "sourceRole": "not found",
+                "vatNumber": "not found"
+            }
+        ],
+        "classification": [
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Diabetes and Metabolism",
+                    "identifier": {
+                        "value": "2704",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Endocrinology",
+                    "identifier": {
+                        "value": "1310",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Clinical Biochemistry",
+                    "identifier": {
+                        "value": "1308",
+                        "type": "ASJC"
+                    }
+                }
+            }
+        ],
+        "relatedOpportunity": [
+            {
+                "grantOpportunityId": 0,
+                "fundingBodyOpportunityId": "not found",
+                "title": [
+                    {
+                        "language": "en",
+                        "value": "not found",
+                        "hasProvenance": {
+                            "createdOn": "2025-01-27T00:00:00",
+                            "createdBy": "MPS",
+                            "createdWith": "MPS SERVICES"
+                        }
+                    }
+                ],
+                "description": "not found"
+            }
+        ],
+        "relatedFunder": {
+            "leadFunder": {
+                "fundingBodyId": 82346797,
+                "sourceId": "not found",
+                "sourceText": "Diabetes Research and Wellness Foundation"
+            },
+            "hasFunder": [
+                {
+                    "fundingBodyId": 0,
+                    "sourceId": "not found",
+                    "sourceText": "Diabetes Research and Wellness Foundation"
+                }
+            ]
+        },
+        "hasProvenance": {
+            "wasAttributedTo": "SUP005",
+            "derivedFrom": "https://www.drwf.org.uk/drwf-research/funded-research/",
+            "createdOn": "2025-02-05T18:16:15",
+            "lastUpdateOn": "2025-02-05T18:16:15",
+            "contactPoint": "robin.bhandari@highwirepress.com",
+            "version": "0",
+            "hidden": false,
+            "defunct": false,
+            "status": "NEW"
+        },
+        "options": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+        }
+    }
+]

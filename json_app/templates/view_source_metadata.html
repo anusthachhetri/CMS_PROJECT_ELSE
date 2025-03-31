@@ -1,0 +1,475 @@
+ {% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Source Metadata</title>
+    <style>
+        /* Styling for the page header */
+        header {
+            background-color: #f5a142;/* Green background for header */
+            color: white;  /* White text color */
+            padding: 10px 20px;
+            text-align: center;
+            width:1400px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+       
+        table, th, td {
+            border: 1px solid #ccc;
+            
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Styling for table headers */
+        th {
+            background-color: #f5a142;
+            color: white;  /* Dark text for contrast */
+            font-weight: bold;
+        }
+
+        /* Table cells styling */
+        td {
+            word-wrap: break-word;
+            max-width: 150px;
+        }
+
+        /* Optional: Add zebra-striping effect to table rows */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Fixed Arrow Button */
+        .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f5a142;  /* Same green color as header */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        /* Arrow icon */
+        .back-to-home::before {
+            content: '←';
+            font-size: 30px;
+        }
+
+        /* Hover effect */
+        .back-to-home:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Source Metadata</h1>
+    </header>
+
+    <h2>View All Source Metadata</h2>
+
+    <!-- Table to display the source metadata records -->
+    <table>
+        <thead>
+            <tr>
+                <th>Import URL</th>
+                <th>Date of Arrival</th>
+                <th>Assigned To</th>
+                <th>Frequency of Site Updates</th>
+                <th>Site Last Checked</th>
+                <th>Source File Upload</th>
+                <th>JSON File Name</th>
+                <th>JSON Upload Date</th>
+                <th>SUP ID</th>
+                <th>SME Comments</th>
+                <th>Screenshots Taken</th>
+                <th>QA Comment</th> <!-- New field -->
+                <th>QA Name</th>    <!-- New field -->
+                <th>QA Issue</th>   <!-- New field -->
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for metadata in source_metadata_list %}
+                <tr>
+                    <td>{{ metadata.import_url }}</td>
+                    <td>{{ metadata.date_of_arrival }}</td>
+                    <td>{{ metadata.assigned_to }}</td>
+                    <td>{{ metadata.frequency_of_site_updates }}</td>
+                    <td>{{ metadata.site_last_checked }}</td>
+                    <td>{{ metadata.source_file_upload }}</td>
+                    <td>{{ metadata.json_file_name }}</td>
+                    <td>{{ metadata.json_upload_date }}</td>
+                    <td>{{ metadata.sup_id }}</td>
+                    <td>{{ metadata.sme_comments }}</td>
+                    <td>{{ metadata.screenshots_taken }}</td>
+                    <td>{{ metadata.qa_comment }}</td> <!-- New field -->
+                    <td>{{ metadata.qa_name }}</td>    <!-- New field -->
+                    <td>{{ metadata.qa_issue }}</td>   <!-- New field -->
+                    <td>{{ metadata.created_at }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Fixed Back to Home Arrow Button -->
+    <button class="back-to-home" onclick="window.location.href='/'"></button>
+
+</body>
+</html>  {% endcomment %}
+
+<!--13-1-2025-->
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Source Metadata</title>
+    <style>
+        /* Styling for the page header */
+        header {
+            background-color: #f5a142; /* Green background for header */
+            color: white;  /* White text color */
+            padding: 10px 20px;
+            text-align: center;
+            width: 1500px;
+        }
+
+        header h1 {
+            margin: 0;
+            
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+       
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Styling for table headers */
+        th {
+            background-color: #f5a142;
+            color: white;  /* Dark text for contrast */
+            font-weight: bold;
+            
+        }
+
+        /* Table cells styling */
+        td {
+            word-wrap: break-word;
+            max-width: 150px;
+        }
+
+        /* Optional: Add zebra-striping effect to table rows */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Edit Button */
+        .edit-button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #f5a142;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .edit-button:hover {
+            background-color: #e3ba88;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Source Metadata</h1>
+    </header>
+
+    <h2>View All Source Metadata</h2>
+
+    <!-- Table to display the source metadata records -->
+    <table>
+        <thead>
+            <tr>
+                <th>Import URL</th>
+                <th>Date of Arrival</th>
+                <th>Assigned To</th>
+                <th>Frequency of Site Updates</th>
+                <th>Site Last Checked</th>
+                <th>Source File Upload</th>
+                <th>JSON File Name</th>
+                <th>JSON Upload Date</th>
+                <th>SUP ID</th>
+                <th>SME Comments</th>
+                <th>Screenshots Taken</th>
+                <th>QA Comment</th> <!-- New field -->
+                <th>QA Name</th>    <!-- New field -->
+                <th>QA Issue</th>   <!-- New field -->
+                <th>Created At</th>
+                <th>Actions</th> <!-- For Edit Button -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for metadata in source_metadata_list %}
+                <tr>
+                    <td>{{ metadata.import_url }}</td>
+                    <td>{{ metadata.date_of_arrival }}</td>
+                    <td>{{ metadata.assigned_to }}</td>
+                    <td>{{ metadata.frequency_of_site_updates }}</td>
+                    <td>{{ metadata.site_last_checked }}</td>
+                    <td>{{ metadata.source_file_upload }}</td>
+                    <td>{{ metadata.json_file_name }}</td>
+                    <td>{{ metadata.json_upload_date }}</td>
+                    <td>{{ metadata.sup_id }}</td>
+                    <td>{{ metadata.sme_comments }}</td>
+                    <td>{{ metadata.screenshots_taken }}</td>
+                    <td>{{ metadata.qa_comment }}</td> <!-- New field -->
+                    <td>{{ metadata.qa_name }}</td>    <!-- New field -->
+                    <td>{{ metadata.qa_issue }}</td>   <!-- New field -->
+                    <td>{{ metadata.created_at }}</td>
+                    <td>
+                        <!-- Add Edit button -->
+                        <a href="{% url 'edit_source_metadata' metadata.id %}" class="edit-button">Edit</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Fixed Back to Home Arrow Button -->
+    <button class="back-to-home" onclick="window.location.href='/'"></button>
+</body>
+</html>  {% endcomment %}
+
+
+<!--correct code-->
+ 
+
+
+
+<!--worked on 21-1-2025-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Source Metadata</title>
+    <style>
+        /* Your CSS styling here */
+        /* Styling for the page header */
+        header {
+            background-color: #f5a142; /* Green background for header */
+            color: white;  /* White text color */
+            padding: 10px 20px;
+            text-align: center;
+            width: 1560px;
+        }
+ 
+        header h1 {
+            margin: 0;
+        }
+ 
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+       
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+ 
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+ 
+        /* Styling for table headers */
+        th {
+            background-color: #f5a142;
+            color: white;  /* Dark text for contrast */
+            font-weight: bold;
+        }
+ 
+        /* Table cells styling */
+        td {
+            word-wrap: break-word;
+            max-width: 150px;
+        }
+ 
+        /* Optional: Add zebra-striping effect to table rows */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+ 
+        /* Edit Button */
+        .edit-button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #f5a142;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .edit-button:hover {
+            background-color:#e3ba88;
+        }
+ 
+        /* Fixed Arrow Button */
+        .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f5a142;  /* Same green color as header */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+ 
+        /* Arrow icon */
+        .back-to-home::before {
+            content: '←';
+            font-size: 30px;
+        }
+ 
+        /* Hover effect */
+        .back-to-home:hover {
+            background-color: #e3ba88;
+        }
+        td,a{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <header>
+        <h1>Source Metadata</h1>
+    </header>
+
+    <h2>View All Source Metadata</h2>
+
+    <!-- Check if metadata exists -->
+    {% if source_metadata_list %}
+        <!-- Table to display the source metadata records -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Row No</th>
+                    <th>URL</th>
+                    <th>Date of Arrival</th>
+                    <th>Assigned To</th>
+                    <th>Frequency of Site Updates</th>
+                    <th>Site Last Checked</th>
+                    <th>Award Mapping Source File</th>
+                    <th>JSON File Name</th>
+                    <th>JSON Upload Date</th>
+                    <th>SUP ID</th>
+                    <th>SME Comments</th>
+                    <th>Screenshots Taken</th>
+                    <th>QA Comment</th>
+                    <th>QA Name</th>
+                    <th>File Status</th>
+                    <th>QA Issue</th>
+                    <th>Created At</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for metadata in source_metadata_list %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>
+                            <a href="{{ metadata.import_url }}" target="_blank">{{ metadata.import_url }}</a>
+                        </td>
+                        <td>{{ metadata.date_of_arrival }}</td>
+                        <td>{{ metadata.assigned_to }}</td>
+                        <td>{{ metadata.frequency_of_site_updates }}</td>
+                        <td>{{ metadata.site_last_checked }}</td>
+                       <td>
+                            {{ metadata.source_file_upload }}
+                            
+                        </td>   
+                     {% comment %} <td>
+                            {% if metadata.source_file_upload %}
+                                {{ metadata.source_file_upload.filename|slice:"8:" }} <!-- Display file name without 'uploads/' -->
+                            {% else %}
+                                No file uploaded
+                            {% endif %}
+                        </td> {% endcomment %}
+                     
+                  
+                        <td>{{ metadata.json_file_name }}</td>
+                        <td>{{ metadata.json_upload_date }}</td>
+                        <td>{{ metadata.sup_id }}</td>
+                        <td>{{ metadata.sme_comments }}</td>
+                        <td>{{ metadata.screenshots_taken }}</td>
+                        <td>{{ metadata.qa_comment }}</td>
+                        <td>{{ metadata.qa_name }}</td>
+                        <td>{{ metadata.file_status }}</td>
+                        <td>{{ metadata.qa_issue }}</td>
+                        <td>{{ metadata.created_at }}</td>
+                        <td>
+                            <!-- Restrict Edit button to assigned user, QA user, or superuser -->
+                            {% if request.user.username == metadata.assigned_to or request.user.username == metadata.qa_name or request.user.is_superuser %}
+                                <a href="{% url 'edit_source_metadata' metadata.id %}" class="edit-button">Edit</a>
+                                 <!--<p>Metadata ID: {{ metadata.id }}</p>-->
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No metadata records available.</p>
+    {% endif %}
+
+    <!-- Back to Home Button -->
+    {% comment %} <button class="back-to-home" onclick="window.location.href='/'"></button> {% endcomment %}
+</body>
+</html>

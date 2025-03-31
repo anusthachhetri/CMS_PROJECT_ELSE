@@ -1,0 +1,22 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:basicdoc="http://cpexample.com/vocabulary/basicdoc/" targetNamespace="http://www.w3.org/1999/xhtml">
+    <xsd:element name="body">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="section" type="basicdoc:Title" minOccurs="1" maxOccurs="1"></xsd:element>
+                <xsd:element name="section" maxOccurs="unbounded"></xsd:element>
+                <xsd:element name="section" type="basicdoc:Introduction" minOccurs="1" maxOccurs="1"></xsd:element>
+                <xsd:element name="section" maxOccurs="unbounded"></xsd:element>
+                <xsd:element name="section" type="basicdoc:Conclusion" minOccurs="1" maxOccurs="1"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="basicdoc:Introduction">
+        <xsd:attribute name="typeof" use="required">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="basicdoc:Introduction"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>

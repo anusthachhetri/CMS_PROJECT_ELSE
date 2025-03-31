@@ -1,0 +1,284 @@
+{
+	"batchId": "73cdbb56-6a08-4344-87d6-9536080d2dbe",
+	"ingestionId": "148ed164-9c26-41af-addd-53126cbb920b",
+	"grantOpportunityId": 805248440,
+	"status": "ACTIVE",
+	"title": [{
+		"language": "en",
+		"value": "Call for Proposals under WISE-SCOPE Fellowship"
+	}, {
+		"language": "hi",
+		"value": "WISE-SCOPE फ़ेलोशिप के अंतर्गत प्रस्ताव आमंत्रित"
+	}],
+	"fundingBodyOpportunityId": "0",
+	"homePage": {
+		"link": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+	},
+	"grantType": "FELLOW",
+	"funderSchemeType": "WISE-SCOPE (WISE-Societal Challenges with Opportunities)",
+	"numberOfAwards": 0,
+	"duration": {
+		"durationExpression": "SPECIFIED",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "P3Y"
+			},
+			"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+		}, {
+			"abstract": {
+				"language": "hi",
+				"value": "P3Y"
+			},
+			"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+		}]
+	},
+	"repeatingOpportunity": "False",
+	"subjectMatter": [{
+		"abstract": {
+			"language": "en",
+			"value": "The WISE SCOPE Fellowship program of the Department of Science & Technology (DST) aims to provide opportunity to Women Scientists and Technologists who have completed Ph.D. and want to utilize their S&T knowledge and expertise for the benefit of society. This program promotes projects that directly deal with challenges at grassroots level and address them through S&T interventions."
+		},
+		"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+	}, {
+		"abstract": {
+			"language": "hi",
+			"value": "विज्ञान और प्रौद्योगिकी विभाग (डीएसटी) के WISE स्कोप फ़ेलोशिप कार्यक्रम का उद्देश्य उन महिला वैज्ञानिकों और प्रौद्योगिकीविदों को अवसर प्रदान करना है जिन्होंने पीएचडी पूरी कर ली है। और समाज के लाभ के लिए अपने विज्ञान एवं प्रौद्योगिकी ज्ञान और विशेषज्ञता का उपयोग करना चाहते हैं। यह कार्यक्रम उन परियोजनाओं को बढ़ावा देता है जो सीधे तौर पर जमीनी स्तर पर चुनौतियों से निपटती हैं और एस एंड टी हस्तक्षेपों के माध्यम से उनका समाधान करती हैं।"
+		},
+		"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+	}],
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "NOTSPECIFIED"
+		},
+		"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+	}, {
+		"abstract": {
+			"language": "hi",
+			"value": "NOTSPECIFIED"
+		},
+		"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+	}],
+	"instruction": [{
+		"abstract": {
+			"language": "en",
+			"value": "1.\tIt is mandatory to submit the proposals only through online mode.\n2.\tThe PI is required to see the completeness of the application before it is submitted finally. The PI shall keep a copy of the submitted proposal for their reference. There is no need to submit hard copy of the proposal at the DST.\n3.\tIn case of more than one proposals found submitted by the same PI, the last submitted proposal would be considered for evaluation.\n4.\tIncomplete or wrongly filled-up application format or application with a lack of essential information/ documents will be summarily rejected.\n5.\tProposal submitted through e-mail will not be entertained. Application format is available at the online portal (https://onlinedst.gov.in/, https://online-wosa.gov.in/)/ given on the website (https://dst.gov.in/).  Submission of proposals other than in the prescribed format shall summarily be rejected without any further processing as per programme norms.Please go through Guidelines at https://dst.gov.in and https://online-wosa.gov.in. And for further clarification email at enquiry-wosdst@gov.in"
+		},
+		"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+	}, {
+		"abstract": {
+			"language": "hi",
+			"value": "1.\tप्रस्ताव केवल ऑनलाइन माध्यम से ही प्रस्तुत करना अनिवार्य है ।\n2.\tअंतिम रूप से सबमिट करने से पहले पीआई को आवेदन की पूर्णता देखना आवश्यक है। पीआई अपने संदर्भ के लिए प्रस्तुत प्रस्ताव की एक प्रति अपने पास रखेगा। डीएसटी पर प्रस्ताव की हार्ड कॉपी जमा करने की कोई आवश्यकता नहीं है |\n3.\tएक ही पीआई द्वारा प्रस्तुत किए गए एक से अधिक प्रस्तावों के मामले में, अंतिम प्रस्तुत प्रस्ताव पर मूल्यांकन के लिए विचार किया जाएगा।\n4.\tअपूर्ण या गलत तरीके से भरे गए आवेदन प्रारूप या आवश्यक जानकारी/दस्तावेजों की कमी वाले आवेदन को सरसरी तौर पर खारिज कर दिया जाएगा।\n5.\tई-मेल के माध्यम से प्रस्तुत प्रस्ताव पर विचार नहीं किया जाएगा। आवेदन प्रारूप ऑनलाइन पोर्टल (https://onlinedst.gov.in/, https://online-wosa.gov.in/)/ वेबसाइट (https://dst.gov.in/) पर उपलब्ध है। .  निर्धारित प्रारूप के अलावा अन्य प्रस्तावों को कार्यक्रम मानदंडों के अनुसार किसी भी आगे की प्रक्रिया के बिना सरसरी तौर पर खारिज कर दिया जाएगा। कृपया https://dst.gov.in और https://online-wosa.gov.in पर दिशानिर्देश देखें। और अधिक स्पष्टीकरण के लिए enquiry-wosdst@gov.in पर ईमेल करें।"
+		},
+		"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "NOTSPECIFIED"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "NOTSPECIFIED"
+		},
+		"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+	}, {
+		"abstract": {
+			"language": "hi",
+			"value": "NOTSPECIFIED"
+		},
+		"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+	}],
+	"relatedOpportunity": {
+		"relatedTo": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NOTSPECIFIED"
+			}],
+			"description": "NOTSPECIFIED"
+		}],
+		"replacedBy": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NA"
+			}],
+			"description": ""
+		}],
+		"replaces": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NA"
+			}],
+			"description": ""
+		}]
+	},
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "",
+			"sourceText": "Department of Science & Technology (DST), Government of India"
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "",
+			"sourceText": ""
+		}]
+	},
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Societal challenges",
+			"identifier": {
+				"type": "ASJC",
+				"value": "1405"
+			}
+		}
+	}],
+	"associatedAmount": {
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "200000"
+			},
+			"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+		}, {
+			"abstract": {
+				"language": "hi",
+				"value": "२00000"
+			},
+			"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+		}],
+		"ceiling": [{
+			"currency": "INR",
+			"amount": 200000
+		}],
+		"estimatedTotal": [{
+			"currency": "INR",
+			"amount": 0
+		}],
+		"floor": [{
+			"currency": "INR",
+			"amount": 0
+		}]
+	},
+	"contactInformation": [{
+		"link": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323",
+		"hasPostalAddress": {
+			"addressCountry": "IND",
+			"addressRegion": "NOTSPECIFIED",
+			"addressLocality": "New Delhi",
+			"addressPostalCode": "110 016",
+			"streetAddress": "Technology Bhavan, New Mehrauli Road"
+		},
+		"contactPerson": [{
+			"initials": "Dr.",
+			"givenName": "CHHAMA",
+			"familyName": "AWASTHI",
+			"emailAddress": "enquiry-wosdst@gov.in"
+		}]
+	}],
+	"opportunityLocation": [{
+		"country": "IND"
+	}],
+	"opportunityDate": {
+		"expirationDateDetail": {
+			"date": "2024-08-23T00:00:00",
+			"description": {
+				"abstract": {
+					"language": "en",
+					"value": "NOTSPECIFIED"
+				},
+				"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+			}
+		},
+		"cycle": [{
+			"index": 1,
+			"label": "Submission Deadline",
+			"startDateDetail": [{
+				"date": "2024-08-23T00:00:00",
+				"description": {
+					"abstract": {
+						"language": "en",
+						"value": "2024-08-23T00:00:00"
+					},
+					"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+				}
+			}],
+			"endDateDetail": [{
+				"date": "2024-08-23T00:00:00",
+				"description": {
+					"abstract": {
+						"language": "en",
+						"value": "2024-08-23T00:00:00"
+					},
+					"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+				}
+			}],
+			"letterOfIntent": [{
+				"limitation": "NOTSPECIFIED"
+			}],
+			"preproposal": [{
+				"limitation": "NOTSPECIFIED"
+			}],
+			"proposal": [{
+				"limitation": "NOTSPECIFIED"
+			}],
+			"decision": [{
+				"limitation": "NOTSPECIFIED"
+			}]
+		}]
+	},
+	"eligibilityClassification": {
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "Candidates in regular employment are not eligible for WISE-SCOPE. However, women scientists who are temporarily employed in research or academics may apply in this program but they have to leave earlier assignment, if, selected in WISE-SCOPE program.\nThe minimum age to apply is 27 years and maximum is 60 years as on the date of submission.\nWomen Scientists who have completed Ph.D. in Basic or Applied Sciences or having equivalent degree like MD/MS/MDS are eligible for WISE-SCOPE"
+			},
+			"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+		}, {
+			"abstract": {
+				"language": "hi",
+				"value": "नियमित रोजगार वाले उम्मीदवार WISE-SCOPE के लिए पात्र नहीं हैं। हालाँकि, जो महिला वैज्ञानिक अस्थायी रूप से अनुसंधान या शिक्षाविदों में कार्यरत हैं, वे इस कार्यक्रम में आवेदन कर सकती हैं, लेकिन उन्हें WISE-स्कोप कार्यक्रम में चयनित होने पर पहले का काम छोड़ना होगा।\nआवेदन करने की न्यूनतम आयु 27 वर्ष और अधिकतम 60 वर्ष है। जमा करने की तिथि।\nमहिला वैज्ञानिक जिन्होंने पीएच.डी. पूरी कर ली है। बेसिक या एप्लाइड साइंसेज में या एमडी/एमएस/एमडीएस जैसी समकक्ष डिग्री रखने वाले WISE-SCOPE के लिए पात्र हैं।"
+			},
+			"source": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323"
+		}],
+		"limitedSubmission": {
+			"limitation": "NOTSPECIFIED"
+		},
+		"individualEligibility": {
+			"limitation": "LIMITED",
+			"applicantType": ["DEGREE"]
+		},
+		"organisationEligibility": {
+			"limitation": "LIMITED",
+			"applicantType": ["GOVERNMENT"]
+		},
+		"citizenship": {
+			"limitation": "NOTSPECIFIED"
+		},
+		"regionSpecific": {
+			"limitation": "NOTSPECIFIED"
+		},
+		"restrictionScope": {
+			"limitation": "NOTSPECIFIED"
+		}
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323",
+		"createdOn": "2024-08-23T00:00:00",
+		"lastUpdateOn": "2024-10-23T00:00:00",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "1",
+		"hidden": "False",
+		"defunct": "False",
+		"status": "UPDATE"
+	}
+}

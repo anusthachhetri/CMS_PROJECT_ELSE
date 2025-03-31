@@ -1,0 +1,237 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "description": "Schema containing the properties in an omniscience add-on asset",
+    "properties": {
+        "@id": {
+            "type": "string",
+            "pattern": "^http://vtw.elsevier.com/content/egi/.*$"
+        },
+        "@type": {
+            "type": "string",
+            "enum": ["eaf:AnnotationDocument"]
+        },
+        "@context": {"$ref": "#/definitions/context"},
+        "prov:wasAttributedTo": {"$ref": "#/definitions/prov:wasAttributedTo"},
+        "prov:generatedAtTime": {"$ref": "#/definitions/prov:generatedAtTime"},
+        "prov:wasGeneratedBy": {"$ref": "#/definitions/prov:wasGeneratedBy"},
+        "eaf:referencedVocabulary": {"$ref": "#/definitions/eaf:referencedVocabulary"},
+        "eaf:annotatedRegion": {"$ref": "#/definitions/eaf:annotatedRegion"}
+    },
+    "definitions": {
+        "context": {
+            "type": "object",
+            "properties": {
+                "base": {
+                    "type": "string",
+                    "description": "Asset Identifier",
+                    "format": "uri",
+                    "pattern": "^http://vtw.elsevier.com/content/.*$"
+                },
+                "dct": {
+                    "type": "string",
+                    "enum": ["http://purl.org/dc/terms/"]
+                },
+                "dct:type": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "@id": {
+                            "type": "string",
+                            "enum": ["http://purl.org/dc/terms/type"]
+                        },
+                        "@type": {
+                            "type": "string",
+                            "enum": ["@id"]
+                        }
+                    }
+                },
+                "eaf": {
+                    "type": "string",
+                    "enum": ["http://vtw.elsevier.com/data/ns/Formats/Annotation/"]
+                },
+                "eaf:annotatedConcept": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "@id": {
+                            "type": "string",
+                            "enum": ["http://vtw.elsevier.com/data/ns/Formats/Annotation/annotatedConcept"]
+                        },
+                        "@type": {
+                            "type": "string",
+                            "enum": ["@id"]
+                        }
+                    }
+                },
+                "eaf:basedOn": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "@id": {
+                            "type": "string",
+                            "enum": ["http://vtw.elsevier.com/data/ns/Formats/Annotation/basedOn"]
+                        },
+                        "@type": {
+                            "type": "string",
+                            "enum": ["@id"]
+                        }
+                    }
+                },
+                "ecm": {
+                    "type": "string",
+                    "enum": ["http://www.elsevier.com/xml/schema/rdf/common/Metadata-1/"]
+                },
+                "prov": {
+                    "type": "string",
+                    "enum": ["http://www.w3.org/ns/prov#"]
+                },
+                "rdf": {
+                    "type": "string",
+                    "enum": ["http://www.w3.org/1999/02/22-rdf-syntax-ns#"]
+                }
+            }
+        },
+        "eaf:referencedVocabulary": {
+            "description": "This element is used provide provenance information about the creation of the annotation. The property associates the vocabularies and their versions used in the annotation.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "eaf:vocabularyName",
+                    "eaf:vocabularyVersion"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "eaf:vocabularyName": {"$ref": "#/definitions/eaf:vocabularyName"},
+                    "eaf:vocabularyVersion": {"$ref": "#/definitions/eaf:vocabularyVersion"}
+                }
+            }
+        },
+        "eaf:vocabularyName": {
+            "description": "Associates the vocabulary name such as the skos:ConceptScheme value of the vocabulary used in the annotation.",
+            "type": "string",
+            "format": "uri",
+            "enum": ["http://data.elsevier.com/vocabularies/OmniScience"]
+        },
+        "eaf:vocabularyVersion": {
+            "description": "Associates the vocabulary version such as the sat:version of the vocabulary used in the annotation. This property comes paired with eag:vocabularyName and is used within the eaf:referencedVocabulary property.",
+            "type": "string"
+        },
+        "eaf:basedOn": {
+            "description": "Associates provenance information about XML elements used as a source elements for annotation",
+            "type": "array",
+            "items": {"anyOf": [
+                {"enum": ["http://data.elsevier.com/vocabulary/DocumentElementTypes#Title"]},
+                {"enum": ["http://data.elsevier.com/vocabulary/DocumentElementTypes#Abstract"]},
+                {"enum": ["http://data.elsevier.com/vocabulary/DocumentElementTypes#FullText"]}
+            ]}
+        },
+        "prov:generatedAtTime": {
+            "title": "The time that the funding asset was created in Zulu time",
+            "type": "string",
+            "format": "date-time"
+        },
+        "prov:wasGeneratedBy": {
+            "title": "specific versioned pipeline process used",
+            "type": "string"
+        },
+        "prov:wasAttributedTo": {
+            "title": "The contributor or creator of the asset.",
+            "type": "string",
+            "format": "uri",
+            "enum": ["http://vtw.elsevier.com/data/voc/Contributors/Elsevier/ContentEnrichmentFramework/FingerPrintEngine"]
+        },
+        "ecm:identifier": {
+            "title": "VTW identifier",
+            "pattern": "^(pii|pui):.*$",
+            "type": "string"
+        },
+        "dct:format": {
+            "title": "format",
+            "type": "string"
+        },
+        "dct:title": {
+            "title": "title",
+            "type": "string"
+        },
+        "eaf:annotatedSourceDocument": {
+            "description": "Associates the information about the annotated source document such as its identifier and title and content type",
+            "type": "object",
+            "required": ["@id"],
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "description": "Full VTW identifier of the used asset of the annotated source docuemnt, optional",
+                    "pattern": "^http://vtw.elsevier.com/asset/.*$",
+                    "type": "string",
+                    "format": "uri"
+                },
+                "dct:formst": {"$ref": "#/definitions/dct:format"},
+                "dct:title": {"$ref": "#/definitions/dct:title"},
+                "dct:type": {"$ref": "#/definitions/dct:type"},
+                "ecm:identifier": {"$ref": "#/definitions/ecm:identifier"}
+            }
+        },
+        "eaf:annotation": {
+            "description": "Holds the set of annotations extracted from the document",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "@id",
+                    "@type",
+                    "eaf:annotatedConcept",
+                    "eaf:annotatedConceptLabel",
+                    "eaf:relevance",
+                    "eaf:pathAttributes"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                    "@id": {"type": "string"},
+                    "@type": {
+                        "type": "string",
+                        "format": "uri",
+                        "enum": ["http://vtw.elsevier.com/data/ns/Formats/Annotation/type/ConceptAnnotation"]
+                    },
+                    "eaf:annotatedConcept": {
+                        "description": "The identifier of the concept associated with the annotation. Used in the eaf:annotation property.",
+                        "type": "string",
+                        "format": "uri",
+                        "pattern": "^http://data.elsevier.com/vocabularies/OmniScience/.*$"
+                    },
+                    "eaf:annotatedConceptLabel": {
+                        "description": "The label of the concept the document is annotation with, usually added for readability. Used in the eaf:annotation property.",
+                        "type": "string"
+                    },
+                    "eaf:relevance": {
+                        "description": "Associates a relevance score with the annotation. The relevance is a ranking measure and shouldn't be confused with confidence score.",
+                        "type": "number"
+                    }
+                }
+            },
+            "eaf:pathAttributes": {
+                "description": "Associates information about the concept location within the vocabulary. The property holds the eaf:conceptPath, eaf:domain and eaf:relevance properties.",
+                "type": "object",
+                "required": [
+                    "eaf:domain",
+                    "eaf:relevance",
+                    "eaf:conceptPath"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "eaf:domain": {
+                        "description": "Associates a scientific domain (eg a specific level in Omnscience taxonomy) with the annotation.",
+                        "type": "uri",
+                        "pattern": "^http://data.elsevier.com/vocabularies/OmniScience/.*$"
+                    },
+                    "eaf:relevance": {"type": "number"},
+                    "eaf:conceptPath": {
+                        "description": "List of concept identifiers stored in @list",
+                        "type": "string",
+                        "properties": {"@list": {"type": "array"}}
+                    }
+                }
+            }
+        }
+    }
+}

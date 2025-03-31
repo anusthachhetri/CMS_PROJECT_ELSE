@@ -1,0 +1,197 @@
+{
+	"batchId": "1f142591-f9c9-4ff7-b8a6-fe782dbf9bf8",
+	"ingestionId": "007ae90a-d213-4e07-a88a-8777917cb874",
+	"grantAwardId": 800273289,
+	"fundingBodyAwardId": "6624027",
+	"hasInstallment": [0],
+	"hasWorkPackage": [0],
+	"title": [{
+		"language": "en",
+		"value": "Environmental Life Sciences Engineering (SCELSE)"
+	}],
+	"identifier": [{
+		"type": "DOI",
+		"value": "NOT FOUND"
+	}],
+	"startDate": "2024-01-01T00:00:00",
+	"grantType": "TRAINING",
+	"funderSchemeType": "Travel Grants",
+	"homePage": {
+		"link": "https://www.medicalresearch.org.nz/travel-grants"
+	},
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "Invited Seminar and establish a new collaboration at Singapore Centre for Environmental Life Sciences Engineering (SCELSE), Singapore, 2 - 11 December 2024"
+		},
+		"source": "https://www.medicalresearch.org.nz/travel-grants"
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "© 2023 by Auckland Medical Research Foundation"
+		},
+		"source": "https://www.medicalresearch.org.nz/travel-grants"
+	}],
+	"funds": [{
+		"fundingBodyProjectId": "NOT FOUND",
+		"hasPart": [{
+			"fundingBodyProjectId": "NOT FOUND",
+			"budget": [{
+				"currency": "NZD",
+				"amount": 3805
+			}]
+		}],
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"acronym": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "NZL",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"link": "NOT FOUND",
+		"budget": [{
+			"currency": "NZD",
+			"amount": 3805
+		}],
+		"status": "OPEN"
+	}],
+	"fundingDetail": {
+		"installment": [{
+			"index": 0,
+			"grantAwardInstallmentId": 1,
+			"financialYearStart": 0,
+			"financialYearEnd": 0,
+			"fundedAmount": [{
+				"currency": "NZD",
+				"amount": 3805
+			}]
+		}],
+		"fundingTotal": [{
+			"currency": "NZD",
+			"amount": 3805
+		}]
+	},
+	"awardeeDetail": [{
+		"awardeeAffiliationId": "800273289_A_0",
+		"name": [{
+			"language": "en",
+			"value": "Department of Surgery, The University of Auckland"
+		}],
+		"role": "COORDINATOR",
+		"fundingTotal": [{
+			"currency": "NZD",
+			"amount": 3805
+		}],
+		"fundingBodyOrganizationId": "NOT FOUND",
+		"vatNumber": "NOT FOUND",
+		"link": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "NZL",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"identifier": [{
+			"type": "DUNS",
+			"value": "NOT FOUND"
+		}],
+		"departmentName": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"activityType": "NOT FOUND",
+		"affiliationOf": [{
+			"awardeePersonId": "800273289_P_0",
+			"name": [{
+				"language": "en",
+				"value": "Kristi Biswas"
+			}],
+			"role": "PI",
+			"initials": "K",
+			"givenName": "Kristi",
+			"familyName": "Biswas",
+			"emailAddress": "NOT FOUND",
+			"identifier": [{
+				"type": "ORCID",
+				"value": "NOT FOUND"
+			}],
+			"fundingBodyPersonId": "NOT FOUND"
+		}]
+	}],
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Environmental Science",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2300"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Surgery",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2746"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Molecular Medicine",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "1313"
+			}
+		}
+	}],
+	"relatedOpportunity": [{
+		"grantOpportunityId": 0,
+		"fundingBodyOpportunityId": "NOT FOUND",
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"description": "NOT FOUND"
+	}],
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "Auckland Medical Research Foundation"
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "Auckland Medical Research Foundation"
+		}]
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.medicalresearch.org.nz/travel-grants",
+		"createdOn": "2024-11-18T16:19:38",
+		"lastUpdateOn": "2024-11-18T16:19:38",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "1",
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	}
+}

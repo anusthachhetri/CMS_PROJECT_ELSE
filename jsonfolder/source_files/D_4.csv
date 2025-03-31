@@ -1,0 +1,71 @@
+JSON Schema 5.0 Data Field,Value from the Source or as determined by Supplier
+fundingBodyAwardId,not found
+grantType,RESEARCH
+title ,Gene Discovery in Transient Neonatal Diabetes to Gain New Insights into Beta-Cell Development and Function
+startDate,01-01-2025
+endDate,not found
+noticeDate,not found
+homePage/link,https://www.drwf.org.uk/drwf-research/funded-research/
+homepage/modifiedDate,not found
+homepage/publishedDate,not found
+synopsis,"Pancreatic beta cells make insulin, which controls blood sugar levels. When beta cells cannot make enough insulin, it leads to diabetes, a chronic and common condition affecting millions worldwide. The aim of our project is to provide a deeper understanding of how beta cells function and develop. We will study individuals with rare types of diabetes caused by a single genetic defect. This helps us to better understand how beta-cells work by allowing us to look at what happens when a single pathway is broken, offering a window into the broader functioning of beta cells.The type of diabetes we will investigate is Transient Neonatal Diabetes Mellitus (TNDM). TNDM is diagnosed in babies who are unable to produce enough insulin during their development before birth and in early life. Uniquely, these children temporarily regain the ability to produce enough insulin in childhood but are then re-diagnosed with diabetes later, usually in adolescence or early adulthood. Studying these babies, therefore, allows us to gain new information on the function and development of beta-cells through time. We will look for new genetic defects causing TNDM to find the key genes responsible for the disease.We will use a powerful genetic technique called whole genome sequencing. This allows us to read all of the person's DNA, meaning we can comprehensively look for the defects that cause the diabetes in people with TNDM. We have already ruled out all of the known causes and selected individuals who have the strongest features of TNDM, meaning we are very likely to find new genes. Our findings will provide key new information on the pathways that govern beta cell function and development. This is the crucial first step towards identifying new drug targets for diabetes, bringing us a step closer to better management and treatment of this condition."
+keyword,not found
+fundingDetail/fundingTotal/amount,20000
+fundingDetail/fundingTotal/currency,GBP
+fundingDetail/installment,not found
+funderSchemeType,Funded Research
+classification/ ASJC code,"1311,,1310,,1309,,1312,,2723"
+classification/ other codes,not found
+classification/ Orgspecific,"Genetics,,Endocrinology,,Developmental Biology,,Molecular Biology,,Medicine - Endocrinology, Diabetes and Metabolism"
+awardeeDetail/name,University of Exeter
+awardeeDetail/fundingBodyOrganizationId,not found
+awardeeDetail/role,COORDINATOR
+awardeeDetail/departmentName,not found
+awardeeDetail/activityType,research organization
+awardeeDetail/fundingTotal/amount,0
+awardeeDetail/fundingTotal/currency,GBP
+awardeeDetail/hasPostalAddress,not found
+awardeeDetail/link,not found
+awardeeDetail/identifier,ROR
+awardeeDetail/vatNumber,not found
+awardeeDetail/awardeeAffiliationId,not found
+awardeeDetail/affiliationOf/initials,J.
+awardeeDetail/affiliationOf/name,James Russ-Silsby
+awardeeDetail/affiliationOf/givenName,James
+awardeeDetail/affiliationOf/familyName,Russ-Silsby
+awardeeDetail/affiliationOf/role,PI
+awardeeDetail/affiliationOf/emailAddress,not found
+awardeeDetail/affiliationOf/identifier/id/orcid,not found
+awardeeDetail/affiliationOf/fundingBodyPersonId,not found
+awardeeDetail/affiliationOf/awardeePersonId,not found
+licenceInformation/link,https://www.drwf.org.uk/privacy-and-cookie-policy/
+relatedFunder/leadFunder,Diabetes Research and Wellness Foundation
+relatedFunder/hasFunder,Diabetes Research and Wellness Foundation
+relatedOpportunity/grantOpportunityId,not found
+relatedOpportunity/title,not found
+relatedOpportunity/description,not found
+relatedOpportunity/fundingBodyOpportunityId,not found
+funds/fundingProjectId,not found
+funds/acronym,not found
+funds/hasPart/budget,not found
+funds/hasPart/fundingBodyProjectId,not found
+funds/title,not found
+funds/startDate,not found
+funds/endDate,not found
+funds/link,not found
+funds/hasPostalAddress,not found
+funds/status,CLOSE
+awardee country,GBR
+awardee addressLocality,not found
+awardee addressPostalCode,not found
+awardee addressRegion,not found
+awardee postOfficeBoxNumber,not found
+awardee streetAddress,not found
+funding country,GBR
+funding addressLocality,not found
+funding addressPostalCode,not found
+funding addressRegion,not found
+funding postOfficeBoxNumber,not found
+funding streetAddress,not found
+licenceInformation value,Privacy and Cookie Policy
+createdON,1/27/2025

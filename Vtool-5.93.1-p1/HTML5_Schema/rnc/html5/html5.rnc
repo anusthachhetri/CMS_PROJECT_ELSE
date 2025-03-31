@@ -1,0 +1,58 @@
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace ns1 = "http://www.w3.org/1999/xhtml"
+
+# #####################################################################
+
+## RELAX NG Schema for HTML 5 Core Profile
+# #####################################################################
+
+# To validate an HTML 5 document, you must first validate against  #
+# this schema and then ALSO validate against assertions.sch        #
+## HTML flavor RELAX NG schemas can only be used after the         #
+## document has been transformed to well-formed XML.               #
+##   - Insert closing slashes in all empty element tags            #
+##   - Insert all optional start and end tags                      #
+##   - Add xmlns "http://www.w3.org/1999/xhtml"                    #
+##   - Properly escape <script> and <style> CDATA                  #
+##   - Parse and transform all HTML-only entities to numeric       #
+##     character references                                        #
+## Obviously, syntax-checking involving these features cannot be   #
+## done by the RELAX NG schema and must be checked, along with the #
+## <!DOCTYPE> requirement, by some other application.              #
+# #####################################################################
+## Schema Framework & Parameters
+include "common.rnc" inherit = ns1 {
+  # XHTML flavor #
+  XMLonly = notAllowed
+  HTMLonly = empty
+  # HTML 4 compat #
+  v5only = empty
+  # HTML-serializability #
+  nonHTMLizable = notAllowed
+  # HTML-roundtrippability #
+  nonRoundtrippable = notAllowed
+}
+# #####################################################################
+
+## Language Definitions
+start = html.elem
+include "meta.rnc" inherit = ns1
+include "phrase.rnc" inherit = ns1
+include "block.rnc" inherit = ns1
+include "sectional.rnc" inherit = ns1
+include "structural.rnc" inherit = ns1
+include "revision.rnc" inherit = ns1
+include "embed.rnc" inherit = ns1
+include "ruby.rnc" inherit = ns1
+include "media.rnc" inherit = ns1
+include "core-scripting.rnc" inherit = ns1
+include "tables.rnc" inherit = ns1
+include "form-datatypes.rnc" inherit = ns1
+include "web-forms.rnc" inherit = ns1
+include "web-forms2.rnc" inherit = ns1
+include "applications.rnc" inherit = ns1
+include "data.rnc" inherit = ns1
+include "rdfa.rnc" inherit = ns1
+include "aria.rnc" inherit = ns1
+include "microdata.rnc" inherit = ns1
+include "web-components.rnc" inherit = ns1

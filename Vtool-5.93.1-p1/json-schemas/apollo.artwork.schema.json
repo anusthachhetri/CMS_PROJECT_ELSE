@@ -1,0 +1,172 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Apollo Artwork Quality report validation schema . Version 1.0. Created by SVa",
+    "properties": {
+        "@context": {"type": "array"},
+        "@id": {"type": "string"},
+        "@type": {
+            "type": "string",
+            "pattern": "^mnf:Manifest$"
+        },
+        "dct:title": {
+            "type": "string",
+            "pattern": "^QUALITY-REPORT for egi"
+        },
+        "mnf:hasServiceOutput": {"$ref": "#/definitions/mnf:hasServiceOutput"}
+    },
+    "required": [
+        "@type",
+        "@id",
+        "@context",
+        "mnf:hasServiceOutput"
+    ],
+    "additionalProperties": true,
+    "definitions": {
+        "mnf:hasServiceOutput": {
+            "title": "All ServiceOutput objects of a mnf:Manifest",
+            "type": "array",
+            "items": {"$ref": "#/definitions/ServiceOutputModel"}
+        },
+        "ServiceOutputModel": {
+            "title": "Service output object",
+            "description": "Service Output object properties",
+            "type": "object",
+            "required": [
+                "@id",
+                "@type",
+                "prov:wasAttributedTo",
+                "prov:generatedAtTime",
+                "mnf:hasFile",
+                "mnf:hasCO"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "@type": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "string",
+                            "enum": ["mnf:ServiceOutput"]
+                        },
+                        {
+                            "type": "string",
+                            "enum": ["awa:QualityReport"]
+                        }
+                    ]
+                },
+                "@id": {"$ref": "#/definitions/@URIid"},
+                "prov:wasAttributedTo": {"$ref": "definitions/asset.schema.json#/definitions/prov:wasAttributedTo"},
+                "prov:generatedAtTime": {"$ref": "definitions/asset.schema.json#/definitions/prov:generatedAtTime"},
+                "prov:wasGeneratedBy": {"$ref": "definitions/asset.schema.json#/definitions/prov:wasGeneratedBy"},
+                "dct:title": {"$ref": "definitions/co.schema.json#/definitions/dct:title"},
+                "mnf:hasFile": {"$ref": "#/definitions/mnf:hasFile"},
+                "mnf:hasCO": {"$ref": "#/definitions/mnf:hasCO"}
+            }
+        },
+        "mnf:hasFile": {
+            "title": "Assets in the Quality Report",
+            "description": "array of asset objects",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                    "@type",
+                    "@id",
+                    "bam:assetType",
+                    "dct:format"
+                ],
+                "properties": {
+                    "@type": {
+                        "type": "string",
+                        "pattern": "^mnf:File$"
+                    },
+                    "@id": {"$ref": "definitions/generic.schema.json#/definitions/@id"},
+                    "bam:assetType": {"$ref": "#/definitions/bam:assetType"},
+                    "bam:assetVersion": {"$ref": "definitions/asset.schema.json#/definitions/bam:assetVersion"},
+                    "prism:byteCount": {"$ref": "definitions/asset.schema.json#/definitions/prism:byteCount"},
+                    "dct:isFormatOf": {"$ref": "definitions/asset.schema.json#/definitions/dct:isFormatOf"},
+                    "dct:format": {"$ref": "definitions/asset.schema.json#/definitions/dct:format"},
+                    "prov:wasGeneratedBy": {"$ref": "definitions/asset.schema.json#/definitions/prov:wasGeneratedBy"},
+                    "dct:requires": {"$ref": "definitions/asset.schema.json#/definitions/dct:requires"},
+                    "awa:processingDetails": {"$ref": "#/definitions/awa:processingDetails"},
+                    "awa:serviceFeedback": {"$ref": "#/definitions/awa:serviceFeedback"},
+                    "dct:conformsTo": {"$ref": "definitions/asset.schema.json#/definitions/dct:conformsTo"},
+                    "bam:filename": {"$ref": "definitions/asset.schema.json#/definitions/bam:filename"}
+                }
+            }
+        },
+        "mnf:hasCO": {
+            "title": "Array of all COs",
+            "description": "Array of all COs to be created by Service contributing to the Manifest",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                    "@type",
+                    "@id"
+                ],
+                "properties": {
+                    "@type": {
+                        "type": "string",
+                        "pattern": "^mnf:CO$"
+                    },
+                    "@id": {"$ref": "#/definitions/@URIid"},
+                    "dct:type": {"$ref": "definitions/co.schema.json#/definitions/dct:type"},
+                    "dct:title": {"$ref": "definitions/co.schema.json#/definitions/dct:title"},
+                    "awa:visualQualityScore": {"$ref": "#/definitions/awa:visualQualityScore"},
+                    "awa:submittedInColour": {"$ref": "#/definitions/awa:submittedInColour"},
+                    "bam:subtype": {"$ref": "definitions/co.schema.json#/definitions/bam:subtype"},
+                    "ada:feedback": {"$ref": "#/definitions/ada:feedback"},
+                    "bam:label": {"$ref": "definitions/co.schema.json#/definitions/bam:label"},
+                    "dct:isPartOf": {"$ref": "definitions/co.schema.json#/definitions/dct:isPartOf"}
+                }
+            }
+        },
+        "awa:processingDetails": {
+            "type": "array",
+            "title": "Artwork Processing details"
+        },
+        "awa:serviceFeedback": {
+            "type": "array",
+            "title": "Artwork Processing comments"
+        },
+        "awa:submittedInColour": {
+            "type": "boolean",
+            "title": "Author Image mode (colour/BW)"
+        },
+        "ada:feedback": {
+            "type": "array",
+            "title": "ADA feedback details"
+        },
+        "@URIid": {
+            "type": "string",
+            "format": "uri"
+        },
+        "bam:assetType": {
+            "title": "type of asset",
+            "description": "value is always UPPERCASE",
+            "type": "string",
+            "enum": [
+                "MAIN",
+                "AUTH-ORG-GRABS",
+                "AUTH-ORG-STABS",
+                "MASTER",
+                "AUTH-ORG-FIG",
+                "MASTER-IMAGE-CMYK",
+                "MASTER-IMAGE-GREYSCALE",
+                "AUTH-ORG-AUTH-PHOTO"
+            ]
+        },
+        "awa:visualQualityScore": {
+            "title": "Visual Quality Score",
+            "type": "number"
+        },
+        "@Stringid": {"type": "string"},
+        "pf:isMentionOf": {
+            "title": "identifier of the associated mnf:File",
+            "type": "string"
+        }
+    }
+}

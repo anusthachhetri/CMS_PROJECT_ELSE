@@ -1,0 +1,409 @@
+{
+	"batchId": "fc1fea33-8e21-4b89-82fd-e818b9171497",
+	"ingestionId": "a263d4c5-b2a9-4213-8127-e19537b2c919",
+	"fundingBodyId": 801558028,
+	"homePage": "https://www.bracco.com/",
+	"status": "ACTIVE",
+	"preferredName": [{
+		"language": "en",
+		"value": "Bracco"
+	}, {
+		"language": "it",
+		"value": "Bracco"
+	}, {
+		"language": "zh",
+		"value": "Bracco"
+	}, {
+		"language": "ja",
+		"value": "Bracco"
+	}, {
+		"language": "ko",
+		"value": "Bracco"
+	}, {
+		"language": "pt",
+		"value": "Bracco"
+	}, {
+		"language": "fr",
+		"value": "Bracco"
+	}, {
+		"language": "de",
+		"value": "Bracco"
+	}],
+	"acronym": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}, {
+		"language": "it",
+		"value": "NOTFOUND"
+	}, {
+		"language": "zh",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ja",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ko",
+		"value": "NOTFOUND"
+	}, {
+		"language": "pt",
+		"value": "NOTFOUND"
+	}, {
+		"language": "fr",
+		"value": "NOTFOUND"
+	}, {
+		"language": "de",
+		"value": "NOTFOUND"
+	}],
+	"abbrevName": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}, {
+		"language": "it",
+		"value": "NOTFOUND"
+	}, {
+		"language": "zh",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ja",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ko",
+		"value": "NOTFOUND"
+	}, {
+		"language": "pt",
+		"value": "NOTFOUND"
+	}, {
+		"language": "fr",
+		"value": "NOTFOUND"
+	}, {
+		"language": "de",
+		"value": "NOTFOUND"
+	}],
+	"alternateName": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}, {
+		"language": "it",
+		"value": "NOTFOUND"
+	}, {
+		"language": "zh",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ja",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ko",
+		"value": "NOTFOUND"
+	}, {
+		"language": "pt",
+		"value": "NOTFOUND"
+	}, {
+		"language": "fr",
+		"value": "NOTFOUND"
+	}, {
+		"language": "de",
+		"value": "NOTFOUND"
+	}],
+	"financeType": "PRI",
+	"activityType": "CORPOR",
+	"profitabilityType": "PROF",
+	"country": "ITA",
+	"state": "Milan",
+	"identifier": [{
+		"type": "CROSSREFID",
+		"value": "7362770"
+	}],
+	"description": [{
+		"abstract": {
+			"language": "en",
+			"value": "As a leading family-owned player in the field of Diagnostic Imaging, Bracco is focused on contrast imaging and works deliberately to provide the healthcare industry with advanced imaging solutions made to meet the challenges of modern medicine and contribute to successful clinical outcomes. These evolving challenges drive us to perfect new tools, engineer innovative medical devices, and continue the advancement, as the progress of medical science never sleeps. Bracco's sights are fixed firmly on the future and our role in reimagining that future."
+		},
+		"source": "https://www.bracco.com/"
+	}, {
+		"abstract": {
+			"language": "it",
+			"value": "Le imprese familiari come Bracco sono uniche, perché si fondano sulla volontà di costruire qualcosa che trasformi il concetto di lavoro in un progetto di vita condiviso.È per questo che Bracco si è concentrata sui mezzi di contrasto per la diagnostica, lavorando incessantemente per fornire agli specialisti soluzioni avanzate per vincere le sfide della medicina moderna e contribuire a risultati clinici di successo. Perfezionare nuovi strumenti e progettare dispositivi medici innovativi fa parte del nostro processo evolutivo e, poiché il progresso della scienza medica non dorme mai, gli occhi di Bracco sono spalancati sul futuro e come trasformarlo."
+		},
+		"source": "https://www.bracco.com/it"
+	}, {
+		"abstract": {
+			"language": "zh",
+			"value": "作为业界领先的家族企业，博莱科专注于造影剂成像，并致力于为医疗保健行业提供应对医学难题，改善临床成果的先进成像解决方案。医学的发展永远不会止步，变化的环境要求我们持续开发新工具、设计创新医疗器械，不断寻求发展进步。博莱科专注重塑未来，以及我们在这个过程中扮演的角色。"
+		},
+		"source": "https://www.bracco.com/zh-cn"
+	}, {
+		"abstract": {
+			"language": "ja",
+			"value": "画像診断領域におけるリーディングカンパニーであるブラッコは、造影イメージングに注力し、現代医学の課題と臨床的な成功に貢献するための最先端のイメージングソリューションをヘルスケア業界に提供しています。医療の課題は常に進化し、私たちもそれらに対応する新たな手法を完成させ、革新的な医療機器を生み出します。医学の進歩が決して止まらないように、私たちも進化を続けます。常に未来を見据え、未来の見方を刷新することが私たちブラッコの役割なのです。"
+		},
+		"source": "https://www.bracco.com/ja"
+	}, {
+		"abstract": {
+			"language": "ko",
+			"value": "가족이 꾸려가는 기업인 브라코는 진단 영상 분야의 선구자로서 특히 조영제 영상에 주력합니다. 우리는 현대 의학의 과제를 해결하고 임상 결과에 기여할 수 있는 첨단 영상 솔루션을 의료업계에 제공하는 것을 우선적인 목표로 삼고 있습니다.의학은 끊임없이 발전합니다. 그렇기 때문에 우리 또한 새로운 도구, 혁신적 의료 기기의 설계, 지속적인 발전을 위해 매일같이 전력을 다합니다. 오로지 미래와 미래를 재창조하는 당사의 역할만이 브라코의 관심사입니다."
+		},
+		"source": "https://www.bracco.com/en-kr"
+	}, {
+		"abstract": {
+			"language": "pt",
+			"value": "Como um dos principais líderes em nossa área, a Bracco está focada em imagens contrastadas e trabalha deliberadamente para fornecer à indústria da saúde soluções avançadas feitas para enfrentar os desafios da medicina moderna e contribuir para resultados clínicos bem-sucedidos. Esses desafios em evolução nos levam a aperfeiçoar novas ferramentas, projetar dispositivos médicos inovadores e continuar o avanço à medida que o progresso da ciência médica nunca descansa. A visão da Bracco está firmemente fixa no futuro e no nosso papel em “reimaginar” esse futuro."
+		},
+		"source": "https://www.bracco.com/pt-br"
+	}, {
+		"abstract": {
+			"language": "fr",
+			"value": "En tant qu’acteur familial de premier plan dans le domaine de l’imagerie diagnostique, Bracco se concentre sur l’imagerie par contraste et travaille délibérément pour fournir à l’industrie de la santé des solutions d’imagerie avancées conçues pour relever les défis de la médecine moderne et contribuer à la réussite des résultats cliniques. Ces défis évolutifs nous poussent à perfectionner de nouveaux outils, à concevoir des dispositifs médicaux innovants et à poursuivre nos progrès, car les progrès de la science médicale ne dorment jamais. La vision de Bracco est résolument tournée vers l’avenir et notre rôle dans la réinvention de cet avenir."
+		},
+		"source": "https://www.bracco.com/fr-ca"
+	}, {
+		"abstract": {
+			"language": "de",
+			"value": "Als führendes Familienunternehmen im Bereich der diagnostischen Bildgebung hat sich Bracco über die Jahre auf die kontrastverstärkte Bildgebung spezialisiert und arbeitet konsequent Innovationen und Konzepten, um den Herausforderungen der modernen Medizin und der klinischen Diagnostik heute und in Zukunft gerecht zu werden.Gerade die wachsenden Anforderungen und Herausforderungen im Gesundheitsmarkt sind es, die uns antreiben unsere Produkte stetig weiter zu verbessern und kontinuierlich neue, innovative Lösungen zu entwickeln. Wir haben die Zukunft der Bildgebung und Diagnostik fest im Blick und sind uns unserer Rolle als Mitgestalter dieser Zukunft bewusst."
+		},
+		"source": "https://www.bracco.com/de-de"
+	}],
+	"awardSuccessRate": {
+		"percentage": 0,
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "it",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "zh",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ja",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ko",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "pt",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "fr",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "de",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}]
+	},
+	"establishment": {
+		"establishmentYear": 1927,
+		"country": "ITA",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "On 1 July 1927, a small company trading in pharmaceuticals set up an office in Piazzale Susa in Milan. A few weeks earlier, Elio Bracco had signed a notary deed incorporating the company bearing his name, the company that is now the Bracco Group. The family business, which has never stopped growing since then, is now an established global leader in diagnostic imaging, an advanced medical technology that underpins a whole area of treatment vital for human health. The success of the Bracco Group is also ascribable to the far-sighted vision of the founder’s son, Fulvio, who joined his father’s firm immediately after graduating from Pavia University. In the 1950s, Fulvio focused his research activity on the chemistry of iodine and its use in diagnostic imaging, then a niche area of interest, which he developed into an industry that Bracco has been revolutionizing ever since."
+			},
+			"source": "https://www.bracco.com/our-history"
+		}, {
+			"abstract": {
+				"language": "it",
+				"value": "1° luglio del 1927, in un palazzo di piazzale Susa a Milano inizia l’attività una piccola azienda che commercializza farmaci. Poche settimane prima, infatti, Elio Bracco aveva firmato dal notaio l’atto costitutivo della società che sarebbe diventata l’odierno Gruppo Bracco. Da allora l’azienda di famiglia non ha mai smesso di crescere diventando un leader globale nell’imaging diagnostico, settore tecnologicamente avanzatissimo e di grande importanza per la salute delle persone. Un successo frutto anche dell’intuizione visionaria e lungimirante di suo figlio Fulvio Bracco, entrato in azienda subito dopo la laurea a Pavia, che negli anni ’50 focalizzò l’attività di ricerca sulla chimica dello iodio e poi sulla diagnostica per immagini, specialità in cui all’epoca pochi credevano e che Bracco ha invece ha saputo rivoluzionare anno dopo anno in tutte le diverse modalità."
+			},
+			"source": "https://www.bracco.com/it/corporate-heritage"
+		}, {
+			"abstract": {
+				"language": "zh",
+				"value": "1927年7月1日,一家经营药品的小公司在米兰的PIAZZALE SUSA设立了办事处。几周前,Elio Bracco签署了一份公证书,将以他的名字成立的公司合并,这家公司就是现在的博莱科集团(Bracco Group)。此后,这家家族企业不断发展,现已成为享誉诊断成像领域的全球领导者。诊断成像作为一种先进的医疗技术，已应用于所有治疗领域,为人类健康做出了巨大贡献。博莱科集团的成功也离不开创始人的儿子Fulvio的远见卓识,他毕业于帕维亚大学后,就立即入职了父亲的公司。20世纪50年代,Fulvio主要研究碘化学及其在诊断成像中的应用,这是他当时感兴趣的领域。随后，他将兴趣发展成了一个行业，而此后的博莱科，也一直在不断推动这一行的变革与发展。"
+			},
+			"source": "https://www.bracco.com/zh-cn/womendelishi"
+		}, {
+			"abstract": {
+				"language": "ja",
+				"value": "1927年7月1日、ミラノのスーザ広場に、医薬品を扱う小さな会社が事務所を構えました。その数週間前、エリオ・ブラッコは、自分の名前を冠した会社、現在のブラッコ・グループを設立する公正証書にサインしていたのです。以来、成長を続けてきたこのファミリービジネスは、現在では、人々の健康に欠かせない治療分野全般を支える高度な医療技術である画像診断の世界的リーダーとしての地位を確立しています。ブラッコ・グループ成長の理由には、創業者の息子であるフルビオが、先見の明を持ち、パヴィア大学を卒業後すぐに父の会社に入社したことも欠かせません。1950年代、フルビオはヨウ素の化学的性質と、当時はニッチな分野であった画像診断への応用に焦点を当てた研究活動を行いました。以来、ブラッコはこの産業に革命を起こし続けているのです。"
+			},
+			"source": "https://www.bracco.com/ja/furatsukonolishi"
+		}, {
+			"abstract": {
+				"language": "pt",
+				"value": "Em 1927, Elio Bracco funda a empresa italiana Prodotti E. Merck em Milão. Durante a agitada década de 1930, as coisas começam a decolar para a empresa. Fulvio Bracco se junta oficialmente; muda seu nome primeiro para Italmerck Spa e depois para Anonima Bracco; e comercializa Cebion®, a primeira marca de vitamina C comercializada no mundo. Antes da Segunda Guerra Mundial, a Europa experimenta um forte crescimento nas oportunidades de emprego para as mulheres. Em 1934, 30 dos 41 operários da Bracco eram mulheres. Durante a guerra, a empresa mantém em aberto os empregos de todos os funcionários alistados no exército – e paga seus salários às suas famílias. Em 1962, os pesquisadores da Bracco desenvolvem o primeiro meio de contraste original de sua pesquisa interna."
+			},
+			"source": "https://www.bracco.com/pt-br/passado-presente-futuro"
+		}, {
+			"abstract": {
+				"language": "fr",
+				"value": "Le 1er juillet 1927, une petite société négociant en produits pharmaceutiques ouvre un bureau à Piazzale Susa à Milan. Quelques semaines plus tôt, Elio Bracco avait signé un acte notarié incorporant la société portant son nom, qui est aujourd’hui le Groupe Bracco. L’entreprise familiale, qui n’a jamais cessé de se développer depuis, est aujourd’hui un leader mondial reconnu dans le domaine de l’imagerie diagnostique, une technologie médicale de pointe qui sous-tend tout un domaine de traitement vital pour la santé humaine. Le succès du Groupe Bracco est également attribuable à la vision visionnaire du fils du fondateur, Fulvio, qui a rejoint l’entreprise de son père immédiatement après avoir obtenu son diplôme à l’Université de Pavie. Dans les années 1950, Fulvio a concentré son activité de recherche sur la chimie de l’iode et son utilisation dans l’imagerie diagnostique, alors un domaine d’intérêt niche, qu’il a développé en une industrie que Bracco n’a cessé de révolutionner depuis."
+			},
+			"source": "https://www.bracco.com/fr-ca/notre-histoire"
+		}, {
+			"abstract": {
+				"language": "de",
+				"value": "Am 1. Juli 1927 eröffnete ein kleines Unternehmen, das sich auf den Handel von Arzneimitteln spezialisiert hatte, sein Büro am Piazzale Susa in Mailand. Dies war der Ausgangspunkt für die Gründung des Unternehmens, das heute als Bracco Gruppe agiert. Bereits einige Wochen zuvor hatte Elio Bracco in einer notariellen Urkunde die Gründung des Unternehmens mit seinem Namen unterzeichnet. Das Familienunternehmen ist seitdem kontinuierlich gewachsen und ist heute ein renommierter globaler Vorreiter auf dem Gebiet der diagnostischen Bildgebung. Diese fortschrittliche medizinische Technologie umfasst einen essenziellen Bereich der modernen Gesundheitsversorgung und bildet die Basis für einen ganzen Behandlungsbereich, der heutzutage unverzichtbar und von entscheidender Bedeutung für die menschliche Gesundheit ist.Der Erfolg der Bracco-Gruppe gründet zudem fest auf der Klarheit und dem strategischen Weitblick von Fulvio Bracco, dem Sohn des Gründers, der unmittelbar nach seinem Abschluss an der Universität Pavia in das Unternehmen seines Vaters eintrat. In den 1950er Jahren widmete sich Fulvio intensiv der Forschung zur Jodchemie und deren Anwendung in der diagnostischen Bildgebung, einem damals noch wenig erschlossenen Bereich. Durch seine bahnbrechende Arbeit verhalf er diesem Bereich, sich zu einer bedeutenden Wirtschaftsbranche zu entwickeln, die seitdem von Bracco entscheidend weiterentwickelt wurde."
+			},
+			"source": "https://www.bracco.com/de-de/our-history"
+		}]
+	},
+	"fundingPolicy": [{
+		"abstract": {
+			"language": "en",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "it",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "zh",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "ja",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "ko",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "pt",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "fr",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "de",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}],
+	"contactInformation": {
+		"link": "https://www.bracco.com/",
+		"hasPostalAddress": {
+			"addressCountry": "ITA",
+			"addressRegion": "NOTFOUND",
+			"addressLocality": "Milan",
+			"addressPostalCode": "20134",
+			"postOfficeBoxNumber": "NOTFOUND",
+			"streetAddress": "Via Egidio Folli 50"
+		}
+	},
+	"relation": {
+		"partOf": [0],
+		"hasPart": [0],
+		"affiliatedWith": [0],
+		"renamedAs": [0],
+		"continuationOf": [0],
+		"mergedWith": [0],
+		"incorporatedInto": [0],
+		"mergerOf": [0],
+		"incorporates": [0],
+		"isReplacedBy": [0],
+		"replaces": [0],
+		"splitFrom": [0],
+		"splitInto": [0]
+	},
+	"vatNumber": "NOTFOUND",
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.bracco.com/",
+		"createdOn": "2024-10-23T06:35:17.720Z",
+		"lastUpdateOn": "2024-10-23T06:35:17.721Z",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": 1,
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	},
+	"registry": {
+		"termsOfUse": {
+			"source": [""]
+		},
+		"fundingBodyDataset": {
+			"collectionCode": "SUP004",
+			"extended": false,
+			"tier": 4,
+			"source": [{
+				"name": "Bracco",
+				"url": "https://www.bracco.com/",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"opportunityDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"awardDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"publicationDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		}
+	}
+}

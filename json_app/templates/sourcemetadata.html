@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Metadata Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color:#f5a142;;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            height:70px;
+        }
+
+        footer {
+            background-color:#f5a142;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container textarea,
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-container textarea {
+            resize: vertical;
+        }
+
+        .form-container button {
+            background-color: #32a4a8;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #288a8c;
+        }
+
+        .form-container .small-note {
+            font-size: 0.85em;
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Source Input Form</h1>
+    </header>
+
+    <!-- Form Section -->
+    <div class="form-container">
+        <h2>Enter Source Metadata</h2>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <div class="form-grid">
+                <div>
+                    <label for="source_url">Import URL:</label>
+                    <input type="url" id="source_url" name="source_url" placeholder="Enter source URL" required>
+                </div>
+                <div>
+                    <label for="arrival_date">Date of Arrival:</label>
+                    <input type="date" id="arrival_date" name="arrival_date" required>
+                </div>
+                <div>
+                    <label for="assigned_to">Assigned To:</label>
+                    <input type="text" id="assigned_to" name="assigned_to" placeholder="Assigned person's name" required>
+                </div>
+                <div>
+                    <label for="frequency_of_updates">Frequency of Site Updates:</label>
+                    <select id="frequency_of_updates" name="frequency_of_updates" required>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="6-months">6 Months</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="site_last_checked">Site Last Checked:</label>
+                    <input type="date" id="site_last_checked" name="site_last_checked">
+                </div>
+                <div>
+                    <label for="source_file">Source File Upload:</label>
+                    <input type="file" id="source_file" name="source_file" accept=".xlsx, .xls, .csv, .txt" required>
+                    <p class="small-note">Allowed file types: Excel, CSV, Text.</p>
+                </div>
+                <div>
+                    <label for="json_file_name">JSON File Name:</label>
+                    <input type="text" id="json_file_name" name="json_file_name" placeholder="Enter JSON file name">
+                </div>
+                <div>
+                    <label for="json_upload_date">JSON Upload Date:</label>
+                    <input type="date" id="json_upload_date" name="json_upload_date">
+                </div>
+                <div>
+                    <label for="sup_id">SUP ID:</label>
+                    <input type="text" id="sup_id" name="sup_id" placeholder="Enter SUP ID" required>
+                </div>
+                <div>
+                    <label for="sme_comments">SME Comments:</label>
+                    <textarea id="sme_comments" name="sme_comments" rows="4" placeholder="Enter any comments"></textarea>
+                </div>
+                <div>
+                    <label for="screenshots_taken">Screenshots Taken:</label>
+                    <select id="screenshots_taken" name="screenshots_taken" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 JSON App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

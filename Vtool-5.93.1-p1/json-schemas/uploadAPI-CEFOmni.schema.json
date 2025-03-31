@@ -1,0 +1,182 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "JSON schema for VTW Upload API; upload CEF-Omniscience assets",
+    "description": "JSON Schema to validate JSON payloads for the upload of CEF Omniscience Assets to the VTW Upload API, based on the uploadAPI-multipleCO.schema.json",
+    "properties": {
+        "@context": {"$ref": "definitions/generic.schema.json#/definitions/@context"},
+        "@type": {"$ref": "definitions/generic.schema.json#/definitions/typeIsCOs"},
+        "bam:hasContentObjects": {"$ref": "#/definitions/bam:hasContentObjects"}
+    },
+    "required": [
+        "@type",
+        "@context",
+        "bam:hasContentObjects"
+    ],
+    "additionalProperties": false,
+    "definitions": {
+        "bam:hasContentObjects": {
+            "title": "Content Objects in the payload",
+            "type": "array",
+            "items": {"$ref": "#/definitions/ContentObjectModel"}
+        },
+        "ContentObjectModel": {
+            "title": "Content Object object model for CEF Omniscience",
+            "description": "object containing the Content Objects properties for CEF Omniscience",
+            "type": "object",
+            "required": [
+                "@type",
+                "dct:title",
+                "dct:type",
+                "prism:aggregationType",
+                "ecm:identifier",
+                "@id",
+                "bam:addOnType",
+                "bam:addsOnTo"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "@type": {"$ref": "definitions/generic.schema.json#/definitions/typeIsMetadata"},
+                "@context": {"$ref": "definitions/generic.schema.json#/definitions/@context"},
+                "prism:aggregationType": {"$ref": "#/definitions/prism:aggregationType"},
+                "dct:type": {"$ref": "#/definitions/dct:type"},
+                "dct:title": {"$ref": "definitions/co.schema.json#/definitions/dct:title"},
+                "dct:creator": {"$ref": "definitions/co.schema.json#/definitions/dct:creator"},
+                "dct:created": {"$ref": "definitions/co.schema.json#/definitions/dct:created"},
+                "dct:language": {"$ref": "definitions/co.schema.json#/definitions/dct:language"},
+                "@id": {"$ref": "definitions/generic.schema.json#/definitions/@id"},
+                "ecm:identifier": {"$ref": "definitions/co.schema.json#/definitions/ecm:identifier"},
+                "bam:addOnType": {"$ref": "#/definitions/bam:addOnType"},
+                "bam:addsOnTo": {"$ref": "definitions/co.schema.json#/definitions/bam:addsOnTo"},
+                "bam:hasAssetMetadata": {"$ref": "#/definitions/bam:hasAssetMetadata"},
+                "bam:hasGeneration": {"$ref": "#/definitions/bam:hasGeneration"}
+            }
+        },
+        "dct:type": {
+            "title": "content type",
+            "type": "string",
+            "format": "uri",
+            "enum": ["http://data.elsevier.com/vocabulary/ElsevierContentTypes/52.8"]
+        },
+        "prism:aggregationType": {
+            "title": "aggregation type",
+            "type": "array",
+            "items": [{
+                "format": "uri",
+                "pattern": "http://data.elsevier.com/vocabulary/ElsevierContentTypes/52"
+            }]
+        },
+        "bam:addOnType": {
+            "title": "addon type",
+            "type": "string",
+            "format": "uri",
+            "enum": ["http://vtw.elsevier.com/data/voc/AddOnTypes/52.8"]
+        },
+        "bam:hasAssetMetadata": {
+            "title": "Assets in the payload",
+            "description": "array of asset objects",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                    "@type",
+                    "@id",
+                    "dct:format",
+                    "bam:assetType",
+                    "bam:assetVersion",
+                    "bam:filename",
+                    "dct:conformsTo",
+                    "prism:byteCount",
+                    "bam:mode"
+                ],
+                "properties": {
+                    "@type": {"$ref": "definitions/generic.schema.json#/definitions/typeIsAssetMetadata"},
+                    "@id": {"$ref": "definitions/generic.schema.json#/definitions/@id"},
+                    "dct:isFormatOf": {"$ref": "definitions/asset.schema.json#/definitions/dct:isFormatOf"},
+                    "prism:byteCount": {"$ref": "definitions/asset.schema.json#/definitions/prism:byteCount"},
+                    "dct:format": {"$ref": "#/definitions/dct:format"},
+                    "bam:assetType": {"$ref": "#/definitions/bam:assetType"},
+                    "bam:assetVersion": {"$ref": "definitions/asset.schema.json#/definitions/bam:assetVersion"},
+                    "bam:mode": {"$ref": "#/definitions/bam:mode"},
+                    "dct:conformsTo": {"$ref": "#/definitions/dct:conformsTo"},
+                    "bam:multiPart": {"$ref": "definitions/asset.schema.json#/definitions/bam:multiPart"},
+                    "bam:filename": {"$ref": "definitions/asset.schema.json#/definitions/bam:filename"}
+                }
+            }
+        },
+        "dct:format": {
+            "type": "string",
+            "enum": ["application/ld+json"]
+        },
+        "dct:conformsTo": {
+            "title": "CEF Omniscience Asset version ",
+            "type": "string",
+            "format": "uri",
+            "enum": ["http://vtw.elsevier.com/data/ns/Formats/Annotation/AnnotationDocument"]
+        },
+        "bam:mode": {
+            "title": "accessibility mode",
+            "type": "string",
+            "enum": ["private"]
+        },
+        "bam:assetType": {
+            "title": "type of asset",
+            "description": "value is always UPPERCASE",
+            "type": "string",
+            "enum": ["MAIN"]
+        },
+        "bam:hasGeneration": {
+            "title": "Generations in the payload",
+            "description": "array of generation objects",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                    "@type",
+                    "bam:stage",
+                    "bam:classificationLevel",
+                    "bam:isGenerationOf",
+                    "bam:contributor",
+                    "bam:contributorVersionIdentifier",
+                    "bam:extends",
+                    "bam:hasAsset",
+                    "bam:hasGeneration"
+                ],
+                "dependencies": {
+                    "bam:generation": ["@id"],
+                    "@id": ["bam:generation"]
+                },
+                "properties": {
+                    "@type": {"$ref": "definitions/generic.schema.json#/definitions/typeIsGeneration"},
+                    "@id": {"$ref": "definitions/generic.schema.json#/definitions/@id"},
+                    "bam:classificationLevel": {"$ref": "#/definitions/bam:classificationLevel"},
+                    "bam:stage": {"$ref": "#/definitions/bam:stage"},
+                    "bam:generation": {"$ref": "definitions/generation.schema.json#/definitions/bam:generation"},
+                    "bam:isGenerationOf": {"$ref": "definitions/generation.schema.json#/definitions/bam:isGenerationOf"},
+                    "bam:contributor": {"$ref": "#/definitions/bam:contributor"},
+                    "bam:contributorVersionIdentifier": {"$ref": "definitions/generation.schema.json#/definitions/bam:contributorVersionIdentifier"},
+                    "bam:hasGeneration": {"$ref": "definitions/generation.schema.json#/definitions/bam:hasNestedGeneration"},
+                    "bam:hasAsset": {"$ref": "definitions/generation.schema.json#/definitions/bam:hasAsset"},
+                    "bam:extends": {"$ref": "definitions/generation.schema.json#/definitions/bam:extends"}
+                }
+            }
+        },
+        "bam:stage": {
+            "title": "generation status",
+            "type": "string",
+            "enum": ["final"]
+        },
+        "bam:classificationLevel": {
+            "title": "access level",
+            "type": "string",
+            "enum": ["internal"]
+        },
+        "bam:contributor": {
+            "title": "contributor",
+            "type": "string",
+            "format": "uri",
+            "enum": ["http://vtw.elsevier.com/data/voc/Contributors/Elsevier/ContentEnrichmentFramework/FingerPrintEngine"]
+        }
+    }
+}

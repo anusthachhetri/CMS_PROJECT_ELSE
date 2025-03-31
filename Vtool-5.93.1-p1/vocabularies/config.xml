@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <vocabulary>
+        <vocabulary-uri>http://data.elsevier.com/vocabulary/SciValFunders</vocabulary-uri>
+        <vocabulary-filename>FundRef.rdf</vocabulary-filename>
+    </vocabulary>
+    <vocabulary>
+        <vocabulary-uri>http://data.elsevier.com/vocabulary/ElsevierContentTypes</vocabulary-uri>
+        <vocabulary-filename>ElsevierContentTypes.rdf</vocabulary-filename>
+    </vocabulary>
+    <vocabulary>
+        <vocabulary-uri>http://data.elsevier.com/vocabulary/Pubnames</vocabulary-uri>
+        <vocabulary-filename>pubnames.rdf</vocabulary-filename>
+    </vocabulary>
+    <vocabulary>
+        <vocabulary-uri>http://data.elsevier.com/vocabulary/Sources</vocabulary-uri>
+        <vocabulary-filename>sources.rdf</vocabulary-filename>
+    </vocabulary>
+    <vocabulary>
+        <vocabulary-uri>http://data.elsevier.com/vocabulary/MedlineJournals</vocabulary-uri>
+        <vocabulary-filename>medline-journals.rdf</vocabulary-filename>
+    </vocabulary>
+    <vocabulary>
+        <vocabulary-uri>http://data.elsevier.com/vocabulary/FDMCountryCodes</vocabulary-uri>
+        <vocabulary-filename>FDMCountryCodes.rdf</vocabulary-filename>
+    </vocabulary>
+	<vocabulary>
+        <vocabulary-uri>http://data.elsevier.com/vocabulary/LanguageCodes</vocabulary-uri>
+        <vocabulary-filename>LanguageCodes.rdf</vocabulary-filename>
+    </vocabulary>
+	<vocabulary>
+        <vocabulary-uri>https://data.elsevier.com/publishing/schema/ecmv/</vocabulary-uri>
+        <vocabulary-filename>PublicationItemType.json</vocabulary-filename>
+    </vocabulary>
+</config>

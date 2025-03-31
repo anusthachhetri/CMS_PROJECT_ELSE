@@ -1,0 +1,217 @@
+{
+	"batchId": "14b51b66-2089-474b-aef3-c66f34a57fd2",
+	"ingestionId": "cbdb63f0-19e0-41b5-aff7-16106eb14797",
+	"grantAwardId": 805240873,
+	"fundingBodyAwardId": "NOT FOUND",
+	"hasInstallment": [0],
+	"hasWorkPackage": [0],
+	"title": [{
+		"language": "en",
+		"value": "Targeting tumour metabolism to improve the radiosensitivity in Diffuse Midline Gliomas"
+	}],
+	"identifier": [{
+		"type": "DOI",
+		"value": "NOT FOUND"
+	}],
+	"startDate": "2023-01-01T00:00:00",
+	"grantType": "RESEARCH",
+	"funderSchemeType": "Career Development Fellowships",
+	"homePage": {
+		"link": "https://www.cancer.nsw.gov.au/research-and-data/grants/grants-we-ve-funded/career-support-grants/2023-career-support-funds-granted"
+	},
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "Diffuse midline glioma (DMG) is an aggressive brain tumour that primarily affects children between 6 to 9 years. The median survival for children with DMGs is less than 1 year. DMG arises from the brainstem, the control centre of many vital body functions like breathing and maintaining heart rate, which curtails surgical resection and none of drugs have been effective.\nRadiotherapy (RT), as the only standard-of-care therapy, can provide transient symptomatic relief but most DMGs relapse within several months secondary to radioresistance. Therefore, understanding how DMG cells develop radioresistance is critical to improve the outcomes in DMG patients.\nSolid tumours frequently have regions of hypoxia (low level of oxygen) which changes tumour metabolism and blunts the effectiveness of RT. To improve their radiosensitivity, my recent work has demonstrated that targeting metabolism of mitochondria, the power plants of cells, with anti-diabetic drugs resulted in a significant reduction of oxygen consumption rate (OCR) and alleviated hypoxia in DMG cells, leading to an improved radiation response. However, due to their moderate efficacy and possible toxicity in children, there is a need to find more potent and safer drugs that work in the similar way.\nWe thus have screened a library of FDA-approved drugs and identified three leading compounds, atovaquone, sorafenib and bithionol, for OCR reduction, with good blood-brain-barrier permeability and minimal anticipated toxicity. In this project, I will assess the how these drugs make RT more effective, understand how they work, and identify additional targets to further improve therapeutic efficacy."
+		},
+		"source": "https://www.cancer.nsw.gov.au/research-and-data/grants/grants-we-ve-funded/career-support-grants/2023-career-support-funds-granted#Shen"
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "Copyright © 2024"
+		},
+		"source": "https://www.cancer.nsw.gov.au/research-and-data/grants/grants-we-ve-funded/career-support-grants/2023-career-support-funds-granted"
+	}],
+	"funds": [{
+		"fundingBodyProjectId": "NOT FOUND",
+		"hasPart": [{
+			"fundingBodyProjectId": "NOT FOUND",
+			"budget": [{
+				"currency": "AUD",
+				"amount": 671545
+			}]
+		}],
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"acronym": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "AUS",
+			"addressRegion": "NSW",
+			"addressLocality": "St Leonards",
+			"addressPostalCode": "2065",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "Level 4, 1 Reserve Road"
+		},
+		"link": "https://www.cancer.nsw.gov.au/research-and-data/grants/grants-we-ve-funded/career-support-grants/2023-career-support-funds-granted",
+		"budget": [{
+			"currency": "AUD",
+			"amount": 671545
+		}],
+		"status": "CLOSED"
+	}],
+	"fundingDetail": {
+		"installment": [{
+			"index": 0,
+			"grantAwardInstallmentId": 1,
+			"financialYearStart": 0,
+			"financialYearEnd": 0,
+			"fundedAmount": [{
+				"currency": "AUD",
+				"amount": 671545
+			}]
+		}],
+		"fundingTotal": [{
+			"currency": "AUD",
+			"amount": 671545
+		}]
+	},
+	"awardeeDetail": [{
+		"awardeeAffiliationId": "805240873_A_0",
+		"name": [{
+			"language": "en",
+			"value": "University of Sydney"
+		}],
+		"role": "PARTICIPANT",
+		"fundingTotal": [{
+			"currency": "AUD",
+			"amount": 671545
+		}],
+		"fundingBodyOrganizationId": "NOT FOUND",
+		"vatNumber": "NOT FOUND",
+		"link": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "AUS",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"identifier": [{
+			"type": "DUNS",
+			"value": "NOT FOUND"
+		}],
+		"departmentName": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"activityType": "NOT FOUND",
+		"affiliationOf": [{
+			"awardeePersonId": "805240873_P_0",
+			"name": [{
+				"language": "en",
+				"value": "Han Shen"
+			}],
+			"role": "PI",
+			"initials": "H",
+			"givenName": "Han",
+			"familyName": "Shen",
+			"emailAddress": "NOT FOUND",
+			"identifier": [{
+				"type": "ORCID",
+				"value": "NOT FOUND"
+			}],
+			"fundingBodyPersonId": "NOT FOUND"
+		}]
+	}],
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Cancer Research",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "1306"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Oncology",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2730"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Molecular Medicine",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "1313"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Pharmacology",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2736"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Radiology Nuclear Medicine and imaging",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2741"
+			}
+		}
+	}],
+	"relatedOpportunity": [{
+		"grantOpportunityId": 0,
+		"fundingBodyOpportunityId": "NOT FOUND",
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"description": "NOT FOUND"
+	}],
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "Cancer Institute NSW"
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "Cancer Institute NSW"
+		}]
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.cancer.nsw.gov.au/research-and-data/grants/grants-we-ve-funded/career-support-grants/2023-career-support-funds-granted",
+		"createdOn": "2024-12-18T11:44:48",
+		"lastUpdateOn": "2024-12-18T11:44:48",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "1",
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	}
+}

@@ -1,0 +1,162 @@
+{
+	"batchId": "",
+	"ingestionId": "",
+	"fundingBodyId": 80709426,
+	"homePage": "https://www.arc.gov.au/",
+	"status": "ACTIVE",
+	"preferredName": [{
+		"language": "en",
+		"value": "Australian Research Council"
+	}],
+	"acronym": [{
+		"language": "en",
+		"value": "ARC"
+	}],
+	"abbrevName": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}],
+	"alternateName": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}],
+	"financeType": "GOV",
+	"activityType": "OTHERN",
+	"profitabilityType": "NONPROF",
+	"country": "AUS",
+	"state": "Canberra",
+	"identifier": [{
+		"type": "CROSSREFID",
+		"value": "NOT FOUND"
+	}],
+	"description": [{
+		"abstract": {
+			"language": "en",
+			"value": "The Australian Research Council (ARC) is a Commonwealth entity within the Australian Government. The ARC reports to an Australian Government Minister, currently the Minister for Education.The ARC's purpose is to help shape Australian research for the nation's economic, social, environmental and cultural benefit by enabling excellent research; evaluating the excellence, impact and depth of Australian research; providing expert advice and research grants services; supporting research integrity and promoting ethical research.The ARC supports the highest-quality pure basic, strategic basic and applied research and research training. We encourage national competition across all disciplines outside of clinical and other medical research. We advise the Government on research matters and administer the National Competitive Grants Program (NCGP).Our grants are competitively awarded to individuals, research teams and large-scale  centres through 2 broad arms: the Discovery Program, which supports individuals and small teams, and the Linkage Program, which creates links between universities, industry and other partners.Clinical and other medical research is primarily supported by the National Health and Medical Research Council."
+		},
+		"source": "https://www.arc.gov.au/"
+	}],
+	"awardSuccessRate": {
+		"percentage": 0,
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "NOT FOUND"
+			},
+			"source": ""
+		}]
+	},
+	"establishment": {
+		"establishmentYear": 2001,
+		"country": "AUS",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "The Australian Research Council has a long history-founded in 2001 under the Australian Research Council Act 2001 it is directly descended from the 1965 Australian Research Grants Committee (ARGC).ARC has functions which date to the 1946 Commonwealth Universities Research Grants Committee."
+			},
+			"source": "https://www.arc.gov.au/"
+		}]
+	},
+	"fundingPolicy": [{
+		"abstract": {
+			"language": "en",
+			"value": "The ARC provides grants administration services to other Australian Government entities who are managing grant programs focussed on the research sector. We provide standardised research grants processes through our Research Management System (RMS).National Intelligence and Security Discovery Research Grants (NISDRG) program funded by the Office of NationalIntelligence (ONI), or Defence - National Security Science and Technology Centre (Defence-NSSTC)National Intelligence Discovery Grants (NIDG) program funded by the Office of National Intelligence (ONI)National Collaborative Research Infrastructure Strategy (NCRIS) funded by the Department of EducationAustralia's Economic Accelerator (AEA) funded by the Department of Education."
+		},
+		"source": "https://www.arc.gov.au/funding-research/research-grants-services"
+	}],
+	"contactInformation": {
+		"hasPostalAddress": {
+			"addressCountry": "AUS",
+			"addressRegion": "ACT",
+			"addressLocality": "Canberra Airport",
+			"addressPostalCode": "2609",
+			"postOfficeBoxNumber": "2702",
+			"streetAddress": "Level 2, 11 Lancaster Place"
+		}
+	},
+	"relation": {
+		"partOf": [0],
+		"hasPart": [0],
+		"affiliatedWith": [0],
+		"renamedAs": [0],
+		"continuationOf": [0],
+		"mergedWith": [0],
+		"incorporatedInto": [0],
+		"mergerOf": [0],
+		"incorporates": [0],
+		"isReplacedBy": [0],
+		"replaces": [0],
+		"splitFrom": [0],
+		"splitInto": [0]
+	},
+	"vatNumber": "NOT FOUND",
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.arc.gov.au/",
+		"createdOn": "2024-11-21T07:06:42.766Z",
+		"lastUpdateOn": "2024-11-21T07:06:42.766Z",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": 1,
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	},
+	"registry": {
+		"termsOfUse": {
+			"source": ["NOT FOUND"]
+		},
+		"fundingBodyDataset": {
+			"collectionCode": "SUP004",
+			"extended": true,
+			"tier": 1,
+			"source": [{
+				"name": "Australian Research Council",
+				"url": "https://www.arc.gov.au/",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-11-21T07:06:42.766Z",
+				"captureEnd": "2024-11-21T07:06:42.766Z",
+				"comment": "NOT FOUND"
+			}]
+		},
+		"opportunityDataset": {
+			"capture": true,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "Funder website",
+				"url": "https://www.arc.gov.au/funding-research/funding-schemes",
+				"status": "ACTIVE",
+				"frequency": "WEEKLY",
+				"captureStart": "2024-11-21T07:06:42.766Z",
+				"captureEnd": "2024-11-21T07:06:42.766Z",
+				"comment": "NOT FOUND"
+			}]
+		},
+		"awardDataset": {
+			"capture": true,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "Funder website",
+				"url": "https://www.arc.gov.au/funding-research/funding-outcome/grants-dataset",
+				"status": "ACTIVE",
+				"frequency": "MONTHLY",
+				"captureStart": "2024-11-21T07:06:42.766Z",
+				"captureEnd": "2024-11-21T07:06:42.766Z",
+				"comment": "NOT FOUND"
+			}]
+		},
+		"publicationDataset": {
+			"capture": true,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "Funder website",
+				"url": "https://zenodo.org/record/4746228/files/ARC.tar",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-11-21T07:06:42.766Z",
+				"captureEnd": "2024-11-21T07:06:42.766Z",
+				"comment": "NOT FOUND"
+			}]
+		}
+	}
+}

@@ -1,0 +1,314 @@
+{
+	"batchId": "be5d96a6-66d3-4e8b-a0a9-557c88c2b218",
+	"ingestionId": "6bd16180-9c39-49af-b3ad-a4532e130e37",
+	"grantAwardId": 808680721,
+	"fundingBodyAwardId": "11-115861",
+	"hasInstallment": [0],
+	"hasWorkPackage": [0],
+	"title": [{
+		"language": "en",
+		"value": "Hypertension and Urine Protease activity in Preeclampsia -the HUPP Study"
+	}, {
+		"language": "da",
+		"value": ": Højt blodtryk og urin-enzymaktivitet vedsvangerskabsforgiftning - ”HUPP”-studiet"
+	}],
+	"identifier": [{
+		"type": "DOI",
+		"value": "NOT FOUND"
+	}],
+	"startDate": "2012-01-01T00:00:00",
+	"endDate": "2016-12-31T00:00:00",
+	"grantType": "RESEARCH",
+	"funderSchemeType": "Individual,\nDisease and \nSociety",
+	"homePage": {
+		"link": "http://fivu.dk/en/publications/2012/files-2012/oversigt-over-bevillinger-givet-af-det-strategiske-forskningsraad-2013-engelsk-version.pdf"
+	},
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "Toxemia or preeclampsia affects 5-7 per cent of pregnancies. It is characterized by sudden hypertension,\nproteinuria and often edema. The disease may have\nserious complications but the cause remains unknown.\nThe hypothesis pursued in this project is that the kidneys retain an abnormal amount of salt. The project is\ndesigned to gain knowledge about disease mechanisms and may lead to improved treatment."
+		},
+		"source": "http://fivu.dk/en/publications/2012/files-2012/oversigt-over-bevillinger-givet-af-det-strategiske-forskningsraad-2013-engelsk-version.pdf"
+	}, {
+		"abstract": {
+			"language": "da",
+			"value": "Toksæmi eller præeklampsi rammer 5-7 procent af graviditeterne. Det er karakteriseret ved pludselig hypertension,\nproteinuri og ofte ødem. Sygdommen kan have\nalvorlige komplikationer, men årsagen er stadig ukendt.\nHypotesen forfulgt i dette projekt er, at nyrerne tilbageholder en unormal mængde salt. Projektet er\ndesignet til at opnå viden om sygdomsmekanismer og kan føre til forbedret behandling."
+		},
+		"source": "http://fivu.dk/en/publications/2012/files-2012/oversigt-over-bevillinger-givet-af-det-strategiske-forskningsraad-2013-engelsk-version.pdf"
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}, {
+		"language": "da",
+		"value": "NOT FOUND"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "NOT FOUND"
+		},
+		"source": "NOT FOUND"
+	}, {
+		"abstract": {
+			"language": "da",
+			"value": "NOT FOUND"
+		},
+		"source": "NOT FOUND"
+	}],
+	"funds": [{
+		"fundingBodyProjectId": "NOT FOUND",
+		"hasPart": [{
+			"fundingBodyProjectId": "NOT FOUND",
+			"budget": [{
+				"currency": "DKK",
+				"amount": 14764419
+			}]
+		}],
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}, {
+			"language": "da",
+			"value": "NOT FOUND"
+		}],
+		"acronym": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "DNK",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "København",
+			"addressPostalCode": "1260",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "Bredgade 40"
+		},
+		"link": "http://fivu.dk/en/publications/2012/files-2012/oversigt-over-bevillinger-givet-af-det-strategiske-forskningsraad-2013-engelsk-version.pdf",
+		"budget": [{
+			"currency": "DKK",
+			"amount": 14764419
+		}],
+		"status": "CLOSED"
+	}],
+	"fundingDetail": {
+		"installment": [{
+			"index": 0,
+			"grantAwardInstallmentId": 1,
+			"financialYearStart": 0,
+			"financialYearEnd": 0,
+			"fundedAmount": [{
+				"currency": "DKK",
+				"amount": 14764419
+			}]
+		}],
+		"fundingTotal": [{
+			"currency": "DKK",
+			"amount": 14764419
+		}]
+	},
+	"awardeeDetail": [{
+		"awardeeAffiliationId": "808680721_A_0",
+		"name": [{
+			"language": "en",
+			"value": "Institute of Molecular Medicine - SDU"
+		}],
+		"role": "COORDINATOR",
+		"fundingTotal": [{
+			"currency": "DKK",
+			"amount": 14764419
+		}],
+		"fundingBodyOrganizationId": "NOT FOUND",
+		"vatNumber": "NOT FOUND",
+		"link": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "DNK",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"identifier": [{
+			"type": "DUNS",
+			"value": "NOT FOUND"
+		}],
+		"departmentName": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}, {
+			"language": "da",
+			"value": "NOT FOUND"
+		}],
+		"activityType": "NOT FOUND",
+		"affiliationOf": [{
+			"awardeePersonId": "808680721_P_0",
+			"name": [{
+				"language": "en",
+				"value": "Boye Lagerbon Jensen"
+			}],
+			"role": "PI",
+			"initials": "B",
+			"givenName": "Boye",
+			"familyName": "Lagerbon Jensen",
+			"emailAddress": "NOT FOUND",
+			"identifier": [{
+				"type": "ORCID",
+				"value": "NOT FOUND"
+			}],
+			"fundingBodyPersonId": "NOT FOUND"
+		}]
+	}, {
+		"awardeeAffiliationId": "808680721_A_1",
+		"name": [{
+			"language": "en",
+			"value": "SDU"
+		}],
+		"role": "PARTICIPANT",
+		"fundingTotal": [{
+			"currency": "DKK",
+			"amount": 14764419
+		}],
+		"fundingBodyOrganizationId": "NOT FOUND",
+		"vatNumber": "NOT FOUND",
+		"link": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "DNK",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"identifier": [{
+			"type": "DUNS",
+			"value": "NOT FOUND"
+		}],
+		"departmentName": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}, {
+			"language": "da",
+			"value": "NOT FOUND"
+		}]
+	}, {
+		"awardeeAffiliationId": "808680721_A_2",
+		"name": [{
+			"language": "en",
+			"value": "Odense University Hospital"
+		}],
+		"role": "PARTICIPANT",
+		"fundingTotal": [{
+			"currency": "DKK",
+			"amount": 14764419
+		}],
+		"fundingBodyOrganizationId": "NOT FOUND",
+		"vatNumber": "NOT FOUND",
+		"link": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "DNK",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"identifier": [{
+			"type": "DUNS",
+			"value": "NOT FOUND"
+		}],
+		"departmentName": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}, {
+			"language": "da",
+			"value": "NOT FOUND"
+		}]
+	}, {
+		"awardeeAffiliationId": "808680721_A_3",
+		"name": [{
+			"language": "en",
+			"value": "Aarhus University Hospital Skejby"
+		}],
+		"role": "PARTICIPANT",
+		"fundingTotal": [{
+			"currency": "DKK",
+			"amount": 14764419
+		}],
+		"fundingBodyOrganizationId": "NOT FOUND",
+		"vatNumber": "NOT FOUND",
+		"link": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "DNK",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"identifier": [{
+			"type": "DUNS",
+			"value": "NOT FOUND"
+		}],
+		"departmentName": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}, {
+			"language": "da",
+			"value": "NOT FOUND"
+		}]
+	}],
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Cardiology and Cardiovascular Medicine",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2705"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Obstetrics and Gynaecology",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2729"
+			}
+		}
+	}],
+	"relatedOpportunity": [{
+		"grantOpportunityId": 0,
+		"fundingBodyOpportunityId": "NOT FOUND",
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}, {
+			"language": "da",
+			"value": "NOT FOUND"
+		}],
+		"description": "NOT FOUND"
+	}],
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "The Danish Council for Strategic Research"
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "The Danish Council for Strategic Research"
+		}]
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "http://fivu.dk/en/publications/2012/files-2012/oversigt-over-bevillinger-givet-af-det-strategiske-forskningsraad-2013-engelsk-version.pdf",
+		"createdOn": "2024-11-26T15:03:05",
+		"lastUpdateOn": "2024-11-26T15:03:05",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "1",
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	}
+}

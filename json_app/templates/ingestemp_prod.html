@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+ 
+
+<!-- {% block title %}File Ingestion PROD{% endblock %} -->
+{% block header %}File Ingestion - PROD{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+
+    <!-- Step 1: Generate Token -->
+    <div class="form-section">
+        <h3>Step 1: Generate Token</h3>
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="generate_token">
+            <input type="hidden" name="user_name" value="{{ user_name }}">
+            <button type="submit" class="btn btn-primary">Initiate Token</button>
+        </form>
+        {% if token %}
+        <p class="mt-3">Token: {{ token }}</p>
+        {% endif %}
+    </div>
+
+    <!-- Step 2: Create Batch -->
+    <div class="form-section">
+        <h3>Step 2: Create Batch</h3>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="create_batch">
+            <input type="hidden" name="user_name" value="{{ user_name }}">
+            <input type="hidden" name="token" value="{{ token }}">
+            <div class="mb-3">
+                <label for="file_location" class="form-label">Upload Fingerprint File:</label>
+                <input type="file" name="file_location" id="file_location" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Create Batch</button>
+        </form>
+        {% if batch_id %}
+        <p class="mt-3">Batch ID: {{ batch_id }}</p>
+        {% endif %}
+    </div>
+
+    <!-- Step 3: Ingest File -->
+    <div class="form-section">
+        <h3>Step 3: Ingest File</h3>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="ingest_file">
+            <input type="hidden" name="user_name" value="{{ user_name }}">
+            <input type="hidden" name="token" value="{{ token }}">
+            <div class="mb-3">
+                <label for="ingestion_type" class="form-label">Select Ingestion Type:</label>
+                <select name="ingestion_type" id="ingestion_type" class="form-select">
+                    <option value="single">Single File</option>
+                    <option value="batch">Batch</option>
+                </select>
+            </div>
+            <input type="hidden" name="batch_id" value="{{ batch_id }}">
+            <div class="mb-3">
+                <label for="data_type" class="form-label">Select Data Type:</label>
+                <select name="data_type" id="data_type" class="form-select">
+                    <option value="award">Award</option>
+                    <option value="opportunity">Opportunity</option>
+                    <option value="funding-body">Funding</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="json_location" class="form-label">Upload JSON File:</label>
+                <input type="file" name="json_location" id="json_location" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Ingest File</button>
+        </form>
+        {% if message %}
+        <p class="mt-3">{{ message }}</p>
+        {% endif %}
+    </div>
+
+     <!-- Step 4: Upload Source  Files -->
+     <div class="form-section">
+        <h3>Step 4: Upload Files</h3>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="upload_files">
+            <input type="hidden" name="user_name" value="{{ user_name }}">
+            <input type="hidden" name="token" value="{{ token }}">
+            <div class="mb-3">
+                <label for="additional_files" class="form-label">Upload Multiple Files:</label>
+                <input type="file" name="additional_files" id="additional_files" class="form-control" multiple>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload Files</button>
+        </form>
+        {% if upload_message %}
+        <p class="mt-3">{{ upload_message }}</p>
+        {% endif %}
+    </div>
+    
+
+    
+    <!-- Step 5: Check Ingestion Status -->
+    <div class="form-section">
+        <h3>Step 5: Check Ingestion Status</h3>
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="check_ingestion_status">
+            <input type="hidden" name="user_name" value="{{ user_name }}">
+    
+            <div class="mb-3">
+                <label for="ingestion_id" class="form-label">Enter Ingestion ID:</label>
+                <input type="text" name="ingestion_id" id="ingestion_id" class="form-control" 
+                       placeholder="Enter Ingestion ID" value="{{ ingestion_id|default:'' }}">
+            </div>
+    
+            <div class="mb-3">
+                <label for="data_type" class="form-label">Select Data Type:</label>
+                <select name="data_type" id="data_type" class="form-select">
+                    <option value="award">Award</option>
+                    <option value="opportunity">Opportunity</option>
+                    <option value="funding-body">Funding Body</option>
+                </select>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Check Status</button>
+        </form>
+    
+        {% if ingestion_status_message %}
+        <p class="mt-3">{{ ingestion_status_message }}</p>
+        {% endif %}
+    </div>
+    
+    
+    
+    <!-- Step 4: Enter Name 
+    <div class="form-section">
+        <h3>Step 4: Enter Your Name</h3>
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="log_name">
+            <div class="mb-3">
+                <label for="user_name" class="form-label">Your Name:</label>
+                <input type="text" name="user_name" id="user_name" class="form-control" placeholder="Enter your name" value="{{ user_name }}">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        {% if log_message %}
+        <p class="mt-3">Log Entry: {{ log_message }}</p>
+        {% endif %}
+    </div>
+-->
+</div>
+{% endblock %} 

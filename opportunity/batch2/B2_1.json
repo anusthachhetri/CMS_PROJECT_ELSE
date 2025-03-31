@@ -1,0 +1,265 @@
+{
+	"batchId": "9fb4bbb2-b192-4dc5-8cfa-452f4726a80d",
+	"ingestionId": "1296e2ba-0b65-4b84-a564-9c19c7f8809e",
+	"grantOpportunityId": 800573784,
+	"status": "ACTIVE",
+	"title": [{
+		"language": "en",
+		"value": "Research Ireland-European Southern Observatory Studentship Programme"
+	}],
+	"fundingBodyOpportunityId": "0",
+	"homePage": {
+		"link": "https://research.ie/funding/irc-eso-studentship-programme/?f="
+	},
+	"grantType": "FELLOW",
+	"funderSchemeType": "IRC-ESO Studentship Programme",
+	"numberOfAwards": 0,
+	"duration": {
+		"durationExpression": "P2Y",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "The European Organisation for Astronomical Research in the Southern Hemisphere awards studentship positions each year, based in both Germany and Chile. The programme offers an invaluable training opportunity for the next generation of astronomers and users of ESO facilities. Studentships are open to students enrolled in a PhD programme, preferentially but not necessarily in an ESO member state. Depending on the number of available positions, there may be one or two annual application deadlines, in April and October"
+			},
+			"source": "https://research.ie/funding/irc-eso-studentship-programme/?f="
+		}]
+	},
+	"repeatingOpportunity": "True",
+	"subjectMatter": [{
+		"abstract": {
+			"language": "en",
+			"value": "A new national research agency, Taighde Éireann/Research Ireland, has been established by the government. The agency will amalgamate the work of the Irish Research Council and Science Foundation Ireland"
+		},
+		"source": "https://research.ie/funding/irc-eso-studentship-programme/?f="
+	}],
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "The programme offers an invaluable training opportunity for the next generation of astronomers and users of ESO facilities"
+		},
+		"source": "https://research.ie/funding/irc-eso-studentship-programme/?f="
+	}],
+	"instruction": [{
+		"abstract": {
+			"language": "en",
+			"value": "Applicants must apply through the ESO Portal and will adhere to the Programme’s existing application process, supplying the needed documents."
+		},
+		"source": "https://research.ie/funding/irc-eso-studentship-programme/?f="
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "NOTSPECIFIED"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "NOTSPECIFIED"
+		},
+		"source": "NOTSPECIFIED"
+	}],
+	"relatedOpportunity": {
+		"relatedTo": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NOTSPECIFIED"
+			}],
+			"description": "NOTSPECIFIED"
+		}],
+		"replacedBy": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NA"
+			}],
+			"description": ""
+		}],
+		"replaces": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NA"
+			}],
+			"description": ""
+		}]
+	},
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "",
+			"sourceText": "NOTSPECIFIED"
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "",
+			"sourceText": ""
+		}]
+	},
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Astronomical Research",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2718"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Physics and Astronomy (miscellaneous)",
+			"identifier": {
+				"type": "ASJC",
+				"value": "3101"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Physics and Astronomy(all)",
+			"identifier": {
+				"type": "ASJC",
+				"value": "3100"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Earth and Planetary Sciences(all)",
+			"identifier": {
+				"type": "ASJC",
+				"value": "1900"
+			}
+		}
+	}],
+	"associatedAmount": {
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "0"
+			},
+			"source": "https://research.ie/funding/irc-eso-studentship-programme/?f="
+		}],
+		"ceiling": [{
+			"currency": "EUR",
+			"amount": 5280
+		}],
+		"estimatedTotal": [{
+			"currency": "EUR",
+			"amount": 29331
+		}],
+		"floor": [{
+			"currency": "EUR",
+			"amount": 0
+		}]
+	},
+	"contactInformation": [{
+		"link": "https://www.eso.org/sci/activities/fellowships-and-studentships/FeSt-overview/ESOstudentship/StudentContact.html",
+		"hasPostalAddress": {
+			"addressCountry": "IRL",
+			"addressRegion": "NOTSPECIFIED",
+			"addressLocality": "Ballsbridge",
+			"addressPostalCode": "D04 C2Y6",
+			"streetAddress": "3 Shelbourne Buildings, Crampton Avenue,"
+		},
+		"contactPerson": [{
+			"initials": "NA",
+			"givenName": "Marina",
+			"familyName": "Rejkuba",
+			"emailAddress": "gar-applications@eso.org"
+		}]
+	}],
+	"opportunityLocation": [{
+		"country": "IRL"
+	}],
+	"opportunityDate": {
+		"expirationDateDetail": {
+			"date": "2024-08-23T00:00:00",
+			"description": {
+				"abstract": {
+					"language": "en",
+					"value": "NOTSPECIFIED"
+				},
+				"source": "https://research.ie/funding/irc-eso-studentship-programme/?f="
+			}
+		},
+		"cycle": [{
+			"index": 1,
+			"label": "Submission Deadline",
+			"startDateDetail": [{
+				"date": "2024-09-03T00:00:00",
+				"description": {
+					"abstract": {
+						"language": "en",
+						"value": "2024-09-03T00:00:00"
+					},
+					"source": "https://research.ie/funding/irc-eso-studentship-programme/?f="
+				}
+			}],
+			"endDateDetail": [{
+				"date": "2024-10-20T00:00:00",
+				"description": {
+					"abstract": {
+						"language": "en",
+						"value": "2024-10-20T00:00:00"
+					},
+					"source": "https://research.ie/funding/irc-eso-studentship-programme/?f="
+				}
+			}],
+			"letterOfIntent": [{
+				"limitation": "NOTSPECIFIED"
+			}],
+			"preproposal": [{
+				"limitation": "NOTSPECIFIED"
+			}],
+			"decision": [{
+				"limitation": "NOTSPECIFIED"
+			}]
+		}]
+	},
+	"eligibilityClassification": {
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "Cover letter,Curriculum Vitae, including a list of publications, if any,Copies of the applicant’s university transcript and certificate(s) or diploma(s),Summary of the applicant’s Master’s thesis project (if applicable) and ongoing projects, including the title and supervisor (maximum half a page),Short description of the general scientific plan for the PhD, indicating the tentative title and the home institute supervisor (maximum half a page),Outline of the proposed project for the Studentship (maximum one page), containing a clear timeline including the tentative start and expected end dates of the Studentship at ESO,The names and contact details of the applicant’s home institution supervisor and the ESO local supervisor,Letter from the home institution that indicates whether the prerequisites to obtain the PhD degree at the home institution have already been met"
+			},
+			"source": "https://research.ie/funding/irc-eso-studentship-programme/?f="
+		}],
+		"limitedSubmission": {
+			"limitation": "NOTSPECIFIED"
+		},
+		"individualEligibility": {
+			"limitation": "LIMITED",
+			"applicantType": ["GRADUATE", "OTHER"]
+		},
+		"organisationEligibility": {
+			"limitation": "NOTSPECIFIED"
+		},
+		"citizenship": {
+			"limitation": "NOTSPECIFIED"
+		},
+		"regionSpecific": {
+			"limitation": "LIMITED",
+			"location": [{
+				"country": "irl"
+			}]
+		},
+		"restrictionScope": {
+			"limitation": "NOTSPECIFIED"
+		}
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://research.ie/funding/irc-eso-studentship-programme/?f=",
+		"createdOn": "2024-08-23T00:00:00",
+		"lastUpdateOn": "2024-08-23T00:00:00",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "1",
+		"hidden": "False",
+		"defunct": "False",
+		"status": "UPDATE"
+	}
+}

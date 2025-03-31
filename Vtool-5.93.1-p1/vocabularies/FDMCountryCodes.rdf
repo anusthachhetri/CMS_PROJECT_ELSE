@@ -1,0 +1,2472 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<egv:satelliteWrapper xmlns:egv="http://www.elsevier.com/xml/schema/rdf/ElsevierGenericVocabularySatellite-1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.elsevier.com/xml/schema/rdf/ElsevierGenericVocabularySatellite-1/ http://www.elsevier.com/xml/schema/rdf/ElsevierGenericVocabularySatellite-1/egv_v01.xsd" xml:base="http://data.elsevier.com/vocabulary/FDMCountryCodes">
+
+<rdf:RDF xmlns:sat="http://www.elsevier.com/xml/schema/rdf/LDR-Satellites/Base-1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" xmlns:pav="http://purl.org/swan/pav/provenance/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dct="http://purl.org/dc/terms/">
+
+<sat:Satellite rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes.rdf">
+<sat:describesResource rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<dct:title>FDM Country Codes</dct:title>
+<sat:satellite-type rdf:resource="http://data.elsevier.com/namespaces/LDR-Satellites/ElsevierGenericVocabulary-1/"/>
+<sat:project rdf:resource="http://data.elsevier.com/voc-project/FDMCountryCodes-1/"/>
+<pav:createdBy>Elsevier B.V.</pav:createdBy>
+<pav:createdOn>2020-07-13T12:42:20+01:00</pav:createdOn>
+</sat:Satellite>
+
+<skos:ConceptScheme rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes">
+<dct:title>FDM Country Codes - 13 July 2020</dct:title>
+<dct:hasVersion>2020-07-13</dct:hasVersion>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-abw"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-afg"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ago"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-aia"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-alb"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-and"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-are"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-arg"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-arm"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-asm"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ata"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-atf"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-atg"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-aus"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-aut"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-aze"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bdi"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bel"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ben"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bes"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bfa"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bgd"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bgr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bhr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bhs"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bih"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-blr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-blz"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bmu"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bol"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bra"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-brb"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-brn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-btn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bvt"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bwa"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-caf"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-can"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cck"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-che"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-chl"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-chn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-civ"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cmr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cod"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cog"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cok"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-col"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-com"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cpv"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cri"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cub"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cuw"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cxr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cym"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cyp"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cze"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-deu"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-dji"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-dma"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-dnk"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-dom"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-dza"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ecu"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-egy"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-eri"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-esh"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-esp"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-est"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-eth"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-eue"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-fin"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-fji"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-flk"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-fra"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-fro"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-fsm"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gab"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gbr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-geo"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gha"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gib"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gin"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-glp"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gmb"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gnb"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gnq"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-grc"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-grd"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-grl"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gtm"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-guf"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gum"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-guy"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hkg"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hmd"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hnd"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hrv"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hti"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hun"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-idn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ind"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-iot"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-irl"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-irn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-irq"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-isl"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-isr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ita"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-jam"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-jor"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-jpn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kaz"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ken"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kgz"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-khm"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kir"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kna"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kor"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kwt"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lao"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lbn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lbr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lby"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lca"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lie"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lka"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lso"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ltu"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lux"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lva"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mac"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-maf"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mar"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mco"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mda"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mdg"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mdv"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mex"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mhl"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mkd"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mli"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mlt"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mmr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mne"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mng"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mnp"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-moz"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mrt"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-msr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mtq"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mus"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mwi"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mys"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-myt"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nam"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ncl"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ner"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nfk"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nga"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nic"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-niu"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nld"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nor"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-npl"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nru"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nzl"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-omn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pak"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pan"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pcn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-per"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-phl"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-plw"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-png"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pol"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pri"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-prk"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-prt"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pry"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pse"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pyf"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-qat"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-reu"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-rou"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-rus"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-rwa"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sau"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sdn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sen"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sgp"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sgs"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-shn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sjm"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-slb"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sle"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-slv"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-smr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-som"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-spm"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-srb"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ssd"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-stp"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sur"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-svk"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-svn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-swe"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-swz"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sxm"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-syc"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-syr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tca"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tcd"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tgo"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tha"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tjk"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tkl"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tkm"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tls"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ton"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tto"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tun"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tur"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tuv"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-twn"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tza"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-uga"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ukr"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-umi"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ury"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-usa"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-uzb"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vat"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vct"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ven"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vgb"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vir"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vnm"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vut"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-wlf"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-wsm"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-yem"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-zaf"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-zmb"/>
+<skos:hasTopConcept rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-zwe"/>
+</skos:ConceptScheme>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-abw">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-abw-01">
+<skosxl:literalForm xml:lang="en">abw</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-afg">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-afg-01">
+<skosxl:literalForm xml:lang="en">afg</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ago">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ago-01">
+<skosxl:literalForm xml:lang="en">ago</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-aia">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-aia-01">
+<skosxl:literalForm xml:lang="en">aia</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-alb">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-alb-01">
+<skosxl:literalForm xml:lang="en">alb</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-and">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-and-01">
+<skosxl:literalForm xml:lang="en">and</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-are">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-are-01">
+<skosxl:literalForm xml:lang="en">are</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-arg">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-arg-01">
+<skosxl:literalForm xml:lang="en">arg</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-arm">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-arm-01">
+<skosxl:literalForm xml:lang="en">arm</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-asm">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-asm-01">
+<skosxl:literalForm xml:lang="en">asm</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ata">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ata-01">
+<skosxl:literalForm xml:lang="en">ata</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-atf">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-atf-01">
+<skosxl:literalForm xml:lang="en">atf</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-atg">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-atg-01">
+<skosxl:literalForm xml:lang="en">atg</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-aus">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-aus-01">
+<skosxl:literalForm xml:lang="en">aus</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-aut">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-aut-01">
+<skosxl:literalForm xml:lang="en">aut</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-aze">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-aze-01">
+<skosxl:literalForm xml:lang="en">aze</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bdi">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bdi-01">
+<skosxl:literalForm xml:lang="en">bdi</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bel">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bel-01">
+<skosxl:literalForm xml:lang="en">bel</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ben">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ben-01">
+<skosxl:literalForm xml:lang="en">ben</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bes">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bes-01">
+<skosxl:literalForm xml:lang="en">bes</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bfa">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bfa-01">
+<skosxl:literalForm xml:lang="en">bfa</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bgd">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bgd-01">
+<skosxl:literalForm xml:lang="en">bgd</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bgr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bgr-01">
+<skosxl:literalForm xml:lang="en">bgr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bhr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bhr-01">
+<skosxl:literalForm xml:lang="en">bhr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bhs">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bhs-01">
+<skosxl:literalForm xml:lang="en">bhs</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bih">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bih-01">
+<skosxl:literalForm xml:lang="en">bih</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-blr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-blr-01">
+<skosxl:literalForm xml:lang="en">blr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-blz">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-blz-01">
+<skosxl:literalForm xml:lang="en">blz</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bmu">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bmu-01">
+<skosxl:literalForm xml:lang="en">bmu</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bol">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bol-01">
+<skosxl:literalForm xml:lang="en">bol</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bra">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bra-01">
+<skosxl:literalForm xml:lang="en">bra</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-brb">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-brb-01">
+<skosxl:literalForm xml:lang="en">brb</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-brn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-brn-01">
+<skosxl:literalForm xml:lang="en">brn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-btn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-btn-01">
+<skosxl:literalForm xml:lang="en">btn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bvt">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bvt-01">
+<skosxl:literalForm xml:lang="en">bvt</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-bwa">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-bwa-01">
+<skosxl:literalForm xml:lang="en">bwa</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-caf">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-caf-01">
+<skosxl:literalForm xml:lang="en">caf</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-can">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-can-01">
+<skosxl:literalForm xml:lang="en">can</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cck">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cck-01">
+<skosxl:literalForm xml:lang="en">cck</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-che">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-che-01">
+<skosxl:literalForm xml:lang="en">che</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-chl">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-chl-01">
+<skosxl:literalForm xml:lang="en">chl</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-chn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-chn-01">
+<skosxl:literalForm xml:lang="en">chn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-civ">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-civ-01">
+<skosxl:literalForm xml:lang="en">civ</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cmr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cmr-01">
+<skosxl:literalForm xml:lang="en">cmr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cod">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cod-01">
+<skosxl:literalForm xml:lang="en">cod</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cog">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cog-01">
+<skosxl:literalForm xml:lang="en">cog</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cok">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cok-01">
+<skosxl:literalForm xml:lang="en">cok</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-col">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-col-01">
+<skosxl:literalForm xml:lang="en">col</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-com">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-com-01">
+<skosxl:literalForm xml:lang="en">com</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cpv">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cpv-01">
+<skosxl:literalForm xml:lang="en">cpv</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cri">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cri-01">
+<skosxl:literalForm xml:lang="en">cri</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cub">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cub-01">
+<skosxl:literalForm xml:lang="en">cub</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cuw">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cuw-01">
+<skosxl:literalForm xml:lang="en">cuw</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cxr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cxr-01">
+<skosxl:literalForm xml:lang="en">cxr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cym">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cym-01">
+<skosxl:literalForm xml:lang="en">cym</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cyp">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cyp-01">
+<skosxl:literalForm xml:lang="en">cyp</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-cze">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-cze-01">
+<skosxl:literalForm xml:lang="en">cze</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-deu">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-deu-01">
+<skosxl:literalForm xml:lang="en">deu</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-dji">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-dji-01">
+<skosxl:literalForm xml:lang="en">dji</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-dma">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-dma-01">
+<skosxl:literalForm xml:lang="en">dma</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-dnk">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-dnk-01">
+<skosxl:literalForm xml:lang="en">dnk</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-dom">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-dom-01">
+<skosxl:literalForm xml:lang="en">dom</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-dza">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-dza-01">
+<skosxl:literalForm xml:lang="en">dza</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ecu">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ecu-01">
+<skosxl:literalForm xml:lang="en">ecu</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-egy">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-egy-01">
+<skosxl:literalForm xml:lang="en">egy</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-eri">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-eri-01">
+<skosxl:literalForm xml:lang="en">eri</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-esh">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-esh-01">
+<skosxl:literalForm xml:lang="en">esh</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-esp">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-esp-01">
+<skosxl:literalForm xml:lang="en">esp</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-est">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-est-01">
+<skosxl:literalForm xml:lang="en">est</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-eth">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-eth-01">
+<skosxl:literalForm xml:lang="en">eth</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-eue">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-eue-01">
+<skosxl:literalForm xml:lang="en">eue</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-fin">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-fin-01">
+<skosxl:literalForm xml:lang="en">fin</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-fji">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-fji-01">
+<skosxl:literalForm xml:lang="en">fji</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-flk">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-flk-01">
+<skosxl:literalForm xml:lang="en">flk</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-fra">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-fra-01">
+<skosxl:literalForm xml:lang="en">fra</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-fro">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-fro-01">
+<skosxl:literalForm xml:lang="en">fro</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-fsm">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-fsm-01">
+<skosxl:literalForm xml:lang="en">fsm</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gab">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-gab-01">
+<skosxl:literalForm xml:lang="en">gab</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gbr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-gbr-01">
+<skosxl:literalForm xml:lang="en">gbr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-geo">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-geo-01">
+<skosxl:literalForm xml:lang="en">geo</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gha">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-gha-01">
+<skosxl:literalForm xml:lang="en">gha</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gib">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-gib-01">
+<skosxl:literalForm xml:lang="en">gib</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gin">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-gin-01">
+<skosxl:literalForm xml:lang="en">gin</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-glp">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-glp-01">
+<skosxl:literalForm xml:lang="en">glp</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gmb">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-gmb-01">
+<skosxl:literalForm xml:lang="en">gmb</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gnb">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-gnb-01">
+<skosxl:literalForm xml:lang="en">gnb</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gnq">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-gnq-01">
+<skosxl:literalForm xml:lang="en">gnq</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-grc">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-grc-01">
+<skosxl:literalForm xml:lang="en">grc</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-grd">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-grd-01">
+<skosxl:literalForm xml:lang="en">grd</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-grl">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-grl-01">
+<skosxl:literalForm xml:lang="en">grl</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gtm">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-gtm-01">
+<skosxl:literalForm xml:lang="en">gtm</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-guf">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-guf-01">
+<skosxl:literalForm xml:lang="en">guf</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-gum">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-gum-01">
+<skosxl:literalForm xml:lang="en">gum</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-guy">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-guy-01">
+<skosxl:literalForm xml:lang="en">guy</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hkg">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-hkg-01">
+<skosxl:literalForm xml:lang="en">hkg</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hmd">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-hmd-01">
+<skosxl:literalForm xml:lang="en">hmd</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hnd">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-hnd-01">
+<skosxl:literalForm xml:lang="en">hnd</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hrv">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-hrv-01">
+<skosxl:literalForm xml:lang="en">hrv</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hti">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-hti-01">
+<skosxl:literalForm xml:lang="en">hti</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-hun">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-hun-01">
+<skosxl:literalForm xml:lang="en">hun</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-idn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-idn-01">
+<skosxl:literalForm xml:lang="en">idn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ind">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ind-01">
+<skosxl:literalForm xml:lang="en">ind</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-iot">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-iot-01">
+<skosxl:literalForm xml:lang="en">iot</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-irl">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-irl-01">
+<skosxl:literalForm xml:lang="en">irl</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-irn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-irn-01">
+<skosxl:literalForm xml:lang="en">irn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-irq">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-irq-01">
+<skosxl:literalForm xml:lang="en">irq</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-isl">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-isl-01">
+<skosxl:literalForm xml:lang="en">isl</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-isr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-isr-01">
+<skosxl:literalForm xml:lang="en">isr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ita">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ita-01">
+<skosxl:literalForm xml:lang="en">ita</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-jam">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-jam-01">
+<skosxl:literalForm xml:lang="en">jam</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-jor">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-jor-01">
+<skosxl:literalForm xml:lang="en">jor</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-jpn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-jpn-01">
+<skosxl:literalForm xml:lang="en">jpn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kaz">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-kaz-01">
+<skosxl:literalForm xml:lang="en">kaz</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ken">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ken-01">
+<skosxl:literalForm xml:lang="en">ken</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kgz">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-kgz-01">
+<skosxl:literalForm xml:lang="en">kgz</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-khm">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-khm-01">
+<skosxl:literalForm xml:lang="en">khm</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kir">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-kir-01">
+<skosxl:literalForm xml:lang="en">kir</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kna">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-kna-01">
+<skosxl:literalForm xml:lang="en">kna</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kor">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-kor-01">
+<skosxl:literalForm xml:lang="en">kor</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-kwt">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-kwt-01">
+<skosxl:literalForm xml:lang="en">kwt</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lao">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-lao-01">
+<skosxl:literalForm xml:lang="en">lao</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lbn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-lbn-01">
+<skosxl:literalForm xml:lang="en">lbn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lbr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-lbr-01">
+<skosxl:literalForm xml:lang="en">lbr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lby">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-lby-01">
+<skosxl:literalForm xml:lang="en">lby</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lca">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-lca-01">
+<skosxl:literalForm xml:lang="en">lca</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lie">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-lie-01">
+<skosxl:literalForm xml:lang="en">lie</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lka">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-lka-01">
+<skosxl:literalForm xml:lang="en">lka</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lso">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-lso-01">
+<skosxl:literalForm xml:lang="en">lso</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ltu">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ltu-01">
+<skosxl:literalForm xml:lang="en">ltu</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lux">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-lux-01">
+<skosxl:literalForm xml:lang="en">lux</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-lva">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-lva-01">
+<skosxl:literalForm xml:lang="en">lva</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mac">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mac-01">
+<skosxl:literalForm xml:lang="en">mac</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-maf">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-maf-01">
+<skosxl:literalForm xml:lang="en">maf</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mar">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mar-01">
+<skosxl:literalForm xml:lang="en">mar</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mco">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mco-01">
+<skosxl:literalForm xml:lang="en">mco</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mda">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mda-01">
+<skosxl:literalForm xml:lang="en">mda</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mdg">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mdg-01">
+<skosxl:literalForm xml:lang="en">mdg</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mdv">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mdv-01">
+<skosxl:literalForm xml:lang="en">mdv</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mex">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mex-01">
+<skosxl:literalForm xml:lang="en">mex</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mhl">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mhl-01">
+<skosxl:literalForm xml:lang="en">mhl</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mkd">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mkd-01">
+<skosxl:literalForm xml:lang="en">mkd</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mli">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mli-01">
+<skosxl:literalForm xml:lang="en">mli</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mlt">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mlt-01">
+<skosxl:literalForm xml:lang="en">mlt</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mmr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mmr-01">
+<skosxl:literalForm xml:lang="en">mmr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mne">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mne-01">
+<skosxl:literalForm xml:lang="en">mne</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mng">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mng-01">
+<skosxl:literalForm xml:lang="en">mng</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mnp">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mnp-01">
+<skosxl:literalForm xml:lang="en">mnp</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-moz">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-moz-01">
+<skosxl:literalForm xml:lang="en">moz</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mrt">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mrt-01">
+<skosxl:literalForm xml:lang="en">mrt</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-msr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-msr-01">
+<skosxl:literalForm xml:lang="en">msr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mtq">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mtq-01">
+<skosxl:literalForm xml:lang="en">mtq</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mus">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mus-01">
+<skosxl:literalForm xml:lang="en">mus</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mwi">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mwi-01">
+<skosxl:literalForm xml:lang="en">mwi</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-mys">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-mys-01">
+<skosxl:literalForm xml:lang="en">mys</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-myt">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-myt-01">
+<skosxl:literalForm xml:lang="en">myt</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nam">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-nam-01">
+<skosxl:literalForm xml:lang="en">nam</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ncl">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ncl-01">
+<skosxl:literalForm xml:lang="en">ncl</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ner">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ner-01">
+<skosxl:literalForm xml:lang="en">ner</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nfk">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-nfk-01">
+<skosxl:literalForm xml:lang="en">nfk</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nga">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-nga-01">
+<skosxl:literalForm xml:lang="en">nga</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nic">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-nic-01">
+<skosxl:literalForm xml:lang="en">nic</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-niu">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-niu-01">
+<skosxl:literalForm xml:lang="en">niu</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nld">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-nld-01">
+<skosxl:literalForm xml:lang="en">nld</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nor">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-nor-01">
+<skosxl:literalForm xml:lang="en">nor</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-npl">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-npl-01">
+<skosxl:literalForm xml:lang="en">npl</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nru">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-nru-01">
+<skosxl:literalForm xml:lang="en">nru</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-nzl">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-nzl-01">
+<skosxl:literalForm xml:lang="en">nzl</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-omn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-omn-01">
+<skosxl:literalForm xml:lang="en">omn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pak">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-pak-01">
+<skosxl:literalForm xml:lang="en">pak</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pan">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-pan-01">
+<skosxl:literalForm xml:lang="en">pan</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pcn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-pcn-01">
+<skosxl:literalForm xml:lang="en">pcn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-per">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-per-01">
+<skosxl:literalForm xml:lang="en">per</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-phl">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-phl-01">
+<skosxl:literalForm xml:lang="en">phl</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-plw">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-plw-01">
+<skosxl:literalForm xml:lang="en">plw</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-png">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-png-01">
+<skosxl:literalForm xml:lang="en">png</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pol">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-pol-01">
+<skosxl:literalForm xml:lang="en">pol</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pri">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-pri-01">
+<skosxl:literalForm xml:lang="en">pri</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-prk">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-prk-01">
+<skosxl:literalForm xml:lang="en">prk</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-prt">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-prt-01">
+<skosxl:literalForm xml:lang="en">prt</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pry">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-pry-01">
+<skosxl:literalForm xml:lang="en">pry</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pse">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-pse-01">
+<skosxl:literalForm xml:lang="en">pse</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-pyf">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-pyf-01">
+<skosxl:literalForm xml:lang="en">pyf</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-qat">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-qat-01">
+<skosxl:literalForm xml:lang="en">qat</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-reu">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-reu-01">
+<skosxl:literalForm xml:lang="en">reu</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-rou">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-rou-01">
+<skosxl:literalForm xml:lang="en">rou</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-rus">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-rus-01">
+<skosxl:literalForm xml:lang="en">rus</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-rwa">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-rwa-01">
+<skosxl:literalForm xml:lang="en">rwa</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sau">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-sau-01">
+<skosxl:literalForm xml:lang="en">sau</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sdn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-sdn-01">
+<skosxl:literalForm xml:lang="en">sdn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sen">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-sen-01">
+<skosxl:literalForm xml:lang="en">sen</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sgp">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-sgp-01">
+<skosxl:literalForm xml:lang="en">sgp</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sgs">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-sgs-01">
+<skosxl:literalForm xml:lang="en">sgs</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-shn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-shn-01">
+<skosxl:literalForm xml:lang="en">shn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sjm">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-sjm-01">
+<skosxl:literalForm xml:lang="en">sjm</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-slb">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-slb-01">
+<skosxl:literalForm xml:lang="en">slb</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sle">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-sle-01">
+<skosxl:literalForm xml:lang="en">sle</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-slv">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-slv-01">
+<skosxl:literalForm xml:lang="en">slv</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-smr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-smr-01">
+<skosxl:literalForm xml:lang="en">smr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-som">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-som-01">
+<skosxl:literalForm xml:lang="en">som</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-spm">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-spm-01">
+<skosxl:literalForm xml:lang="en">spm</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-srb">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-srb-01">
+<skosxl:literalForm xml:lang="en">srb</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ssd">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ssd-01">
+<skosxl:literalForm xml:lang="en">ssd</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-stp">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-stp-01">
+<skosxl:literalForm xml:lang="en">stp</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sur">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-sur-01">
+<skosxl:literalForm xml:lang="en">sur</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-svk">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-svk-01">
+<skosxl:literalForm xml:lang="en">svk</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-svn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-svn-01">
+<skosxl:literalForm xml:lang="en">svn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-swe">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-swe-01">
+<skosxl:literalForm xml:lang="en">swe</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-swz">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-swz-01">
+<skosxl:literalForm xml:lang="en">swz</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-sxm">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-sxm-01">
+<skosxl:literalForm xml:lang="en">sxm</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-syc">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-syc-01">
+<skosxl:literalForm xml:lang="en">syc</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-syr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-syr-01">
+<skosxl:literalForm xml:lang="en">syr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tca">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tca-01">
+<skosxl:literalForm xml:lang="en">tca</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tcd">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tcd-01">
+<skosxl:literalForm xml:lang="en">tcd</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tgo">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tgo-01">
+<skosxl:literalForm xml:lang="en">tgo</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tha">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tha-01">
+<skosxl:literalForm xml:lang="en">tha</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tjk">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tjk-01">
+<skosxl:literalForm xml:lang="en">tjk</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tkl">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tkl-01">
+<skosxl:literalForm xml:lang="en">tkl</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tkm">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tkm-01">
+<skosxl:literalForm xml:lang="en">tkm</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tls">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tls-01">
+<skosxl:literalForm xml:lang="en">tls</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ton">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ton-01">
+<skosxl:literalForm xml:lang="en">ton</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tto">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tto-01">
+<skosxl:literalForm xml:lang="en">tto</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tun">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tun-01">
+<skosxl:literalForm xml:lang="en">tun</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tur">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tur-01">
+<skosxl:literalForm xml:lang="en">tur</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tuv">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tuv-01">
+<skosxl:literalForm xml:lang="en">tuv</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-twn">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-twn-01">
+<skosxl:literalForm xml:lang="en">twn</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-tza">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-tza-01">
+<skosxl:literalForm xml:lang="en">tza</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-uga">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-uga-01">
+<skosxl:literalForm xml:lang="en">uga</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ukr">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ukr-01">
+<skosxl:literalForm xml:lang="en">ukr</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-umi">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-umi-01">
+<skosxl:literalForm xml:lang="en">umi</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ury">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ury-01">
+<skosxl:literalForm xml:lang="en">ury</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-usa">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-usa-01">
+<skosxl:literalForm xml:lang="en">usa</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-uzb">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-uzb-01">
+<skosxl:literalForm xml:lang="en">uzb</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vat">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-vat-01">
+<skosxl:literalForm xml:lang="en">vat</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vct">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-vct-01">
+<skosxl:literalForm xml:lang="en">vct</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-ven">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-ven-01">
+<skosxl:literalForm xml:lang="en">ven</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vgb">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-vgb-01">
+<skosxl:literalForm xml:lang="en">vgb</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vir">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-vir-01">
+<skosxl:literalForm xml:lang="en">vir</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vnm">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-vnm-01">
+<skosxl:literalForm xml:lang="en">vnm</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-vut">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-vut-01">
+<skosxl:literalForm xml:lang="en">vut</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-wlf">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-wlf-01">
+<skosxl:literalForm xml:lang="en">wlf</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-wsm">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-wsm-01">
+<skosxl:literalForm xml:lang="en">wsm</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-yem">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-yem-01">
+<skosxl:literalForm xml:lang="en">yem</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-zaf">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-zaf-01">
+<skosxl:literalForm xml:lang="en">zaf</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-zmb">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-zmb-01">
+<skosxl:literalForm xml:lang="en">zmb</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Concept-zwe">
+<skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/FDMCountryCodes"/>
+<skosxl:prefLabel>
+<skosxl:Label rdf:about="http://data.elsevier.com/vocabulary/FDMCountryCodes/Label-zwe-01">
+<skosxl:literalForm xml:lang="en">zwe</skosxl:literalForm>
+</skosxl:Label>
+</skosxl:prefLabel>
+</skos:Concept>
+
+</rdf:RDF>
+
+</egv:satelliteWrapper>

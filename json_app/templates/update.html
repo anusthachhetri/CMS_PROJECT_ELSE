@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update JSON</title>
+</head>
+<body>
+    <h1>Update JSON File</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="batch_id">Batch ID:</label>
+        <input type="text" name="batch_id" required>
+        <input type="file" name="file" accept=".json" required>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>

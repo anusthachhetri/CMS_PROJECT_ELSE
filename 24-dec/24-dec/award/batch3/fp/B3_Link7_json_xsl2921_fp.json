@@ -1,0 +1,28 @@
+{"fingerprints": {
+    "signature": "f1f1d1d25b5578a45da54e63ed06b9fe",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "B3_Link7.json",
+            "checksum": "4e26058e5bbc714e3557c853d68d0284"
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "total-errors": 0
+        },
+        "info": {
+            "date": "2024/12/25",
+            "os": "Windows 10 version 10.0",
+            "time": "14:34",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.92.1",
+                "specset-version": "2.92.1"
+            },
+            "ingestion-version": "6.6.0",
+            "commandline": "-Xmx1024m -DentityExpansionLimit=200000 -file \"D:\\ML\\files\\JSOn\\latest\\24-dec\\award\\batch3\\B3_Link7.json\" -log \"D:\\ML\\files\\JSOn\\latest\\24-dec\\award\\batch3\\B3_Link7.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

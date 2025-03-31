@@ -1,0 +1,275 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASJC Code Matcher</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 40px; }
+        form { margin-bottom: 20px; }
+        textarea { width: 60%; height: 100px; padding: 10px; font-size: 16px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        table { width: 60%; margin: 20px auto; border-collapse: collapse; }
+        th, td { padding: 10px; border: 1px solid #ddd; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1>ASJC Code Matcher</h1>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="text" placeholder="Enter your text here...">{{ input_text }}</textarea><br>
+        <button type="submit">Match ASJC Codes</button>
+    </form>
+
+    {% if matched_codes %}
+    <h2>Matched ASJC Codes</h2>
+    <table>
+        <tr>
+            <th>Code</th>
+            <th>Category</th>
+            <th>Similarity</th>
+        </tr>
+        {% for code, category, similarity in matched_codes %}
+        <tr>
+            <td>{{ code }}</td>
+            <td>{{ category }}</td>
+            <td>{{ similarity|floatformat:2 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</body>
+</html> {% endcomment %}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASJC Code Matcher</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f7fc;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        h2 {
+            background: #f5a142;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        table {
+            background: white;
+        }
+
+        th {
+            background: #0d6efd;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .download-link {
+            display: none;
+            text-decoration: none;
+        }
+
+        .btn-primary{
+            background-color:#f5a142;
+        }
+        .btn-success{
+            background-color:#f5a142;
+        }
+        .download-link{
+            background-color:#f5a142;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>ASJC Code Matcher</h2>
+
+    <!-- Single Text Input -->
+    <div class="card shadow-sm p-4 mb-4">
+        <h4 class="mb-3">Enter Title or Synopsis</h4>
+        <form method="post" id="text-form">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="text" class="form-label">Enter Text:</label>
+                <input type="text" name="text" id="text" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Match ASJC Codes</button>
+        </form>
+    </div>
+
+    <!-- Text Results Table -->
+    <h4>Results:</h4>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Input Text</th>
+                <th>ASJC Code</th>
+                <th>Category</th>
+                <th>Similarity</th>
+            </tr>
+        </thead>
+        <tbody id="text-results"></tbody>
+    </table>
+
+    <!-- File Upload -->
+    <div class="card shadow-sm p-4 mb-4">
+        <h4 class="mb-3">Upload CSV for Bulk Matching</h4>
+        <form method="post" id="file-form" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-3">
+                <input type="file" name="file" id="file" accept=".csv" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Upload & Match</button>
+        </form>
+    </div>
+
+    <!-- CSV Results Table -->
+    <h4>CSV Results:</h4>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Input Text</th>
+                <th>ASJC Code</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody id="csv-results"></tbody>
+    </table>
+    
+    <a id="download-link" class="btn btn-success download-link" download="matched_asjc_codes.csv">Download Results</a>
+</div>
+<br>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    {% comment %} // Handle single text input
+       document.getElementById("text-form").onsubmit = async function(event) {
+            event.preventDefault();
+            let formData = new FormData(this);
+            let response = await fetch("{% url 'asjc_matcher' %}", {
+                method: "POST",
+                body: formData
+            });
+            let data = await response.json();
+            let resultsTable = document.getElementById("text-results");
+            resultsTable.innerHTML = ''; // Clear previous results
+ 
+            if (data.error) {
+                resultsTable.innerHTML = `<tr><td colspan="4">Error: ${data.error}</td></tr>`;
+            } else {
+                let inputText = document.getElementById("text").value;
+                data.matches.forEach(match => {
+                    resultsTable.innerHTML += `
+                        <tr>
+                            <td>${inputText}</td>
+                            <td>${match[0]}</td>
+                            <td>${match[1]}</td>
+                            <td>${match[2]}</td>
+                        </tr>
+                    `;
+                });
+            }
+        };
+  {% endcomment %}
+    document.getElementById("text-form").onsubmit = async function(event) {
+        event.preventDefault();
+        
+        let formData = new FormData(this);
+        
+        try {
+            let response = await fetch("{% url 'asjc_matcher' %}", {
+                method: "POST",
+                body: formData
+            });
+
+            let data = await response.json();
+            let resultsTable = document.getElementById("text-results");
+            resultsTable.innerHTML = ''; // Clear previous results
+
+            if (data.error) {
+                resultsTable.innerHTML = `<tr><td colspan="4" class="text-danger">Error: ${data.error}</td></tr>`;
+                return;
+            }
+
+            let inputText = document.getElementById("text").value;
+
+            data.matches.forEach(match => {
+                let asjcCode = match.asjc_code || "N/A";
+                let category = match.category || "N/A";
+                let similarity = match.similarity !== undefined ? match.similarity.toFixed(2) : "N/A";
+
+                resultsTable.innerHTML += `
+                    <tr>
+                        <td>${inputText}</td>
+                        <td>${asjcCode}</td>
+                        <td>${category}</td>
+                        <td>${similarity}</td>
+                    </tr>
+                `;
+            });
+
+        } catch (error) {
+            console.error("Error fetching data:", error);
+            document.getElementById("text-results").innerHTML = `<tr><td colspan="4" class="text-danger">Error processing request.</td></tr>`;
+        }
+    };
+
+    // Handle CSV upload
+    document.getElementById("file-form").onsubmit = async function(event) {
+        event.preventDefault();
+        let formData = new FormData(this);
+        let response = await fetch("{% url 'asjc_matcher' %}", {
+            method: "POST",
+            body: formData
+        });
+        let data = await response.json();
+        let resultsTable = document.getElementById("csv-results");
+        let downloadLink = document.getElementById("download-link");
+        resultsTable.innerHTML = ''; // Clear previous results
+
+        if (data.error) {
+            resultsTable.innerHTML = `<tr><td colspan="3" class="text-danger">Error: ${data.error}</td></tr>`;
+            downloadLink.style.display = 'none';
+        } else {
+            data.matches.forEach(match => {
+                resultsTable.innerHTML += `
+                    <tr>
+                        <td>${match[0]}</td>
+                        <td>${match[1]}</td>
+                        <td>${match[2]}</td>
+                    </tr>
+                `;
+            });
+            downloadLink.style.display = 'block';
+            downloadLink.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(data.csv_data);
+        }
+    };
+</script>
+</body>
+</html>

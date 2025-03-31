@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f5a142;
+            color: white;
+        }
+        input {
+            width: 60%;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        button {
+            background-color:#f5a142;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .download-btn {
+            background-color: #f5a142;
+            display: inline-block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🌐 Automated Web Scraper (Selenium)</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <label>🔗 Enter URL to scrape:</label>
+        <input type="text" name="url" required>
+        <button type="submit">🚀 Start Scraping</button>
+    </form>
+
+    {% if data %}
+    <h2>📄 Scraped Data</h2>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Row Data</th>
+            {% comment %} <th>Additional Tags</th> {% endcomment %}
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.Title }}</td>
+            <td>{{ item.Row_Data }}</td>  
+            
+            {% comment %} <td>{{ item.Additional_Tags }}</td>  {% endcomment %}
+            
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="{% url 'download_csv' %}" class="download-btn">💾 Download CSV</a>
+    {% endif %}
+
+</body>
+</html>

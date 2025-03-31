@@ -1,0 +1,197 @@
+{
+	"batchId": "466f7883-5a98-4d76-a509-99f9e995e21d",
+	"ingestionId": "6dba0f02-bbe6-4d76-a636-da90acfb180d",
+	"fundingBodyId": 805701999,
+	"homePage": "https://dent.ksu.edu.sa/en",
+	"status": "ACTIVE",
+	"preferredName": [{
+		"language": "en",
+		"value": "College of Dentistry"
+	}, {
+		"language": "ar",
+		"value": "كلية طب الأسنان"
+	}],
+	"acronym": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}, {
+		"language": "ar",
+		"value": "NOT FOUND"
+	}],
+	"abbrevName": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}, {
+		"language": "ar",
+		"value": "NOT FOUND"
+	}],
+	"alternateName": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}, {
+		"language": "ar",
+		"value": "NOT FOUND"
+	}],
+	"financeType": "GOV",
+	"activityType": "GOVNON",
+	"country": "SAU",
+	"state": "NOT FOUND",
+	"identifier": [{
+		"type": "CROSSREFID",
+		"value": "NOT FOUND"
+	}],
+	"description": [{
+		"abstract": {
+			"language": "en",
+			"value": "To develop competent dental professionals and contribute to research and community service; through an environment that stimulates acquisition, dissemination and production of oral health knowledge, adopting technology, and building local and international partnerships"
+		},
+		"source": "https://dent.ksu.edu.sa/en/mission"
+	}, {
+		"abstract": {
+			"language": "ar",
+			"value": "تأهيل كفاءات مهنية في علوم طب الأسنان والإسهام بفعالية في البحث العلمي وخدمة المجتمع، من خلال بيئة محفزة لاكتساب ونشر وإنتاج المعرفة في طب الأسنان، والتوظيف الأمثل للتقنية، وبناء الشراكات المحلية والعالمية"
+		},
+		"source": "https://dent.ksu.edu.sa/ar/mission"
+	}],
+	"awardSuccessRate": {
+		"percentage": 0,
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "NOT FOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ar",
+				"value": "NOT FOUND"
+			},
+			"source": ""
+		}]
+	},
+	"establishment": {
+		"establishmentYear": 1957,
+		"country": "SAU",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "History Establishing Saudi Arabia's first university was a response to the educational and professional needs of a young nation. Abdulaziz Al-Saud, proclaimed the King in 1932, and began laying the foundations for modernizing his country and establishing an educational system. In 1953, Saud, the eldest son of Abdulaziz, acceded to the throne upon his father's death. He would soon institute the Council of Ministers and establish the Ministry Education. Prince Fahd, who would eventually become the Saudi King himself, assumed the office of the first Ministry of Education, and following the first session of the Council of Ministers, he announce, “We will shortly establish the first Saudi University, this is a foregone conclusion. This university will be one of the most prominent houses of culture and sciences and will be worthy of our country where the light of Islamic faith and civilization has emanated.” The Kingdom's first institute of higher education, King Saud University, was subsequently opened in Riyadh in 1957"
+			},
+			"source": "https://ksu.edu.sa/en/history"
+		}, {
+			"abstract": {
+				"language": "ar",
+				"value": "بموجب المرسوم الملكي رقــم (17) وتاريخ 21/4/1377هـ. وقد بدأت الدراسة في الجامعة بافتتاح كلية الآداب عام 77/1378هـ. وقد حظي التنظيمالإداري للجامعة بالاهتمام الكبير حيث أرسيت القواعد الأساسية المتعلقة بنظامها من خلال صدور(3) مراسيم ملكية تتعلق بنظامها.قد توالى افتتاح الكليات في الجامعة حيث أنشئت كلية العلوم في عام 7/8/1379هـ كان أبرز ما جاء فيه أن للجامعة شخصية اعتبارية وميزانية خاصة يوافق عليها وزير المعارف ويعرضها على الجهات ذات الاختصاص لاعتمادها، وأن تختص الجامعة بكل ما يتصل بالتعليم العالي الذي تتولاه كلياتها ومعاهدها وبتشجيع البحوث العلمية والعمل على رقي الآداب والعلوم في البلاد. وكان وزير المعارف الرئيس الأعلى للجامعة بحكم منصبه. كما نص النظام على أن يكون للجامعة وكيل وأمين عام ويكون لكل كلية عميد ووكيل على أن يتم تكوين مجلس لكل .كلية أو معهد تابع للجامعة وبتاريخ 7/9/1380هـ تم إنشاء كليتي التجارة ( العلوم الإدارية حالياً )"
+			},
+			"source": "https://ksu.edu.sa/ar/history"
+		}]
+	},
+	"fundingPolicy": [{
+		"abstract": {
+			"language": "en",
+			"value": "To develop competent dental professionals and contribute to research and community service; through an environment that stimulates acquisition, dissemination and production of oral health knowledge, adopting technology, and building local and international partnerships."
+		},
+		"source": "https://dent.ksu.edu.sa/en/mission"
+	}, {
+		"abstract": {
+			"language": "ar",
+			"value": "تأهيل كفاءات مهنية في علوم طب الأسنان والإسهام بفعالية في البحث العلمي وخدمة المجتمع، من خلال بيئة محفزة لاكتساب ونشر وإنتاج المعرفة في طب الأسنان، والتوظيف الأمثل للتقنية، وبناء الشراكات المحلية والعالمية"
+		},
+		"source": "https://dent.ksu.edu.sa/ar/mission"
+	}],
+	"contactInformation": {
+		"hasPostalAddress": {
+			"addressCountry": "SAU",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "4545",
+			"postOfficeBoxNumber": "145111",
+			"streetAddress": "NOT FOUND"
+		}
+	},
+	"relation": {
+		"partOf": [0],
+		"hasPart": [0],
+		"affiliatedWith": [0],
+		"renamedAs": [0],
+		"continuationOf": [0],
+		"mergedWith": [0],
+		"incorporatedInto": [0],
+		"mergerOf": [0],
+		"incorporates": [0],
+		"isReplacedBy": [0],
+		"replaces": [0],
+		"splitFrom": [0],
+		"splitInto": [0]
+	},
+	"vatNumber": "NOT FOUND",
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://dent.ksu.edu.sa/en",
+		"createdOn": "2024-10-23T07:06:42.766Z",
+		"lastUpdateOn": "2024-10-23T07:06:42.766Z",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": 1,
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	},
+	"registry": {
+		"termsOfUse": {
+			"source": ["https://www.ksu.edu.sa/en/terms"]
+		},
+		"fundingBodyDataset": {
+			"collectionCode": "SUP004",
+			"extended": false,
+			"tier": 4,
+			"source": [{
+				"name": "College of Dentistry",
+				"url": "https://dent.ksu.edu.sa/en",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T07:06:42.766Z",
+				"captureEnd": "2024-10-23T07:06:42.766Z",
+				"comment": "NOT FOUND"
+			}]
+		},
+		"opportunityDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T07:06:42.766Z",
+				"captureEnd": "2024-10-23T07:06:42.766Z",
+				"comment": "NOT FOUND"
+			}]
+		},
+		"awardDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T07:06:42.766Z",
+				"captureEnd": "2024-10-23T07:06:42.766Z",
+				"comment": "NOT FOUND"
+			}]
+		},
+		"publicationDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T07:06:42.766Z",
+				"captureEnd": "2024-10-23T07:06:42.766Z",
+				"comment": "NOT FOUND"
+			}]
+		}
+	}
+}

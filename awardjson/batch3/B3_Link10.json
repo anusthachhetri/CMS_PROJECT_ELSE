@@ -1,0 +1,273 @@
+{
+	"batchId": "01d97a1d-9068-4004-a249-c0ab00740a1b",
+	"ingestionId": "feb4f94e-4538-4b24-8e04-7e6a5b9e192f",
+	"grantAwardId": 803766863,
+	"fundingBodyAwardId": "NOT FOUND",
+	"hasInstallment": [0],
+	"hasWorkPackage": [0],
+	"title": [{
+		"language": "en",
+		"value": "Elucidation of the mechanism of immune cell-mediated inflammatory memory phenomenon"
+	}, {
+		"language": "jp",
+		"value": "免疫細胞を介した炎症記憶現象メカニズムの解明"
+	}],
+	"identifier": [{
+		"type": "DOI",
+		"value": "NOT FOUND"
+	}],
+	"startDate": "2023-01-01T00:00:00",
+	"grantType": "RESEARCH",
+	"funderSchemeType": "NOT FOUND",
+	"homePage": {
+		"link": "https://www.smrf.or.jp/results/k_bunya/k_list_2023.html"
+	},
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "Elucidation of the mechanism of immune cell-mediated inflammatory memory phenomenon"
+		},
+		"source": "https://www.smrf.or.jp/results/k_bunya/k_list_2023.html"
+	}, {
+		"abstract": {
+			"language": "jp",
+			"value": "免疫細胞を介した炎症記憶現象メカニズムの解明"
+		},
+		"source": "https://www.smrf.or.jp/results/k_bunya/k_list_2023.html"
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}, {
+		"language": "jp",
+		"value": "NOT FOUND"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "Copyright  © Senshin Medical Research Foundation"
+		},
+		"source": "https://www.smrf.or.jp/results/k_bunya/k_list_2023.html"
+	}, {
+		"abstract": {
+			"language": "jp",
+			"value": "NOT FOUND"
+		},
+		"source": "https://www.smrf.or.jp/results/k_bunya/k_list_2023.html"
+	}],
+	"funds": [{
+		"fundingBodyProjectId": "NOT FOUND",
+		"hasPart": [{
+			"fundingBodyProjectId": "NOT FOUND",
+			"budget": [{
+				"currency": "JPY",
+				"amount": 100000000
+			}]
+		}],
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}, {
+			"language": "jp",
+			"value": "NOT FOUND"
+		}],
+		"acronym": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "JPN",
+			"addressRegion": "Osaka Prefecture",
+			"addressLocality": "Chuo-ku, Osaka",
+			"addressPostalCode": "541-8505",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "2-2-10 Doshomachi 3-chome"
+		},
+		"link": "https://www.smrf.or.jp/results/k_bunya/k_list_2023.html",
+		"budget": [{
+			"currency": "JPY",
+			"amount": 100000000
+		}],
+		"status": "CLOSED"
+	}],
+	"fundingDetail": {
+		"installment": [{
+			"index": 0,
+			"grantAwardInstallmentId": 1,
+			"financialYearStart": 0,
+			"financialYearEnd": 0,
+			"fundedAmount": [{
+				"currency": "JPY",
+				"amount": 100000000
+			}]
+		}],
+		"fundingTotal": [{
+			"currency": "JPY",
+			"amount": 100000000
+		}]
+	},
+	"awardeeDetail": [{
+		"awardeeAffiliationId": "803766863_A_0",
+		"name": [{
+			"language": "en",
+			"value": "Department of Integrated Pathology, Department of Pathology, Hokkaido University School of Medicine"
+		}, {
+			"language": "jp",
+			"value": "北海道大学医学部 病理学講座 統合病理学教室"
+		}],
+		"role": "PARTICIPANT",
+		"fundingTotal": [{
+			"currency": "JPY",
+			"amount": 100000000
+		}],
+		"fundingBodyOrganizationId": "NOT FOUND",
+		"vatNumber": "NOT FOUND",
+		"link": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "JPN",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"identifier": [{
+			"type": "DUNS",
+			"value": "NOT FOUND"
+		}],
+		"departmentName": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}, {
+			"language": "jp",
+			"value": "NOT FOUND"
+		}],
+		"activityType": "NOT FOUND",
+		"affiliationOf": [{
+			"awardeePersonId": "803766863_P_0",
+			"name": [{
+				"language": "en",
+				"value": "Koji Taniguchi"
+			}],
+			"role": "PI",
+			"initials": "K",
+			"givenName": "Koji",
+			"familyName": "Taniguchi",
+			"emailAddress": "NOT FOUND",
+			"identifier": [{
+				"type": "ORCID",
+				"value": "NOT FOUND"
+			}],
+			"fundingBodyPersonId": "NOT FOUND"
+		}, {
+			"awardeePersonId": "803766863_P_0",
+			"name": [{
+				"language": "jp",
+				"value": "谷口 浩二"
+			}],
+			"role": "PI",
+			"initials": "浩",
+			"givenName": "浩二",
+			"familyName": "谷口",
+			"emailAddress": "NOT FOUND",
+			"identifier": [{
+				"type": "ORCID",
+				"value": "NOT FOUND"
+			}],
+			"fundingBodyPersonId": "NOT FOUND"
+		}]
+	}],
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Immunology and Allergy",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2723"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Pathology and Forensic Medicine",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2734"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Immunology and Microbiology",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2400"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Medicine",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2700"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Applied Microbiology and Biotechnology",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2402"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Molecular Medicine",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "1313"
+			}
+		}
+	}],
+	"relatedOpportunity": [{
+		"grantOpportunityId": 0,
+		"fundingBodyOpportunityId": "NOT FOUND",
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}, {
+			"language": "jp",
+			"value": "NOT FOUND"
+		}],
+		"description": "NOT FOUND"
+	}],
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "Senshin Medical Research Foundation"
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "Senshin Medical Research Foundation"
+		}]
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.smrf.or.jp/results/k_bunya/k_list_2023.html",
+		"createdOn": "2024-11-18T18:01:32",
+		"lastUpdateOn": "2024-11-18T18:01:32",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "1",
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	}
+}

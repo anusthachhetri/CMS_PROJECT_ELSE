@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns:c="http://n.validator.nu/custom-elements/" 
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
+  xmlns="http://relaxng.org/ns/structure/1.0" 
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <define name="template.elem">
+    <a:documentation> RELAX NG Schema for HTML 5: Web Components</a:documentation>
+    <a:documentation>Templates: &lt;template&gt;</a:documentation>
+    <a:documentation>No pattern from this file is needed in Core Profile</a:documentation>
+    <element name="template">
+      <interleave>
+        <ref name="template.inner"/>
+        <ref name="template.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  <define name="template.attrs">
+    <ref name="common.attrs"/>
+  </define>
+  <define name="template.inner">
+    <choice>
+      <ref name="common.inner.metadata"/>
+      <ref name="common.inner.flow"/>
+      <ref name="ol.inner"/>
+      <ref name="ul.inner"/>
+      <ref name="dl.inner"/>
+      <ref name="figure.inner"/>
+      <ref name="ruby.inner"/>
+      <ref name="object.inner.flow"/>
+      <ref name="object.inner.phrasing"/>
+      <ref name="video.inner.flow"/>
+      <ref name="video.inner.phrasing"/>
+      <ref name="audio.inner.flow"/>
+      <ref name="audio.inner.phrasing"/>
+      <ref name="table.inner"/>
+      <ref name="colgroup.inner"/>
+      <ref name="thead.inner"/>
+      <ref name="tbody.inner"/>
+      <ref name="tfoot.inner"/>
+      <ref name="tr.inner"/>
+      <ref name="fieldset.inner"/>
+      <ref name="select.inner"/>
+      <ref name="details.inner"/>
+    </choice>
+  </define>
+  <define name="common.elem.script-supporting" combine="choice">
+    <ref name="template.elem"/>
+  </define>
+  <!-- also allow <script> wherever <template> is allowed -->
+  <define name="common.elem.script-supporting" combine="choice">
+    <ref name="script.elem"/>
+  </define>
+  <define name="attr.any">
+    <attribute>
+      <anyName/>
+    </attribute>
+  </define>
+  <!--
+    not allowed in Core Profile
+    <define name="common.attrs.other" combine="interleave">
+    <optional>
+      <attribute name="is">
+        <!-\- common.data.custom.element.name -\->
+        <data type="string">
+          <param name="pattern">([a-z]+)[\-]+([a-zA-Z0-9]+)?</param>
+        </data>
+      </attribute>
+    </optional>
+  </define>-->
+</grammar>

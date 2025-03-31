@@ -1,0 +1,163 @@
+{
+	"batchId": "0e1fe861-34db-456d-b2f8-58be989c666a",
+	"ingestionId": "749461d0-ac95-415e-9265-f81e6c00f959",
+	"fundingBodyId": 809285888,
+	"homePage": "https://www.fondation-hoguet.be/spip/spip.php?rubrique7",
+	"status": "ACTIVE",
+	"preferredName": [{
+		"language": "fr",
+		"value": "Fondation Rose et Jean Hoguet"
+	}],
+	"acronym": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}],
+	"abbrevName": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}],
+	"alternateName": [{
+		"language": "en",
+		"value": "Rose and Jean Hoguet Foundation"
+	}],
+	"financeType": "PRI",
+	"activityType": "FOUNDA",
+	"profitabilityType": "NONPROF",
+	"country": "BEL",
+	"state": "NOTFOUND",
+	"identifier": [{
+		"type": "CROSSREFID",
+		"value": "NOTFOUND"
+	}],
+	"description": [{
+		"abstract": {
+			"language": "en",
+			"value": "The objective of the Rose and Jean Hoguet Foundation is to contribute to the development of scientific research in the field of cancer in Belgium, and we hope that the awardee will remain there in the future to build their career."
+		},
+		"source": "https://fondation-hoguet.be/spip/spip.php?article12"
+	}],
+	"awardSuccessRate": {
+		"percentage": 0,
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}]
+	},
+	"establishment": {
+		"establishmentYear": 1969,
+		"country": "BEL",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "In 1967, Jean Hoguet decided to make a very significant donation to the National Foundation against Cancer. This donation was ultimately reduced in favor of creating a private foundation, given the lack of dynamism that the National Foundation showed at that time. The Rose and Jean Hoguet Foundation was therefore created in 1969, and Jean Hoguet chaired the board until his death."
+			},
+			"source": "https://fondation-hoguet.be/spip/spip.php?article13"
+		}]
+	},
+	"fundingPolicy": [{
+		"abstract": {
+			"language": "en",
+			"value": "The Rose and Jean Hoguet Foundation awards grants, particularly to researchers preparing a doctoral thesis."
+		},
+		"source": "https://fondation-hoguet.be/spip/spip.php?rubrique9"
+	}],
+	"contactInformation": {
+		"link": "http://www.yf-ftian.ru/about",
+		"hasPostalAddress": {
+			"addressCountry": "BEL",
+			"addressRegion": "NOTFOUND",
+			"addressLocality": "Uccle",
+			"addressPostalCode": "1180",
+			"postOfficeBoxNumber": "NOTFOUND",
+			"streetAddress": "1 drève de Carloo"
+		}
+	},
+	"relation": {
+		"partOf": [0],
+		"hasPart": [0],
+		"affiliatedWith": [0],
+		"renamedAs": [0],
+		"continuationOf": [0],
+		"mergedWith": [0],
+		"incorporatedInto": [0],
+		"mergerOf": [0],
+		"incorporates": [0],
+		"isReplacedBy": [0],
+		"replaces": [0],
+		"splitFrom": [0],
+		"splitInto": [0]
+	},
+	"vatNumber": "NOTFOUND",
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.fondation-hoguet.be/spip/spip.php?rubrique7",
+		"createdOn": "2024-10-23T07:06:42.766Z",
+		"lastUpdateOn": "2024-10-23T07:06:42.766Z",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": 1,
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	},
+	"registry": {
+		"termsOfUse": {
+			"source": [""]
+		},
+		"fundingBodyDataset": {
+			"collectionCode": "SUP004",
+			"extended": false,
+			"tier": 4,
+			"source": [{
+				"name": "Rose and Jean Hoguet Foundation",
+				"url": "https://www.fondation-hoguet.be/spip/spip.php?rubrique7",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T07:06:42.766Z",
+				"captureEnd": "2024-10-23T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"opportunityDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T07:06:42.766Z",
+				"captureEnd": "2024-10-23T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"awardDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T07:06:42.766Z",
+				"captureEnd": "2024-10-23T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"publicationDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T07:06:42.766Z",
+				"captureEnd": "2024-10-23T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		}
+	}
+}

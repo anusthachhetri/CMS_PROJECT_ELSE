@@ -1,0 +1,28 @@
+{"fingerprints": {
+    "signature": "c648b72795b9a762d35bf4504aad45f6",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "Burdett_Trust.json",
+            "checksum": "169aa6d822432ccd95e5613ebd03ba8b"
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "total-errors": 0
+        },
+        "info": {
+            "date": "2025/02/21",
+            "os": "Windows 10 version 10.0",
+            "time": "19:20",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.93.1",
+                "specset-version": "2.93.1"
+            },
+            "ingestion-version": "6.8.0",
+            "commandline": "-Xmx1g -file \"D:\\\\Elsevier\\\\json\\\\21feb\\\\Burdett\\\\Burdett_Trust.json\" -log \"D:\\\\Elsevier\\\\json\\\\21feb\\\\Burdett\\\\file_t.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

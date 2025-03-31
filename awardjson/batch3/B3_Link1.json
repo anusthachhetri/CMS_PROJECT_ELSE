@@ -1,0 +1,209 @@
+{
+	"batchId": "16a1c17d-7781-42a1-8401-c0eb89807d0e",
+	"ingestionId": "d148a03e-0b7c-48e6-ab7f-64fd5c5c1442",
+	"grantAwardId": 807164651,
+	"fundingBodyAwardId": "SSS/2023/139",
+	"hasInstallment": [0],
+	"hasWorkPackage": [0],
+	"title": [{
+		"language": "en",
+		"value": "Reframing the yield gap: Integrating farmer knowledge, culture and agroecological conditions for sustainable rice yields in the Philippines"
+	}],
+	"identifier": [{
+		"type": "DOI",
+		"value": "NOT FOUND"
+	}],
+	"startDate": "2023-10-01T00:00:00",
+	"endDate": "2025-12-30T00:00:00",
+	"grantType": "RESEARCH",
+	"funderSchemeType": "Social Systems",
+	"homePage": {
+		"link": "https://www.aciar.gov.au/project/sss-2023-139",
+		"modifiedDate": "2023-10-26T00:00:00"
+	},
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "This project aims to develop an integrated farmer-led understanding of crop yield from a social and agroecological perspective, to engage centralised governance trends in rice production and management.The 'yield gap' can be understood as the difference between average farm yield and optimal yield potential, given certain biophysical conditions (van Ittersum et al, 2013). Research indicates that the efforts to address the yield gap among smallholders are hindered by knowledge gaps between bioengineers, field extensionists, and farmers. Previous understandings and applications of the yield gap concept among rice producers and managers have been narrow and technocratic, prioritising the top-down imposition of expert knowledge rather than an engagement with farmers' knowledge, skills and livelihood priorities through participatory processes.Drawing on farmer field school and family farm approaches, the study aims to examine how and why smallholder farmers and extensionists interpret, manage, and prioritise rice (and other crop) yields differently in the rural Philippines.The project will facilitate collaborative analysis, diagnosis, and learning to develop inclusive and participatory modalities of engaging with rice farming systems, livelihoods and institutional support in the upland and lowlands of Palawan Island, the Philippines. It will aid extension officers and bioengineers in reducing rice yield gaps, ensuring they align with smallholder knowledge, livelihood priorities, institutional support, and climate change adaptation needs."
+		},
+		"source": "https://www.aciar.gov.au/project/sss-2023-139"
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "Capacity-building"
+	}, {
+		"language": "en",
+		"value": "Crop improvement"
+	}, {
+		"language": "en",
+		"value": "Smallholders"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "© 2024 Australian Centre for International Agricultural Research (ACIAR)"
+		},
+		"source": "https://www.aciar.gov.au/project/sss-2023-139"
+	}],
+	"funds": [{
+		"fundingBodyProjectId": "NOT FOUND",
+		"hasPart": [{
+			"fundingBodyProjectId": "NOT FOUND",
+			"budget": [{
+				"currency": "AUD",
+				"amount": 500000
+			}]
+		}],
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"acronym": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "AUS",
+			"addressRegion": "ACT",
+			"addressLocality": "Bruce",
+			"addressPostalCode": "2617",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "38 Thynne St"
+		},
+		"link": "https://www.aciar.gov.au/project/sss-2023-139",
+		"budget": [{
+			"currency": "AUD",
+			"amount": 500000
+		}],
+		"status": "OPEN"
+	}],
+	"fundingDetail": {
+		"installment": [{
+			"index": 0,
+			"grantAwardInstallmentId": 1,
+			"financialYearStart": 0,
+			"financialYearEnd": 0,
+			"fundedAmount": [{
+				"currency": "AUD",
+				"amount": 500000
+			}]
+		}],
+		"fundingTotal": [{
+			"currency": "AUD",
+			"amount": 500000
+		}]
+	},
+	"awardeeDetail": [{
+		"awardeeAffiliationId": "807164651_A_0",
+		"name": [{
+			"language": "en",
+			"value": "The University of Melbourne"
+		}],
+		"role": "COORDINATOR",
+		"fundingTotal": [{
+			"currency": "AUD",
+			"amount": 500000
+		}],
+		"fundingBodyOrganizationId": "NOT FOUND",
+		"vatNumber": "NOT FOUND",
+		"link": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "AUS",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"identifier": [{
+			"type": "DUNS",
+			"value": "NOT FOUND"
+		}],
+		"departmentName": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"activityType": "Research Organization",
+		"affiliationOf": [{
+			"awardeePersonId": "807164651_P_0",
+			"name": [{
+				"language": "en",
+				"value": "Wolfram Dressler"
+			}],
+			"role": "PI",
+			"initials": "W",
+			"givenName": "Wolfram",
+			"familyName": "Dressler",
+			"emailAddress": "NOT FOUND",
+			"identifier": [{
+				"type": "ORCID",
+				"value": "NOT FOUND"
+			}],
+			"fundingBodyPersonId": "NOT FOUND"
+		}]
+	}],
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Agronomy and Crop Science",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "1102"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Soil Science",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "1111"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Agricultural and Biological Sciences",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "1101"
+			}
+		}
+	}],
+	"relatedOpportunity": [{
+		"grantOpportunityId": 0,
+		"fundingBodyOpportunityId": "NOT FOUND",
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"description": "NOT FOUND"
+	}],
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "Australian Centre for International Agricultural Research (ACIAR)"
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "Australian Centre for International Agricultural Research (ACIAR)"
+		}, {
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "The University of Melbourne"
+		}]
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.aciar.gov.au/project/sss-2023-139",
+		"createdOn": "2024-12-14T17:35:54",
+		"lastUpdateOn": "2024-12-14T17:35:54",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "1",
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	}
+}

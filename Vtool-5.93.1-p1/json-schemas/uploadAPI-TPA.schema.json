@@ -1,0 +1,91 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "JSON schema for TPA VTW Upload API; upload multiple CO",
+    "description": "JSON Schema to validate TPA JSON payloads for the upload of multiple CO to the VTW Upload API",
+    "properties": {
+        "@context": {"$ref": "definitions/generic.schema.json#/definitions/@context"},
+        "@type": {"$ref": "definitions/generic.schema.json#/definitions/typeIsCOs"},
+        "bam:hasContentObjects": {"$ref": "#/definitions/bam:hasContentObjects"}
+    },
+    "required": [
+        "@type",
+        "@context",
+        "bam:hasContentObjects"
+    ],
+    "additionalProperties": false,
+    "definitions": {
+        "bam:hasContentObjects": {
+            "title": "Content Objects in the payload",
+            "type": "array",
+            "items": {"$ref": "#/definitions/ContentObjectModel"}
+        },
+        "ContentObjectModel": {
+            "title": "Content Object object model",
+            "description": "object containing the Content Objects properties",
+            "type": "object",
+            "required": [
+                "@type",
+                "dct:title",
+                "dct:type",
+                "prism:aggregationType"
+            ],
+            "oneOf": [
+                {"required": [
+                    "ecm:identifier",
+                    "@id"
+                ]},
+                {"required": [
+                    "bam:addsOnTo",
+                    "bam:addOnType"
+                ]}
+            ],
+            "dependencies": {
+                "@id": ["ecm:identifier"],
+                "ecm:identifier": ["@id"],
+                "bam:addOnType": ["bam:addsOnTo"],
+                "bam:addsOnTo": ["bam:addOnType"]
+            },
+            "additionalProperties": false,
+            "properties": {
+                "@type": {"$ref": "definitions/generic.schema.json#/definitions/typeIsMetadata"},
+                "@context": {"$ref": "definitions/generic.schema.json#/definitions/@context"},
+                "@id": {"$ref": "definitions/generic.schema.json#/definitions/@id"},
+                "ecm:identifier": {"$ref": "definitions/co.schema.json#/definitions/ecm:identifier"},
+                "dct:identifier": {"$ref": "definitions/co.schema.json#/definitions/dct:identifier"},
+                "prism:aggregationType": {"$ref": "definitions/co.schema.json#/definitions/prism:aggregationType"},
+                "dct:type": {"$ref": "definitions/co.schema.json#/definitions/dct:type"},
+                "obs:publisherItemType": {"$ref": "definitions/co.schema.json#/definitions/obs:publisherItemType"},
+                "obs:publisherStage": {"$ref": "definitions/generation.schema.json#/definitions/obs:publisherStage"},
+                "prism:channel": {"$ref": "definitions/co.schema.json#/definitions/prism:channel"},
+                "dct:isPartOf": {"$ref": "definitions/co.schema.json#/definitions/dct:isPartOf"},
+                "dct:title": {"$ref": "definitions/co.schema.json#/definitions/dct:title"},
+                "dct:creator": {"$ref": "definitions/co.schema.json#/definitions/dct:creator"},
+                "dct:date": {"$ref": "definitions/co.schema.json#/definitions/dct:date"},
+                "bam:year": {"$ref": "definitions/co.schema.json#/definitions/bam:year"},
+                "dct:created": {"$ref": "definitions/co.schema.json#/definitions/dct:created"},
+                "dct:modified": {"$ref": "definitions/co.schema.json#/definitions/dct:modified"},
+                "dct:publisher": {"$ref": "definitions/co.schema.json#/definitions/dct:publisher"},
+                "dct:abstract": {"$ref": "definitions/co.schema.json#/definitions/dct:abstract"},
+                "dct:language": {"$ref": "definitions/co.schema.json#/definitions/dct:language"},
+                "prism:expirationDate": {"$ref": "definitions/co.schema.json#/definitions/prism:expirationDate"},
+                "prism:keyword": {"$ref": "definitions/co.schema.json#/definitions/prism:keyword"},
+                "prism:publicationName": {"$ref": "definitions/co.schema.json#/definitions/prism:publicationName"},
+                "prism:issn": {"$ref": "definitions/co.schema.json#/definitions/prism:issn"},
+                "prism:eissn": {"$ref": "definitions/co.schema.json#/definitions/prism:eissn"},
+                "prism:isbn": {"$ref": "definitions/co.schema.json#/definitions/prism:isbn"},
+                "prism:volume": {"$ref": "definitions/co.schema.json#/definitions/prism:volume"},
+                "prism:number": {"$ref": "definitions/co.schema.json#/definitions/prism:number"},
+                "prism:pageRange": {"$ref": "definitions/co.schema.json#/definitions/prism:pageRange"},
+                "prism:startingPage": {"$ref": "definitions/co.schema.json#/definitions/prism:startingPage"},
+                "prism:endingPage": {"$ref": "definitions/co.schema.json#/definitions/prism:endingPage"},
+                "prism:coverDisplayDate": {"$ref": "definitions/co.schema.json#/definitions/prism:coverDisplayDate"}, 
+                "prism:coverDate": {"$ref": "definitions/co.schema.json#/definitions/prism:coverDate"}, 
+                "bam:project": {"$ref": "definitions/co.schema.json#/definitions/bam:project"},
+                "prism:distributor": {"$ref": "definitions/co.schema.json#/definitions/prism:distributor"},
+                "prism:doi": {"$ref": "definitions/co.schema.json#/definitions/prism:doi"},
+                "bam:hasAssetMetadata": {"$ref": "definitions/asset.schema.json#/definitions/bam:hasAssetMetadata"},
+                "bam:hasGeneration": {"$ref": "definitions/generation.schema.json#/definitions/bam:hasGeneration"}
+            }
+        }
+    }
+}

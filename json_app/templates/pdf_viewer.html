@@ -1,0 +1,496 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PDF Viewer with Search Navigation</title>
+    {% load static %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .search-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .search-container input {
+            padding: 8px;
+            font-size: 14px;
+            width: 250px;
+        }
+
+        .search-container button {
+            padding: 8px 12px;
+            font-size: 14px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .search-controls {
+            margin-top: 10px;
+        }
+
+        .search-result {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .pdf-container {
+            width: 80%;
+            height: 600px;
+            border: 1px solid #ccc;
+            overflow-y: auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        canvas {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h2 >PDF Viewer Of Funding Body Data</h2>
+
+    <!-- Search Input and Buttons -->
+    <div class="search-container">
+        <input type="text" id="searchText" placeholder="Enter text to search">
+        <button onclick="searchText()">Search</button>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="button-group">
+        <button onclick="goToPreviousMatch()">Previous</button>
+        <span class="search-result" id="searchResult">0/0</span>
+        <button onclick="goToNextMatch()">Next</button>
+    </div>
+
+    <!-- PDF Viewer -->
+    <div class="pdf-container" id="pdf-container"></div>
+
+    <script>
+        const pdfPath = "{{ pdf_path }}";  // Ensure this variable is passed correctly
+        const pdfContainer = document.getElementById("pdf-container");
+        let pdfDoc = null;
+        const scale = 1.5;
+        let searchMatches = []; // Store page numbers of matches
+        let currentMatchIndex = -1; // Index for navigation
+        let totalMatches = 0;
+
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+
+        // Load and render the entire PDF
+        pdfjsLib.getDocument(pdfPath).promise.then(doc => {
+            pdfDoc = doc;
+            renderAllPages();
+        }).catch(error => {
+            console.error("Error loading PDF:", error);
+        });
+
+        function renderAllPages() {
+            for (let i = 1; i <= pdfDoc.numPages; i++) {
+                pdfDoc.getPage(i).then(page => {
+                    const viewport = page.getViewport({ scale });
+                    const canvas = document.createElement("canvas");
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+                    pdfContainer.appendChild(canvas);
+
+                    const ctx = canvas.getContext("2d");
+                    const renderContext = { canvasContext: ctx, viewport };
+                    page.render(renderContext);
+                });
+            }
+        }
+
+        async function searchText() {
+            const searchValue = document.getElementById("searchText").value.toLowerCase();
+            if (!searchValue) {
+                alert("Please enter a word to search.");
+                return;
+            }
+
+            // Reset search results
+            searchMatches = [];
+            totalMatches = 0;
+            currentMatchIndex = -1;
+            const searchResultElement = document.getElementById("searchResult");
+            searchResultElement.textContent = "0/0";
+
+            // Search all pages
+            for (let i = 1; i <= pdfDoc.numPages; i++) {
+                const page = await pdfDoc.getPage(i);
+                const textContent = await page.getTextContent();
+                const textItems = textContent.items.map(item => item.str.toLowerCase());
+
+                if (textItems.some(text => text.includes(searchValue))) {
+                    searchMatches.push(i);
+                }
+            }
+
+            totalMatches = searchMatches.length;
+            if (totalMatches > 0) {
+                currentMatchIndex = 0; // Start with the first match
+                goToMatch(currentMatchIndex);
+                searchResultElement.textContent = `1/${totalMatches}`;
+            } else {
+                alert("No matches found.");
+            }
+        }
+
+        function goToMatch(index) {
+            if (index >= 0 && index < totalMatches) {
+                const pageNumber = searchMatches[index];
+                const canvas = pdfContainer.children[pageNumber - 1];
+                if (canvas) {
+                    canvas.scrollIntoView({ behavior: "smooth" });
+                }
+            }
+        }
+
+        function goToNextMatch() {
+            if (totalMatches === 0) {
+                alert("No matches to navigate.");
+                return;
+            }
+
+            if (currentMatchIndex < totalMatches - 1) {
+                currentMatchIndex++;
+                goToMatch(currentMatchIndex);
+                updateMatchCounter();
+            }
+        }
+
+        function goToPreviousMatch() {
+            if (totalMatches === 0) {
+                alert("No matches to navigate.");
+                return;
+            }
+
+            if (currentMatchIndex > 0) {
+                currentMatchIndex--;
+                goToMatch(currentMatchIndex);
+                updateMatchCounter();
+            }
+        }
+
+        function updateMatchCounter() {
+            const searchResultElement = document.getElementById("searchResult");
+            searchResultElement.textContent = `${currentMatchIndex + 1}/${totalMatches}`;
+        }
+    </script>
+
+</body>
+</html> {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PDF Viewer with Search Navigation</title>
+    {% load static %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .search-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .search-container input {
+            padding: 8px;
+            font-size: 14px;
+            width: 250px;
+        }
+
+        .search-container button {
+            padding: 8px 12px;
+            font-size: 14px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .search-controls {
+            margin-top: 10px;
+        }
+
+        .search-result {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .pdf-container {
+            width: 90%;
+            height: 600px;
+            border: 1px solid #ccc;
+            overflow-y: auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        canvas {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .textLayer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            font-family: sans-serif;
+            font-size: 10px;
+            line-height: 1.2;
+            white-space: pre-wrap;
+            transform-origin: top left;
+        }
+
+        .textLayer span {
+            position: absolute;
+            transform: scale(1);
+            transform-origin: 0% 0%;
+            color: transparent;
+        }
+
+        .highlight {
+            background-color: yellow;
+            color: black;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h2>PDF Viewer Of Funding Body Data</h2>
+
+    <!-- Search Input and Buttons -->
+    <div class="search-container">
+        <input type="text" id="searchText" placeholder="Enter text to search">
+        <button onclick="searchText()">Search</button>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="button-group">
+        <button onclick="goToPreviousMatch()">Previous</button>
+        <span class="search-result" id="searchResult">0/0</span>
+        <button onclick="goToNextMatch()">Next</button>
+    </div>
+
+    <!-- PDF Viewer -->
+    <div class="pdf-container" id="pdf-container"></div>
+
+    <script>
+        const pdfPath = "{{ pdf_path }}"; // Ensure this variable is passed correctly
+        const pdfContainer = document.getElementById("pdf-container");
+        let pdfDoc = null;
+        const scale = 1.5;
+        let searchMatches = []; // Store match locations
+        let currentMatchIndex = -1; // Index for navigation
+        let totalMatches = 0;
+
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+
+        // Load and render the entire PDF
+        pdfjsLib.getDocument(pdfPath).promise.then(doc => {
+            pdfDoc = doc;
+            renderAllPages();
+        }).catch(error => {
+            console.error("Error loading PDF:", error);
+        });
+
+        async function renderAllPages() {
+            for (let i = 1; i <= pdfDoc.numPages; i++) {
+                const page = await pdfDoc.getPage(i);
+                const viewport = page.getViewport({ scale });
+
+                const container = document.createElement("div");
+                container.style.position = "relative";
+
+                const canvas = document.createElement("canvas");
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const textLayer = document.createElement("div");
+                textLayer.classList.add("textLayer");
+                textLayer.style.height = `${viewport.height}px`;
+                textLayer.style.width = `${viewport.width}px`;
+
+                container.appendChild(canvas);
+                container.appendChild(textLayer);
+                pdfContainer.appendChild(container);
+
+                const ctx = canvas.getContext("2d");
+                const renderContext = { canvasContext: ctx, viewport };
+                await page.render(renderContext);
+
+                const textContent = await page.getTextContent();
+                textContent.items.forEach(textItem => {
+                    const span = document.createElement("span");
+                    span.textContent = textItem.str;
+                    const { transform, width, height } = textItem;
+
+                    // Scale positions to match the viewport
+                    const x = transform[4] * viewport.scale;
+                    const y = transform[5] * viewport.scale;
+
+                    span.style.left = `${x}px`;
+                    span.style.top = `${y - height}px`;
+                    span.style.width = `${width * viewport.scale}px`;
+                    span.style.height = `${height * viewport.scale}px`;
+
+                    textLayer.appendChild(span);
+                });
+            }
+        }
+
+        async function searchText() {
+            const searchValue = document.getElementById("searchText").value.toLowerCase();
+            if (!searchValue) {
+                alert("Please enter a word to search.");
+                return;
+            }
+
+            searchMatches = [];
+            totalMatches = 0;
+            currentMatchIndex = -1;
+
+            document.getElementById("searchResult").textContent = "0/0";
+
+            for (let i = 1; i <= pdfDoc.numPages; i++) {
+                const page = await pdfDoc.getPage(i);
+                const textContent = await page.getTextContent();
+
+                textContent.items.forEach(item => {
+                    if (item.str.toLowerCase().includes(searchValue)) {
+                        searchMatches.push({ page: i, match: item.str });
+                    }
+                });
+            }
+
+            totalMatches = searchMatches.length;
+            if (totalMatches > 0) {
+                currentMatchIndex = 0;
+                highlightMatch(currentMatchIndex);
+                updateMatchCounter();
+            } else {
+                alert("No matches found.");
+            }
+        }
+
+        function highlightMatch(index) {
+            if (index >= 0 && index < totalMatches) {
+                const match = searchMatches[index];
+                const pageContainer = pdfContainer.children[match.page - 1];
+                const textLayer = pageContainer.querySelector(".textLayer");
+
+                textLayer.querySelectorAll("span").forEach(span => {
+                    if (span.textContent.includes(match.match)) {
+                        span.classList.add("highlight");
+                        span.scrollIntoView({ behavior: "smooth" });
+                    } else {
+                        span.classList.remove("highlight");
+                    }
+                });
+            }
+        }
+
+        function goToNextMatch() {
+            if (currentMatchIndex < totalMatches - 1) {
+                currentMatchIndex++;
+                highlightMatch(currentMatchIndex);
+                updateMatchCounter();
+            }
+        }
+
+        function goToPreviousMatch() {
+            if (currentMatchIndex > 0) {
+                currentMatchIndex--;
+                highlightMatch(currentMatchIndex);
+                updateMatchCounter();
+            }
+        }
+
+        function updateMatchCounter() {
+            document.getElementById("searchResult").textContent = `${currentMatchIndex + 1}/${totalMatches}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+{
+  "batchId": "f39194c2-09b1-448d-80fe-c63ba464e99e",
+  "ingestionId": "48117d34-fa8f-4438-8f15-d36c4e2b9b06",
+  "fundingBodyId": 100000042,
+  "homePage": "https://www.amgenfoundation.org/",
+  "status": "ACTIVE",
+  "preferredName": [
+    {
+      "language": "en",
+      "value": "Amgen Foundation"
+    }
+  ],
+  "alternateName": [
+    {
+      "language": "en",
+      "value": "Amgen Foundation, Inc."
+    }
+  ],
+  "financeType": "PRI",
+  "activityType": "FOUNDA",
+  "profitabilityType": "NONPROF",
+  "country": "usa",
+  "state": "CA",
+  "identifier": [
+    {
+      "type": "USEIN",
+      "value": "770252898"
+    }
+  ],
+  "description": [
+    {
+      "abstract": {
+        "language": "en",
+        "value": "<p>Inspiring The Scientists of Tomorrow</p><p>The Amgen Foundation seeks to advance excellence in science education to inspire the next generation of innovators, and invest in strengthening communities where Amgen staff members live and work.</p>"
+      },
+      "source": "https://www.amgen.com/responsibility/healthy-society/community-investment/amgen-foundation"
+    },
+    {
+      "abstract": {
+        "language": "en",
+        "value": "<p>About the Amgen Foundation</p><p>We work to advance science literacy and inspire the next generation of innovators around the world.\r\n\r\n</p><p>Committed to Science Education</p><p>The Amgen Foundation plays a key role in Amgen's commitment to improving the lives of others. As Amgen's principal channel for corporate philanthropy, we work with expert partners to provide best-in-class science education programs free of cost to teachers and students. In 2022, our work reached 23 million students and educators worldwide.</p>"
+      },
+      "source": "https://www.amgenfoundation.org/about"
+    }
+  ],
+  "establishment": {
+    "establishmentYear": 1991,
+    "country": "usa",
+    "description": [
+      {
+        "abstract": {
+          "language": "en",
+          "value": "<p>The Foundation, established in 1991, is an integral component of Amgen's commitment to dramatically improve people's lives.</p>"
+        },
+        "source": "https://www.amgen.com/responsibility/healthy-society/community-investment/amgen-foundation"
+      }
+    ]
+  },
+  "fundingPolicy": [
+    {
+      "abstract": {
+        "language": "en",
+        "value": "<p>The Amgen Foundation, Inc. will consider grant requests from nonprofit organizations that are recognized by the Internal Revenue Service as tax exempt public charities under sections 501(c)(3) and 509(a)(1), (2), (3) of the Internal Revenue Code, located in the United States and Puerto Rico. In addition, the Amgen Foundation will consider requests for funding from governmental organizations located in the United States where the purpose of the grant is to support a charitable, educational, scientific or literary purpose. Thus, eligible grantees may include public elementary and secondary schools, as well as public colleges and universities, public libraries and public hospitals. Successful requests will fall within both the current eligibility guidelines and funding priority areas established by the Amgen Foundation. The Amgen Foundation has established grantmaking partnerships with qualified intermediary partners to manage donations to organizations chartered outside of the U.S.</p> "
+      },
+      "source": "https://www.amgen.com/responsibility/healthy-society/community-investment/amgen-foundation/amgen-foundation-grants/amgen-foundation-grant-guidelines"
+    }
+  ],
+  "contactInformation": {
+    "link": "https://wwwext.amgen.com/privacy-statement",
+    "hasPostalAddress": {
+      "addressCountry": "usa",
+      "addressRegion": "CA",
+      "addressLocality": "Thousand Oaks",
+      "addressPostalCode": "91320",
+      "streetAddress": "One Amgen Center Drive MS 28-4-A"
+    }
+  },
+  "relation": {
+    "partOf": [
+      100002429
+    ]
+  },
+  "hasProvenance": {
+    "wasAttributedTo": "SUP001",
+    "derivedFrom": "https://www.amgenfoundation.org/",
+    "createdOn": "2009-07-06T18:53:11",
+    "lastUpdateOn": "2024-02-07T22:12:02",
+    "contactPoint": "xxxxx@xxx.com",
+    "version": "38",
+    "hidden": false,
+    "defunct": false,
+    "status": "UPDATE"
+  },
+  "registry": {
+    "fundingBodyDataset": {
+      "collectionCode": "SUP001",
+      "extended": true,
+      "tier": 3,
+      "source": [
+        {
+          "name": "Amgen Foundation",
+          "url": "https://www.amgenfoundation.org/",
+          "status": "ACTIVE",
+          "frequency": "SIGNAL-BASED",
+          "captureStart": "2009-07-06T18:53:00"
+        }
+      ]
+    },
+    "opportunityDataset": {
+      "capture": true,
+      "collectionCode": "SUP001",
+      "source": [
+        {
+          "name": "Amgen Foundation Grants",
+          "url": "https://www.amgen.com/responsibility/healthy-society/community-investment/amgen-foundation/amgen-foundation-grants",
+          "status": "ACTIVE",
+          "frequency": "SIGNAL-BASED",
+          "captureStart": "2009-07-06T18:53:00"
+        }
+      ]
+    },
+    "awardDataset": {
+      "capture": true,
+      "collectionCode": "SUP001",
+      "source": [
+        {
+          "name": "Amgen Foundation Grants",
+          "url": "https://www.amgen.com/about/how-we-operate/policies-practices-and-disclosures/transparency-disclosures/donation-and-grant-recipients/amgen-foundation-grants",
+          "status": "ACTIVE",
+          "frequency": "SIGNAL-BASED",
+          "captureStart": "2009-07-06T18:53:00"
+        }
+      ]
+    },
+    "publicationDataset": {
+      "capture": false,
+      "collectionCode": "NOTSPECIFIED"
+    }
+  }
+}

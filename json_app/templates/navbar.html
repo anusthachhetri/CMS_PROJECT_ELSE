@@ -1,0 +1,53 @@
+ <!-- navbar.html -->
+ 
+ <nav class="navbar">
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'funding_body' %}">Funding Body</a></li>
+        <li><a href="{% url 'awards' %}">Awards</a></li>
+        <li><a href="{% url 'opportunity' %}">Opportunities</a></li>
+    </ul>
+</nav>
+
+<style>
+    /* Navbar container styling */
+    .navbar {
+        background-color: #f5a142; /* Match the header color */
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 1560px;
+    }
+
+    /* Unordered list styling */
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+        margin-right: 150px
+    }
+
+    /* List item styling */
+    .navbar ul li {
+        display: inline;
+    }
+
+    /* Link styling */
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    /* Link hover effect */
+    .navbar ul li a:hover {
+        background-color: #e3ba88; /* Slightly lighter color */
+    }
+</style>  
+

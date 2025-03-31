@@ -1,0 +1,74 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "generic definitions",
+    "description": "This schema contains the generic definitions to be used by other JSON schema. Do not use standalone",
+    "definitions": {
+        "@context": {
+            "title": "context file",
+            "description": "ref to the context file",
+            "type": "string",
+            "format": "uri"
+        },
+        "@id": {
+            "title": "id of object: CO, Asset, Generation, creator, etc",
+            "type": "string",
+            "format": "uri"
+        },
+        "typeIsCOs": {
+            "title": "object of type of bam:ContentObjects",
+            "type": "string",
+            "pattern": "^bam:ContentObjects$"
+        },
+        "typeIsMetadata": {
+            "title": "object of type bam:Metadata",
+            "type": "string",
+            "pattern": "^bam:Metadata$"
+        },
+        "typeIsAssetMetadata": {
+            "title": "object of type bam:AssetMetadata",
+            "type": "string",
+            "pattern": "^bam:AssetMetadata$"
+        },
+        "typeIsGeneration": {
+            "title": "object of type bam:Generation",
+            "type": "string",
+            "pattern": "^bam:Generation$"
+        },
+        "bam:availableOnline": {
+            "title": "Basic Asset Metadata: Available Online (date)",
+            "description": "The first date on which any version of the resource is published on any online platform",
+            "type": "string",
+            "format": "date-time"
+        },
+        "bam:originalAvailableOnline": {
+            "title": "Basic Asset Metadata: Original Available Online (date)",
+            "description": "The first date on which any version of the resource has been published on any platform, prior to acquisition by Elsevier",
+            "type": "string",
+            "format": "date-time"
+        },
+        "bam:originalVorAvailableOnline": {
+            "title": "Basic Asset Metadata: Original Version-of-Record Available Online (date)",
+            "description": "The first date on which the first final version (Version of Record) of the resource has been published on any platform prior to acquisition by Elsevier",
+            "type": "string",
+            "format": "date-time"
+        },
+        "bam:vorAvailableOnline": {
+            "title": "Basic Asset Metadata: Version-of-Record Available Online (date)",
+            "description": "The date upon which the first final version of the resource is published on any of Elsevier's online platforms.",
+            "type": "string",
+            "format": "date-time"
+        },
+        "bam:typesetModel": {
+            "title": "The typeset model used to create an article PDF",
+            "description": "https://confluence.cbsels.com/display/VUD/bam%3AtypesetModel",
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9]{1,8}$"
+        },
+        "bam:typesetModelVersion": {
+            "title": "The version of the typeset model used to create an article PDF",
+            "description": "https://confluence.cbsels.com/display/VUD/bam%3AtypesetModelVersion",
+            "type": "string",
+            "pattern": "^(\\d{1,2}\\.)?(\\d{1,2}\\.)?(\\d{1,2})$"
+        }
+    }
+}

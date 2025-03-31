@@ -1,0 +1,14 @@
+{
+  "name": "Linked Elsevier Documents",
+  "manifest_version": 2,
+  "version": "0.1",
+  "icons": {"48": "img/icon-48.png"},
+  "description": "This extension gleans embedded Linked Data from standards compliant Linked Elsevier Documents.",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["js/jquery-3.4.1.min.js", "js/jquery.scrollTo.min.js", "js/bootstrap.bundle.min.js", "js/popper.min.js", "js/jsonld.min.js", "js/rdflib.min.js", "js/ledviewer.js", "js/shacl.js"],
+      "css": ["css/bootstrap.min.css", "css/ledviewer.css"]
+    }
+  ]
+}

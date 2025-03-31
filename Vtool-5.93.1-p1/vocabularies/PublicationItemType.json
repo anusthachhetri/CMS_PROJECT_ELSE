@@ -1,0 +1,2209 @@
+{
+    "@context": {
+        "@base": "https://data.elsevier.com/publishing/schema/ecmv/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dct": "http://purl.org/dc/terms/",
+        "edm": "https://data.elsevier.com/schema/edm/",
+        "ecmv": "https://data.elsevier.com/publishing/schema/ecmv/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "idm": "https://data.elsevier.com/schema/idm/",
+        "idtype": "https://data.elsevier.com/e/identifier/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "pav": "http://purl.org/pav/",
+        "pit": "http://data.elsevier.com/vocabulary/ElsevierPubItemTypes/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "vann": "http://purl.org/vocab/vann/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "keyword": {"@id": "dcat:keyword"},
+        "theme": {"@id": "dcat:theme"},
+        "created": {
+            "@id": "dct:created",
+            "@type": "xsd:dateTime"
+        },
+        "description": {
+            "@id": "dct:description",
+            "@type": "xsd:string"
+        },
+        "modified": {
+            "@id": "dct:modified",
+            "@type": "xsd:dateTime"
+        },
+        "apcItem": {
+            "@id": "ecmv:apcItem",
+            "@type": "@id"
+        },
+        "capDeliverable": {
+            "@id": "ecmv:capDeliverable",
+            "@type": "@id"
+        },
+        "crossmarkLogo": {
+            "@id": "ecmv:crossmarkLogo",
+            "@type": "@id"
+        },
+        "excludedInDTD": {
+            "@id": "ecmv:excludedInDTD",
+            "@type": "@id"
+        },
+        "includedInDTD": {
+            "@id": "ecmv:includedInDTD",
+            "@type": "@id"
+        },
+        "individualItem": {
+            "@id": "ecmv:individualItem",
+            "@type": "@id"
+        },
+        "isPublicationItemTypeFor": {
+            "@id": "ecmv:isPublicationItemTypeFor",
+            "@type": "@id"
+        },
+        "kpiItem": {
+            "@id": "ecmv:kpiItem",
+            "@type": "@id"
+        },
+        "s5DeliveryRequired": {
+            "@id": "ecmv:s5DeliveryRequired",
+            "@type": "@id"
+        },
+        "pdfOpeningMode": {
+            "@id": "ecmv:pdfOpeningMode",
+            "@type": "@id"
+        },
+        "pubMedDeliveryRequired": {
+            "@id": "ecmv:pubMedDeliveryRequired",
+            "@type": "@id"
+        },
+        "altLabel": {
+            "@id": "skos:altLabel",
+            "@type": "xsd:Literal"  
+        },
+        "Collection": {"@id": "skos:Collection"},
+        "Concept": {
+            "@id": "skos:Concept",
+            "@context": {"@vocab": "https://data.elsevier.com/publishing/schema/ecmv/"}
+        },
+        "definition": {
+            "@id": "skos:definition",
+            "@type": "xsd:Literal"
+        },
+        "member": {
+            "@id": "skos:member",
+            "@type": "@id"
+        },
+        "prefLabel": {
+            "@id": "skos:prefLabel",
+            "@type": "xsd:string"
+        },
+        "label": {
+            "@id": "rdfs:label",
+            "@type": "xsd:string"
+        },
+        "comment": {
+            "@id": "rdfs:comment",
+            "@type": "xsd:Literal"
+        },
+        "Ontology": "owl:Ontology",
+        "imports": {
+            "@id": "owl:imports",
+            "@type": "@id"
+        },
+        "DatatypeProperty": {
+            "@id": "owl:DatatypeProperty",
+            "@type": "@id"
+        },
+        "priorVersion": {
+            "@id": "owl:priorVersion",
+            "@type": "xsd:anyURI"
+        },
+        "versionIRI": {
+            "@id": "owl:versionIRI",
+            "@type": "xsd:anyURI"
+        },
+        "versionInfo": {
+            "@id": "owl:versionInfo",
+            "@type": "xsd:string"
+        },
+        "lastUpdateOn": {
+            "@id": "pav:lastUpdateOn",
+            "@type": "xsd:date"
+        },
+        "domainIncludes": {
+            "@id": "schema:domainIncludes",
+            "@type": "@id"
+        },
+        "rangeIncludes": {
+            "@id": "schema:rangeIncludes",
+            "@type": "@id"
+        },
+        "anyURI": {"@id": "xsd:anyURI"},
+        "boolean": {"@id": "xsd:boolean"},
+        "preferredNamespacePrefix": {
+            "@id": "vann:preferredNamespacePrefix",
+            "@type": "xsd:string"
+        },
+        "preferredNamespaceUri": {
+            "@id": "vann:preferredNamespaceUri",
+            "@type": "xsd:anyURI"
+        },
+        "id": {
+            "@type": "@id",
+            "@id": "@id"
+        },
+        "type": {
+            "@id": "@type",
+            "@type": "@id"
+        },
+        "graph": {"@id": "@graph"}
+    },
+    "graph": [
+        {
+            "id": "https://data.elsevier.com/publishing/schema/ecmv/",
+            "type": "Ontology",
+            "created": "2023-02-21T18:20:14",
+            "description": "The Elsevier Content Model Vocabulary contains all the entity types, attributes and relations used in the Elsevier Content Model.",
+            "modified": "2023-04-30T08:13:59",
+            "lastUpdateOn": "2023-04-30",
+            "preferredNamespacePrefix": "ecmv",
+            "preferredNamespaceUri": "https://data.elsevier.com/publishing/schema/ecmv/",
+            "label": "Elsevier Content Model Vocabulary (ECMV)",
+            "foaf:homepage": [
+               "https://elsevier.atlassian.net/wiki/spaces/VUD/pages/119601137208538/ECMV+Elsevier+Content+Model+Vocabularies",
+               "https://data.elsevier.com/publishing/schema/ecmv/",
+               "https://data.arch.elsevier.systems/publishing/schema/ecmv/"
+            ],
+            "priorVersion": "https://data.elsevier.com/publishing/schema/ecmv/1.0.1/",
+            "versionIRI": "https://data.elsevier.com/publishing/schema/ecmv/1.0.2",
+            "versionInfo": "v1.0.2",
+            "keyword": ["URA"],
+            "theme": "Architecture",
+            "imports": [
+               "https://data.elsevier.com/schema/edm/",
+               "https://data.elsevier.com/research/schema/rv/"
+            ]
+        },
+        {
+            "id": "PIT",
+            "type": "Collection",
+            "member": [
+               {"id": "pit:ABS"},
+               {"id": "pit:ACK"},
+               {"id": "pit:ADD"},
+               {"id": "pit:ADV"},
+               {"id": "pit:ANN"},
+               {"id": "pit:APP"},
+               {"id": "pit:BCC"},
+               {"id": "pit:BIB"},
+               {"id": "pit:BIO"},
+               {"id": "pit:BK"},
+               {"id": "pit:BPH"},
+               {"id": "pit:BRV"},
+               {"id": "pit:CAL"},
+               {"id": "pit:CHP"},
+               {"id": "pit:CNF"},
+               {"id": "pit:COM"},
+               {"id": "pit:CON"},
+               {"id": "pit:COP"},
+               {"id": "pit:COR"},
+               {"id": "pit:CRP"},
+               {"id": "pit:CTR"},
+               {"id": "pit:DAT"},
+               {"id": "pit:DCT"},
+               {"id": "pit:DED"},
+               {"id": "pit:DIS"},
+               {"id": "pit:DUP"},
+               {"id": "pit:EDB"},
+               {"id": "pit:EDI"},
+               {"id": "pit:ENC"},
+               {"id": "pit:EOC"},
+               {"id": "pit:ERR"},
+               {"id": "pit:EXM"},
+               {"id": "pit:FLA"},
+               {"id": "pit:FOR"},
+               {"id": "pit:GLS"},
+               {"id": "pit:HTU"},
+               {"id": "pit:IDX"},
+               {"id": "pit:IND"},
+               {"id": "pit:INS"},
+               {"id": "pit:ITR"},
+               {"id": "pit:LIT"},
+               {"id": "pit:LRW"},
+               {"id": "pit:LST"},
+               {"id": "pit:MIC"},
+               {"id": "pit:MIS"},
+               {"id": "pit:NWS"},
+               {"id": "pit:OCN"},
+               {"id": "pit:OSP"},
+               {"id": "pit:OVW"},
+               {"id": "pit:PAR"},
+               {"id": "pit:PGL"},
+               {"id": "pit:PNT"},
+               {"id": "pit:PRE"},
+               {"id": "pit:PRO"},
+               {"id": "pit:PRP"},
+               {"id": "pit:PRR"},
+               {"id": "pit:PRV"},
+               {"id": "pit:PUB"},
+               {"id": "pit:REM"},
+               {"id": "pit:REQ"},
+               {"id": "pit:RET"},
+               {"id": "pit:REV"},
+               {"id": "pit:RPL"},
+               {"id": "pit:RRA"},
+               {"id": "pit:RRP"},
+               {"id": "pit:RPR"},
+               {"id": "pit:RTI"},
+               {"id": "pit:SCO"},
+               {"id": "pit:SCP"},
+               {"id": "pit:SSU"},
+               {"id": "pit:TPG"},
+               {"id": "pit:VID"},
+               {"id": "pit:ZZZ"}
+            ],
+            "label": "Publication Item Type Collection (List of Values)",
+            "prefLabel": "PIT",
+            "definition": "The concepts belonging to this collection are the enumeration of values for Publication Item Types"
+        },
+        {
+            "id": "apcItem",
+            "type": "DatatypeProperty",
+            "domainIncludes": {"id": "skos:Concept"},
+            "rangeIncludes": {"id": "xsd:boolean"},
+            "definition": "Whether or not items of the specific publication item type have an Article Publication Charge as listed on [Open_Access_PITs_section](https://internal.elsevier.support/gjp/answer/open-access-guide-for-journal-managers#Open_Access_PITs_section). These items are chargeble in OA journals, and in hybrid journals only these items can be made open access.",
+            "label": "APC item"
+        },
+        {
+            "id": "capDeliverable",
+            "type": "DatatypeProperty",
+            "domainIncludes": {"id": "skos:Concept"},
+            "rangeIncludes": {"id": "skos:Concept"},
+            "label": "CAP deliverable",
+            "definition": "The minimum requirements for CAP delivery for this PIT. The minimum requirement acts as the default for delivery. The requirements for deliverables can be increased - if needed - via a remark to the supplier. For example: `full text XML required` (if the default happened to be set to `Head-and-tail` or lighter). The requirments can only be <i>increased</i>, <b>not</b> decreased to a lighter deliverable. Expected values are listed in [CAP Deliverable Collection](ecmv:XML_WEIGHT). See also [XML Weights for Journals](VUD:XML Weights for Journals)."
+        },
+        {
+            "id": "crossmarkLogo",
+            "type": "DatatypeProperty",
+            "domainIncludes": {"id": "skos:Concept"},
+            "rangeIncludes": {"id": "xsd:boolean"},
+            "definition": "Whether or not items of the specific publication item type must feature the CrossmarkLogo, which is a multi-publisher initiative from the CrossRef organization to provide a standard way for readers to locate the authoritative version of a document. See also: [Crossmark](VUD:Crossmark).",
+            "label": "Crossmark logo"
+        },
+        {
+            "id": "excludedInDTD",
+            "type": "DatatypeProperty",
+            "domainIncludes": {"id": "Concept"},
+            "rangeIncludes": {"id": "Concept"},
+            "definition": "Versions of the DTD in which the `PIT` is excluded. Expected values are in [DTD JA version Collection](ecmv:DTD_JA) and [DTD BK version Collection](ecmv:DTD_BK). This property can be interpreted as `deprecated since` the listed DTD.",
+            "label": "Excluded in DTD"
+        },
+        {
+            "id": "isPublicationItemTypeFor",
+            "type": "DatatypeProperty",
+            "domainIncludes": {"id": "Concept"},
+            "rangeIncludes": {"id": "Concept"},
+            "definition": "DatatypeProperty for relating a Publication Item Type with the top level element(s) it is valid PIT for. Expected values are in. Expected values are in [Top Level XML-Elements Collection](ecmv:Top_Level_Elements)",
+            "label": "is PIT for top level element"
+        },
+        {
+            "id": "includedInDTD",
+            "type": "DatatypeProperty",
+            "domainIncludes": {"id": "skos:Concept"},
+            "rangeIncludes": {"id": "skos:Concept"},
+            "definition": "Versions of the DTD in which the `PIT` is included. Expected values are in [DTD JA version Collection ](ecmv:DTD_JA) and [DTD BK version Collection](ecmv:DTD_BK). Currently only the first version of the in which the `PIT` occurs is listed, and not the successors (if any) of that DTD-version. The use of a `PIT` may also be deprecated in a later version of a DTD. See [ecmv:excludedInDTD](VUD:ecmv:excludedInDTD).",
+            "label": "Included in DTD"
+        },
+        {
+            "id": "individualItem",
+            "type": "DatatypeProperty",
+            "domainIncludes": {"id": "skos:Concept"},
+            "rangeIncludes": {"id": "xsd:boolean"},
+            "definition": "Whether or not it is obligatory to treat every publication item of that type as an individual item in journals. If set to `No`, it is allowed to log in together a number of related items as one manuscript. Examples: multiple [ABS](pit:ABS) of a single conference,  multiple [NWS](pit:NWS) combined.",
+            "label": "Individual item"
+        },
+        {
+            "id": "kpiItem",
+            "type": "DatatypeProperty",
+            "domainIncludes": {"id": "skos:Concept"},
+            "rangeIncludes": {"id": "xsd:boolean"},
+            "definition": "Whether or not items of the specific publication item type are of special interest in reporting to management and stakeholders (Key Performance Item).",
+            "label": "KPI item"
+        },
+        {
+            "id": "pubMedDeliveryRequired",
+            "type": "DatatypeProperty",
+            "domainIncludes": {"id": "skos:Concept"},
+            "rangeIncludes": {"id": "xsd:boolean"},
+            "definition": "Whether or not the National Library of Medicine (NLM) wants a `PIT` for abstracting and indexing in PubMed and Medline (with value `Yes`). Elsevier filters out the other PITs (with value `No`) from the deliveries to the NLM. This property has only values for items in journals. See also [Pubmed](VUD:PubMed).",
+            "label": "PubMed delivery required"
+        },
+        {
+            "id": "pdfOpeningMode",
+            "type": "DatatypeProperty",
+            "domainIncludes": {"id": "skos:Concept"},
+            "rangeIncludes": {"id": "skos:Concept"},
+            "definition": "The value of this property captures what the opening mode of the generated PDF is of items of the specific publication item. Expected values are in the collection [PDFOpeningModes](ecmv:PDFOpeningModes).",
+            "label": "PDF Opening mode"
+        },
+        {
+            "id": "s5DeliveryRequired",
+            "type": "DatatypeProperty",
+            "domainIncludes": {"id": "skos:Concept"},
+            "rangeIncludes": {"id": "xsd:boolean"},
+            "definition": "Whether or not items of the specific publication item type need to make S5 deliveries (authors' manuscript accepted for publication, prior to any editing, combined with preliminary publication information) to online platforms. This property has only values for items in journals. See also [S5](VUD:S5).",
+            "label": "S5 delivery required"
+        },
+        {
+            "id": "pit:ABS",
+            "type": "Concept",
+            "prefLabel": "ABS",
+            "altLabel": "Abstract",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Abstract of a paper or oral presentation or poster, published as a separate item. A better name would be \"extra short communication\". These mostly occur in fairly great numbers in conference proceedings, where not all authors are allowed to publish a full-length article. Note. Not to be confused with the pit LIT (journal)[VUD:pit:LIT (journal)]."
+        },
+        {
+            "id": "pit:ACK",
+            "type": "Concept",
+            "prefLabel": "ACK",
+            "altLabel": "Acknowledgement",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "Acknowledgements in the front matter of a book."
+        },
+        {
+            "id": "pit:ADD",
+            "type": "Concept",
+            "prefLabel": "ADD",
+            "altLabel": "Addendum",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": true,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Publication item giving additional information regarding another publication item, mostly presenting additional results. The article with [pit:ADD](pit:ADD) requires a \"refers-to\" DOI or PII to the original article. Refer to Errata and Corrigenda."
+        },
+        {
+            "id": "pit:ADV",
+            "type": "Concept",
+            "prefLabel": "ADV",
+            "altLabel": "Advertisement",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Advertisement (mostly commercial, including Elsevier's own). PIT is only rarely used, in case an advertisement requires an XML delivery and is handled as a contents entry."
+        },
+        {
+            "id": "pit:ANN",
+            "type": "Concept",
+            "prefLabel": "ANN",
+            "altLabel": "Announcement",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Informative statement with a scope within the context of the publication in which it appears."
+        },
+        {
+            "id": "pit:APP",
+            "type": "Concept",
+            "prefLabel": "APP",
+            "altLabel": "Appendix",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "This PIT is intended for appendices in the rear matter of a book, not for an appendix at the back of an individual chapter or article."
+        },
+        {
+            "id": "pit:BCC",
+            "type": "Concept",
+            "prefLabel": "BCC",
+            "altLabel": "Back Cover Copy",
+            "includedInDTD": "DTD_BK5_7",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "To be used for the text for the back cover. The back cover text is not reviewed by editors and does not appear in the table of contents, but may be presented online. This type allows a consistent workflow for sending and tracking the text used for the back cover."
+        },
+        {
+            "id": "pit:BIB",
+            "type": "Concept",
+            "prefLabel": "BIB",
+            "altLabel": "Bibliography",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "BIBLIOGRAPHY"
+            ],
+            "definition": "To be used for a list of references pertaining to the whole of a book, and appearing as a separate section in the rear matter, not for the references that may be part of an individual chapter."
+        },
+        {
+            "id": "pit:BIO",
+            "type": "Concept",
+            "prefLabel": "BIO",
+            "altLabel": "Biography",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "Description of authors' lives in the front matter of a book."
+        },
+        {
+            "id": "pit:BK",
+            "type": "Concept",
+            "prefLabel": "BK",
+            "altLabel": "Book",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "BOOK"
+            ],
+            "definition": "PIT of the element used to capture the basic structure of a book."
+        },
+        {
+            "id": "pit:BPH",
+            "type": "Concept",
+            "prefLabel": "BPH",
+            "altLabel": "Batch Placeholder",
+            "includedInDTD": "DTD_JA5_1",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "NOT_APPLICABLE"
+            ],
+            "definition": "Pseudo-PIT, used in PTS registration of  batches of abstracts. Not used in deliveries to any Web platform. Refer to [Subitems](VUD:Subitems) for a elaborate discussion."
+        },
+        {
+            "id": "pit:BRV",
+            "type": "Concept",
+            "prefLabel": "BRV",
+            "altLabel": "Book review",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": true,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "BOOK-REVIEW",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Critical discussion of a book's contents."
+        },
+        {
+            "id": "pit:CAL",
+            "type": "Concept",
+            "prefLabel": "CAL",
+            "altLabel": "Calendar",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "List of forthcoming meetings, symposia, conferences and other events."
+        },
+        {
+            "id": "pit:CHP",
+            "type": "Concept",
+            "prefLabel": "CHP",
+            "altLabel": "Chapter",
+            "includedInDTD": [
+               "DTD_JA5_1",
+               "DTD_BK5_2_1"
+            ],
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": true,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "CHAPTER",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "In Book DTD: individual chapter (see also [pit:SCP](VUD:pit:SCP)); in JA DTD to be used for individual chapters in book series volumes, similar to [FLA](VUD:pit:FLA) for journal articles. Not to be used for journal articles."
+        },
+        {
+            "id": "pit:CNF",
+            "type": "Concept",
+            "prefLabel": "CNF",
+            "altLabel": "About a conference",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Information about a conference (can be a description of the venue, but also a visit report of a scientist who has attended a conference). Note. A scientific article in a conference proceedings is not [pit:CNF](VUD:pit:CNF)."
+        },
+        {
+            "id": "pit:COM",
+            "type": "Concept",
+            "prefLabel": "COM",
+            "altLabel": "Comprehensive",
+            "includedInDTD": "DTD_BK5_3",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "BOOK"
+            ],
+            "definition": "'Comprehensive' is one of the two principal types of Major Reference Works distinguished by Elsevier (the other being 'Encyclopedia', see [pit:ENC](VUD:pit:ENC))."
+        },
+        {
+            "id": "pit:CON",
+            "type": "Concept",
+            "prefLabel": "CON",
+            "altLabel": "Contents list",
+            "includedInDTD": [
+            "DTD_JA5_1",
+            "DTD_BK5_6"
+            ],
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE",
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "List of publication items published in issue(s) or volume(s) of the publication at hand. Note. This includes volume contents. PIT is only rarely used, in case a list of contents requires an XML delivery and is handled as a contents entry."
+        },
+        {
+            "id": "pit:COP",
+            "type": "Concept",
+            "prefLabel": "COP",
+            "altLabel": "Copyright",
+            "includedInDTD": [
+                "DTD_JA5_1",
+                "DTD_BK5_3"
+                ],
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "FB-NON-CHAPTER",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Used for an item containing copyright information in book series volumes only; not to be used in journal articles."
+        },
+        {
+            "id": "pit:COR",
+            "type": "Concept",
+            "prefLabel": "COR",
+            "altLabel": "Correspondence",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_BOOKMARKS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Letter to the editor or a reply to the letter. <b>Note</b>. The reply needs a \"refers-to\" DOI or PII. In case an item with [pit:COR](VUD:pit:COR) is delivered as CAPLitePlus, the PDF opening mode should be thumbnails."
+        },
+        {
+            "id": "pit:CRP",
+            "type": "Concept",
+            "prefLabel": "CRP",
+            "altLabel": "Case Report",
+            "includedInDTD": "DTD_JA5_2",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Used in medical literature: A detailed report of the symptoms, signs, diagnosis, treatment, and follow-up of an individual patient."
+        },
+        {
+            "id": "pit:CTR",
+            "type": "Concept",
+            "prefLabel": "CTR",
+            "altLabel": "Contributors",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "List of contributors in the front matter of a book."
+        },
+        {
+            "id": "pit:DAT",
+            "type": "Concept",
+            "prefLabel": "DAT",
+            "altLabel": "Data in Brief",
+            "includedInDTD": "DTD_JA5_4",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Use is restricted to a defined set of journals only. Short article that presents raw research data in order to make these publicly available."
+        },
+        {
+            "id": "pit:DCT",
+            "type": "Concept",
+            "prefLabel": "DCT",
+            "altLabel": "Dictionary",
+            "includedInDTD": "DTD_BK5_3",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "BOOK"
+            ],
+            "definition": "Included for future use only."
+        },
+        {
+            "id": "pit:DED",
+            "type": "Concept",
+            "prefLabel": "DED",
+            "altLabel": "Dedication",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "Part of a book's front matter thanking persons not directly involved with the research described in the book for their contribution."
+        },
+        {
+            "id": "pit:DIS",
+            "type": "Concept",
+            "prefLabel": "DIS",
+            "altLabel": "Discussion",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Argumentative communication, like papers in a discussion, but also perspectives, commentaries, etc. <b>Note</b>. Subsequent discussion papers need a \"refers-to\" DOI or PII. In case an item with [pit:DIS](VUD:pit:DIS) is delivered as CAPLitePlus, the PDF opening mode should be thumbnails."
+        },
+        {
+            "id": "pit:DUP",
+            "type": "Concept",
+            "prefLabel": "DUP",
+            "altLabel": "Duplicate",
+            "includedInDTD": [
+               "DTD_JA5_1",
+               "DTD_BK5_4"
+            ],
+            "capDeliverable": "XML_WEIGHT_HEAD_ONLY",
+            "individualItem": "SAME_AS_ORIGINAL",
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "BIBLIOGRAPHY",
+               "CHAPTER",
+               "EXAMINATION",
+               "FB-NON-CHAPTER",               
+               "GLOSSARY",
+               "INDEX",
+               "INTRODUCTION",
+               "SIMPLE-ARTICLE",
+               "SIMPLE-CHAPTER"
+            ],
+            "definition": "Tombstone PIT assigned to a duplicate item. Although it is allowed by the Book DTD, this PIT is not used in the \"Tombstone procedure for books\"."
+        },
+        {
+            "id": "pit:EDB",
+            "type": "Concept",
+            "prefLabel": "EDB",
+            "altLabel": "Editorial Board",
+            "includedInDTD": [
+               "DTD_JA5_1",
+               "DTD_BK5_4"
+            ],
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "FB-NON-CHAPTER",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "List of names, usually with affiliations, of scientists supporting the scientific Editor(s) in maintaining the quality of articles published in a journal or book. Also Advisory Board, Advisory Editors, Board of Directors etc."
+        },
+        {
+            "id": "pit:EDI",
+            "type": "Concept",
+            "prefLabel": "EDI",
+            "altLabel": "Editorial",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": true,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "From the (guest) editor of the publication. Can be Foreword, Editorial, Guest Editorial, Preface, etc."
+        },
+        {
+            "id": "pit:ENC",
+            "type": "Concept",
+            "prefLabel": "ENC",
+            "altLabel": "Encyclopedia",
+            "includedInDTD": "DTD_BK5_3",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "BOOK"
+            ],
+            "definition": "`Encyclopedia` is one of the two principal types of Major Reference Works distinguished by Elsevier (the other being `Comprehensive`, see [pit:COM](VUD:pit:COM))."
+        },
+        {
+            "id": "pit:EOC",
+            "type": "Concept",
+            "prefLabel": "EOC",
+            "altLabel": "Expression of Concern",
+            "includedInDTD": [
+               "DTD_JA5_6",
+               "DTD_BK5_6"
+            ],
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_BOOKMARKS",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "FB-NON-CHAPTER",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Expression of Concern, a variant of the publication item type Editorial in which the journal's Editors point out a minor violation of the scientific code of conduct in an article that was published earlier. <b>Note:</b> The article with [pit:EOC](VUD:pit:EOC) requires `refers-to` DOI or PII to link to the corrected article. Preferably, the title of the [pit:EOC](VUD:pit:EOC) contains the title of the original article as well."
+        },
+        {
+            "id": "pit:ERR",
+            "type": "Concept",
+            "prefLabel": "ERR",
+            "altLabel": "Erratum",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_BOOKMARKS",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "BOOK-REVIEW",
+               "EXAM",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Article in which errors are reported that were made in an earlier publication in the same journal. Can be Erratum but also Corrigendum. [PIT:ERR](VUD:pit:ERR) is also used for retraction and removal notices. The article with [pit:ERR](VUD:pit:ERR) requires a `refers-to` DOI or PII to link to the corrected article. <b>Note:</b>In case an item with [pit:ERR](VUD:pit:ERR) is delivered as CAPLitePlus, the PDF opening mode should be thumbnails. For documentation on Errata, see `Errata and Corrigenda`"
+        },
+        {
+            "id": "pit:EXM",
+            "type": "Concept",
+            "prefLabel": "EXM",
+            "altLabel": "Examination",
+            "includedInDTD": [
+               "DTD_JA5_1",
+               "DTD_BK5_2_1"
+            ],
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": true,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "EXAM",
+               "EXAMINATION",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "One or more lists of questions on a subject discussed in a previous article; may also contain list(s) of answers to questions published previously."
+        },
+        {
+            "id": "pit:FLA",
+            "type": "Concept",
+            "prefLabel": "FLA",
+            "altLabel": "Full-length article",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_BOOKMARKS",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Complete report on original research. In case an item with [pit:FLA](VUD:pit:FLA) is delivered as CAPLitePlus, the PDF opening mode should be thumbnails."
+        },
+        {
+            "id": "pit:FOR",
+            "type": "Concept",
+            "prefLabel": "FOR",
+            "altLabel": "Foreword",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "Introductory text in the front matter of a book written by another person than the author of the book itself."
+        },
+        {
+            "id": "pit:GLS",
+            "type": "Concept",
+            "prefLabel": "GLS",
+            "altLabel": "Glossary",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "GLOSSARY"
+            ],
+            "definition": "A list of technical terms used in a book and their meaning, found in the front matter."
+        },
+        {
+            "id": "pit:HTU",
+            "type": "Concept",
+            "prefLabel": "HTU",
+            "altLabel": "How To Use",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "Part of the front matter of a book that may be used to capture a disclaimer text."
+        },
+        {
+            "id": "pit:IDX",
+            "type": "Concept",
+            "prefLabel": "IDX",
+            "altLabel": "Index",
+            "includedInDTD": "DTD_BK5_2_1",
+            "excludedInDTD": "DTD_BK5_6",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "INDEX"
+            ],
+            "definition": "Cross-reference of items against the location of occurrence. Can be Author index, Master index, Subject index, Materials index, etc. For use in books only. Use is no longer allowed for book content received after April 29, 2019, the implementation date of DTD 5.6."
+        },
+        {
+            "id": "pit:IND",
+            "type": "Concept",
+            "prefLabel": "IND",
+            "altLabel": "Index",
+            "includedInDTD": [
+              "DTD_JA5_1",
+              "DTD_BK5_6"
+            ],
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "INDEX",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Cross-reference of items against the location of occurrence. Can be Author index, Master index, Subject index, Materials index, etc. For use in journals and book series only."
+        },
+        {
+            "id": "pit:INS",
+            "type": "Concept",
+            "prefLabel": "INS",
+            "altLabel": "Insights",
+            "includedInDTD": [
+               "DTD_JA5_6",
+               "DTD_BK5_6"
+            ],
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_BOOKMARKS",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": false,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "CHAPTER",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "A publication item that is neither research article nor review of primary research; it is roughly comparable to an article in the popular science press. The article with [pit:INS](pit:INS) requires a \"refers-to\" DOI or PII to the original article."
+        },
+        {
+            "id": "pit:ITR",
+            "type": "Concept",
+            "prefLabel": "ITR",
+            "altLabel": "Introduction",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "INTRODUCTION"
+            ],
+            "definition": "Text introducing a volume, part or section of a book. Not to be confused with Foreword ([pit:FOR](VUD:pit:FOR)) or Preface ([pit:PRE](VUD:pit:PRE)) that are part of the front matter. In S&amp;T e-Books Expansion Project (STAB) used to capture a book's copyright page."
+        },
+        {
+            "id": "pit:LIT",
+            "type": "Concept",
+            "prefLabel": "LIT",
+            "altLabel": "Literature alert",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Publication item containing information on relevant literature. This includes lists of recently published books, and collections of abstracts published, or to be published, elsewhere (in the same or another journal). <b>Note</b>. Such abstracts should not be confused with articles of type [pit:ABS](VUD:pit:ABS). <b>Note</b> The use of `LIT` for Books as review of literature alert (mostly used in (MRWs) Major Reference Works) is deprecated and superseded by [pit:LRW](VUD:pit:LRW)."
+        },
+        {
+            "id": "pit:LRW",
+            "type": "Concept",
+            "prefLabel": "LRW",
+            "altLabel": "Literature review",
+            "includedInDTD": "DTD_BK5_7",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "CHAPTER",
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "Review of literature that appeared in a given period of time regarding a certain subject area. This type supersedes the deprecated [pit:LIT/book](VUD:pit:LIT)"
+        },
+        {
+            "id": "pit:LST",
+            "type": "Concept",
+            "prefLabel": "LST",
+            "altLabel": "List",
+            "includedInDTD": [
+               "DTD_BK5_4",
+               "DTD_JA5_4"
+            ],
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "FB-NON-CHAPTER",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Any kind of list (e.g., list of figures, list of plates). Type of list is to be indicated by an appropriate role attribute. As of Book DTD 5.4.0, `LST` is also to be used for a list of reviewers of a book."
+        },
+        {
+            "id": "pit:MIC",
+            "type": "Concept",
+            "prefLabel": "MIC",
+            "altLabel": "Microarticle",
+            "includedInDTD": "DTD_JA5_4",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Use is restricted to a defined set of journals only. A microarticle is a short self-contained publication dealing with a specific research object that can be directly accessed and interactively explored via this publication."
+        },
+        {
+            "id": "pit:MIS",
+            "type": "Concept",
+            "prefLabel": "MIS",
+            "altLabel": "Miscellaneous",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "All publication items that do not fit in any of the other publication item types mentioned and that do not merit the introduction of a new type"
+        },
+        {
+            "id": "pit:NWS",
+            "type": "Concept",
+            "prefLabel": "NWS",
+            "altLabel": "News",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Publication item containing new information relevant to the audience of the publication."
+        },
+        {
+            "id": "pit:OCN",
+            "type": "Concept",
+            "prefLabel": "OCN",
+            "altLabel": "Other contents",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Contents list of another, related journal. Note. Must be another journal."
+        },
+        {
+            "id": "pit:OSP",
+            "type": "Concept",
+            "prefLabel": "OSP",
+            "altLabel": "Original software publication",
+            "includedInDTD": "DTD_JA5_4",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Use is restricted to a defined set of journals only. Scientific article that comprises computer code or software and a description thereof."
+        },
+        {
+            "id": "pit:OVW",
+            "type": "Concept",
+            "prefLabel": "OVW",
+            "altLabel": "Overview",
+            "includedInDTD": "DTD_BK5_3_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "CHAPTER",
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "Used for so-called `Topic pages` in an MRW, a short description of the subject of the MRW section."
+        },
+        {
+            "id": "pit:PAR",
+            "type": "Concept",
+            "prefLabel": "PAR",
+            "altLabel": "Perspective Articles",
+            "includedInDTD": "DTD_JA5_7",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "A Perspective Article is a scholarly article expressing a personal opinion or a new perspective about existing research on a particular topic. `PAR` may also briefly review and reference published work, but is distinguished from [pit:SSU](VUD:pit:SSU), which is a `Mini Review`, rather than a `Perspective Article`."
+        },
+        {
+            "id": "pit:PGL",
+            "type": "Concept",
+            "prefLabel": "PGL",
+            "altLabel": "Practice Guidelines",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Text describing recommended best practice in medical articles."
+        },
+        {
+            "id": "pit:PNT",
+            "type": "Concept",
+            "prefLabel": "PNT",
+            "altLabel": "Patent Report",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Report on newly developed patents."
+        },
+        {
+            "id": "pit:PRE",
+            "type": "Concept",
+            "prefLabel": "PRE",
+            "altLabel": "Preface",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "FB-NON-CHAPTER"
+            ],
+            "definition": "Introductory text in the front matter of a book written by the book's author."
+        },
+        {
+            "id": "pit:PRO",
+            "type": "Concept",
+            "prefLabel": "PRO",
+            "altLabel": "Protocol",
+            "includedInDTD": [
+               "DTD_JA5_6",
+               "DTD_BK5_6"
+            ],
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "CHAPTER",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "A variant of the publication item type [FLA](pit:FLA) focussing on the materials and methods employed in research. `PRO` is not applicable to the following journals: LANCET, JACBTS, JACCAS, JACCAO and VGIE."
+        },
+        {
+            "id": "pit:PRR",
+            "type": "Concept",
+            "prefLabel": "PRR",
+            "altLabel": "Peer Review Report",
+            "includedInDTD": "DTD_JA5_7",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": true,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "A `PRR` is a report from an independant researcher that assess the quality of a manuscript of an author before it is published. Prior to the creaton of `PRR`, sometimes [pit:PRP](VUD:pit:PRP) was used to identify Peer Review Reports."
+        },
+        {
+            "id": "pit:PRP",
+            "type": "Concept",
+            "prefLabel": "PRP",
+            "altLabel": "Personal report",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": true,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Report about one or more (living or deceased) persons, e.g. an obituary (report on the recent death of a person), a biography, an award ceremony, etc. May also comprise personal historical overviews or reminiscences of the author. Finally, `PRP` has been be used in the past to identify a Peer Review Report, which now has its own [pit:PRR](VUD:pit:PRR)."
+        },
+        {
+            "id": "pit:PRV",
+            "type": "Concept",
+            "prefLabel": "PRV",
+            "altLabel": "Product review",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": true,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Product review, i.e. a review of software, hardware, medical products, etc. <b>Note.</b> Not a book review: see [pit:BRV](VUD:pit:BRV). Not a conference review: see [pit:CNF](VUD:pit:CNF)."
+        },
+        {
+            "id": "pit:PUB",
+            "type": "Concept",
+            "prefLabel": "PUB",
+            "altLabel": "Publisher's note",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_BOOKMARKS",
+            "individualItem": true,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "A message from the Publisher to the readers. CAP deliverable upgraded to \"Journal default\" in March 2020."
+        },
+        {
+            "id": "pit:REM",
+            "type": "Concept",
+            "prefLabel": "REM",
+            "altLabel": "Removal",
+            "includedInDTD": [
+               "DTD_JA5_1",
+               "DTD_BK5_4"
+            ],
+            "capDeliverable": "XML_WEIGHT_HEAD_ONLY",
+            "individualItem": "SAME_AS_ORIGINAL",
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "BIBLIOGRAPHY",
+               "CHAPTER",
+               "EXAMINATION",
+               "FB-NON-CHAPTER",
+               "GLOSSARY",
+               "INDEX",
+               "INTRODUCTION",
+               "SIMPLE-ARTICLE",
+               "SIMPLE-CHAPTER"
+            ],
+            "definition": "Tombstone PIT assigned to a removed item. PubMed Central requires the original item PDF stamped with `removed`; on Elsevier web platforms the original item is replaced by a new text."
+        },
+        {
+            "id": "pit:REQ",
+            "type": "Concept",
+            "prefLabel": "REQ",
+            "altLabel": "Request for assistance",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_THUMBNAILS",
+            "individualItem": true,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Publication item containing the description of a problem with an appeal to the audience for a solution."
+        },
+        {
+            "id": "pit:RET",
+            "type": "Concept",
+            "prefLabel": "RET",
+            "altLabel": "Retraction",
+            "includedInDTD": [
+               "DTD_JA5_1",
+               "DTD_BK5_4"
+            ],
+            "capDeliverable": "XML_WEIGHT_HEAD_ONLY",
+            "individualItem": "SAME_AS_ORIGINAL",
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "BIBLIOGRAPHY",
+               "CHAPTER",
+               "EXAMINATION",
+               "FB-NON-CHAPTER",
+               "GLOSSARY",
+               "INDEX",
+               "INTRODUCTION",
+               "SIMPLE-ARTICLE",
+               "SIMPLE-CHAPTER"
+            ],
+            "definition": "Tombstone PIT assigned to a retracted item. In Book DTD 5.3.1, [pit:RET](VUD:pit:RET) was used in MRWs to denote items that were no longer required in the current edition of the MRW. This use of `RET` is no longer allowed; moreover, the Tombstone procedure for books makes no use of this PIT although it is allowed by the Book DTD."
+        },
+        {
+            "id": "pit:REV",
+            "type": "Concept",
+            "prefLabel": "REV",
+            "altLabel": "Review article",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_BOOKMARKS",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Substantial overview of original research, usually with a comprehensive bibliography, generally also containing a table of contents. <b>Note.</b> Not a book review: see [pit:BRV](VUD:pit:BRV). In case an item with [pit:REV](VUD:pit:REV) is delivered as CAPLitePlus, the PDF opening mode should be thumbnails. <b>Note.</b> The usage of `REV` (List of names of referees that have reviewed (parts of) the book) has been deprecated in `BK DTD 5.4`. Use [pit:LST](VUD:pit:LST) instead."
+        },
+        {
+            "id": "pit:RPL",
+            "type": "Concept",
+            "prefLabel": "RPL",
+            "altLabel": "Replication Studies",
+            "includedInDTD": [
+               "DTD_JA5_5",
+               "DTD_BK5_5"
+            ],
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "CHAPTER",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Results of the replication of research performed previously and published elsewhere."
+        },
+        {
+            "id": "pit:RRA",
+            "type": "Concept",
+            "prefLabel": "RRA",
+            "altLabel": "Registered Report Article",
+            "includedInDTD": "DTD_JA5_7",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "A Registered Report Article is the second stage of a two stages submission process for empirical research. These reports are relatively new content in the publishing landscape in which research reports are submitted in two different phases. The first stage is [pit:RRP](VUD:pit:RRP)."
+        },
+        {
+            "id": "pit:RRP",
+            "type": "Concept",
+            "prefLabel": "RRP",
+            "altLabel": "Registered Report Protocol",
+            "includedInDTD": "DTD_JA5_7",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "A Registered Report Protocol is the first stage of a two stages submission process for empirical research. See [pit:RRA](VUD:pit:RRA) for the second stage."
+        },
+        {
+            "id": "pit:RPR",
+            "type": "Concept",
+            "prefLabel": "RPR",
+            "altLabel": "Recognized Peer Reviewers",
+            "includedInDTD": "DTD_JA5_7",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Items acknowledging journal referees. These items can be a simple lists of reviewers, or they can be an Editorial-like item expressing thanks to reviewers. For Books, [pit:LST](VUD:pit:LST) is used. Avoid confusion with [pit:PRR](VUD:pit:PRR)."
+        },
+        {
+            "id": "pit:RTI",
+            "type": "Concept",
+            "prefLabel": "RTI",
+            "altLabel": "Retired",
+            "includedInDTD": [
+               "DTD_JA5_7",
+               "DTD_BK5_7"
+            ],
+            "capDeliverable": "XML_WEIGHT_HEAD_ONLY",
+            "individualItem": "SAME_AS_ORIGINAL",
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "BIBLIOGRAPHY",
+               "CHAPTER",
+               "EXAMINATION",
+               "FB-NON-CHAPTER",
+               "GLOSSARY",
+               "INDEX",
+               "INTRODUCTION",
+               "SIMPLE-ARTICLE",
+               "SIMPLE-CHAPTER"
+            ],
+            "definition": "Tombstone PIT assigned to a retired item. The workflow is identical to [pit:RET](VUD:pit:RET) but the stamp (`Retired`) is different."
+        },
+        {
+            "id": "pit:SCO",
+            "type": "Concept",
+            "prefLabel": "SCO",
+            "altLabel": "Short communication",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_BOOKMARKS",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Short report or announcement of research, usually claiming certain results, usually with a shorter publication time than other papers in the same publication. May appear under many names, such as Letter Papers, Preliminary notes, Notes, etc. In case an item with [pit:SCO](VUD:pit:SCO) is delivered as CAPLitePlus, the PDF opening mode should be thumbnails."
+        },
+        {
+            "id": "pit:SCP",
+            "type": "Concept",
+            "prefLabel": "SCP",
+            "altLabel": "Simple chapter",
+            "includedInDTD": "DTD_BK5_2_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "SIMPLE-CHAPTER"
+            ],
+            "definition": "Simple chapter. Primarily used for conversion projects; in regular book production [pit:CHP](VUD:pit:CHP) is to be used."
+        },
+        {
+            "id": "pit:SSU",
+            "type": "Concept",
+            "prefLabel": "SSU",
+            "altLabel": "Short review",
+            "includedInDTD": "DTD_JA5_1",
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "pdfOpeningMode": "PDF_OPEN_BOOKMARKS",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Short or mini-review."
+        },
+        {
+            "id": "pit:TPG",
+            "type": "Concept",
+            "prefLabel": "TPG",
+            "altLabel": "Title page",
+            "includedInDTD": [
+               "DTD_JA5_6",
+               "DTD_BK5_6"
+            ],
+            "capDeliverable": "XML_WEIGHT_ULTRALIGHT",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "FB-NON-CHAPTER",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Publication item type which should be used to capture a book's title page. In JA DTD 5.6.0, [pit:TPG](VUD:pit:TPG) is only allowed to be used for book series."
+        },
+        {
+            "id": "pit:VID",
+            "type": "Concept",
+            "prefLabel": "VID",
+            "altLabel": "Video Article",
+            "includedInDTD": [
+               "DTD_JA5_5",
+               "DTD_BK5_5"
+            ],
+            "capDeliverable": "CONTENTTYPE_DEFAULT",
+            "individualItem": true,
+            "crossmarkLogo": true,
+            "pubMedDeliveryRequired": true,
+            "s5DeliveryRequired": true,
+            "apcItem": true,
+            "kpiItem": true,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "CHAPTER",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "Journal article or book chapter whose prime content consists of a video accompanied by a description of that video."
+        },
+        {
+            "id": "pit:ZZZ",
+            "type": "Concept",
+            "prefLabel": "ZZZ",
+            "altLabel": "ancillary material without PIT",
+            "includedInDTD": "DTD_JA5_0",
+            "individualItem": false,
+            "crossmarkLogo": false,
+            "pubMedDeliveryRequired": false,
+            "s5DeliveryRequired": false,
+            "apcItem": false,
+            "kpiItem": false,
+            "isPublicationItemTypeFor": [
+               "ARTICLE",
+               "SIMPLE-ARTICLE"
+            ],
+            "definition": "In journals, documents that are not being referred to in the contents list of an issue (i.e., that are not [Contents Entries](VUD:Contents Entries)) are called `ancillary material`. Common examples are preliminary pages, advertisements and the like. Ancillary material is not assigned a PIT; However, in PTS they are to be marked with the \"pseudo-PIT\" `ZZZ`, ensuring that no electronic files are delivered of ancillary material, Note that it in very rare cases it is possible that a regular article does not appear in the table of contents; this article then also is ancillary material with a pseudo-PIT `ZZZ`."
+        },
+        {
+            "id": "PDFOpeningModes",
+            "type": "Collection",
+            "member": [
+               "PDF_OPEN_BOOKMARKS",
+               "PDF_OPEN_THUMBNAILS"
+            ],
+            "label": "PDF Opening Mode Collection (List of Values)",
+            "prefLabel": "PDF Opening Modes",
+            "definition": "The concepts belonging to this collection are the enumeration of what the opening mode of the generated PDF. The opening mode is the pane to be displayed by the PDF reader when the PDF resource is opened."
+        },
+        {
+            "id": "PDF_OPEN_BOOKMARKS",
+            "type": "Concept",
+            "definition": "The PDF resource must be set to open with bookmarks pane displayed.",
+            "prefLabel": "Bookmarks",
+            "altLabel": "Open PDF displaying Bookmarks pane"
+        },
+        {
+            "id": "PDF_OPEN_THUMBNAILS",
+            "type": "Concept",
+            "definition": "The PDF resource must be set to open with thumbnails pane displayed.",
+            "prefLabel": "Thumbnails",
+            "altLabel": "Open PDF displaying Thumbnails pane"
+        },
+        {
+            "id": "XML_Weight",
+            "type": "Collection",
+            "member": [
+               "XML_WEIGHT_FULL_TEXT",
+               "XML_WEIGHT_HEAD_AND_TAIL",
+               "XML_WEIGHT_HEAD_ONLY",
+               "XML_WEIGHT_ULTRALIGHT"
+            ],
+            "label": "XML Weight for CAP Deliverable Collection (List of Values)",
+            "prefLabel": "XML Weight",
+            "definition": "The concepts belonging to this collection are the enumeration of XML Weight values, as used for the CAP Deliverable of a Publication Item Type (PIT)."
+        },
+        {
+            "id": "XML_WEIGHT_FULL_TEXT",
+            "type": "Concept",
+            "prefLabel": "Full text",
+            "altLabel": "Full XML text (head, body and tail)",
+            "definition": "Item is to be delivered as a complete item, captured in XML. This is the most complete delivery type."
+        },
+        {
+            "id": "XML_WEIGHT_HEAD_AND_TAIL",
+            "type": "Concept",
+            "prefLabel": "Head-and-tail",
+            "altLabel": "Head and tail (but no body text)",
+            "definition": "Item with front matter and bibliographic material, captured in XML. Formerly known as formerly known as `CAPLitePlus`. This is the 2nd most complete delivery type."
+        },
+        {
+            "id": "XML_WEIGHT_HEAD_ONLY",
+            "type": "Concept",
+            "prefLabel": "Head-only",
+            "altLabel": "Head only (no tail and no body text)",
+            "definition": "Item with front matter, captured in XML. This is the 3rd most complete delivery type."
+        },
+        {
+            "id": "XML_WEIGHT_ULTRALIGHT",
+            "type": "Concept",
+            "prefLabel": "UltraLight",
+            "altLabel": "Title and author names",
+            "definition": "Item with only title and authors' names, captured in XML. Also know as `contents-entry-only`. This is the least complete delivery type."
+        },
+        {
+            "id": "CONTENTTYPE_DEFAULT",
+            "type": "Concept",
+            "prefLabel": "Contenttype default",
+            "altLabel": "The default value for this property of the Book or Article",
+            "definition": "The Item has no specific value for the property, but falls back to the defined default for a specific Book or Journal."
+        },
+        {
+            "id": "DTD_JA",
+            "type": "Collection",
+            "member": [
+               "DTD_JA5_0",
+               "DTD_JA5_1",
+               "DTD_JA5_2",
+               "DTD_JA5_2_1",
+               "DTD_JA5_3",
+               "DTD_JA5_4",
+               "DTD_JA5_5",
+               "DTD_JA5_6",
+               "DTD_JA5_7"
+            ],
+            "label": "DTD JA version Collection (List of Values)",
+            "prefLabel": "DTD JA version",
+            "definition": "The concepts belonging to this collection are the enumeration of versions of the Journal Article DTD. Items from this list are used to indicate in what DTD version a PIT was introduced or deprecated."
+        },
+        {
+            "id": "DTD_JA5_0",
+            "type": "Concept",
+            "prefLabel": "JA DTD 5.0",
+            "altLabel": "Journal Article DTD v5.0",
+            "definition": "Journal Article DTD version 5.0"
+        },
+        {
+            "id": "DTD_JA5_1",
+            "type": "Concept",
+            "prefLabel": "JA DTD 5.1",
+            "altLabel": "Journal Article DTD v5.1",
+            "definition": "Journal Article DTD version 5.1"
+        },
+        {
+            "id": "DTD_JA5_2",
+            "type": "Concept",
+            "prefLabel": "JA DTD 5.2",
+            "altLabel": "Journal Article DTD v5.2",
+            "definition": "Journal Article DTD version 5.2"
+        },
+        {
+            "id": "DTD_JA5_2_1",
+            "type": "Concept",
+            "prefLabel": "JA DTD 5.2.1",
+            "altLabel": "Journal Article DTD v5.2.1",
+            "definition": "Journal Article DTD version 5.2.1"
+        },
+        {
+            "id": "DTD_JA5_3",
+            "type": "Concept",
+            "prefLabel": "JA DTD 5.3.0",
+            "altLabel": "Journal Article DTD v5.3.0",
+            "definition": "Journal Article DTD version 5.3.0"
+        },
+        {
+            "id": "DTD_JA5_4",
+            "type": "Concept",
+            "prefLabel": "JA DTD 5.4",
+            "altLabel": "Journal Article DTD v5.4",
+            "definition": "Journal Article DTD version 5.4"
+        },
+        {
+            "id": "DTD_JA5_5",
+            "type": "Concept",
+            "prefLabel": "JA DTD 5.5",
+            "altLabel": "Journal Article DTD v5.5",
+            "definition": "Journal Article DTD version 5.5"
+        },
+        {
+            "id": "DTD_JA5_6",
+            "type": "Concept",
+            "prefLabel": "JA DTD 5.6",
+            "altLabel": "Journal Article DTD v5.6",
+            "definition": "Journal Article DTD version 5.6"
+        },
+        {
+            "id": "DTD_JA5_7",
+            "type": "Concept",
+            "prefLabel": "JA DTD 5.7.0",
+            "altLabel": "Journal Article DTD v5.7.0",
+            "definition": "Journal Article DTD version 5.7.0"
+        },
+        {
+            "id": "DTD_BK",
+            "type": "Collection",
+            "member": [
+               "DTD_BK5_2",
+               "DTD_BK5_2_1",
+               "DTD_BK5_3",
+               "DTD_BK5_3_1",
+               "DTD_BK5_4",
+               "DTD_BK5_5",
+               "DTD_BK5_6",
+               "DTD_BK5_7"
+            ],
+            "label": "DTD BK version Collection (List of Values)",
+            "prefLabel": "DTD BK version",
+            "definition": "The concepts belonging to this collection are the enumeration of versions of the Book DTD. Items in this list are used to indicate in which version of the DTD a PIT was included or deprecated."
+        },
+        {
+            "id": "DTD_BK5_2",
+            "type": "Concept",
+            "prefLabel": "BK DTD 5.2",
+            "altLabel": "Book DTD v5.2",
+            "definition": "Book DTD version 5.2"
+        },
+        {
+            "id": "DTD_BK5_2_1",
+            "type": "Concept",
+            "prefLabel": "BK DTD 5.2.1",
+            "altLabel": "Book DTD v5.2.1",
+            "definition": "Book DTD version 5.2.1"
+        },
+        {
+            "id": "DTD_BK5_3",
+            "type": "Concept",
+            "prefLabel": "BK DTD 5.3",
+            "altLabel": "Book DTD v5.3",
+            "definition": "Book DTD version 5.3"
+        },
+        {
+            "id": "DTD_BK5_3_1",
+            "type": "Concept",
+            "prefLabel": "BK DTD 5.3.1",
+            "altLabel": "Book DTD v5.3.1",
+            "definition": "Book DTD version 5.3.1"
+        },
+        {
+            "id": "DTD_BK5_4",
+            "type": "Concept",
+            "prefLabel": "BK DTD 5.4",
+            "altLabel": "Book DTD v5.4",
+            "definition": "Book DTD version 5.4"
+        },
+        {
+            "id": "DTD_BK5_5",
+            "type": "Concept",
+            "prefLabel": "BK DTD 5.5",
+            "altLabel": "Book DTD v5.5",
+            "definition": "Book DTD version 5.5"
+        },
+        {
+            "id": "DTD_BK5_6",
+            "type": "Concept",
+            "prefLabel": "BK DTD 5.6",
+            "altLabel": "Book DTD v5.6",
+            "definition": "Book DTD version 5.6"
+        },
+        {
+            "id": "DTD_BK5_7",
+            "type": "Concept",
+            "prefLabel": "BK DTD 5.7.0",
+            "altLabel": "Book DTD v5.7.0",
+            "definition": "Book DTD version 5.7.0"
+        },
+        {
+            "id": "NOT_APPLICABLE",
+            "type": "Concept",
+            "definition": "The Item has no value for the property by design, because the property is not applicable for the Item.",
+            "prefLabel": "n.a.",
+            "altLabel": "Not applicable"
+        },
+        {
+            "id": "SAME_AS_ORIGINAL",
+            "type": "Concept",
+            "definition": "Indicates that the item value for this property is the same as the original item to which it is a duplicate, a retraction or a removal. See [pit:DUP](VUD:pit:DUP), [pit:REM](VUD:pit:REM) and [pit:RET](VUD:pit:RET).",
+            "prefLabel": "As original item",
+            "altLabel": "Same value as orignal item"
+        },
+        {
+            "id": "Top_Level_Elements",
+            "type": "Collection",
+            "member": [
+               "ARTICLE",
+               "BIBLIOGRAPHY",
+               "BOOK",
+               "BOOK-REVIEW",
+               "CHAPTER",
+               "EXAM",
+               "EXAMINATION",
+               "FB-NON-CHAPTER",
+               "GLOSSARY",
+               "INDEX",
+               "INTRODUCTION",
+               "SIMPLE-ARTICLE",
+               "SIMPLE-CHAPTER"
+            ],
+            "label": "Top Level XML-Elements Collection (List of Values)",
+            "prefLabel": "Top level elements",
+            "definition": "The concepts belonging to this collection are the enumeration of top level elements from the Journal Article DTD and the Book DTD. All publication item types are related to a top level element."
+        },
+        {
+            "id": "ARTICLE",
+            "type": "Concept",
+            "prefLabel": "article",
+            "altLabel": "Article",
+            "definition": "The element &lt;article&gt; captures the content of a complete journal article or a complete book chapter."
+        },
+        {
+            "id": "BIBLIOGRAPHY",
+            "type": "Concept",
+            "prefLabel": "bibliography",
+            "altLabel": "bibliography",
+            "definition": "The element &lt;bibliography&gt; captures a list of bibliographic references made in a book. It can appear in back matter of a book. When used as a top level element the Bibliography is in an individual XML file."
+        },
+        {
+            "id": "BOOK",
+            "type": "Concept",
+            "prefLabel": "book",
+            "altLabel": "Book",
+            "definition": "The element &lt;book&gt; captures the main organizational structure of a book, notably the front, body and rear parts."
+        },
+        {
+            "id": "BOOK-REVIEW",
+            "type": "Concept",
+            "prefLabel": "book-review",
+            "altLabel": "Book review",
+            "definition": "The element &lt;book-review&gt; captures the content and metadata of an article that gives a review of a book."
+        },
+        {
+            "id": "CHAPTER",
+            "type": "Concept",
+            "prefLabel": "chapter",
+            "altLabel": "Chapter",
+            "definition": "The element &lt;chapter&gt; captures content of book chapters. When used as a top level element the Chapters are in individual XML files."
+        },
+        {
+            "id": "EXAM",
+            "type": "Concept",
+            "prefLabel": "exam",
+            "altLabel": "Exam",
+            "definition": "The element &lt;exam&gt; captures content and metadate for examination articles, as used for example in continuous medical education (CME). They contain questions and answers."
+        },
+        {
+            "id": "EXAMINATION",
+            "type": "Concept",
+            "prefLabel": "examinantion",
+            "altLabel": "Examinantion",
+            "definition": "The element &lt;examination&gt; captures a series of review questions. When used as a top level element the Examination is in an individual XML file.."
+        },
+        {
+            "id": "FB-NON-CHAPTER",
+            "type": "Concept",
+            "prefLabel": "fb-non-chapter",
+            "altLabel": "Front and back matter non-chapter",
+            "definition": "The element &lt;fb-non-chapter&gt; captures special front and back matter non-chapter divisions as individual XML files. The intented usage to be included within the &lt;body&gt;-element of a Book."
+        },
+        {
+            "id": "GLOSSARY",
+            "type": "Concept",
+            "prefLabel": "glossary",
+            "altLabel": "Glossary",
+            "definition": "The element &lt;glossary&gt; captures special terms used in a book. It can appear in back matter of a book. When used as a top level element the Glossary is in an individual XML file."
+        },
+        {
+            "id": "INDEX",
+            "type": "Concept",
+            "prefLabel": "index",
+            "altLabel": "Index",
+            "definition": "The element &lt;index&gt; captures a list of terms (index entries) and references to places in the book that are relevant to each term. It can appear in back matter of a book. When used as a top level element the Index is in an individual XML file."
+        },
+        {
+            "id": "INTRODUCTION",
+            "type": "Concept",
+            "prefLabel": "introduction",
+            "altLabel": "Introduction",
+            "definition": "The element &lt;introduction&gt; captures introductory material for parts, sections or chapters of books. When used as a top level element the Introduction is in an individual XML file."
+        },
+        {
+            "id": "SIMPLE-ARTICLE",
+            "type": "Concept",
+            "prefLabel": "simple-article",
+            "altLabel": "Simple article",
+            "definition": "The element &lt;simple-article&gt; captures content and metadata of 'simple' articles, such as editorials, obituaries, prefaces, etc."
+        },
+        {
+            "id": "SIMPLE-CHAPTER",
+            "type": "Concept",
+            "prefLabel": "simple-chapter",
+            "altLabel": "Simple chapter",
+            "definition": "The element &lt;simple-chapter&gt; captures content of book chapters in a PreCAP backfile conversion book project. Simple chapters are in individual XML files. The intented usage to be included within the &lt;body&gt;-element of a Book."
+        }
+    ]
+}

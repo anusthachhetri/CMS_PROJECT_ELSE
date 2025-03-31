@@ -1,0 +1,265 @@
+@prefix : <http://schema.elsevier.com/model/document/> .
+@prefix ect: <http://data.elsevier.com/vocabulary/ElsevierContentTypes/> .
+@prefix edm: <http://schema.elsevier.com/model/data/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dome: <http://schema.elsevier.com/model/document/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://schema.elsevier.com/model/document/> .
+
+<http://schema.elsevier.com/model/document/> rdf:type owl:Ontology ;
+                                              owl:imports pav: ,
+                                                          <http://www.w3.org/ns/prov-o-20130430> ;
+                                              rdfs:comment "The ontology for the Elsevier Document Model as defined for Content Profiles" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/isFormatOf
+dcterms:isFormatOf rdf:type owl:ObjectProperty ;
+                   rdfs:domain dome:Document ;
+                   rdfs:range edm:Thing .
+
+
+###  http://purl.org/dc/terms/type
+dcterms:type rdf:type owl:ObjectProperty ;
+             rdfs:domain dome:Document ;
+             rdfs:range <http://data.elsevier.com/vocabulary/ElsevierContentType> .
+
+
+###  http://purl.org/pav/authoredBy
+pav:authoredBy rdfs:domain dome:Document .
+
+
+###  http://purl.org/pav/contributedBy
+pav:contributedBy rdfs:domain dome:Document .
+
+
+###  http://purl.org/pav/createdBy
+pav:createdBy rdfs:domain dome:Document .
+
+
+###  http://purl.org/pav/curatedBy
+pav:curatedBy rdfs:domain dome:Document .
+
+
+###  http://purl.org/pav/providedBy
+pav:providedBy rdfs:domain dome:Document .
+
+
+###  http://schema.elsevier.com/model/document/hasChild
+dome:hasChild rdf:type owl:ObjectProperty ;
+              owl:inverseOf dome:hasParent ;
+              rdfs:domain dome:Fragment ;
+              rdfs:range dome:Fragment .
+
+
+###  http://schema.elsevier.com/model/document/hasDocument
+dome:hasDocument rdf:type owl:ObjectProperty ;
+                 rdfs:domain dome:Fragment ;
+                 rdfs:range dome:StructuredDocument .
+
+
+###  http://schema.elsevier.com/model/document/hasElement
+dome:hasElement rdf:type owl:ObjectProperty ;
+                rdfs:domain dome:StructuredDocument ;
+                rdfs:range dome:Fragment .
+
+
+###  http://schema.elsevier.com/model/document/hasParent
+dome:hasParent rdf:type owl:ObjectProperty ;
+               rdfs:domain dome:Fragment ;
+               rdfs:range dome:Fragment .
+
+
+###  http://schema.elsevier.com/model/document/hasRegion
+dome:hasRegion rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain dome:StructuredDocument ,
+                           dome:UnstructuredDocument ;
+               rdfs:range dome:StructuredRegion ,
+                          dome:UnstructuredRegion .
+
+
+###  http://schema.elsevier.com/model/document/hasSequence
+dome:hasSequence rdf:type owl:ObjectProperty ;
+                 rdfs:domain dome:Fragment ;
+                 rdfs:range dome:NodeSequence .
+
+
+###  http://schema.elsevier.com/model/document/isContainedIn
+dome:isContainedIn rdf:type owl:ObjectProperty ;
+                   rdfs:domain dome:Fragment ;
+                   rdfs:range dome:StructuredRegion .
+
+
+###  http://schema.elsevier.com/model/document/isRepresentedBy
+dome:isRepresentedBy rdf:type owl:ObjectProperty ;
+                     owl:inverseOf dome:represents ;
+                     rdfs:range dome:DocumentRegion ,
+                                dome:Fragment .
+
+
+###  http://schema.elsevier.com/model/document/represents
+dome:represents rdf:type owl:ObjectProperty ;
+                rdfs:domain dome:DocumentRegion ,
+                            dome:Fragment .
+
+
+###  http://schema.elsevier.com/model/document/src
+dome:src rdf:type owl:ObjectProperty ;
+         rdfs:domain dome:Fragment ;
+         rdfs:range dome:BinaryDocument .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/format
+dcterms:format rdf:type owl:DatatypeProperty ;
+               rdfs:domain dome:Document .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:DatatypeProperty ;
+                   rdfs:domain dome:Document ;
+                   rdfs:range xsd:anyURI .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:DatatypeProperty ;
+              rdfs:domain dome:Document ;
+              rdfs:range xsd:string .
+
+
+###  http://purl.org/pav/authoredOn
+pav:authoredOn rdfs:domain dome:Document .
+
+
+###  http://purl.org/pav/contributedOn
+pav:contributedOn rdfs:domain dome:Document .
+
+
+###  http://purl.org/pav/createdOn
+pav:createdOn rdfs:domain dome:Document .
+
+
+###  http://purl.org/pav/curatedOn
+pav:curatedOn rdfs:domain dome:Document .
+
+
+###  http://purl.org/pav/lastUpdateOn
+pav:lastUpdateOn rdfs:domain dome:Document .
+
+
+###  http://purl.org/pav/retrievedOn
+pav:retrievedOn rdfs:domain dome:Document .
+
+
+###  http://purl.org/pav/version
+pav:version rdfs:domain dome:Document .
+
+
+###  http://schema.elsevier.com/model/document/charOffset
+dome:charOffset rdf:type owl:DatatypeProperty ;
+                rdfs:domain dome:DocumentRegion ;
+                rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://schema.elsevier.com/model/document/namespace
+dome:namespace rdf:type owl:DatatypeProperty ;
+               rdfs:domain dome:StructuredDocument ;
+               rdfs:range xsd:anyURI .
+
+
+###  http://schema.elsevier.com/model/document/schema
+dome:schema rdf:type owl:DatatypeProperty ;
+            rdfs:domain dome:StructuredDocument ;
+            rdfs:range xsd:string .
+
+
+###  http://schema.elsevier.com/model/document/text
+dome:text rdf:type owl:DatatypeProperty ;
+          rdfs:domain dome:DocumentRegion ,
+                      dome:Fragment ;
+          rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.elsevier.com/vocabulary/ElsevierContentType
+<http://data.elsevier.com/vocabulary/ElsevierContentType> rdf:type owl:Class .
+
+
+###  http://schema.elsevier.com/model/data/Thing
+edm:Thing rdf:type owl:Class .
+
+
+###  http://schema.elsevier.com/model/document/BinaryDocument
+dome:BinaryDocument rdf:type owl:Class ;
+                    rdfs:subClassOf dome:Document .
+
+
+###  http://schema.elsevier.com/model/document/Document
+dome:Document rdf:type owl:Class ;
+              rdfs:subClassOf prov:Entity .
+
+
+###  http://schema.elsevier.com/model/document/DocumentRegion
+dome:DocumentRegion rdf:type owl:Class .
+
+
+###  http://schema.elsevier.com/model/document/Fragment
+dome:Fragment rdf:type owl:Class .
+
+
+###  http://schema.elsevier.com/model/document/NodeSequence
+dome:NodeSequence rdf:type owl:Class .
+
+
+###  http://schema.elsevier.com/model/document/StructuredDocument
+dome:StructuredDocument rdf:type owl:Class ;
+                        rdfs:subClassOf dome:Document .
+
+
+###  http://schema.elsevier.com/model/document/StructuredRegion
+dome:StructuredRegion rdf:type owl:Class ;
+                      rdfs:subClassOf dome:DocumentRegion .
+
+
+###  http://schema.elsevier.com/model/document/UnstructuredDocument
+dome:UnstructuredDocument rdf:type owl:Class ;
+                          rdfs:subClassOf dome:Document .
+
+
+###  http://schema.elsevier.com/model/document/UnstructuredRegion
+dome:UnstructuredRegion rdf:type owl:Class ;
+                        rdfs:subClassOf dome:DocumentRegion .
+
+
+###  http://www.w3.org/2002/07/owl#DataProperty
+owl:DataProperty rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

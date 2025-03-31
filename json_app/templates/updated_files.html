@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Updated Files</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #32a4a8; color: white; }
+        a{color:black;text-decoration:none;}
+        
+    </style>
+</head>
+<body>
+    <h1>Updated Files</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Batch ID</th>
+                <th>File Name</th>
+                <th>Version</th>
+                <th>Updated At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for update in updates %}
+            <tr>
+                <td>{{ update.batch_id }}</td>
+                <td>{{ update.json_file.file_name }}</td>
+                <td>{{ update.version }}</td>
+                <td>{{ update.updated_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'manage_files' %}">Back to Manage Files</a>
+</body>
+</html>

@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - JSON Viewer</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uploaded JSON Files</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>Batch ID</th>
+                <th>Version</th>
+                <th>Uploaded At</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+    <script>
+        async function fetchJSONFiles() {
+            try {
+                const response = await fetch('/getdata/');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                // Ensure the table body is selected
+                const tableBody = document.getElementById('table-body');
+                tableBody.innerHTML = ''; // Clear previous rows if any
+
+                if (data.files && data.files.length > 0) {
+                    data.files.forEach(file => {
+                        // Create a new table row
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${file.file_name}</td>
+                            <td>${file.batch_id}</td>
+                            <td>${file.version}</td>
+                            <td>${file.uploaded_at}</td>`;
+                        // Append the row to the table body
+                        tableBody.appendChild(row);
+                    });
+                } else {
+                    // No data, display a message
+                    const noDataRow = document.createElement('tr');
+                    noDataRow.innerHTML = `
+                        <td colspan="4" style="text-align: center;">No JSON files found.</td>
+                    `;
+                    tableBody.appendChild(noDataRow);
+                }
+            } catch (error) {
+                console.error('Error fetching JSON files:', error);
+                alert('Failed to load JSON files. Please check the console for details.');
+            }
+        }
+
+        // Fetch JSON files on page load
+        window.onload = fetchJSONFiles;
+    </script>
+</body>
+</html> 
+
+
+ 
+
+
+
+ 

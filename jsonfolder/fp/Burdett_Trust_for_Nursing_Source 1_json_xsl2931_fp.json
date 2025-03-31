@@ -1,0 +1,41 @@
+{"fingerprints": {
+    "signature": "848581c3d32c7cbba1e4030a31e61381",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "Burdett_Trust_for_Nursing_Source 1.json",
+            "checksum": "8f5f8142f3a009bd584c25d5626c3b09"
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "message": [
+                {
+                    "file": "X:\\json_project_1\\jsonfolder\\Burdett_Trust_for_Nursing_Source 1.json",
+                    "id": "grant-parser",
+                    "type": "error",
+                    "content": "net.minidev.json.JSONArray cannot be cast to net.minidev.json.JSONObject"
+                },
+                {
+                    "id": "GWH-GRT110",
+                    "type": "error",
+                    "content": "This document contains carriage return characters."
+                }
+            ],
+            "total-errors": 2
+        },
+        "info": {
+            "date": "2025/02/19",
+            "os": "Windows 10 version 10.0",
+            "time": "18:16",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.93.1",
+                "specset-version": "2.93.1"
+            },
+            "ingestion-version": "6.8.0",
+            "commandline": "-file \"X:\\json_project_1\\jsonfolder\\Burdett_Trust_for_Nursing_Source 1.json\" -log \"X:\\json_project_1\\jsonfolder\\ff.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

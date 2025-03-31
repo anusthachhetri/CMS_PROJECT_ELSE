@@ -1,0 +1,302 @@
+{
+	"batchId": "cb097061-b628-4399-b5df-9caddc68eda6",
+	"ingestionId": "db706fa0-eeff-4aba-8267-87297f4e84af",
+	"grantOpportunityId": 803908099,
+	"status": "INACTIVE",
+	"title": [{
+		"language": "en",
+		"value": "Korea-China (NRF-NSFC) Joint Research Cooperation Program"
+	}, {
+		"language": "ko",
+		"value": "한중 (NRF-NSFC) 공동연구 협력 프로그램"
+	}],
+	"fundingBodyOpportunityId": "0",
+	"homePage": {
+		"link": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+	},
+	"grantType": "RESEARCH",
+	"funderSchemeType": "Key Joint Research Program between Korea and China.",
+	"numberOfAwards": 0,
+	"duration": {
+		"durationExpression": "SPECIFIED",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "P2Y"
+			},
+			"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+		}, {
+			"abstract": {
+				"language": "ko",
+				"value": "2년"
+			},
+			"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+		}]
+	},
+	"repeatingOpportunity": "False",
+	"subjectMatter": [{
+		"abstract": {
+			"language": "en",
+			"value": "Produce research achievements resolving common issues of both countries through\nstrategic joint research between Korea and China nEnhance research outcomes by designating and supporting strategic fields"
+		},
+		"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+	}, {
+		"abstract": {
+			"language": "ko",
+			"value": "양국의 공동 문제를 해결하는 연구 성과를 창출하기 위해 한국과 중국 간의 전략적 공동 연구를 통해 연구 성과를 향상시키고 전략적 분야를 지정하고 지원합니다."
+		},
+		"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+	}],
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "Produce research achievements resolving common issues of both countries through\nstrategic joint research between Korea and China nEnhance research outcomes by designating and supporting strategic fields"
+		},
+		"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+	}, {
+		"abstract": {
+			"language": "ko",
+			"value": "양국의 공동 문제를 해결하는 연구 성과를 창출하기 위해 한국과 중국 간의 전략적 공동 연구를 통해 연구 성과를 향상시키고 전략적 분야를 지정하고 지원합니다."
+		},
+		"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+	}],
+	"instruction": [{
+		"abstract": {
+			"language": "en",
+			"value": "Jeong, Seungmo, International Exchange Programs Team (jsm7@nrf.re.kr)"
+		},
+		"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+	}, {
+		"abstract": {
+			"language": "ko",
+			"value": "정승모, 국제 교류 프로그램 팀 (jsm7@nrf.re.kr)"
+		},
+		"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "Biomimetic metal catalysis"
+	}, {
+		"language": "ko",
+		"value": "생체모방 금속 촉매작용"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "Copyright (c) 2019 NRF. All rights reserved."
+		},
+		"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+	}, {
+		"abstract": {
+			"language": "ko",
+			"value": "저작권 (c) 2019 NRF. 모든 권리 보유."
+		},
+		"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+	}],
+	"relatedOpportunity": {
+		"relatedTo": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NA"
+			}],
+			"description": ""
+		}],
+		"replacedBy": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NA"
+			}],
+			"description": ""
+		}],
+		"replaces": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NA"
+			}],
+			"description": ""
+		}]
+	},
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "",
+			"sourceText": "National Research Foundation of Korea (NRF) and National Natural Science Foundation of China (NSFC)."
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "",
+			"sourceText": ""
+		}]
+	},
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Biomimetic metal catalysis",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2500"
+			}
+		}
+	}],
+	"associatedAmount": {
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "60,000,000 KRW per year for each project (for Korean researchers). Chinese researchers should check with NSFC for funding details."
+			},
+			"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+		}, {
+			"abstract": {
+				"language": "ko",
+				"value": "각 프로젝트당 연간 60,000,000 KRW (한국 연구자용). 중국 연구자는 NSFC에 자금 지원 세부사항을 확인해야 합니다."
+			},
+			"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+		}],
+		"ceiling": [{
+			"currency": "KRW",
+			"amount": 60000000
+		}],
+		"estimatedTotal": [{
+			"currency": "KRW",
+			"amount": 0
+		}],
+		"floor": [{
+			"currency": "KRW",
+			"amount": 0
+		}]
+	},
+	"contactInformation": [{
+		"link": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page=",
+		"hasPostalAddress": {
+			"addressCountry": "KOR",
+			"addressRegion": "NOTSPECIFIED",
+			"addressLocality": "DAEJEON",
+			"addressPostalCode": "34113",
+			"streetAddress": "201 GAJEONG-RO, YUSEONG-GU"
+		},
+		"contactPerson": [{
+			"initials": "Ms.",
+			"givenName": "CHO",
+			"familyName": "Eunhye",
+			"emailAddress": "rongnh@nsfc.gov.cn"
+		}]
+	}],
+	"opportunityLocation": [{
+		"country": "KOR",
+		"city": "DAEJEON"
+	}],
+	"opportunityDate": {
+		"expirationDateDetail": {
+			"date": "2024-10-04T15:44:11",
+			"description": {
+				"abstract": {
+					"language": "en",
+					"value": "NOTSPECIFIED"
+				},
+				"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+			}
+		},
+		"cycle": [{
+			"index": 1,
+			"label": "Submission Deadline",
+			"startDateDetail": [{
+				"date": "2024-10-04T15:44:11",
+				"description": {
+					"abstract": {
+						"language": "en",
+						"value": "2024-07-21T00:00:00"
+					},
+					"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+				}
+			}],
+			"endDateDetail": [{
+				"date": "2024-10-04T15:44:11",
+				"description": {
+					"abstract": {
+						"language": "en",
+						"value": "2024-08-23T00:00:00"
+					},
+					"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+				}
+			}],
+			"letterOfIntent": [{
+				"limitation": "NOTSPECIFIED"
+			}],
+			"preproposal": [{
+				"limitation": "NOTSPECIFIED"
+			}],
+			"proposal": [{
+				"limitation": "NOTSPECIFIED"
+			}],
+			"decision": [{
+				"limitation": "NOTSPECIFIED"
+			}]
+		}]
+	},
+	"eligibilityClassification": {
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "Researchers at universities/institutes defined in Paragraph 3 of Article 2 of the National\nResearch and Development Innovation Act.\n Partner researcher should meet qualifications by NSFC. - Researchers who can fulfill responsibility nSpecified S&T Field"
+			},
+			"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+		}, {
+			"abstract": {
+				"language": "ko",
+				"value": "국가 연구 및 개발 혁신 법 제2조 제3항에 정의된 대학/연구소의 연구자.\n파트너 연구자는 NSFC의 자격 요건을 충족해야 합니다. - 책임을 다할 수 있는 연구자\n지정된 S&T 분야."
+			},
+			"source": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page="
+		}],
+		"limitedSubmission": {
+			"limitation": "LIMITED",
+			"numberOfApplications": 0,
+			"description": [{
+				"abstract": {
+					"language": "en",
+					"value": "An applicant can only participate in one project as either a PI or a participating researcher"
+				},
+				"source": "https://www.forskningsradet.no/en/call-for-proposals/2024/innovation-project-industrial-sector-2024/"
+			}, {
+				"abstract": {
+					"language": "ko",
+					"value": "신청자는 PI 또는 참여 연구자로서 하나의 프로젝트에만 참여할 수 있습니다."
+				},
+				"source": "https://www.forskningsradet.no/en/call-for-proposals/2024/innovation-project-industrial-sector-2024/"
+			}]
+		},
+		"individualEligibility": {
+			"limitation": "LIMITED",
+			"applicantType": ["DEGREE"]
+		},
+		"organisationEligibility": {
+			"limitation": "NOTSPECIFIED"
+		},
+		"citizenship": {
+			"limitation": "LIMITED",
+			"country": ["KOR"]
+		},
+		"regionSpecific": {
+			"limitation": "NOTSPECIFIED"
+		},
+		"restrictionScope": {
+			"limitation": "NOTSPECIFIED"
+		}
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.nrf.re.kr/eng/page/62a7fecb-959a-4dcb-80ff-11dcd9913d1e?ac=view&post=c490bacb-554c-466b-a1c4-78419acf614b&keyword=&page=",
+		"createdOn": "2024-10-04T15:44:11",
+		"lastUpdateOn": "2024-10-23T15:44:11",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "1",
+		"hidden": "False",
+		"defunct": "False",
+		"status": "UPDATE"
+	}
+}

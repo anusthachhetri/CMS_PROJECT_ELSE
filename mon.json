@@ -1,0 +1,204 @@
+{
+    "batchId": "1920b6ce-4959-4a1d-b7fc-be2ecdfba6fa",
+    "ingestionId": "2024308f-7782-40ba-a518-2e5c557ac9d5",
+    "grantOpportunityId": 300024469,
+    "status": "INACTIVE",
+    "title": [
+      {
+        "language": "en",
+        "value": "MS in Clinical Investigation"
+      }
+    ],
+    "fundingBodyOpportunityId": "Not Available",
+    "homePage": {
+      "link": "https://ictr.wisc.edu/graduate-program-in-clinical-investigation/",
+      "modifiedDate": "2018-11-20T00:00:00"
+    },
+    "grantType": "RESEARCH",
+    "funderSchemeType": "GRADUATE PROGRAM IN CLINICAL INVESTIGATION",
+    "repeatingOpportunity": false,
+    "subjectMatter": [
+      {
+        "abstract": {
+          "language": "en",
+          "value": "<ul>\r\n<li>Lead to translation of research among the laboratory, clinic and population through technological or systems innovations, including but not limited to drug therapies, medical devices, biological materials, clinical processes, and/or behavioral interventions.</li>\r\n<li>Are appropriately patient-oriented.</li>\r\n<li>Draw on the expertise of collaborators in multiple disciplines.</li>\r\n<li>Integrate clinical and translational science across multiple departments, schools and colleges, clinical and research institutes, and healthcare delivery organizations.</li>\r\n<li>Determine when it is appropriate to use a patient-oriented research design to investigate a translational clinical problem.</li>\r\n<li>Understand the principles of multidisciplinary patient-oriented clinical research protocols.</li>\r\n<li>Analyze, interpret and report research findings of clinical studies through peer-reviewed scientific channels and to a lay audience.</li>\r\n<li>Apply and foster professional, ethical and responsible conduct of clinical research.</li>\r\n</ul>"
+        },
+        "source": "https://ictr.wisc.edu/graduate-program-in-clinical-investigation/"
+      }
+    ],
+    "synopsis": [
+      {
+        "abstract": {
+          "language": "en",
+          "value": "<p>The ICTR Graduate Program in Clinical Investigation includes a PhD program in Clinical Investigation (PhD CI), an MS in Clinical Investigation, and a PhD minor in Clinical Investigations also known as a PhD with a Clinical and Translational Science focus (PhDCTS). All students share a common didactic foundation encompassing biostatistics, epidemiology, clinical study design, clinical trials conduct, and the ethical and responsible conduct of research.</p><p>The PhD CI is an applied degree in which trainees focus on the creation of novel methodologies and tools for translational science within the context of a specific biomedical discipline.</p><p>The PhDCTS leverages the core curriculum to give trainees in other degree programs the skills and tools necessary to move their biomedical research along the translational pathway.</p>"
+        },
+        "source": "https://ictr.wisc.edu/graduate-program-in-clinical-investigation/"
+      }
+    ],
+    "instruction": [
+      {
+        "abstract": {
+          "language": "en",
+          "value": "<p>For questions, please contact studentinquiry@ictr.wisc.edu</p>"
+        },
+        "source": "https://ictr.wisc.edu/graduate-program-in-clinical-investigation/"
+      }
+    ],
+    "licenseInformation": [
+      {
+        "abstract": {
+          "language": "en",
+          "value": "<p>Â© 2024 Board of Regents of the University of Wisconsin System.</p>"
+        },
+        "source": "https://ictr.wisc.edu/graduate-program-in-clinical-investigation/"
+      }
+    ],
+    "relatedFunder": {
+      "leadFunder": {
+        "fundingBodyId": 100005902
+      },
+      "hasFunder": [
+        {
+          "fundingBodyId": 100005902
+        }
+      ]
+    },
+    "classification": [
+      {
+        "type": "Annotation",
+        "hasSubject": {
+          "preferredLabel": "Epidemiology",
+          "identifier": {
+            "type": "ASJC",
+            "value": "2713"
+          }
+        }
+      }
+    ],
+    "contactInformation": [
+      {
+        "link": "https://ictr.wisc.edu/graduate-program-in-clinical-investigation/",
+        "hasPostalAddress": {
+          "addressCountry": "usa",
+          "addressRegion": "WI",
+          "addressLocality": "Madison",
+          "addressPostalCode": "53705",
+          "streetAddress": "750 Highland Avenue"
+        },
+        "contactPerson": [
+          {
+            "initials": "S.",
+            "givenName": "Sally",
+            "familyName": "Wedde",
+            "emailAddress": "studentinquiry@ictr.wisc.edu"
+          }
+        ]
+      }
+    ],
+    "opportunityDate": {
+      "cycle": [
+        {
+          "index": 1,
+          "label": "Cycle 1",
+          "letterOfIntent": [
+            {
+              "limitation": "NOTSPECIFIED",
+              "required": false
+            }
+          ],
+          "preproposal": [
+            {
+              "limitation": "NOTSPECIFIED",
+              "required": false
+            }
+          ],
+          "proposal": [
+            {
+              "limitation": "SPECIFIED",
+              "date": "2022-02-01T00:00:00",
+              "required": true
+            }
+          ],
+          "decision": [
+            {
+              "limitation": "NOTSPECIFIED",
+              "required": false
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "label": "Cycle 2",
+          "letterOfIntent": [
+            {
+              "limitation": "NOTSPECIFIED",
+              "required": false
+            }
+          ],
+          "preproposal": [
+            {
+              "limitation": "NOTSPECIFIED",
+              "required": false
+            }
+          ],
+          "proposal": [
+            {
+              "limitation": "SPECIFIED",
+              "date": "2024-02-01T12:46:00",
+              "required": true
+            }
+          ],
+          "decision": [
+            {
+              "limitation": "NOTSPECIFIED",
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    "eligibilityClassification": {
+      "description": [
+        {
+          "abstract": {
+            "language": "en",
+            "value": "<p>The ICTR Graduate Program in Clinical Investigation includes a PhD program in Clinical Investigation (PhD CI), an MS in Clinical Investigation, and a PhD minor in Clinical Investigations also known as a PhD with a Clinical and Translational Science focus (PhDCTS).\r\n</p>"
+          },
+          "source": "https://ictr.wisc.edu/graduate-program-in-clinical-investigation/"
+        }
+      ],
+      "limitedSubmission": {
+        "limitation": "NOTSPECIFIED"
+      },
+      "individualEligibility": {
+        "limitation": "LIMITED",
+        "applicantType": [
+          "GRADUATE"
+        ]
+      },
+      "organisationEligibility": {
+        "limitation": "NOTSPECIFIED"
+      },
+      "citizenship": {
+        "limitation": "NOTSPECIFIED"
+      },
+      "regionSpecific": {
+        "limitation": "NOTSPECIFIED"
+      },
+      "restrictionScope": {
+        "limitation": "NOTSPECIFIED"
+      }
+    },
+    "hasProvenance": {
+      "wasAttributedTo": "SUP001",
+      "derivedFrom": "https://ictr.wisc.edu/graduate-program-in-clinical-investigation/",
+      "createdOn": "2011-01-25T13:22:10",
+      "lastUpdateOn": "2024-02-02T17:47:15",
+      "contactPoint": "xxxx@xxxx.com",
+      "version": "26",
+      "hidden": false,
+      "defunct": false,
+      "status": "UPDATE"
+    }
+  }
+  

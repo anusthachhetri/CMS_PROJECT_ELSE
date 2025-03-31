@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Satellite RDF and XHTML Validation in VTOOL</title>
+<style>
+body {font-family:Times,serif}
+</style>
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1>Satellite RDF and XHTML Validation in Vtool</h1>
+
+<p style="margin-bottom:0px"><b>Vtool version: 5.93.1</b></p>
+
+<p style="margin-top:0px; margin-bottom:20px"><b>Date: 24 December 2024</b></p>
+
+<h2>Introduction</h2>
+
+<p>This document describes the procedures to be followed to validate stand-alone RDF Satellite XML files, XHTML files, and A300 and TFS datasets with the Vtool.</p>
+
+<h3>Procedure</h3>
+
+<p>In order to validate an RDF Satellite XML file or an A300 dataset, the user needs to create a folder by name <b>satellite-schemas</b> in the same folder
+where the <b>vtool</b>.<b>jar</b> file is located. The <b>satellite-schemas</b> folder should contain all the schema files (these schema files may be in subfolders) that are required to validate the input XML file. This folder should contain an XML catalog file named <b>satellite-catalog.xml</b>. The main schema should have a valid entry in the catalog. A <b>satellite-catalog.xml</b> example is given below:</p>
+
+<p><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;iso-8859-1&quot;?&gt;</code></p>
+
+<p><code>&lt;catalog xmlns=&quot;urn:oasis:names:tc:entity:xmlns:xml:catalog&quot; prefer=&quot;public&quot;&gt;</code></p>
+
+<p><code>&lt;group&gt;</code></p>
+
+<p><code>&lt;system systemId=&quot;http://data.elsevier.com/schema/GenHosp-CSP-1/gh_v01.xsd&quot; uri=&quot;GenHosp-CSP-1/gh_v01.xsd&quot;/&gt;</code></p>
+
+<p><code>&lt;system systemId=&quot;http://data.elsevier.com/schema/Lancet-CSP-1/lnb_v09.xsd&quot; uri=&quot;Lancet-CSP-1/lnb_v09.xsd&quot;/&gt;</code></p>
+
+<p><code>&lt;system systemId=&quot;http://data.elsevier.com/schema/QAA-CSP-1/qaacsp_v01.xsd&quot; uri=&quot;QAA-CSP-1/qaacsp_v01.xsd&quot;/&gt;</code></p>
+
+<p><code>&lt;system systemId=&quot;http://data.elsevier.com/schema/SKOSsatellite-1/voc_v01.xsd&quot; uri=&quot;SKOSsatellite-1/voc_v01.xsd&quot;/&gt;</code></p>
+
+<p><code>&lt;systemSuffix systemIdSuffix=&quot;gh_v02.xsd&quot; uri=&quot;gh_v02.xsd&quot;/&gt;</code></p>
+
+<p><code>&lt;/group&gt;</code></p>
+
+<p><code>&lt;/catalog&gt;</code></p>
+
+<p>You will note in the above XML that there are two main elements, namely,  <code>system</code> and <code>systemSuffix</code>. The <code>system</code> element should be used when the <code>schemaLocation</code> attribute of the root element of the RDF XML file has the schema path along with the default namespace URI. The <code>systemSuffix</code> element should be used when the <code>schemaLocation</code> attribute of the root element contains only the
+schema name without the default namespace URI. For further clarification about the catalog please visit <a
+href="http://www.oasis-open.org/committees/download.php/14809/xml-catalogs.html" target="_blank">: http://www.oasis-open.org/committees/download.php/14809/xml-catalogs.html</span></a>.</p>
+
+<p>In order to validate XHTML files or TFS datasets, a similar procedure should be followed. The only difference is in the folder/file naming. The folder name should be <b>xhtml</b> <b>-schemas</b> and the corresponding catalog XML file name should be <b>xhtml-catalog.xml</b>.</p>
+
+<p>To detect the RDF errors, Vtool is now available with JENA parser (a Semantic Web Framework), use the option &quot;<code>-rdf</code>&quot; along with the regular Vtool options both while validating an individual RDF XML file or a dataset.</p>
+
+<p>To validate an individual RDF XML file, use the option &quot;<code>-satellite</code>&quot; along with the regular Vtool options.</p>
+
+<p>To validate individual RDF XML against both JENA parser and Vtool Satellite both options &quot;<code>-rdf</code>&quot &quot;<code>-satellite</code>&quot; should be used.</p>
+
+<p>To validate XHTML files, the option &quot;<code>-xhtml</code>&quot; should be used along with the regular Vtool options.</p>
+
+<p><b>From Vtool v5.25.0 onwards, an additional option "-v" is introduced to facilitate parsing of very large files (tested with a thesaurus RDF Elsevier Satellite XML of size 600 MB) and other options such as "-satellite" and "-rdf" can also be used in addition to this option "-v".</b></p>
+
+<p>When an A300 or a TFS dataset.xml file is given as input to the Vtool, additional command options are not required. The  Vtool will automatically enable those options in run-time.</span></p>
+
+</div>
+
+</body>
+
+</html>

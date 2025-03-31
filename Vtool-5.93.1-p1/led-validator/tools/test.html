@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta charset="utf-8"></meta>
+  <meta name="id" content="https://data.elsevier.com/health/test/doc1"></meta>
+  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="../js/jsonld.min.js"></script>
+  <script type="text/javascript" src="../js/rdflib.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/shacl.js"></script>
+  <script type="text/javascript" src="../js/ledviewer.js"></script>
+  <link rel="stylesheet" href="../css/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="../css/ledviewer.css"></link>
+  <script type="application/ld+json">
+    {
+      "@context": [{
+        "@version": 1.1,
+        "edm": "https://data.elsevier.com/schema/edm/",
+        "pav": "http://purl.org/pav/",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "basicdoc": "http://cpexample.com/vocabulary/basicdoc/",
+        "sh": "http://www.w3.org/ns/shacl#",
+        "led": "https://data.elsevier.com/schema/led/",
+        "owl:sameAs": {
+          "@type": "@id"
+        },
+        "edm:hasPart": {
+          "@type": "@id"
+        },
+        "basicdoc:renderedAs": {
+          "@type": "@id"
+        },
+        "basicdoc:renditionOf": {
+          "@type": "@id"
+        },
+        "pav:createdOn": {
+          "@type": "xsd:date"
+        },
+        "edm:copyrightYear": {
+          "@type": "xsd:date"
+        },
+        "edm:emailAddress": {
+          "@type": "xsd:anyURI"
+        },
+        "sh:shapesGraph": {
+          "@type": "@id"
+        },
+        "led:conformsTo": {
+          "@type": "xsd:string"
+        }
+      }, {
+        "doc": "https://data.elsevier.com/health/test/doc1#"
+      }],
+      "@id": "https://data.elsevier.com/health/test/doc1",
+      "@type": "edm:Article",
+      "led:conformsTo": ["https://data.elsevier.com/schema/led/", "https://data.elsevier.com/schema/test/", "my idea of a correct LED document", "test.xsd"],
+      "sh:shapesGraph": [ "https://data.elsevier.com/schema/edm/", "https://datax.elsevier.com/schema/xxx/" ],
+      "dc:creator": "Andy Townsend",
+      "edm:copyrightYear": "2019",
+      "edm:copyrightLine": "(c) Elsevier 2019",
+      "pav:createdOn": "2019-06-10",
+      "edm:hasAuthor": {
+        "@id": "doc:author1",
+        "edm:givenName": "Flash",
+        "edm:initials": "F.",
+        "edm:familyName": "Gordon",
+        "edm:emailAddress": "mailto:f.gordon@mongo.planet",
+        "owl:sameAs": "https://cpexample.com/people/heys9372wyuxnpahe2u",
+        "basicdoc:renderedAs": "doc:cpr_003"
+      },
+      "edm:hasPart": [{
+          "@id": "doc:cpr_003",
+          "basicdoc:renditionOf": "doc:author1"
+        },
+        {
+          "@id": "doc:cpr_004",
+          "@type": "basicdoc:Description",
+          "pav:createdOn": "2019-06-11"
+        },
+        {
+          "@id": "doc:cpr_005",
+          "pav:createdOn": "2019-06-12"
+        },
+        {
+          "@id": "doc:cpr_007",
+          "@type": "basicdoc:Introduction",
+          "pav:createdOn": "2019-06-12"
+        },
+        {
+          "@id": "doc:cpr_010",
+          "@type": "basicdoc:Title"
+        },
+        {
+          "@id": "doc:cpr_012",
+          "@type": "basicdoc:Conclusion"
+        },
+	{
+          "@id": "doc:cpr_013"
+	}
+      ]
+    }
+  </script>
+  <title>Content Object with metadata about parts of the document</title>
+</head>
+
+<body>
+  <section id="cpr_010">
+    <h1 id="cpr_011">Content Profile Patterns for Content and Data</h1>
+  </section>
+  <section id="cpr_001">
+    <h1 id="cpr_002">Author</h1>
+    <p id="cpr_003">Written by: F. Gordon (f.gordon@mongo.planet)</p>
+  </section>
+  <section id="cpr_007">
+    <h1 id="cpr_008">Overview</h1>
+    <p id="cpr_009">Content Profile is a new format for bringing content and data together in an open and flexible manner.  The Content Profile format establishes a standard way to express content and data together and is intended to become the common format used for content that we author and for content that we acquire from third-parties.  Documents that use the format are called Content Profile Documents.</p>
+  </section>
+  <section id="cpr_004">
+    <h1 id="cpr_005">Components</h1>
+    <p id="cpr_006">Content Profile makes use of the industry standard formats HTML and Linked Data. XHTML5 is used as the base fabric for capturing content, while JSON-LD is used to capture data about the content, about various parts of the
+      content, and to capture relationships between the content and other data resources. The JSON-LD packages a set of RDF statements (subject-predicate-object) in a JSON format.</p>
+    <p>I am authored by <a href="#cpr_003">Mr. Gordon</a>.</p>
+  </section>
+  <section id="cpr_012">
+    <h1 id="cpr_013">Summary</h1>
+    <p>Content Profiles are the format for the future!</p>
+  </section>
+</body>
+
+</html>

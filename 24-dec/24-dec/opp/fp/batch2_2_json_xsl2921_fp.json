@@ -1,0 +1,28 @@
+{"fingerprints": {
+    "signature": "62e1cc62a5a9c6442d95f697d20e3b3c",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "batch2_2.json",
+            "checksum": "ae03e0c5cde0846fbcff27b8a763a70a"
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "total-errors": 0
+        },
+        "info": {
+            "date": "2024/12/24",
+            "os": "Windows 10 version 10.0",
+            "time": "12:46",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.92.1",
+                "specset-version": "2.92.1"
+            },
+            "ingestion-version": "6.6.0",
+            "commandline": "-Xmx1g -file \"C:\\Users\\mac008096\\Downloads\\opp\\2\\batch2_2.json\" -log \"C:\\\\Users\\\\mac008096\\\\Downloads\\\\opp\\\\2\\\\file_t.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

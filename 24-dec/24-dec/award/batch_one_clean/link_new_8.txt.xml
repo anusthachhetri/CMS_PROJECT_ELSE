@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="ViewLog.xsl"?><LogReport xmlns:vt="http://www.elsevier.com/xml/apps/qc/v" filename="D:\ML\files\JSOn\latest\24-dec\award\batch_one_clean\link_new_8.json"><Log filename="D:\ML\files\JSOn\latest\24-dec\award\batch_one_clean\link_new_8.json"><time>Vtool:5.92.1 run at Tue Dec 24 19:03:26 IST 2024</time>
+<command-line-options>-Xmx1024m -DentityExpansionLimit=200000 -file "D:\ML\files\JSOn\latest\24-dec\award\batch_one_clean\link_new_8.json" -log "D:\ML\files\JSOn\latest\24-dec\award\batch_one_clean\link_new_8.txt" -vjson "grant"</command-line-options>
+<results><total-errors>0</total-errors>
+<total-warnings>0</total-warnings>
+<total-skipped-checks>0</total-skipped-checks>
+</results>
+<time>Vtool:5.92.1 run at Tue Dec 24 19:03:33 IST 2024</time>
+</Log>
+</LogReport>

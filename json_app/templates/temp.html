@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #32a4a8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #228b8b;
+        }
+    </style>
+</head>
+<body>
+    <h1>JSON Data Form</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <!-- Render simple fields -->
+        <label for="batchId">Batch ID:</label>
+        <input type="text" id="batchId" name="batchId" value="{{ json_data.batchId }}" readonly>
+
+        <label for="ingestionId">Ingestion ID:</label>
+        <input type="text" id="ingestionId" name="ingestionId" value="{{ json_data.ingestionId }}" readonly>
+
+        <label for="grantAwardId">Grant Award ID:</label>
+        <input type="text" id="grantAwardId" name="grantAwardId" value="{{ json_data.grantAwardId }}" readonly>
+
+        <label for="fundingBodyAwardId">Funding Body Award ID:</label>
+        <input type="text" id="fundingBodyAwardId" name="fundingBodyAwardId" value="{{ json_data.fundingBodyAwardId }}" readonly>
+
+        <!-- Render complex fields -->
+        <label>Title:</label>
+        {% for title in json_data.title %}
+            <input type="text" name="title_language" value="{{ title.language }}" readonly>
+            <textarea name="title_value">{{ title.value }}</textarea>
+        {% endfor %}
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" value="{{ json_data.startDate|date:'Y-m-d' }}">
+
+        <label for="grantType">Grant Type:</label>
+        <input type="text" id="grantType" name="grantType" value="{{ json_data.grantType }}">
+
+        <!-- Add similar fields for other nested JSON structures -->
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

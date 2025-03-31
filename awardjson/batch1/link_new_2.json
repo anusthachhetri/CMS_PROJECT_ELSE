@@ -1,0 +1,188 @@
+{
+	"batchId": "b723564b-51fd-4a31-9c39-dde8a592422c",
+	"ingestionId": "748251f8-c5ea-4560-bd2c-dea5af667571",
+	"grantAwardId": 804769933,
+	"fundingBodyAwardId": "2019-122",
+	"hasInstallment": [0],
+	"hasWorkPackage": [0],
+	"title": [{
+		"language": "en",
+		"value": "Developing jurisdictional and national SAFS authoring and collaboration platform"
+	}],
+	"identifier": [{
+		"type": "DOI",
+		"value": "NOT FOUND"
+	}],
+	"startDate": "2019-10-03T00:00:00",
+	"endDate": "2025-09-29T00:00:00",
+	"grantType": "RESEARCH",
+	"funderSchemeType": "fisheries research, development",
+	"homePage": {
+		"link": "https://www.frdc.com.au/project/2019-122"
+	},
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "Commercial in confidence"
+		},
+		"source": "https://www.frdc.com.au/project/2019-122"
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "copyright (and any other intellectual property rights, if any) in this publication is owned by the Fisheries Research and Development Corporation."
+		},
+		"source": "https://www.frdc.com.au/copyright"
+	}],
+	"funds": [{
+		"fundingBodyProjectId": "NOT FOUND",
+		"hasPart": [{
+			"fundingBodyProjectId": "NOT FOUND",
+			"budget": [{
+				"currency": "AUD",
+				"amount": 246011
+			}]
+		}],
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"acronym": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "AUS",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "Locked Bag 222",
+			"streetAddress": "NOT FOUND"
+		},
+		"link": "https://www.frdc.com.au/contact-us",
+		"budget": [{
+			"currency": "AUD",
+			"amount": 246011
+		}],
+		"status": "OPEN"
+	}],
+	"fundingDetail": {
+		"installment": [{
+			"index": 0,
+			"grantAwardInstallmentId": 1,
+			"financialYearStart": 0,
+			"financialYearEnd": 0,
+			"fundedAmount": [{
+				"currency": "AUD",
+				"amount": 246011
+			}]
+		}],
+		"fundingTotal": [{
+			"currency": "AUD",
+			"amount": 246011
+		}]
+	},
+	"awardeeDetail": [{
+		"awardeeAffiliationId": "804769933_A_0",
+		"name": [{
+			"language": "en",
+			"value": "SourceCode ANZ Pty Ltd"
+		}],
+		"role": "PARTICIPANT",
+		"fundingTotal": [{
+			"currency": "AUD",
+			"amount": 246011
+		}],
+		"fundingBodyOrganizationId": "NOT FOUND",
+		"vatNumber": "NOT FOUND",
+		"link": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "AUS",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"identifier": [{
+			"type": "DUNS",
+			"value": "NOT FOUND"
+		}],
+		"departmentName": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"activityType": "NOT FOUND",
+		"affiliationOf": [{
+			"awardeePersonId": "804769933_P_0",
+			"name": [{
+				"language": "en",
+				"value": "Rudi van der Walt"
+			}],
+			"role": "PI",
+			"initials": "R",
+			"givenName": "Rudi van der",
+			"familyName": "Walt",
+			"emailAddress": "NOT FOUND",
+			"identifier": [{
+				"type": "ORCID",
+				"value": "NOT FOUND"
+			}],
+			"fundingBodyPersonId": "NOT FOUND"
+		}]
+	}],
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Environmental Science",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2300"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Aquatic Science",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "1104"
+			}
+		}
+	}],
+	"relatedOpportunity": [{
+		"grantOpportunityId": 0,
+		"fundingBodyOpportunityId": "NOT FOUND",
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"description": "NOT FOUND"
+	}],
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "FRDC"
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "FRDC"
+		}]
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.frdc.com.au/project/2019-122",
+		"createdOn": "2024-12-03T00:00:00",
+		"lastUpdateOn": "2024-12-03T00:00:00",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "1",
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	}
+}

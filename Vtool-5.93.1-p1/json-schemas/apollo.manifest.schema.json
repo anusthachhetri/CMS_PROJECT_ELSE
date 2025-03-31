@@ -1,0 +1,440 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Manifest validation schema for Manifest instances created in the Apollo workflow. Version 1.0 - Initial version for Apollo. Version 1.1 - added as:RenderedImage, pf:AuthorPhoto, pf:EthicalStatement, pf:FundingDeclaration, pf:StereochemistryAbstract, pf:Abbreviations, Version 1.2 - file type pf:ManuscriptSupportingDoc has been changed to pf:SupportingManuscript",
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": {"type": ["object", "string"]}
+    },
+    "@id": {"$ref": "#/definitions/@URIid"},
+    "@type": {
+      "type": "string",
+      "pattern": "^mnf:Manifest$"
+    },
+    "dct:title": {"$ref": "definitions/co.schema.json#/definitions/dct:title"},
+    "mnf:hasServiceOutput": {"$ref": "#/definitions/mnf:hasServiceOutput"}
+  },
+  "required": ["@type", "@id", "@context", "mnf:hasServiceOutput"],
+  "additionalProperties": true,
+  "definitions": {
+    "mnf:hasServiceOutput": {
+      "title": "All mnf:ServiceOutput objects of a mnf:Manifest",
+      "type": "array",
+      "items": {"$ref": "#/definitions/ServiceOutputModel"}
+    },
+    "ServiceOutputModel": {
+      "title": "Service output object",
+      "description": "Service Output object properties",
+      "type": "object",
+      "required": ["@id", "@type", "prov:wasAttributedTo", "prov:generatedAtTime", "mnf:hasFile", "mnf:hasCO"],
+      "additionalProperties": false,
+      "properties": {
+        "@type": {
+          "type": "string",
+          "pattern": "^mnf:ServiceOutput$"
+        },
+        "@context": {"$ref": "#/definitions/SOcontext"},
+        "@id": {"$ref": "#/definitions/@URIid"},
+        "prov:wasAttributedTo": {"$ref": "definitions/asset.schema.json#/definitions/prov:wasAttributedTo"},
+        "prov:generatedAtTime": {"$ref": "definitions/asset.schema.json#/definitions/prov:generatedAtTime"},
+        "prov:wasGeneratedBy": {"$ref": "definitions/asset.schema.json#/definitions/prov:wasGeneratedBy"},
+        "dct:title": {"$ref": "definitions/co.schema.json#/definitions/dct:title"},
+        "dct:description": {"$ref": "definitions/co.schema.json#/definitions/dct:description"},
+        "bam:extends": {"$ref": "definitions/generation.schema.json#/definitions/bam:extends"},
+        "mnf:hasFile": {"$ref": "#/definitions/mnf:hasFile"},
+        "mnf:hasSequence": {"$ref": "#/definitions/mnf:hasSequence"},
+        "pf:hasConsolidationSequence": {"$ref": "#/definitions/pf:hasConsolidationSequence"},
+        "mnf:hasCO": {"$ref": "#/definitions/mnf:hasCO"},
+        "pf:hasMention": {"$ref": "#/definitions/pf:hasMentionObject"},
+        "pf:hasCUreport": {"$ref": "#/definitions/pf:hasCUreport"},
+        "pf:nr-of-missing-files": {"$ref": "#/definitions/pf:nr-of-missing-files"},
+        "pf:complete": {"$ref": "#/definitions/pf:complete"}
+      }
+    },
+    "mnf:hasSequence": {
+      "title": "sequence of any set objects as defined in the mnf:ServiceOutput",
+      "type": "array",
+      "required": ["@list"],
+      "properties": {"@list": {"type": "array"}}
+    },
+    "pf:hasConsolidationSequence": {
+      "title": "The sequence of non-extracted images in the mnf:ServiceOutput",
+      "required": ["@list"],
+      "properties": {"@list": {"oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array"
+            }
+      
+    ]}}
+    },
+
+
+"mnf:hasFile": {
+      "title": "Manifest assets in the payload",
+      "description": "array of asset objects",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["@type",  "@id",  "bam:assetType",  "bam:assetVersion",  "prism:byteCount",  "dct:format"],
+        "properties": {
+          "@type": {"oneOf": [
+            {
+              "type": "string",
+              "pattern": "^mnf:File$"
+            },
+            {
+              "type": "array",
+              "items": [
+                 {"type": "string","enum":["mnf:File"]},
+                 {"$ref": "#/definitions/pf:FileTypes"}],
+              "additionalItems":false
+            }
+          ]},
+          "dct:isFormatOf": {"$ref": "definitions/asset.schema.json#/definitions/dct:isFormatOf"},
+          "prism:byteCount": {"$ref": "definitions/asset.schema.json#/definitions/prism:byteCount"},
+          "dct:format": {"$ref": "definitions/asset.schema.json#/definitions/dct:format"},
+          "bam:assetVersion": {"$ref": "definitions/asset.schema.json#/definitions/bam:assetVersion"},
+          "prov:generatedAtTime": {"$ref": "definitions/asset.schema.json#/definitions/prov:generatedAtTime"},
+          "prov:wasGeneratedBy": {"$ref": "definitions/asset.schema.json#/definitions/prov:wasGeneratedBy"},
+          "prov:wasAttributedTo": {"$ref": "definitions/asset.schema.json#/definitions/prov:wasAttributedTo"},
+          "dct:requires": {"$ref": "definitions/asset.schema.json#/definitions/dct:requires"},
+          "bam:pixelsHigh": {"$ref": "definitions/asset.schema.json#/definitions/bam:pixelsHigh"},
+          "bam:pixelsWide": {"$ref": "definitions/asset.schema.json#/definitions/bam:pixelsWide"},
+          "bam:duration": {"$ref": "definitions/asset.schema.json#/definitions/bam:duration"},
+          "dct:conformsTo": {"$ref": "definitions/asset.schema.json#/definitions/dct:conformsTo"},
+          "bam:filename": {"$ref": "definitions/asset.schema.json#/definitions/bam:filename"},
+          "bam:pageCount": {"$ref": "definitions/asset.schema.json#/definitions/bam:pageCount"},
+          "pf:hasMention": {"$ref": "#/definitions/pf:hasMentionRef"},
+          "pf:deDuplicationChecksum": {"$ref": "#/definitions/pf:deDuplicationChecksum"}
+        }
+      }
+    },
+    "mnf:hasCO": {
+      "title": "Array of all COs",
+      "description": "Array of all COs to be created by Service contributing to the Manifest",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["@type",  "@id"],
+        "properties": {
+          "@type": {
+            "type": "string",
+            "pattern": "^mnf:CO$"
+          },
+          "@id": {"$ref": "#/definitions/@URIid"},
+          "dct:type": {"$ref": "definitions/co.schema.json#/definitions/dct:type"},
+          "dct:title": {"$ref": "definitions/co.schema.json#/definitions/dct:title"},
+          "bam:subtype": {"$ref": "definitions/co.schema.json#/definitions/bam:subtype"},
+          "bam:label": {"$ref": "definitions/co.schema.json#/definitions/bam:label"},
+          "dct:isPartOf": {"$ref": "definitions/co.schema.json#/definitions/dct:isPartOf"}
+        }
+      }
+    },
+    "@URIid": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@Stringid": {"type": "string"},
+    "pf:isMentionOf": {
+      "title": "identifier of the associated mnf:File",
+      "type": "string"
+    },
+    "SOcontext": {
+      "description":"allowed namespace definitions in Manifest",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pf": {
+          "type": "string",
+          "pattern": "^http://vtw.elsevier.com/data/ns/properties/Manifest/PreFlight-1/$"
+        },
+        "as": {
+          "type": "string",
+          "pattern": "^http://vtw.elsevier.com/data/ns/properties/Manifest/AutoStructure-1/$"
+        },
+        "ice": {
+          "type": "string",
+          "pattern": "^http://vtw.elsevier.com/data/ns/properties/Manifest/InteractiveCopyEdit-1/$"
+        }
+      }
+    },
+    "pf:hasMentionRef": {
+      "title": "Identifier of mention of file as found in the text",
+      "type": ["string"]
+    },
+    "pf:hasMentionObject": {
+      "title": "pf:hasMention block",
+      "description": "Array of all Mentions found in the text",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["@type", "@id",  "bam:label"],
+        "properties": {
+          "@type": {"$ref": "#/definitions/typeMFhasMention"},
+          "@id": {"$ref": "#/definitions/@Stringid"},
+          "bam:label": {"$ref": "definitions/co.schema.json#/definitions/bam:label"},
+          "dct:description": {"$ref": "definitions/co.schema.json#/definitions/dct:description"},
+          "bam:title": {"$ref": "definitions/co.schema.json#/definitions/dct:title"},
+          "pf:isMentionOf": {"$ref": "#/definitions/pf:isMentionOf"}
+        }
+      }
+    },
+    "typeMFhasMention": {
+      "title": "array of pf:XMention objects that the Preflight has discovered in the text",
+      "type": "string",
+      "enum": ["pf:FigureMention", "pf:VideoMention"]
+    },
+    "pf:FileTypes":{
+      "title":"all pf: and as:FileTypes applicable by Preflight and Auto structure",
+      "type":"string",
+      "enum": [
+        "pf:Abstract", 
+        "pf:Acknowledgement", 
+        "pf:Appendix", 
+        "pf:AuthorDeclaration", 
+        "pf:Biography", 
+        "pf:ConflictOfInterest",  
+        "pf:ConflictOfInterestWeb", 
+        "pf:CoverLetter", 
+        "pf:DeclarationOfCompetingInterests", 
+        "pf:DuplicateManuscript", 
+        "pf:ExtractedImage", 
+        "pf:Figure", 
+        "pf:InlineFigure",
+        "pf:FigureCaptions", 
+        "pf:GraphicalAbstract",
+        "pf:Highlights", 
+        "pf:Manuscript",
+        "pf:SupportingManuscript",
+        "pf:MultiMedia",
+        "pf:PublisherInput",
+        "pf:References",
+        "pf:RemainingFile",
+        "pf:Table",
+        "pf:Title",
+        "as:RenderedImage",
+        "pf:AuthorPhoto",
+        "pf:EthicalStatement",
+        "pf:FundingDeclaration",
+        "pf:StereochemistryAbstract",
+        "pf:Abbreviations"
+        ]
+    },
+    
+    "pf:deDuplicationChecksum": {
+      "type": "string"      
+    },
+    "pf:complete": {"type": "boolean"},
+    "pf:nr-of-missing-files": {"type": "integer"},
+    "pf:hasCUreport": {"type": "array"},
+    "cu:title": {
+      "title": "title of CU report",
+      "type": "boolean"
+    },
+    "cu:author_group": {
+      "title": "author group",
+      "type": "boolean"
+    },
+    "name": {
+      "title": "figure name",
+      "type": "string"
+    },
+    "id": {
+      "title": "id",
+      "type": "string"
+    },
+    "cu:affiliations": {
+      "title": "affiliations",
+      "type": "boolean"
+    },
+    "cu:corresponding_author_address": {
+      "title": "corresponding author address",
+      "type": "boolean"
+    },
+    "cu:corresponding_author_email_address": {
+      "title": "corresponding author email address",
+      "type": "boolean"
+    },
+    "cu:abstract": {
+      "title": "abstract",
+      "type": "boolean"
+    },
+    "cu:keywords": {
+      "title": "keywords",
+      "type": "boolean"
+    },
+    "cu:line_numbering": {
+      "title": "line numbering",
+      "type": "boolean"
+    },
+    "cu:page_count": {
+      "title": "page count",
+      "type": "integer"
+    },
+    "cu:word_count": {
+      "title": "word count",
+      "type": "integer"
+    },
+    "cu:table_count": {
+      "title": "table count",
+      "type": "integer"
+    },
+    "cu:editable_table_count": {
+      "title": "editable table count",
+      "type": "integer"
+    },
+    "cu:missing_figures": {
+      "title": "missing figures list",
+      "description": "array of missing_figures",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_tables": {
+      "title": "missing tables list",
+      "description": "array of missing tables",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_references": {
+      "title": "missing references list",
+      "description": "array of missing_references",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_scheme": {
+      "title": "missing scheme list",
+      "description": "array of missing scheme",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_table_caption": {
+      "title": "missing table caption list",
+      "description": "array of missing table caption",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_figure_caption": {
+      "title": "missing figure caption list",
+      "description": "array of missing_figure_caption",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_scheme_caption": {
+      "title": "missing scheme caption list",
+      "description": "array of missing_scheme_caption",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_citation_for_tables": {
+      "title": "missing_citation_for_tables list",
+      "description": "array of missing_citation_for_tables",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_citation_for_figures": {
+      "title": "missing citation for figures list",
+      "description": "array of missing_citation_for_figures",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_citation_for_references": {
+      "title": "missing citation for references list",
+      "description": "array of missing_citation_for_references",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_citation_for_schemes": {
+      "title": "missing citation for schemes list",
+      "description": "array of missing_citation_for_schemes",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "as:AutoStructure": {
+      "title": "Block defined for Auto Structure properties",
+      "type": "string"
+    }
+  }
+}

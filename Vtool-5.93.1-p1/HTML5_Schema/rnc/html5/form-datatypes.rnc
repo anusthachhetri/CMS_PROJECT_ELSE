@@ -1,0 +1,46 @@
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+
+
+##  RELAX NG Schema for HTML 5: Datatypes related to forms
+
+## MIME types
+form.data.mimetypelist =
+  list {
+    xsd:token { pattern = ".[^ ]+/.[^ ]+" }
+  }
+form.data.charsetlist = string
+# FIXME should be a "a space- and/or comma-delimited 
+# list of charset values"
+
+## ECMAScript Regular Expression
+form.data.pattern = xsd:string { pattern = ".*$" }
+
+## Temporal
+form.data.datetime-local =
+  # w:datetime-local
+  xsd:dateTime
+form.data.date = xsd:date
+form.data.month = xsd:gMonth
+form.data.week = xsd:string { pattern = "^([0-9]{4,})-W([0-9]{2})$" }
+form.data.time =
+  # w:time
+  xsd:dateTime
+
+## Email
+form.data.emailaddress =
+  xsd:string
+  # TODO
+  
+form.data.emailaddresslist =
+  xsd:string
+  # TODO
+  
+
+## Color
+form.data.color = xsd:token { pattern = "#[a-fA-F0-9]{6}" }
+
+## Text without line breaks
+form.data.stringwithoutlinebreaks = xsd:string { pattern = "(.[^\n\r]*)?" }
+
+## Non-empty string
+form.data.nonemptystring = xsd:string { pattern = "(.+)" }

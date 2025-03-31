@@ -1,0 +1,169 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "The grant fingerprint schema",
+    "description": "The grant schema comprises the entire JSON document. Based on a selection of the element names from the fingerprint DTD.",
+    "required": ["fingerprints"],
+    "additionalProperties": false,
+    "properties": {
+	"fingerprints": {
+            "type": "object",
+            "description": "The root element. The XML namespace attribute from the fingerprint element omitted. XML mode: (fingerprint+, signature)",
+            "required": [
+		"fingerprint",
+		"signature",
+		"xmlns:vt"
+            ],
+            "additionalProperties": false,
+            "properties": {
+		"fingerprint": {
+		    "type": "object",
+		    "description": "XML model: (info, item-info, extract?, results )",
+		    "required": [
+			"info",
+			"item-info",
+			"results"
+		    ],
+		    "additionalProperties": false,
+		    "properties": {
+			"info": {
+			    "type": "object",
+			    "description": "XML model: (date, time, os, program, commandline, spec-file*, checksum*, skipped-checks? )",
+			    "required": [
+				"date",
+				"os",
+				"time",
+				"program",
+				"ingestion-version",
+				"commandline"
+			    ],
+			    "additionalProperties": false,
+			    "properties": {
+				"date": {"$ref": "#/definitions/date"},
+				"os": {"$ref": "#/definitions/os"},
+				"time": {"$ref": "#/definitions/time"},
+				"program": {"$ref": "#/definitions/program"},
+				"ingestion-version": {"$ref": "#/definitions/ingestion-version"},
+				"commandline": {"$ref": "#/definitions/commandline"}
+			    }
+			},
+			"item-info": {
+			    "type": "object",
+			    "description": "XML model:  (item-name, checksum, total-processed-record?, dataset-id?,jid?, aid?, pii?)",
+			    "required": [
+				"item-name",
+				"checksum"
+			    ],
+			    "additionalProperties": false,
+			    "properties": {
+				"item-name": {"$ref": "#/definitions/item-name"},
+				"checksum": {"$ref": "#/definitions/checksum"},
+				"total-processed-record": {"$ref": "#/definitions/total-processed-record"}
+			    }
+			},
+			"results": {
+			    "type": "object",
+			    "required": [
+				"total-errors",
+				"total-warnings",
+				"total-skipped-checks"
+			    ],
+			    "additionalProperties": false,
+			    "properties": {
+				"message": {
+					"oneOf": [
+                              {"type": "array"},
+                              {"type": "object"}
+  							],
+		            "properties": {
+					    "file": {"$ref": "#/definitions/file"},
+					    "id": {"$ref": "#/definitions/id"},
+					    "position": {"$ref": "#/definitions/position"},
+					    "record-id": {"$ref": "#/definitions/record-id"},
+					    "type": {"$ref": "#/definitions/type"},
+					    "content": {"$ref": "#/definitions/content"}
+					},
+					"required": [
+					    "id",
+					    "type",
+					    "content"
+					],
+					"additionalProperties": false,
+				    "items": {
+					"type": "object",
+					"properties": {
+					    "file": {"$ref": "#/definitions/file"},
+					    "id": {"$ref": "#/definitions/id"},
+					    "position": {"$ref": "#/definitions/position"},
+					    "record-id": {"$ref": "#/definitions/record-id"},
+					    "type": {"$ref": "#/definitions/type"},
+					    "content": {"$ref": "#/definitions/content"}
+					},
+					"required": [
+					    "id",
+					    "type",
+					    "content"
+					],
+					"additionalProperties": false
+				    }
+				},
+				"total-errors": {"$ref": "#/definitions/total-errors"},
+				"total-warnings": {"$ref": "#/definitions/total-warnings"},
+				"total-skipped-checks": {"$ref": "#/definitions/total-skipped-checks"}
+			    }
+			}
+		    }
+		},
+		"signature": {"$ref": "#/definitions/signature"},
+		"xmlns:vt": {"$ref": "#/definitions/xmlns:vt"}
+            }
+	}
+    },
+    "definitions": {
+	"checksum": {
+            "description": "MD5 checksum",
+            "type": "string"
+	},
+	"total-processed-record": {"type": "integer"},
+	"content": {"type": "string"},
+	"commandline": {"type": "string"},
+	"date": {"type": "string"},
+	"file": {"type": "string"},
+	"id": {"type": "string"},
+	"ingestion-version": {"type": "string"},
+	"item-name": {"type": "string"},
+	"json-config-version": {"type": "string"},
+	"name": {"type": "string"},
+	"os": {
+            "type": "string",
+            "description": "Operating System"
+	},
+	"position": {"type": "string"},
+	"program": {
+            "type": "object",
+            "required": [
+		"json-config-version",
+		"name",
+		"version",
+		"specset-version"
+            ],
+            "additionalProperties": false,
+            "properties": {
+		"json-config-version": {"$ref": "#/definitions/json-config-version"},
+		"name": {"$ref": "#/definitions/name"},
+		"version": {"$ref": "#/definitions/version"},
+		"specset-version": {"$ref": "#/definitions/specset-version"}
+            }
+	},
+	"record-id": {"type": "integer"},
+	"signature": {"type": "string"},
+	"xmlns:vt": {"type": "string"},
+	"specset-version": {"type": "string"},
+	"time": {"type": "string"},
+	"type": {"type": "string"},
+	"total-errors": {"type": "integer"},
+	"total-warnings": {"type": "integer"},
+	"total-skipped-checks": {"type": "integer"},
+	"version": {"type": "string"}
+    }
+}

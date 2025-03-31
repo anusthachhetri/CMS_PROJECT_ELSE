@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- draft version of a DOME RDFS by DKu -->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://data.elsevier.com/schema/document#">
+
+    <!-- 
+
+ This RDF schema support a very basic version of the Document Object Model for Elsevier (DOME)
+
+Supported features:
+classes:
+- docmuments
+- fragments
+- region
+- Anchor
+
+properties:
+- parent
+- children
+
+
+-->
+
+    <rdfs:Class ID="Unknown">
+        <rdfs:subClassOf resource="#Literal"/>
+    </rdfs:Class>
+
+    <rdfs:Class ID="NoValue">
+
+        <rdfs:subClassOf resource="#Literal"/>
+
+    </rdfs:Class>
+
+    <!-- Property classes derived from standard classes -->
+
+    <rdfs:Class ID="Literal"/>
+
+    <rdf:Description about="http://www.w3.org/2000/01/rdf-schema#Literal">
+        <rdfs:subClassOf resource="#Literal"/>
+    </rdf:Description>
+
+    <rdfs:Class ID="Integer">
+        <rdfs:subClassOf resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdfs:Class>
+
+    <!--Info item classes-->
+
+    <rdfs:Class ID="Item"/>
+
+    <rdfs:Class ID="Document">
+        <rdfs:subClassOf resource="#Item"/>
+    </rdfs:Class>
+
+    <rdfs:Class ID="Fragment">
+        <rdfs:subClassOf resource="#Item"/>
+    </rdfs:Class>
+
+    <rdfs:Class ID="Role">
+        <rdfs:subClassOf resource="#Item"/>
+    </rdfs:Class>
+
+    <rdfs:Class ID="Anchor">
+        <rdfs:subClassOf resource="#Item"/>
+    </rdfs:Class>
+
+    <rdfs:Class ID="Region">
+        <rdfs:subClassOf resource="#Item"/>
+    </rdfs:Class>
+
+    <rdfs:Class ID="Character">
+        <rdfs:subClassOf resource="#Item"/>
+    </rdfs:Class>
+
+    <!-- Set containers -->
+
+    <rdfs:Class ID="ItemSet">
+        <rdfs:subClassOf resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    </rdfs:Class>
+
+    <!-- Sequence containers -->
+
+    <rdfs:Class ID="ItemSeq">
+        <rdfs:subClassOf resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+
+    </rdfs:Class>
+
+    <!--Info item properties-->
+
+    <rdfs:Property ID="baseURI">
+        <rdfs:domain resource="#Document"/>
+        <rdfs:domain resource="#Fragment"/>
+        <rdfs:domain resource="#Anchor"/>
+        <rdfs:domain resource="#Region"/>
+        <rdfs:range resource="#Literal"/>
+    </rdfs:Property>
+
+    <rdfs:Property ID="characterCode">
+        <rdfs:domain resource="#Character"/>
+        <rdfs:range resource="#Integer"/>
+    </rdfs:Property>
+
+
+    <rdfs:Property ID="children">
+        <rdfs:domain resource="#Document"/>
+        <rdfs:domain resource="#Fragment"/>
+        <rdfs:range resource="#ItemSeq"/>
+    </rdfs:Property>
+
+    <rdfs:Property ID="text">
+        <rdfs:domain resource="#Document"/>
+        <rdfs:domain resource="#Fragment"/>
+        <rdfs:range resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdfs:Property>
+
+    <rdfs:Property ID="parent">
+        <rdfs:domain resource="#Fragment"/>
+        <rdfs:domain resource="#Character"/>
+        <rdfs:range resource="#Item"/>
+    </rdfs:Property>
+
+    <rdfs:Property ID="version">
+        <rdfs:domain resource="#Document"/>
+        <rdfs:range resource="#Literal"/>
+    </rdfs:Property>
+
+</rdf:RDF>

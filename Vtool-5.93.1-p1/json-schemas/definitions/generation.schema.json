@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Definitions for generation properties",
+  "description": "This schema contains the generic definitions for Generations. Do not use standalone",
+  "definitions": {
+    "bam:hasGeneration": {
+      "title": "Generations in the payload",
+      "description": "array of generation objects",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["@type", "bam:stage", "bam:classificationLevel", "bam:hasAsset", "bam:hasGeneration"],
+        "anyOf":[
+           {"required":["bam:isGenerationOf"]},
+           {"required":["bam:extends"]}],
+        "dependencies": {
+          "bam:generation": ["@id"],
+          "@id": ["bam:generation"]
+        },
+        "properties": {
+          "@type": {"$ref": "generic.schema.json#/definitions/typeIsGeneration"},
+          "@id": {"$ref": "generic.schema.json#/definitions/@id"},
+          "bam:classificationLevel": {"$ref": "#/definitions/bam:classificationLevel"},
+          "bam:stage": {"$ref": "#/definitions/bam:stage"},
+          "obs:publisherStage": {"$ref": "#/definitions/obs:publisherStage"},
+          "bam:generation": {"$ref": "#/definitions/bam:generation"},
+          "bam:isGenerationOf": {"$ref": "#/definitions/bam:isGenerationOf"},
+          "bam:contributor": {"$ref": "#/definitions/bam:contributor"},
+          "bam:contributorVersionIdentifier": {"$ref": "#/definitions/bam:contributorVersionIdentifier"},
+          "bam:isBasedOn": {"$ref": "#/definitions/bam:isBasedOn"},
+          "bam:hasGeneration": {"$ref": "#/definitions/bam:hasNestedGeneration"},
+          "bam:hasAsset": {"$ref": "#/definitions/bam:hasAsset"},
+          "bam:extends": {"$ref": "#/definitions/bam:extends"}
+        }
+      }
+    },
+    "bam:generation": {
+      "title": "generation number",
+      "type": "integer"
+    },
+    "bam:stage": {
+      "title": "generation status",
+      "type": "string"
+    },
+    "obs:publisherStage": {
+      "title": "TPA generation status",
+      "type": "string"
+    },
+    "bam:classificationLevel": {
+      "title": "access level",
+      "type": "string"
+    },
+    "bam:isGenerationOf": {
+      "title": "CO of generation",
+      "type": "string",
+      "format": "uri"
+    },
+    "bam:contributor": {
+      "type": "string",
+      "format": "uri"
+    },
+    "bam:contributorVersionIdentifier": {"type": "string"},
+    "bam:hasAsset": {
+      "type": "array",
+      "uniqueItems": true
+    },
+    "bam:hasNestedGeneration": {
+      "type": "array",
+      "uniqueItems": true
+    },
+    "bam:extends": {
+      "type": "string",
+      "format": "uri"
+    },
+    "bam:isBasedOn": {
+      "type": "string",
+      "format": "uri"
+    }
+  }
+}

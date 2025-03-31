@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "JSON schema for eBook VTW Upload API",
+  "description": "JSON Schema to validate the JSON payloads for the eBook uploads using the VTW Upload API; based on the uploadAPI-multipleCO.schema.json/ Version 1.0. Created by: SVa",
+  "properties": {
+    "@context": {"$ref": "definitions/generic.schema.json#/definitions/@context"},
+    "@type": {"$ref": "definitions/generic.schema.json#/definitions/typeIsCOs"},
+    "bam:hasContentObjects": {"$ref": "#/definitions/bam:hasContentObjects"}
+  },
+  "required": [
+    "@type",
+    "@context",
+    "bam:hasContentObjects"
+  ],
+  "additionalProperties": false,
+  "definitions": {
+    "bam:hasContentObjects": {
+      "title": "Content Objects in the payload",
+      "type": "array",
+      "items": {"$ref": "#/definitions/ContentObjectModel"}
+    },
+    "ContentObjectModel": {
+      "title": "Content Object model for eBook",
+      "description": "object containing the Content Objects properties for eBook",
+      "type": "object",
+      "required": [
+        "@id",
+        "@type",
+        "ecm:identifier",
+        "dct:title",
+        "dct:type",
+        "prism:aggregationType"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "@type": {"$ref": "definitions/generic.schema.json#/definitions/typeIsMetadata"},
+        "@context": {"$ref": "definitions/generic.schema.json#/definitions/@context"},
+        "@id": {"$ref": "definitions/generic.schema.json#/definitions/@id"},
+        "ecm:identifier": {"$ref": "definitions/co.schema.json#/definitions/ecm:identifier"},
+        "prism:aggregationType": {"$ref": "#/definitions/prism:aggregationType"},
+        "dct:type": {"$ref": "#/definitions/dct:type"},
+        "prism:channel": {"$ref": "definitions/co.schema.json#/definitions/prism:channel"},
+        "dct:title": {"$ref": "definitions/co.schema.json#/definitions/dct:title"},
+        "bam:hasAssetMetadata": {"$ref": "#/definitions/bam:hasAssetMetadata"},
+        "bam:hasGeneration": {"$ref": "#/definitions/bam:hasGeneration"}
+      }
+    },
+    "dct:type": {
+      "title": "content type",
+      "type": "string",
+      "format": "uri",
+      "enum": [      
+      "http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.2",
+      "http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.7"
+      ]
+
+    },
+    "prism:aggregationType": {
+      "title": "aggregation type",
+      "type": "array",
+      "items": [{
+      "format": "uri",
+       "enum": [
+        "http://data.elsevier.com/vocabulary/ElsevierContentTypes/3",
+        "http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"
+        ]
+       }]
+          },
+    "bam:hasAssetMetadata": {
+      "title": "Assets in the payload",
+      "description": "array of asset objects",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "@type",
+          "@id",
+          "dct:format",
+          "bam:assetType",
+          "bam:assetVersion",
+          "prism:byteCount",
+          "bam:filename",
+          "dct:isFormatOf",
+          "bam:mode"
+        ],
+        "properties": {
+          "@type": {"$ref": "definitions/generic.schema.json#/definitions/typeIsAssetMetadata"},
+          "@id": {"$ref": "definitions/generic.schema.json#/definitions/@id"},
+          "dct:isFormatOf": {"$ref": "definitions/asset.schema.json#/definitions/dct:isFormatOf"},
+          "prism:byteCount": {"$ref": "#/definitions/prism:byteCount"},
+          "dct:format": {"$ref": "#/definitions/dct:format"},
+          "bam:assetType": {"$ref": "#/definitions/bam:assetType"},
+          "bam:assetVersion": {"$ref": "definitions/asset.schema.json#/definitions/bam:assetVersion"},
+          "bam:mode": {"$ref": "#/definitions/bam:mode"},
+          "bam:created": {"$ref": "definitions/asset.schema.json#/definitions/bam:created"},
+          "dct:conformsTo": {"$ref": "#/definitions/dct:conformsTo"},
+          "bam:filename": {"$ref": "definitions/asset.schema.json#/definitions/bam:filename"}
+        }
+      }
+    },
+    "dct:format": {
+      "type": ["null", "string"],
+      "enum": [
+        null,
+        "application/epub+zip",
+        "image/jpg",
+        "application/x-mobipocket-ebook"
+      ]
+    },
+    "dct:conformsTo": {
+      "title": "PDF version, ePub version, etc.",
+      "type": "string",
+      "enum": [
+        "EPUB 1.0",
+        "EPUB 2.0",
+        "EPUB 3.0"
+      ]
+    },
+    "prism:byteCount": {
+      "title": "byte count",
+      "type": "integer",
+      "minimum": 0
+    },
+    "bam:mode": {
+      "title": "accessibility mode",
+      "type": "string",
+      "enum": ["public"]
+    },
+    "bam:assetType": {
+      "title": "type of asset",
+      "description": "value is always UPPERCASE",
+      "type": "string",
+      "enum": [
+      "MAIN",
+      "THUMBNAIL-EBOOK",
+      "DOWNSAMPLED-EBOOK",
+      "ENHANCED-EBOOK"
+      ]
+      
+    },
+    "bam:hasGeneration": {
+      "title": "Generations in the payload",
+      "description": "array of generation objects",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "@type",
+          "bam:stage",
+          "bam:classificationLevel",
+          "bam:isGenerationOf",
+          "bam:hasAsset",
+          "bam:hasGeneration"
+        ],
+        "dependencies": {
+          "bam:generation": ["@id"],
+          "@id": ["bam:generation"]
+        },
+        "properties": {
+          "@type": {"$ref": "definitions/generic.schema.json#/definitions/typeIsGeneration"},
+          "@id": {"$ref": "definitions/generic.schema.json#/definitions/@id"},
+          "bam:classificationLevel": {"$ref": "#/definitions/bam:classificationLevel"},
+          "bam:stage": {"$ref": "#/definitions/bam:stage"},
+          "bam:generation": {"$ref": "definitions/generation.schema.json#/definitions/bam:generation"},
+          "bam:isGenerationOf": {"$ref": "definitions/generation.schema.json#/definitions/bam:isGenerationOf"},
+          "bam:contributor": {"$ref": "definitions/generation.schema.json#/definitions/bam:contributor"},
+          "bam:contributorVersionIdentifier": {"$ref": "definitions/generation.schema.json#/definitions/bam:contributorVersionIdentifier"},
+          "bam:hasGeneration": {"$ref": "definitions/generation.schema.json#/definitions/bam:hasNestedGeneration"},
+          "bam:hasAsset": {"$ref": "definitions/generation.schema.json#/definitions/bam:hasAsset"}
+        }
+      }
+    },
+    "bam:stage": {
+      "title": "generation status",
+      "type": "string",
+      "enum": ["final"]
+    },
+    "bam:classificationLevel": {
+      "title": "access level",
+      "type": "string",
+      "enum": ["public"]
+    }
+  }
+}

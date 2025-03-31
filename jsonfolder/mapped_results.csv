@@ -1,0 +1,71 @@
+JSON Schema 5.0 Data Field,Value from the Source or as determined by Supplier,
+fundingBodyAwardId,GN3049,0
+grantType,"Research,Training, Fellowship",1
+title ,Testing a new treatment strategy that could help children with two rare neurodegenerative diseases,2
+startDate,11/1/2024,3
+endDate,10/31/2024,4
+noticeDate,8/19/2024,5
+homePage/link,https://action.org.uk/research/testing-new-treatment-strategy-could-help-children-two-rare-neurodegenerative-diseases,6
+homepage/modifiedDate,not found ,7
+homepage/publishedDate,9/30/2024,8
+synopsis,"Niemann-Pick type C1 (NPC1) disease and Wolfram syndrome (WS) are both rare,, life-limiting neurodegenerative diseases that mainly affect children. Currently,, there is no cure for either – and current treatment options are extremely limited. Dr Sovan Sarkar of the University of Birmingham is carrying out laboratory tests to find out whether existing therapies used for other health conditions could help slow the progression of symptoms that affect the nervous system in NPC1 and WS. His ultimate goal is to develop an effective new treatment strategy that could help improve the quality of life and extend life expectancy for children born with these devastating conditions.",9
+keyword,not found,10
+fundingDetail/fundingTotal/amount,249999,11
+fundingDetail/fundingTotal/currency,GBP,12
+fundingDetail/installment,not found,13
+funderSchemeType,Research,14
+classification/ ASJC code,"1307 ,, 1313 ,, 2708 ,, 2804 ",15
+classification/ other codes,not found,16
+classification/ Orgspecific,"Cell Biology,,Molecular Medicine,,Neurology (Clinical),,Cellular and Molecular Neuroscience",17
+awardeeDetail/name,"University of Birmingham,,not found",18
+awardeeDetail/fundingBodyOrganizationId,not found,19
+awardeeDetail/role,"COORDINATOR ,, PARTICIPANT",20
+awardeeDetail/departmentName,"Department of Cancer and Genomic Sciences ,, Department of Endocrinology",21
+awardeeDetail/activityType,"research organization,,research organization",22
+awardeeDetail/fundingTotal/amount,0,23
+awardeeDetail/fundingTotal/currency,GBP,24
+awardeeDetail/hasPostalAddress,not found,25
+awardeeDetail/link,not found,26
+awardeeDetail/identifier,ROR,27
+awardeeDetail/vatNumber,not found,28
+awardeeDetail/awardeeAffiliationId,not found,29
+awardeeDetail/affiliationOf/initials,"S.,,T.G.",30
+awardeeDetail/affiliationOf/name,"Sovan Sarkar,,Timothy G Barrett",31
+awardeeDetail/affiliationOf/givenName,"Sovan,,Timothy G",32
+awardeeDetail/affiliationOf/familyName,"Sarkar,,Barrett",33
+awardeeDetail/affiliationOf/role,"PI,,COPI",34
+awardeeDetail/affiliationOf/emailAddress,"not found,,not found",35
+awardeeDetail/affiliationOf/identifier/id/orcid,"not found,,not found",36
+awardeeDetail/affiliationOf/fundingBodyPersonId,"not found,,not found",37
+awardeeDetail/affiliationOf/awardeePersonId,not found,38
+licenceInformation/link,https://action.org.uk/about-us/policies/privacy-policy,39
+relatedFunder/leadFunder,Action Medical Research for children,40
+relatedFunder/hasFunder,Action Medical Research for children,41
+relatedOpportunity/grantOpportunityId,NOT FOUND,42
+relatedOpportunity/title,Action Medical Research Project Grants in Child Health 2025,43
+relatedOpportunity/description,"Action Medical Research is a leading UK-wide charity dedicated to saving and changing children’s lives through medical research. Action funds a wide range of cutting-edge medical research most likely to deliver real benefit to babies,, children and young people.Applications are invited across the breadth of Action’s remit to prevent and treat disease and disability by funding vital medical research in hospitals or research institutions across the UK. The support focuses on child health to include problems affecting pregnancy,, childbirth,, babies,, children and young people.This call includes the opportunity to apply for a co-funded award with DEBRA UK for translational research into Epidermolysis Bullosa in children  and a co-funded award with Borne for translational research into the causes of preterm birth.",44
+relatedOpportunity/fundingBodyOpportunityId,not found,45
+funds/fundingProjectId,not found,46
+funds/acronym,not found,47
+funds/hasPart/budget,not found,48
+funds/hasPart/fundingBodyProjectId,not found,49
+funds/title,not found,50
+funds/startDate,not found,51
+funds/endDate,not found,52
+funds/link,not found,53
+funds/hasPostalAddress,not found,54
+funds/status,OPEN,55
+awardee country,not found,56
+awardee addressLocality,not found,57
+awardee addressPostalCode,not found,58
+awardee addressRegion,not found,59
+awardee postOfficeBoxNumber,not found,60
+awardee streetAddress,not found,61
+funding country,not found,62
+funding addressLocality,not found,63
+funding addressPostalCode,not found,64
+funding addressRegion,not found,65
+funding postOfficeBoxNumber,not found,66
+funding streetAddress,not found,67
+licenceInformation value,not found,68
+createdON,2/6/2025,69

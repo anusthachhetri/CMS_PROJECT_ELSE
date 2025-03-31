@@ -1,0 +1,196 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Definitions for asset properties",
+    "description": "This schema contains the generic definitions for Assets. Do not use standalone",
+    "definitions": {
+        "bam:hasAssetMetadata": {
+            "title": "Assets in the payload",
+            "description": "array of asset objects",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                    "@type",
+                    "@id",
+                    "dct:format",
+                    "bam:assetType",
+                    "bam:assetVersion",
+                    "prism:byteCount",
+                    "bam:filename",
+                    "bam:mode"
+                ],
+                "properties": {
+                    "@type": {"$ref": "generic.schema.json#/definitions/typeIsAssetMetadata"},
+                    "@id": {"$ref": "generic.schema.json#/definitions/@id"},
+                    "dct:isFormatOf": {"$ref": "#/definitions/dct:isFormatOf"},
+                    "prism:byteCount": {"$ref": "#/definitions/prism:byteCount"},
+                    "dct:format": {"$ref": "#/definitions/dct:format"},
+                    "bam:assetType": {"$ref": "#/definitions/bam:assetType"},
+                    "bam:assetVersion": {"$ref": "#/definitions/bam:assetVersion"},
+                    "bam:mode": {"$ref": "#/definitions/bam:mode"},
+                    "prov:generatedAtTime": {"$ref": "#/definitions/prov:generatedAtTime"},
+                    "prov:wasGeneratedBy": {"$ref": "#/definitions/prov:wasGeneratedBy"},
+                    "prov:wasAttributedTo": {"$ref": "#/definitions/prov:wasAttributedTo"},
+                    "dct:requires": {"$ref": "#/definitions/dct:requires"},
+                    "bam:pixelsHigh": {"$ref": "#/definitions/bam:pixelsHigh"},
+                    "bam:pixelsWide": {"$ref": "#/definitions/bam:pixelsWide"},
+                    "bam:duration": {"$ref": "#/definitions/bam:duration"},
+                    "dct:conformsTo": {"$ref": "#/definitions/dct:conformsTo"},
+                    "stDim:h": {"$ref": "#/definitions/stDim:h"},
+                    "stDim:unit": {"$ref": "#/definitions/stDim:unit"},
+                    "stDim:w": {"$ref": "#/definitions/stDim:w"},
+                    "bam:vectorRaster": {"$ref": "#/definitions/bam:vectorRaster"},
+                    "bam:transparency": {"$ref": "#/definitions/bam:transparency"},
+                    "bam:resolution": {"$ref": "#/definitions/bam:resolution"},
+                    "bam:colourSpace": {"$ref": "#/definitions/bam:colourSpace"},
+                    "bam:colourProfile": {"$ref": "#/definitions/bam:colourProfile"},
+                    "bam:typesetModel": {"$ref": "#/definitions/bam:typesetModel"},
+                    "bam:typesetModelVersion": {"$ref": "#/definitions/bam:typesetModelVersion"},
+                    "bam:multiPart": {"$ref": "#/definitions/bam:multiPart"},
+                    "bam:filename": {"$ref": "#/definitions/bam:filename"},
+                    "bam:sequenceNumber": {"$ref": "#/definitions/bam:sequenceNumber"},
+                    "bam:fpLocation": {"$ref": "#/definitions/bam:fpLocation"},
+                    "bam:pageCount": {"$ref": "#/definitions/bam:pageCount"},
+                    "bam:alias": {"$ref": "#/definitions/bam:alias"},
+                    "bam:hasPageLayoutComments": {"$ref": "#/definitions/bam:hasPageLayoutComments"}
+                }
+            }
+        },
+        "bam:typesetModel": {"$ref": "generic.schema.json#/definitions/bam:typesetModel"},
+        "bam:typesetModelVersion": {"$ref": "generic.schema.json#/definitions/bam:typesetModelVersion"},
+        "dct:format": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "pattern": "^[a-z0-9]*/[A-z0-9\\-\\.\\+]*$"
+        },
+        "bam:assetType": {
+            "title": "type of asset",
+            "description": "value is always UPPERCASE",
+            "type": "string",
+            "pattern": "^[A-Z\\-]*$"
+        },
+        "prism:byteCount": {
+            "title": "byte count",
+            "type": "integer"
+        },
+        "bam:assetVersion": {
+            "title": "md5 of asset",
+            "type": "string"
+        },
+        "bam:filename": {
+            "title": "name",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "dct:isFormatOf": {
+            "title": "CO of asset",
+            "type": "string"
+        },
+        "bam:mode": {
+            "title": "accessibility mode",
+            "type": "string",
+            "enum": [
+                "private",
+                "public"
+            ]
+        },
+        "bam:created": {
+            "title": "date-time of creation of the asset, will be deprecated",
+            "type": "string",
+            "format": "date-time"
+        },
+        "prov:generatedAtTime": {
+            "title": "date-time of creation of asset",
+            "type": "string",
+            "format": "date-time"
+        },
+        "prov:wasGeneratedBy": {
+            "title": "date-time of creation",
+            "type": "string",
+            "format": "uri"
+        },
+        "bam:fpLocation": {
+            "title": "Vtool fingerprint file location",
+            "type": "array",
+            "format": "uri"
+        },
+        "prov:wasAttributedTo": {
+            "title": "date-time of creation",
+            "type": "string",
+            "format": "uri"
+        },
+        "bam:colourProfile": {
+            "title": "Color Profile name",
+            "type": "string"
+        },
+        "bam:colourSpace": {
+            "title": "Color Space value",
+            "type": "string"
+        },
+        "bam:resolution": {
+            "title": "Number of dots per inch of the raster image",
+            "type": "integer"
+        },
+        "bam:transparency": {
+            "title": "transparency indicator",
+            "type": "boolean"
+        },
+        "bam:vectorRaster": {
+            "title": "Vector or Raster indicator",
+            "type": "string"
+        },
+        "stDim:h": {
+            "title": "Height magnitude of the print size",
+            "type": "number"
+        },
+        "stDim:w": {
+            "title": "Width magnitude of the print size",
+            "type": "number"
+        },
+        "stDim:unit": {
+            "title": "Unit of print height and width",
+            "type": "string"
+        },
+        "dct:conformsTo": {
+            "title": "Standards that assets conforms to",
+            "type": "string"
+        },
+        "bam:multiPart": {
+            "title": "multipart indicator",
+            "type": "boolean"
+        },
+        "bam:sequenceNumber": {
+            "title": "sequence of the asset in the multipart during upload",
+            "type": "integer"
+        },
+        "bam:pixelsHigh": {"type": "integer"},
+        "bam:pixelsWide": {"type": "integer"},
+        "bam:ucsLocation": {"type": "string"},
+        "bam:duration": {"type": "integer"},
+        "dct:requires": {"type": "array"},
+        "bam:generation": {
+            "title": "generation number",
+            "type": "integer"
+        },
+        "bam:alias": {
+            "title": "list of alternative file names for the asset",
+            "type": "array"
+        },
+        "bam:pageCount": {
+            "title": "page count",
+            "description": "https://confluence.cbsels.com/display/VUD/bam%3ApageCount",
+            "type": "integer",
+            "minimum": 1
+        },
+        "bam:hasPageLayoutComments": {
+        	"title":"Page Layout Comments",
+        	"description": "https://confluence.cbsels.com/display/VUD/bam%3AhasPageLayoutComments",
+        	"type": "boolean"
+        }
+    }
+}

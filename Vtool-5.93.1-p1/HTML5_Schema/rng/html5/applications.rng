@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
+  xmlns="http://relaxng.org/ns/structure/1.0" 
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <a:documentation> RELAX NG Schema for HTML 5: Web Application Features</a:documentation>
+  <a:documentation>Removed patterns that are not alldwed in Elseviers Core Profile</a:documentation>
+  
+  <define name="details.elem">
+    <a:documentation>Additional On-Demand Information: details</a:documentation>
+    <element name="details">
+      <interleave>
+        <ref name="details.inner"/>
+        <ref name="details.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  <define name="details.attrs">
+    <interleave>
+      <ref name="common.attrs"/>
+      <optional>
+        <ref name="details.attrs.open"/>
+      </optional>
+      <optional>
+        <choice>
+          <ref name="common.attrs.aria.implicit.group"/>
+          <!-- aria-expanded must be true if open attr present; check by assertions -->
+          <ref name="common.attrs.aria.role.group"/>
+        </choice>
+      </optional>
+    </interleave>
+  </define>
+  <define name="details.attrs.open">
+    <attribute name="open">
+      <choice>
+        <value type="string" datatypeLibrary="">open</value>
+        <value type="string" datatypeLibrary=""/>
+      </choice>
+    </attribute>
+  </define>
+  <define name="details.inner">
+    <ref name="summary.elem"/>
+    <ref name="common.inner.flow"/>
+  </define>
+  <define name="summary.elem">
+    <a:documentation>Caption/summary for details element: summary</a:documentation>
+    <element name="summary">
+      <interleave>
+        <ref name="summary.inner"/>
+        <ref name="summary.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  <define name="summary.attrs">
+    <interleave>
+      <ref name="common.attrs"/>
+      <optional>
+        <choice>
+          <ref name="common.attrs.aria.implicit.button"/>
+          <ref name="common.attrs.aria.role.button"/>
+        </choice>
+      </optional>
+    </interleave>
+  </define>
+  <define name="summary.inner">
+    <choice>
+      <ref name="common.inner.phrasing"/>
+      <ref name="h1.elem"/>
+      <ref name="h2.elem"/>
+      <ref name="h3.elem"/>
+      <ref name="h4.elem"/>
+      <ref name="h5.elem"/>
+      <ref name="h6.elem"/>
+      <ref name="hgroup.elem"/>
+    </choice>
+  </define>
+</grammar>

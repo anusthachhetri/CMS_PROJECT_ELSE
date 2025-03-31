@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "JSON schema for VTW Assertions API",
+  "description": "JSON Schema to validate JSON payloads for the VTW Assertions API.",
+  "type": "object",
+  "properties": {
+    "project": {"$ref": "#/definitions/project"},
+    "type": {"$ref": "#/definitions/type"},
+    "annotation-type": {"$ref": "#/definitions/annotation-type"},
+    "assertions": {"$ref": "#/definitions/assertions"}
+  },
+  "required": [
+    "project",
+    "type",
+    "assertions"
+  ],
+  "additionalProperties": false,
+  "definitions": {
+    "project": {
+      "title": "LDR project",
+      "description": "The name of the project, stating the reason why the content is uploaded",
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "title": "type of satellite",
+      "description": "dct:type of of the resulting satellite",
+      "type": "string",
+      "format": "uri"
+    },
+    "annotation-type": {
+      "title": "type of annotation",
+      "description": "Optional property for the type of annotations made in the payload. This will populate the 'sat-type', which is the urpose of the resulting satellite",
+      "type": "string"
+    },
+    "assertions": {
+      "title": "assertions",
+      "description": "The set of assertions made in the payload to be captured in the satellite. No restrictions on the number of assertions is set in this JSON Schema. However, the property name should contain a colon; the property should have a namespace. And the assertion property cannot be an (array of) object(s) itself.",
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^.*:.*": 
+          {"not": 
+            {"oneOf": [
+             {"type": ["object"]},
+             {"type": ["array"],"items": {"type": "object"}}
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace dcterms = "http://purl.org/dc/terms/"
+namespace h = "http://www.w3.org/1999/xhtml"
+namespace pav = "http://purl.org/pav/"
+
+[
+  pav:createdBy [ "Elsevier, Quality Assessment Suite Squad" ]
+  pav:version [ "0.3" ]
+  pav:createdOn [ "2018-04-18" ]
+  pav:lastUpdateOn [ "2018-09-05" ]
+  a:documentation [
+    "\x{a}" ~
+    "      "
+    h:article [
+      "\x{a}" ~
+      "        "
+      h:h1 [ "RELAX NG Schema for HTML 5 Core Profile" ]
+      "\x{a}" ~
+      "        "
+      h:div [
+        "\x{a}" ~
+        "          "
+        h:h2 [ "version history" ]
+        "\x{a}" ~
+        "          "
+        h:table [
+          "\x{a}" ~
+          "            "
+          h:tbody [
+            "\x{a}" ~
+            "              "
+            h:tr [
+              "\x{a}" ~
+              "                "
+              h:td [ "0.1" ]
+              "\x{a}" ~
+              "                "
+              h:td [ "2018-01-01" ]
+              "\x{a}" ~
+              "                "
+              h:td [ "Initial draft" ]
+              "\x{a}" ~
+              "              "
+            ]
+            "\x{a}" ~
+            "              "
+            h:tr [
+              "\x{a}" ~
+              "                "
+              h:td [ "0.2" ]
+              "\x{a}" ~
+              "                "
+              h:td [ "2018-04-03" ]
+              "\x{a}" ~
+              "                "
+              h:td [ "Based on March version of Core Profile" ]
+              "\x{a}" ~
+              "              "
+            ]
+            "\x{a}" ~
+            "              "
+            h:tr [
+              "\x{a}" ~
+              "                "
+              h:td [ "0.3" ]
+              "\x{a}" ~
+              "                "
+              h:td [ "2018-09-07" ]
+              "\x{a}" ~
+              "                "
+              h:td [ "reinstalled data-* for clean separation of syntax and semantics" ]
+              "\x{a}" ~
+              "              "
+            ]
+            "\x{a}" ~
+            "            "
+          ]
+          "\x{a}" ~
+          "          "
+        ]
+        "\x{a}" ~
+        "        "
+      ]
+      "\x{a}" ~
+      "        "
+      h:div [
+        "\x{a}" ~
+        "          "
+        h:p [
+          "Extended documentation and design at "
+          h:a [
+            href = "https://confluence.cbsels.com/display/CPROFILES/Core+Profile"
+            "Confluence CProfile page on Core Profile"
+          ]
+          "."
+        ]
+        "\x{a}" ~
+        "        "
+      ]
+      "\x{a}" ~
+      "      "
+    ]
+    "\x{a}" ~
+    "    "
+  ]
+]
+include "html5/common.rnc" inherit = h
+
+## Language Definitions
+start = html.elem
+include "html5/meta.rnc" inherit = h
+include "html5/phrase.rnc" inherit = h
+include "html5/block.rnc" inherit = h
+include "html5/sectional.rnc" inherit = h
+include "html5/structural.rnc" inherit = h
+include "html5/revision.rnc" inherit = h
+include "html5/embed.rnc" inherit = h
+include "html5/ruby.rnc" inherit = h
+include "html5/media.rnc" inherit = h
+include "html5/core-scripting.rnc" inherit = h
+include "html5/tables.rnc" inherit = h
+include "html5/form-datatypes.rnc" inherit = h
+include "html5/web-forms.rnc" inherit = h
+include "html5/web-forms2.rnc" inherit = h
+include "html5/applications.rnc" inherit = h
+include "html5/data.rnc" inherit = h
+include "html5/rdfa.rnc" inherit = h
+include "html5/aria.rnc" inherit = h
+# include href="html5/microdata.rnc"/
+
+# <include href="html5/web-components.rnc"/>
+
+## SVG
+include "svg11/svg11.rnc" inherit = h
+
+## MathML3
+include "mathml3/mathml3.rnc" inherit = h

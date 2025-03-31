@@ -1,0 +1,71 @@
+JSON Schema 5.0 Data Field,Value from the Source or as determined by Supplier
+fundingBodyAwardId,not found
+grantType,RESEARCH
+title ,Novel molecular determinants of brown adipose tissue inflammation in obesity and glucose dysmetabolism
+startDate,01-01-2024
+endDate,not found
+noticeDate,not found
+homePage/link,https://www.drwf.org.uk/drwf-research/funded-research/
+homepage/modifiedDate,not found
+homepage/publishedDate,not found
+synopsis,"Poor nutrition and population ageing are the main contributors to the current global epidemic of obesity and type-2 diabetes. A pathological process underlying the development of these conditions is chronic inflammation of the adipose tissue. There are two main types of adipose tissue: white adipose tissue that stores energy in the form of fat, and brown adipose tissue that contains a unique type of mitochondria (cellular organelles that produce energy), which can dissipate the energy from fat and glucose as heat. Inflammation affects both the white adipose tissue and the brown adipose tissue. Our research has shown that dietary fatty acids activate innate immune signalling pathways associated with inflammation and it aims to demonstrate that certain innate immune pathway components can be manipulated in a manner that promotes the energy dissipating activity of the brown adipose tissue. This demonstration would provide proof-of-principle that pharmacological interventions altering the activity of innate immune inflammatory pathways can be used therapeutically to promote energy expenditure in a way that reduces body weight, improves insulin sensitivity and prevents or ameliorates type 2 diabetes."
+keyword,not found
+fundingDetail/fundingTotal/amount,"19,997"
+fundingDetail/fundingTotal/currency,GBP
+fundingDetail/installment,not found
+funderSchemeType,Funded Research
+classification/ ASJC code,"1311,,1310,,2704,,2403"
+classification/ other codes,not found
+classification/ Orgspecific,"Nutrition and Dietetics,,Endocrinology,,Diabetes and Metabolism,,Immunology and Microbiology (miscellaneous)"
+awardeeDetail/name,University College London
+awardeeDetail/fundingBodyOrganizationId,not found
+awardeeDetail/role,COORDINATOR
+awardeeDetail/departmentName,not found
+awardeeDetail/activityType,research organization
+awardeeDetail/fundingTotal/amount,0
+awardeeDetail/fundingTotal/currency,GBP
+awardeeDetail/hasPostalAddress,not found
+awardeeDetail/link,not found
+awardeeDetail/identifier,ROR
+awardeeDetail/vatNumber,not found
+awardeeDetail/awardeeAffiliationId,not found
+awardeeDetail/affiliationOf/initials,L.
+awardeeDetail/affiliationOf/name,Lazaros Foukas
+awardeeDetail/affiliationOf/givenName,Lazaros
+awardeeDetail/affiliationOf/familyName,Foukas
+awardeeDetail/affiliationOf/role,PI
+awardeeDetail/affiliationOf/emailAddress,not found
+awardeeDetail/affiliationOf/identifier/id/orcid,not found
+awardeeDetail/affiliationOf/fundingBodyPersonId,not found
+awardeeDetail/affiliationOf/awardeePersonId,not found
+licenceInformation/link,https://www.drwf.org.uk/privacy-and-cookie-policy/
+relatedFunder/leadFunder,Diabetes Research and Wellness Foundation
+relatedFunder/hasFunder,Diabetes Research and Wellness Foundation
+relatedOpportunity/grantOpportunityId,not found
+relatedOpportunity/title,not found
+relatedOpportunity/description,not found
+relatedOpportunity/fundingBodyOpportunityId,not found
+funds/fundingProjectId,not found
+funds/acronym,not found
+funds/hasPart/budget,not found
+funds/hasPart/fundingBodyProjectId,not found
+funds/title,not found
+funds/startDate,not found
+funds/endDate,not found
+funds/link,not found
+funds/hasPostalAddress,not found
+funds/status,CLOSE
+awardee country,GBR
+awardee addressLocality,not found
+awardee addressPostalCode,not found
+awardee addressRegion,not found
+awardee postOfficeBoxNumber,not found
+awardee streetAddress,not found
+funding country,GBR
+funding addressLocality,not found
+funding addressPostalCode,not found
+funding addressRegion,not found
+funding postOfficeBoxNumber,not found
+funding streetAddress,not found
+licenceInformation value,Privacy and Cookie Policy
+createdON,1/27/2025

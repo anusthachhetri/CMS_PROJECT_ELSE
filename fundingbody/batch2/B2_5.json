@@ -1,0 +1,163 @@
+{
+	"batchId": "3bd4cddb-4b9d-4d74-bdd7-360182abb5f4",
+	"ingestionId": "d9f0a419-28f3-41ed-8c57-52823712719d",
+	"fundingBodyId": 809606960,
+	"homePage": "https://www.ria.ie",
+	"status": "ACTIVE",
+	"preferredName": [{
+		"language": "en",
+		"value": "Royal Irish Academy"
+	}],
+	"acronym": [{
+		"language": "en",
+		"value": "RIA"
+	}],
+	"abbrevName": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}],
+	"alternateName": [{
+		"language": "ga",
+		"value": "Acadamh Ríoga na hÉireann"
+	}],
+	"financeType": "PRI",
+	"activityType": "ACADEM",
+	"profitabilityType": "NONPROF",
+	"country": "IRL",
+	"state": "Dublin",
+	"identifier": [{
+		"type": "CROSSREFID",
+		"value": "NOTFOUND"
+	}],
+	"description": [{
+		"abstract": {
+			"language": "en",
+			"value": "The Royal Irish Academy, established in 1785, serves as an all-island learned society, recognising academic achievement and contributing expertise to enhance the public good."
+		},
+		"source": "https://www.ria.ie"
+	}],
+	"awardSuccessRate": {
+		"percentage": 0,
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}]
+	},
+	"establishment": {
+		"establishmentYear": 1785,
+		"country": "IRL",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "Founded in 1785, the RIA is Ireland's premier learned body. The Earl of Charlemont was its first president. Its royal charter, granted the following year, declared its aims to be the promotion and investigation of the sciences, polite literature, and antiquities, as well as the encouragement of discussion and debate between scholars of diverse backgrounds and interests."
+			},
+			"source": "https://www.ria.ie/about/history-of-the-academy"
+		}]
+	},
+	"fundingPolicy": [{
+		"abstract": {
+			"language": "en",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}],
+	"contactInformation": {
+		"link": "https://www.ria.ie/about/contact-us",
+		"hasPostalAddress": {
+			"addressCountry": "IRL",
+			"addressRegion": "Dublin",
+			"addressLocality": "Dublin 2",
+			"addressPostalCode": "D02 HH58",
+			"postOfficeBoxNumber": "NOTFOUND",
+			"streetAddress": "19 Dawson Street,Dublin 2,D02 HH58"
+		}
+	},
+	"relation": {
+		"partOf": [0],
+		"hasPart": [0],
+		"affiliatedWith": [0],
+		"renamedAs": [0],
+		"continuationOf": [0],
+		"mergedWith": [0],
+		"incorporatedInto": [0],
+		"mergerOf": [0],
+		"incorporates": [0],
+		"isReplacedBy": [0],
+		"replaces": [0],
+		"splitFrom": [0],
+		"splitInto": [0]
+	},
+	"vatNumber": "NOTFOUND",
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.ria.ie",
+		"createdOn": "2024-10-28T06:35:17.720Z",
+		"lastUpdateOn": "2024-10-28T06:35:17.721Z",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": 1,
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	},
+	"registry": {
+		"termsOfUse": {
+			"source": [""]
+		},
+		"fundingBodyDataset": {
+			"collectionCode": "SUP004",
+			"extended": false,
+			"tier": 4,
+			"source": [{
+				"name": "Royal Irish Academy",
+				"url": "https://www.ria.ie",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-28T06:35:17.721Z",
+				"captureEnd": "2024-10-28T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"opportunityDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-28T06:35:17.721Z",
+				"captureEnd": "2024-10-28T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"awardDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-28T06:35:17.721Z",
+				"captureEnd": "2024-10-28T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"publicationDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-28T06:35:17.721Z",
+				"captureEnd": "2024-10-28T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		}
+	}
+}

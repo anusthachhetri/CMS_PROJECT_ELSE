@@ -1,0 +1,71 @@
+JSON Schema 5.0 Data Field,Value from the Source or as determined by Supplier
+fundingBodyAwardId,not found
+grantType,RESEARCH
+title ,Does partial inhibition of glucokinase protect human pancreatic beta-cells against glucotoxicity and glucolipotoxicity?
+startDate,01-01-2024
+endDate,not found
+noticeDate,not found
+homePage/link,https://www.drwf.org.uk/drwf-research/funded-research/
+homepage/modifiedDate,not found
+homepage/publishedDate,not found
+synopsis,"All forms of diabetes are characterised by a chronically elevated level of blood glucose (chronic hyperglycaemia), which results from insufficient secretion of insulin from the ?-cells of the pancreas. Type 2 diabetes (T2D) is a progressive disease in which elevated blood glucose gradually damages the ?-cell so that they release even less insulin, which leads to higher blood glucose levels and therefore further ?-cell damage. At time of T2D diagnosis, it is often found that an individual’s capacity to produce adequate amounts of insulin in order to maintain healthy blood glucose levels has declined by as much as 50%. This inexorable decline in ?-cell function leads to devastating secondary complications, such as heart, eye and kidney disease.Although the current therapeutic strategies available for T2D can reduce blood glucose either by enhancing insulin release (sulphonylureas, GLP-1 receptor agonists) or by increasing glucose clearance from the blood (insulin, metformin), none of these therapies provide any long-term benefit with regard to maintaining ?-cell health and insulin secretion. In people without diabetes, a rise in blood glucose causes glucose from the blood to be taken up by the ?-cell where it is broken down by metabolism to produce a molecule called ATP, which is needed to stimulate insulin release. In contrast, when blood glucose is chronically elevated, too much glucose is metabolised by the ?-cell and eventually causes ‘blockages’ in the metabolic pathway. These ‘blockages’ mean that glucose can no longer be metabolised to produce enough ATP to cause insulin secretion. Thus, this proposal will investigate if the ?-cell can be protected against the detrimental effects of chronic hyperglycaemia by lowering the amount of glucose which is metabolised by the cell down to the same level as which occurs in people without diabetes. This novel approach will prioritise maintaining, or restoring, ?-cell health and insulin secretion which will greatly reduce the risk of developing debilitating secondary complications."
+keyword,not found
+fundingDetail/fundingTotal/amount,20000
+fundingDetail/fundingTotal/currency,GBP
+fundingDetail/installment,not found
+funderSchemeType,Funded Research
+classification/ ASJC code,"2704,,1310,,1308"
+classification/ other codes,not found
+classification/ Orgspecific,"Diabetes and Metabolism,,Endocrinology,,Clinical Biochemistry"
+awardeeDetail/name,Edinburgh University
+awardeeDetail/fundingBodyOrganizationId,not found
+awardeeDetail/role,COORDINATOR
+awardeeDetail/departmentName,not found
+awardeeDetail/activityType,research organization
+awardeeDetail/fundingTotal/amount,0
+awardeeDetail/fundingTotal/currency,GBP
+awardeeDetail/hasPostalAddress,not found
+awardeeDetail/link,not found
+awardeeDetail/identifier,ROR
+awardeeDetail/vatNumber,not found
+awardeeDetail/awardeeAffiliationId,not found
+awardeeDetail/affiliationOf/initials,E.
+awardeeDetail/affiliationOf/name,Elizabeth Haythorne
+awardeeDetail/affiliationOf/givenName,Elizabeth
+awardeeDetail/affiliationOf/familyName,Haythorne
+awardeeDetail/affiliationOf/role,PI
+awardeeDetail/affiliationOf/emailAddress,not found
+awardeeDetail/affiliationOf/identifier/id/orcid,not found
+awardeeDetail/affiliationOf/fundingBodyPersonId,not found
+awardeeDetail/affiliationOf/awardeePersonId,not found
+licenceInformation/link,https://www.drwf.org.uk/privacy-and-cookie-policy/
+relatedFunder/leadFunder,Diabetes Research and Wellness Foundation
+relatedFunder/hasFunder,Diabetes Research and Wellness Foundation
+relatedOpportunity/grantOpportunityId,not found
+relatedOpportunity/title,not found
+relatedOpportunity/description,not found
+relatedOpportunity/fundingBodyOpportunityId,not found
+funds/fundingProjectId,not found
+funds/acronym,not found
+funds/hasPart/budget,not found
+funds/hasPart/fundingBodyProjectId,not found
+funds/title,not found
+funds/startDate,not found
+funds/endDate,not found
+funds/link,not found
+funds/hasPostalAddress,not found
+funds/status,CLOSE
+awardee country,GBR
+awardee addressLocality,not found
+awardee addressPostalCode,not found
+awardee addressRegion,not found
+awardee postOfficeBoxNumber,not found
+awardee streetAddress,not found
+funding country,GBR
+funding addressLocality,not found
+funding addressPostalCode,not found
+funding addressRegion,not found
+funding postOfficeBoxNumber,not found
+funding streetAddress,not found
+licenceInformation value,Privacy and Cookie Policy
+createdON,1/27/2025

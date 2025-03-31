@@ -1,0 +1,334 @@
+[
+    {
+        "batchId": "",
+        "ingestionId": "",
+        "grantAwardId": 88812321,
+        "fundingBodyAwardId": "not found",
+        "hasInstallment": [
+            0
+        ],
+        "hasWorkPackage": [
+            0
+        ],
+        "title": [
+            {
+                "language": "en",
+                "value": "Integrated omics to identify the epitranscriptomic interactions between methyl modifications of mature miRNAs and transcriptome in placenta due to micronutrient (B12) deficiency promoting diabetes in pregnancy",
+                "hasProvenance": {
+                    "createdOn": "2025-01-27T00:00:00",
+                    "createdBy": "MPS",
+                    "createdWith": "MPS SERVICES"
+                }
+            }
+        ],
+        "identifier": [
+            {
+                "type": "DOI",
+                "value": "not found"
+            }
+        ],
+        "startDate": "2024-01-01T00:00:00",
+        "grantType": "RESEARCH",
+        "funderSchemeType": "Funded Research",
+        "homePage": {
+            "link": "https://www.drwf.org.uk/drwf-research/funded-research/"
+        },
+        "synopsis": [
+            {
+                "abstract": {
+                    "language": "en",
+                    "value": "Obesity in pregnancy has adverse effects on both mother and baby and predisposes them to heart diseases later in life. Women of child-bearing age, pregnant, lactating and women adhering to vegan diet are at much higher risk of B12 deficiency, and their offspring are at elevated risk of low birth weight and preterm birth. This led to significant interest in understanding the maternal diet during pregnancy. My research showed that pregnant women with low B12 have higher sugar and fat levels in the blood and develop more body fat, which are signs of higher risk for heart diseases in later life. However, the causal reason is unknown.B12 is one of the key micronutrients turning the biological switch on/off for the methylation process, which is responsible for efficient functioning of small RNA molecules called microRNA that control genes and cellular process. Here I propose that when B12 levels are deficient, the methyl groups normally added to the microRNA are reduced. This results in dysfunctional microRNAs which could profoundly change gene/protein products and contribute to disease development.The aim is to characterise the methylation sites and identify the gene targets of microRNAs at the tissue level caused by low B12 using advanced technologies. This approach will identify new pathways affected and detect new targets that could enable tailored therapies in specific patient subgroups to treat diabetes. Benefits are anticipated to enhance the potential for the individualized health care and management of patients with diabetes during pregnancy.",
+                    "hasProvenance": {
+                        "createdOn": "2025-01-27T00:00:00",
+                        "createdBy": "MPS",
+                        "createdWith": "MPS SERVICES"
+                    }
+                },
+                "source": "https://www.drwf.org.uk/drwf-research/funded-research/"
+            }
+        ],
+        "keyword": [
+            {
+                "language": "en",
+                "value": "not found",
+                "hasProvenance": {
+                    "createdOn": "2025-01-27T00:00:00",
+                    "createdBy": "MPS",
+                    "createdWith": "MPS SERVICES"
+                }
+            }
+        ],
+        "licenseInformation": [
+            {
+                "abstract": {
+                    "language": "en",
+                    "hasProvenance": {
+                        "createdOn": "2025-01-27T00:00:00",
+                        "createdBy": "MPS",
+                        "createdWith": "MPS SERVICES"
+                    },
+                    "value": "Privacy and Cookie Policy"
+                },
+                "source": "https://www.drwf.org.uk/privacy-and-cookie-policy/"
+            }
+        ],
+        "funds": [
+            {
+                "fundingBodyProjectId": "not found",
+                "hasPart": [
+                    {
+                        "fundingBodyProjectId": "not found",
+                        "budget": [
+                            {
+                                "currency": "GBP",
+                                "amount": 0
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "language": "en",
+                        "value": "Integrated omics to identify the epitranscriptomic interactions between methyl modifications of mature miRNAs and transcriptome in placenta due to micronutrient (B12) deficiency promoting diabetes in pregnancy",
+                        "hasProvenance": {
+                            "createdOn": "2025-01-27T00:00:00",
+                            "createdBy": "MPS",
+                            "createdWith": "MPS SERVICES"
+                        }
+                    }
+                ],
+                "acronym": "not found",
+                "hasPostalAddress": {
+                    "addressCountry": "GBR",
+                    "addressRegion": "not found",
+                    "addressLocality": "not found",
+                    "addressPostalCode": "not found",
+                    "postOfficeBoxNumber": "not found",
+                    "streetAddress": "not found"
+                },
+                "link": "not found",
+                "budget": [
+                    {
+                        "currency": "GBP",
+                        "amount": 0
+                    }
+                ],
+                "status": "OPEN"
+            }
+        ],
+        "fundingDetail": {
+            "installment": [
+                {
+                    "index": 0,
+                    "grantAwardInstallmentId": 1,
+                    "financialYearStart": 0,
+                    "financialYearEnd": 0,
+                    "fundedAmount": [
+                        {
+                            "currency": "GBP",
+                            "amount": 0
+                        }
+                    ]
+                }
+            ],
+            "fundingTotal": [
+                {
+                    "currency": "GBP",
+                    "amount": 20000
+                }
+            ]
+        },
+        "awardeeDetail": [
+            {
+                "activityType": "research organization",
+                "affiliationOf": [
+                    {
+                        "awardeePersonId": "88812321_P_0",
+                        "emailAddress": "not found",
+                        "familyName": "Antonysunil",
+                        "fundingBodyPersonId": "not found",
+                        "givenName": "Adaikala",
+                        "identifier": [
+                            {
+                                "type": "ORCID",
+                                "value": "not found"
+                            }
+                        ],
+                        "initials": "A.",
+                        "name": [
+                            {
+                                "language": "en",
+                                "value": "Adaikala Antonysunil"
+                            }
+                        ],
+                        "role": "PI",
+                        "sourceRole": "not found"
+                    }
+                ],
+                "awardeeAffiliationId": "88812321_A_0",
+                "departmentName": [
+                    {
+                        "language": "en",
+                        "value": "not found",
+                        "hasProvenance": {
+                            "createdOn": "2025-01-27T00:00:00",
+                            "createdBy": "MPS",
+                            "createdWith": "MPS SERVICES"
+                        }
+                    }
+                ],
+                "fundingBodyOrganizationId": "not found",
+                "fundingTotal": [
+                    {
+                        "amount": 0,
+                        "currency": "GBP"
+                    }
+                ],
+                "hasPostalAddress": {
+                    "addressCountry": "GBR",
+                    "addressLocality": "not found",
+                    "addressPostalCode": "not found",
+                    "addressRegion": "not found",
+                    "postOfficeBoxNumber": "not found",
+                    "streetAddress": "not found"
+                },
+                "identifier": [
+                    {
+                        "type": "ROR",
+                        "value": "not found"
+                    }
+                ],
+                "link": "not found",
+                "name": [
+                    {
+                        "language": "en",
+                        "value": "Nottingham Trent University"
+                    }
+                ],
+                "role": "COORDINATOR",
+                "sourceRole": "not found",
+                "vatNumber": "not found"
+            }
+        ],
+        "classification": [
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Obstetrics and Gynaecology",
+                    "identifier": {
+                        "value": "2729",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Endocrinology",
+                    "identifier": {
+                        "value": "1310",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Nutrition and Dietetics",
+                    "identifier": {
+                        "value": "1311",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Clinical Biochemistry",
+                    "identifier": {
+                        "value": "1308",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Diabetes and Metabolism",
+                    "identifier": {
+                        "value": "2704",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Reproductive Medicine",
+                    "identifier": {
+                        "value": "2743",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Public Health, Environmental and Occupational Health",
+                    "identifier": {
+                        "value": "2739",
+                        "type": "ASJC"
+                    }
+                }
+            }
+        ],
+        "relatedOpportunity": [
+            {
+                "grantOpportunityId": 0,
+                "fundingBodyOpportunityId": "not found",
+                "title": [
+                    {
+                        "language": "en",
+                        "value": "not found",
+                        "hasProvenance": {
+                            "createdOn": "2025-01-27T00:00:00",
+                            "createdBy": "MPS",
+                            "createdWith": "MPS SERVICES"
+                        }
+                    }
+                ],
+                "description": "not found"
+            }
+        ],
+        "relatedFunder": {
+            "leadFunder": {
+                "fundingBodyId": 82346797,
+                "sourceId": "not found",
+                "sourceText": "Diabetes Research and Wellness Foundation"
+            },
+            "hasFunder": [
+                {
+                    "fundingBodyId": 0,
+                    "sourceId": "not found",
+                    "sourceText": "Diabetes Research and Wellness Foundation"
+                }
+            ]
+        },
+        "hasProvenance": {
+            "wasAttributedTo": "SUP005",
+            "derivedFrom": "https://www.drwf.org.uk/drwf-research/funded-research/",
+            "createdOn": "2025-02-05T18:13:30",
+            "lastUpdateOn": "2025-02-05T18:13:30",
+            "contactPoint": "robin.bhandari@highwirepress.com",
+            "version": "0",
+            "hidden": false,
+            "defunct": false,
+            "status": "NEW"
+        },
+        "options": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+        }
+    }
+]

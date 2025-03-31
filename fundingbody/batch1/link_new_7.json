@@ -1,0 +1,199 @@
+{
+	"batchId": "6b52a3c9-9364-4100-b044-34f6882841aa",
+	"ingestionId": "7632ea9b-df07-44c7-b649-79a3a9fe73f5",
+	"fundingBodyId": 808856754,
+	"homePage": "https://english.swps.pl",
+	"status": "ACTIVE",
+	"preferredName": [{
+		"language": "en",
+		"value": "SWPS University"
+	}, {
+		"language": "pl",
+		"value": "Uniwersytet SWPS"
+	}],
+	"acronym": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}, {
+		"language": "pl",
+		"value": "NOTFOUND"
+	}],
+	"abbrevName": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}, {
+		"language": "pl",
+		"value": "NOTFOUND"
+	}],
+	"alternateName": [{
+		"language": "en",
+		"value": "European University named after Father Józef Tischner in Kraków"
+	}, {
+		"language": "pl",
+		"value": "Wyższa Szkoła Europejska im. ks. Józefa Tischnera w Krakowie"
+	}],
+	"financeType": "PRI",
+	"activityType": "RESINS",
+	"profitabilityType": "NONPROF",
+	"country": "POL",
+	"state": "Kraków",
+	"identifier": [{
+		"type": "CROSSREFID",
+		"value": "NOTFOUND"
+	}],
+	"description": [{
+		"abstract": {
+			"language": "en",
+			"value": "SWPS University excels in exploring the human mind and applying this expertise to address practical challenges of today and tomorrow. We believe that through better understanding of human intelligence we can learn to thrive in the world of new technologies and dynamic social change. We are a leading higher education institution in Poland, excelling in psychology, social sciences, law, language studies, literature and cultural studies, media and communication studies, computer science, management, and design."
+		},
+		"source": "https://english.swps.pl/we-the-university"
+	}, {
+		"abstract": {
+			"language": "pl",
+			"value": "Uniwersytet SWPS doskonale bada ludzką psyche i wykorzystuje tę wiedzę do rozwiązywania praktycznych wyzwań dzisiejszego i jutrzejszego świata. Wierzymy, że dzięki lepszemu zrozumieniu ludzkiej inteligencji możemy nauczyć się prosperować w świecie nowych technologii i dynamicznych zmian społecznych. Jesteśmy wiodącą instytucją edukacyjną w Polsce, specjalizującą się w psychologii, naukach społecznych, prawie, filologiach, literaturze i kulturze, studiach medialnych i komunikacyjnych, informatyce, zarządzaniu oraz designie."
+		},
+		"source": "https://swps.pl/my-uniwersytet"
+	}],
+	"awardSuccessRate": {
+		"percentage": 0,
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "pl",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}]
+	},
+	"establishment": {
+		"establishmentYear": 1996,
+		"country": "POL",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "The University was established in 1996 by three eminent professors of Psychology and now, after more than twenty years of dynamic growth, we are proud to be a strong community of over 500 faculty researchers and experienced academics, who teach 16,000 students enrolled in close to 50 undergraduate, graduate, and doctoral programs across six campuses located in major cities in Poland. Our broad education offer includes 18 undergraduate and graduate programs taught entirely in English to over 1,100 international students from more than 80 countries."
+			},
+			"source": "https://english.swps.pl/we-the-university"
+		}, {
+			"abstract": {
+				"language": "pl",
+				"value": "Uniwersytet został założony w 1996 roku przez trzech wybitnych profesorów psychologii, a teraz, po ponad dwudziestu latach dynamicznego rozwoju, jesteśmy dumni z bycia silną społecznością ponad 500 pracowników naukowych i doświadczonych akademików, którzy uczą 16 000 studentów zapisanych na blisko 50 programów licencjackich, magisterskich i doktoranckich w sześciu kampusach zlokalizowanych w głównych miastach Polski. Nasza szeroka oferta edukacyjna obejmuje 18 programów licencjackich i magisterskich nauczanych w całości w języku angielskim dla ponad 1 100 studentów międzynarodowych z ponad 80 krajów."
+			},
+			"source": "https://swps.pl/my-uniwersytet"
+		}]
+	},
+	"fundingPolicy": [{
+		"abstract": {
+			"language": "en",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "pl",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}],
+	"contactInformation": {
+		"link": "https://www.ualberta.ca/en/about/contact.html",
+		"hasPostalAddress": {
+			"addressCountry": "POL",
+			"addressRegion": "Lesser Poland Voivodeship (Małopolskie)",
+			"addressLocality": "Kraków",
+			"addressPostalCode": "31-864",
+			"postOfficeBoxNumber": "NOTFOUND",
+			"streetAddress": "al. Jana Pawła II 39a"
+		}
+	},
+	"relation": {
+		"partOf": [0],
+		"hasPart": [0],
+		"affiliatedWith": [0],
+		"renamedAs": [0],
+		"continuationOf": [0],
+		"mergedWith": [0],
+		"incorporatedInto": [0],
+		"mergerOf": [0],
+		"incorporates": [0],
+		"isReplacedBy": [0],
+		"replaces": [0],
+		"splitFrom": [0],
+		"splitInto": [0]
+	},
+	"vatNumber": "NOTFOUND",
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://english.swps.pl",
+		"createdOn": "2024-10-23T06:35:17.720Z",
+		"lastUpdateOn": "2024-10-23T06:35:17.721Z",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": 1,
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	},
+	"registry": {
+		"termsOfUse": {
+			"source": [""]
+		},
+		"fundingBodyDataset": {
+			"collectionCode": "SUP004",
+			"extended": false,
+			"tier": 4,
+			"source": [{
+				"name": "SWPS University",
+				"url": "https://english.swps.pl",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"opportunityDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"awardDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"publicationDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		}
+	}
+}

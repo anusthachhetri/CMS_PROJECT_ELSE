@@ -1,0 +1,28 @@
+{"fingerprints": {
+    "signature": "af11d0317bc7095eb21ba4793e7f13d9",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "FEMS_Diana_sourcefile_N.json",
+            "checksum": "e4a80df3383b69b587c3ffa28a2630d0"
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "total-errors": 0
+        },
+        "info": {
+            "date": "2025/03/20",
+            "os": "Windows 10 version 10.0",
+            "time": "12:45",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.93.1",
+                "specset-version": "2.93.1"
+            },
+            "ingestion-version": "6.8.0",
+            "commandline": "-Xmx1g -file \"D:\\\\Elsevier\\\\json\\\\bulkjson\" -log \"D:\\\\Elsevier\\\\json\\\\bulkjson\\\\file_t.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

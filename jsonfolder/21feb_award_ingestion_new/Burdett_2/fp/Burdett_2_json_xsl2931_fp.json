@@ -1,0 +1,28 @@
+{"fingerprints": {
+    "signature": "b8d1b503049a4ceef8f7ee03a6fb0a77",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "Burdett_2.json",
+            "checksum": "62a29bee4beff4b48a62268a0b22c7fd"
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "total-errors": 0
+        },
+        "info": {
+            "date": "2025/02/21",
+            "os": "Windows 10 version 10.0",
+            "time": "18:58",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.93.1",
+                "specset-version": "2.93.1"
+            },
+            "ingestion-version": "6.8.0",
+            "commandline": "-Xmx1g -file \"D:\\\\Elsevier\\\\json\\\\21feb\\\\Burdett_2\\\\Burdett_2.json\" -log \"D:\\\\Elsevier\\\\json\\\\21feb\\\\Burdett_2\\\\file_t.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

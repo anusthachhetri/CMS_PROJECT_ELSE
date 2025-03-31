@@ -1,0 +1,220 @@
+{
+	"batchId": "4d171778-c137-40f3-bbe0-90496778c8db",
+	"ingestionId": "b557e42b-2af7-4837-84c4-c31265021def",
+	"grantAwardId": 805484575,
+	"fundingBodyAwardId": "4720010",
+	"hasInstallment": [0],
+	"hasWorkPackage": [0],
+	"title": [{
+		"language": "en",
+		"value": "NURSE WELLBEING DURING COVID-19"
+	}],
+	"identifier": [{
+		"type": "DOI",
+		"value": "NOT FOUND"
+	}],
+	"startDate": "2020-01-01T00:00:00",
+	"endDate": "2020-12-31T00:00:00",
+	"grantType": "RESEARCH",
+	"funderSchemeType": "Covid Grants",
+	"homePage": {
+		"link": "https://www.medicalresearch.org.nz/covid-grants"
+	},
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "Our nurses are essential to the success of our health system and response to COVID-19. While New Zealand is not yet facing the catastrophic pressure felt overseas, nurses are working on the front lines and experiencing the risks and vulnerabilities to themselves and their whanau. This can have serious consequences such as anxiety and depression, harming nurse wellbeing and undermining our health system at a time of need. This research will directly address workforce sustainability by investigating the impact COVID-19 has on nurse wellbeing in the Auckland region and identifying resilience strategies which can be deployed by nurses, their employers and organizations which support them. To achieve this, data on wellbeing are collected through online surveying to identify patterns resulting from the pandemic. These data are then complemented with interviews exploring themes identified in the survey, focusing on sustainability strategies and opportunities to intervene to improve wellbeing. The research will have an impact not only in the science community, but also for our largest health workforce by informing the development of support strategies during this and future crises, directly contributing to a better health system and improved outcomes for both nurses and the public they work tirelessly to support."
+		},
+		"source": "https://www.medicalresearch.org.nz/covid-grants"
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "© 2023 by Auckland© 2023 by Auckland Medical Research Foundation Medical Research Foundation"
+		},
+		"source": "https://www.medicalresearch.org.nz/covid-grants"
+	}],
+	"funds": [{
+		"fundingBodyProjectId": "NOT FOUND",
+		"hasPart": [{
+			"fundingBodyProjectId": "NOT FOUND",
+			"budget": [{
+				"currency": "NZD",
+				"amount": 31494
+			}]
+		}],
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"acronym": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "NZL",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"link": "NOT FOUND",
+		"budget": [{
+			"currency": "NZD",
+			"amount": 31494
+		}],
+		"status": "CLOSED"
+	}],
+	"fundingDetail": {
+		"installment": [{
+			"index": 0,
+			"grantAwardInstallmentId": 1,
+			"financialYearStart": 0,
+			"financialYearEnd": 0,
+			"fundedAmount": [{
+				"currency": "NZD",
+				"amount": 31494
+			}]
+		}],
+		"fundingTotal": [{
+			"currency": "NZD",
+			"amount": 31494
+		}]
+	},
+	"awardeeDetail": [{
+		"awardeeAffiliationId": "805484575_A_0",
+		"name": [{
+			"language": "en",
+			"value": "Massey Business School, Massey University"
+		}],
+		"role": "COORDINATOR",
+		"fundingTotal": [{
+			"currency": "NZD",
+			"amount": 31494
+		}],
+		"fundingBodyOrganizationId": "NOT FOUND",
+		"vatNumber": "NOT FOUND",
+		"link": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "NZL",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"identifier": [{
+			"type": "DUNS",
+			"value": "NOT FOUND"
+		}],
+		"departmentName": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"activityType": "NOT FOUND",
+		"affiliationOf": [{
+			"awardeePersonId": "805484575_P_0",
+			"name": [{
+				"language": "en",
+				"value": "Matthew Roskruge"
+			}],
+			"role": "PI",
+			"initials": "M",
+			"givenName": "Matthew",
+			"familyName": "Roskruge",
+			"emailAddress": "NOT FOUND",
+			"identifier": [{
+				"type": "ORCID",
+				"value": "NOT FOUND"
+			}],
+			"fundingBodyPersonId": "NOT FOUND"
+		}, {
+			"awardeePersonId": "805484575_P_1",
+			"name": [{
+				"language": "en",
+				"value": "Margaret Brunton"
+			}],
+			"role": "COPI",
+			"initials": "M",
+			"givenName": "Margaret",
+			"familyName": "Brunton",
+			"emailAddress": "NOT FOUND",
+			"identifier": [{
+				"type": "ORCID",
+				"value": "NOT FOUND"
+			}],
+			"fundingBodyPersonId": "NOT FOUND"
+		}, {
+			"awardeePersonId": "805484575_P_2",
+			"name": [{
+				"language": "en",
+				"value": "Catherine Cook"
+			}],
+			"role": "COPI",
+			"initials": "C",
+			"givenName": "Catherine",
+			"familyName": "Cook",
+			"emailAddress": "NOT FOUND",
+			"identifier": [{
+				"type": "ORCID",
+				"value": "NOT FOUND"
+			}],
+			"fundingBodyPersonId": "NOT FOUND"
+		}]
+	}],
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Infectious Diseases",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2725"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Public Health",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2705"
+			}
+		}
+	}],
+	"relatedOpportunity": [{
+		"grantOpportunityId": 0,
+		"fundingBodyOpportunityId": "NOT FOUND",
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"description": "NOT FOUND"
+	}],
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "Auckland Medical Research Foundation"
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "Auckland Medical Research Foundation"
+		}]
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.medicalresearch.org.nz/covid-grants",
+		"createdOn": "2024-12-18T14:32:40",
+		"lastUpdateOn": "2024-12-18T14:32:40",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "1",
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	}
+}

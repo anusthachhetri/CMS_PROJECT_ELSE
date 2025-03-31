@@ -1,0 +1,426 @@
+{
+   "$schema": "http://json-schema.org/schema#",
+   "title": "Definitions for CO properties",
+   "description": "This schema contains the generic definitions for Content Objects. Do not use standalone",
+   "definitions": {
+      "acs:countryID": {
+         "title": "countryID",
+         "description": "The GeoNames geographical database covers all countries and contains over 25 million placenames.",
+         "type": "string",
+         "format": "uri",
+         "pattern": "^https://www.geonames.org/[0-9]+.*$"
+      },
+      "acs:sequenceNumber": {
+         "title": "sequenceNumber",
+         "description": "Sequence in an list of Authors or Organizations. Differs from bam:sequenceNumber (domain of Content Objects)",
+         "type": "integer"
+      },
+      "acs:isCorrespondingAuthor": {
+         "title": "isCorrespondingAuthor",
+         "description": "set to true if an Author is the Corresponding Author",
+         "type": "boolean"
+      },
+      "bam:availableOnline": {"$ref": "generic.schema.json#/definitions/bam:availableOnline"},
+      "bam:originalAvailableOnline": {"$ref": "generic.schema.json#/definitions/bam:originalAvailableOnline"},
+      "bam:originalVorAvailableOnline": {"$ref": "generic.schema.json#/definitions/bam:originalVorAvailableOnline"},
+      "bam:vorAvailableOnline": {"$ref": "generic.schema.json#/definitions/bam:vorAvailableOnline"},
+      "bam:typesetModel": {"$ref": "generic.schema.json#/definitions/bam:typesetModel"},
+      "bam:typesetModelVersion": {"$ref": "generic.schema.json#/definitions/bam:typesetModelVersion"},
+      "ecm:identifier": {
+         "title": "VTW identifier",
+         "type": "string"
+      },
+      "dct:identifier": {
+         "title": "any other identifier",
+         "type": "array",
+         "items": [
+            {"type": "string"}
+         ]
+      },
+      "dct:title": {
+         "title": "title",
+         "type": "string"
+      },
+      "dct:type": {
+         "title": "content type",
+         "type": "string",
+         "format": "uri",
+         "pattern": "^http://data.elsevier.com/vocabulary/.*$"
+      },
+      "obs:publisherItemType": {
+         "title": "TPA content type",
+         "type": "string"
+      },
+      "obs:carCreationInstruction": {
+         "title": "CAR creation type",
+         "type": "array",
+         "items": [
+            {"type": "string"}
+         ]
+      },
+      "obs:isPartOf": {
+         "type": "array",
+         "items": [
+            {
+               "type": "string",
+               "format": "uri"
+            }
+         ]
+      },
+      "obs:sourceType": {
+         "title": "TPA source type",
+         "type": "string"
+      },
+      "obs:subscriptionStatus": {
+         "title": "status of CAR",
+         "type": "string"
+      },
+      "prism:aggregationType": {
+         "title": "aggregation type",
+         "type": "array"
+      },
+      "prism:channel": {
+         "type": "array",
+         "items": [
+            {
+               "format": "uri",
+               "pattern": "^http://data.elsevier.com/vocabulary/.*$"
+            }
+         ]
+      },
+      "bam:subtype": {
+         "type": "string",
+         "format": "uri",
+         "pattern": "^http://data.elsevier.com/vocabulary/.*$"
+      },
+      "dct:isPartOf": {
+         "type": ["array"],
+         "items": [
+            {
+               "type": "string",
+               "format": "uri"
+            }
+         ]
+      },
+      "dct:creator": {
+         "type": "array",
+         "items": {"$ref": "#/definitions/person"}
+      },
+      "bam:correspondingAuthor": {"$ref": "#/definitions/person"},
+      "bam:leadCreator": {"$ref": "#/definitions/person"},
+      "person": {
+         "type": "object",
+         "required": ["foaf:name"],
+         "properties": {
+            "@id": {"$ref": "#/definitions/orcid"},
+            "foaf:name": {
+               "type": "string",
+               "pattern": "^([^@]+)$"
+            },
+            "foaf:mailbox": {"type": "string"},
+            "ccm:instanceIdentifier": {"type": "string"},
+            "ccm:role": {"$ref": "#/definitions/ccm:role"},
+            "ccm:orcid": {"type": "string"},
+            "ccm:altName": {"type": "string"},
+            "acs:sequenceNumber": {"$ref": "#/definitions/acs:sequenceNumber"},
+            "acs:isCorrespondingAuthor": {"$ref": "#/definitions/acs:isCorrespondingAuthor"}
+         },
+         "additionalProperties": false,
+         "patternProperties": {
+            "^foaf.*": {"type": "string"}
+         }
+      },
+      "orcid": {
+         "type": "string",
+         "pattern": "^http://orcid.org/.*$"
+      },
+      "dct:abstract": {
+         "type": "array",
+         "items": [
+            {"type": "string"}
+         ]
+      },
+      "dct:description": {"type": "string"},
+      "dct:date": {
+         "type": "string",
+         "format": "date-time"
+      },
+      "bam:year": {"type": "integer"},
+      "dct:created": {
+         "type": "string",
+         "format": "date-time"
+      },
+      "dct:modified": {
+         "type": "string",
+         "format": "date-time"
+      },
+      "dct:publisher": {"type": "string"},
+      "prism:copyright": {"type": "string"},
+      "dct:language": {"type": "string"},
+      "prism:expirationDate": {
+         "type": "string",
+         "format": "date-time"
+      },
+      "bam:addOnType": {
+         "title": "Type of extension for the Add-On Content Object",
+         "type": "string",
+         "format": "uri"
+      },
+      "bam:addsOnTo": {
+         "title": "identifier of the parent content object",
+         "type": "string",
+         "format": "uri"
+      },
+      "bam:isZeroAddOn": {
+         "title": "Exposes the zero aspect of this Add-On to consumers",
+         "type": "string",
+         "format": "uri",
+         "pattern": "^(http://vtw.elsevier.com/data/voc/AddOnStatus#)(Complete|Zero)$"
+      },
+      "bam:isPreprintOf": {
+         "title": "The URI of the realted JA/TPA Content Object",
+         "type": "string",
+         "format": "uri",
+         "pattern": "^http://vtw.elsevier.com/content/.^$"
+      },
+      "prism:keyword": {
+         "type": "array",
+         "items": [
+            {"type": "string"}
+         ]
+      },
+      "prism:publicationName": {"type": "string"},
+      "prism:issn": {
+         "type": "string",
+         "pattern": "^[0-9]{4}-[0-9]{3}[0-9X]$"
+      },
+      "prism:eissn": {
+         "type": "string",
+         "pattern": "^[0-9]{4}-[0-9]{3}[0-9X]$"
+      },
+      "prism:isbn": {"type": "string"},
+      "prism:issueName": {
+         "type": "string",
+         "description": "A special issue name, typically used for major issues of a magazine or other resource."
+      },
+      "prism:coverdate": {
+         "type": "string",
+         "description": "The cover date is the numeric form of the issue date (cover display date) printed on the cover of a magazine; suitable for storing in a database field with a 'date' data type. Note that the 'real' prism:coverDate has a capital D. This typo will be solved in a future release."
+      },
+      "prism:coverDisplayDate": {"type": "string"},
+      "prism:issueIdentifier": {"type": "string"},
+      "oa:userLicense": {
+         "title": "The URL of the license of the preprint article",
+         "type": "string",
+         "format": "uri"
+      },
+      "bam:publicationTimeStart": {
+         "type": "string",
+         "format": "date-time"
+      },
+      "bam:publicationTimeEnd": {
+         "type": "string",
+         "format": "date-time"
+      },
+      "prism:volume": {"type": "string"},
+      "prism:number": {"type": "string"},
+      "prism:pageRange": {"type": "string"},
+      "prism:startingPage": {"type": "string"},
+      "prism:endingPage": {"type": "string"},
+      "bam:articleNumber": {"type": "string"},
+      "bam:project": {"type": "string"},
+      "prism:distributor": {"type": "string"},
+      "bam:formattedPII": {"type": "string"},
+      "prism:doi": {
+         "description": "value does not start with http://dx.doi.org/",
+         "type": "string",
+         "pattern": "^(?!http://dx.doi.org/).*$"
+      },
+      "bam:isFundedBy": {
+         "title": "isFundedBy",
+         "description": "the Entity of Grant Award that supplies financial resources",
+         "type": "string"
+      },
+      "bam:isCitationAbstractReferenceOf": {
+         "type": "string",
+         "format": "uri"
+      },
+      "bam:describesResource": {"type": "string"},
+      "bam:collectionCode": {"type": "string"},
+      "bam:copyrightYear": {
+         "type": "string",
+         "pattern": "^[0-9]{4}$"
+      },
+      "bam:hasCommonGroup": {"type": "string"},
+      "bam:operatingCompany": {
+         "type": "string",
+         "format": "uri",
+         "pattern": "^http://data.elsevier.com/vocabulary/.*$"
+      },
+      "bam:label": {"type": "string"},
+      "bam:asjcCode": {
+         "type": "array",
+         "items": [
+            {"type": "string"}
+         ]
+      },
+      "bam:contentProvider": {"type": "string"},
+      "bam:rejectionReason": {"type": "string"},
+      "bam:title": {"type": "string"},
+      "bam:subtitle": {"type": "string"},
+      "bam:aid": {
+         "type": "number",
+         "minimum": 0
+      },
+      "bam:jid": {"type": "string"},
+      "bam:dochead": {"type": "string"},
+      "bam:documentThread": {
+         "type": "array",
+         "items": [
+            {"type": "string"}
+         ]
+      },
+      "epc:printColourPages": {
+         "type": "array",
+         "items": [
+            {"type": "string"}
+         ]
+      },
+      "epc:isIncludedBy": {
+         "type": "string",
+         "format": "uri"
+      },
+      "epc:printEndingPage": {"type": "string"},
+      "epc:printStartingPage": {"type": "string"},
+      "epc:printPageRange": {"type": "string"},
+      "bam:fragmentIdentifier": {"type": "string"},
+      "bam:initialSubmissionDate": {
+         "type": "string",
+         "format": "date-time"
+      },
+      "bam:isContinuedFrom": {
+         "type": "string",
+         "format": "uri"
+      },
+      "bam:patentClassification": {
+         "type": "array",
+         "items": [
+            {"type": "string"}
+         ]
+      },
+      "bam:patentClassificationCpc": {
+         "type": "array",
+         "items": [
+            {"type": "string"}
+         ]
+      },
+      "bam:patentClassificationIpcr": {
+         "type": "array",
+         "items": [
+            {"type": "string"}
+         ]
+      },
+      "bam:patentFamilyId": {
+         "type": "integer",
+         "minimum": 0
+      },
+      "bam:patentKindCode": {"type": "string"},
+      "bam:revised": {
+         "type": "array",
+         "items": [
+            {
+               "type": "string",
+               "format": "date-time"
+            }
+         ]
+      },
+      "bam:source": {
+         "type": "string",
+         "format": "uri"
+      },
+      "bam:workingTitle": {"type": "string"},
+      "prism:edition": {"type": "string"},
+      "bam:shortenedTitle": {"type": "string"},
+      "bam:crossMarkIdentified": {"type": "boolean"},
+      "bam:sequenceNumber": {
+         "title": "sequenceNumber",
+         "description": "Sequence in an list",
+         "type": "integer"
+      },
+      "ccm:role": {
+         "title": "role",
+         "description": "Role(s) of the Person (the Author) with respect to the Work",
+         "type": "array",
+         "items": [
+            {
+               "type": "string",
+               "format": "uri",
+               "enum": [
+                  "https://dictionary.casrai.org/Contributor_Roles/Conceptualization",
+                  "https://dictionary.casrai.org/Contributor_Roles/Data_curation",
+                  "https://dictionary.casrai.org/Contributor_Roles/Formal_analysis",
+                  "https://dictionary.casrai.org/Contributor_Roles/Funding_acquisition",
+                  "https://dictionary.casrai.org/Contributor_Roles/Investigation",
+                  "https://dictionary.casrai.org/Contributor_Roles/Methodology",
+                  "https://dictionary.casrai.org/Contributor_Roles/Project_administration",
+                  "https://dictionary.casrai.org/Contributor_Roles/Resources",
+                  "https://dictionary.casrai.org/Contributor_Roles/Software",
+                  "https://dictionary.casrai.org/Contributor_Roles/Supervision",
+                  "https://dictionary.casrai.org/Contributor_Roles/Validation",
+                  "https://dictionary.casrai.org/Contributor_Roles/Visualization",
+                  "https://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_original_draft",
+                  "https://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_review_%26_editing"
+               ]
+            }
+         ]
+      },
+      "acs:isAffiliatedWith": {
+         "title": "isAffiliatedWith",
+         "description": "The relation connecting the author(s) of the article to their respective affiliation",
+         "type": "array",
+         "items": {"$ref": "#/definitions/acs:Affiliation"}
+      },
+      "acs:Affiliation": {
+         "title": "Affiliation",
+         "description": "The affiliation of one of the authors as supplied in OACS",
+         "type": "object",
+         "required": ["acs:affiliationName"],
+         "properties": {
+            "@id": {"$ref": "#/definitions/acs:affiliationCustomerId"},
+            "acs:affiliationName": {"$ref": "#/definitions/acs:affiliationName"},
+            "acs:affiliationScopusId": {"$ref": "#/definitions/acs:affiliationScopusId"},
+            "acs:organizationCustomerId": {"$ref": "#/definitions/acs:organizationCustomerId"},
+            "acs:countryID": {"$ref": "#/definitions/acs:countryID"}
+         },
+         "additionalProperties": false
+      },
+      "acs:affiliationName": {
+         "title": "affiliationName",
+         "description": "The name of the affiliation of the author in full text",
+         "type": "string"
+      },
+      "acs:affiliationScopusId": {
+         "title": "affiliationScopusId",
+         "description": "Scopus ID of the affiliation",
+         "type": "string",
+         "pattern": "^[0-9]+$"
+      },
+      "acs:affiliationCustomerId": {
+         "title": "affiliationCustomerId",
+         "description": "CMX (Content Metadata eXchange) id of the Affiliation",
+         "type": "string",
+         "pattern": "^ECR-[0-9]+$"
+      },
+      "acs:organizationCustomerId": {
+         "title": "organizationCustomerId",
+         "description": "CMX (Content Metadata eXchange) id of the of the 'root' or 'highest level' of the Organization (institute) of which the Affiliation is a part.",
+         "type": "string",
+         "pattern": "^ECR-[0-9]+$"
+      },
+      "edm:country": {
+         "title": "country",
+         "description": "The country associated with the entity.",
+         "type": "string"
+      }
+   }
+}

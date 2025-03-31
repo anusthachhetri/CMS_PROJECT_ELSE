@@ -1,0 +1,1916 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<egv:satelliteWrapper
+	xmlns:egv="http://www.elsevier.com/xml/schema/rdf/ElsevierGenericVocabularySatellite-1/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.elsevier.com/xml/schema/rdf/ElsevierGenericVocabularySatellite-1/ http://www.elsevier.com/xml/schema/rdf/ElsevierGenericVocabularySatellite-1/egv_v01.xsd"
+	xml:base="http://data.elsevier.com/vocabulary/ElsevierContentTypes">
+	<rdf:RDF
+		xmlns:sat="http://www.elsevier.com/xml/schema/rdf/LDR-Satellites/Base-1/"
+		xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+		xmlns:pav="http://purl.org/swan/pav/provenance/"
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:dct="http://purl.org/dc/terms/">
+		<sat:Satellite
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes.rdf">
+			<sat:describesResource
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<dct:title>A Controlled Vocabulary for all Elsevier Content Types</dct:title>
+			<sat:satellite-type
+				rdf:resource="http://data.elsevier.com/namespaces/LDR-Satellites/ElsevierGenericVocabulary-1/"/>
+			<sat:project
+				rdf:resource="http://data.elsevier.com/voc-project/ElsevierContentTypes-1/"/>
+			<pav:createdBy>Elsevier B.V.</pav:createdBy>
+			<pav:createdOn>2012-10-23T15:05:00+01:00</pav:createdOn>
+			<!-- updated by VSr on 11-03-2015 -->
+			<!-- 
+				modifieddate: 2016-05-26
+				modifiedby: TBo
+				change: 40.2.5 added
+			-->
+			<!-- 
+				modifieddate: 2016-06-16
+				modifiedby: GRa
+				change: Introduced rdf:type to enable differentiate defined URL's for dct:type, prism:aggregationType and prism:channel 
+			-->
+			<!-- 
+				modifieddate: 2016-06-29
+				modifiedby: GRa
+				change: 
+					Replaced existing URL of rdf:type with the following URL, 
+            		prism:aggregationType - http://data.elsevier.com/vocabulary/ElsevierAggregationType
+            		dct:type - http://data.elsevier.com/vocabulary/ElsevierContentType
+            		prism:channel - http://data.elsevier.com/vocabulary/ElsevierChannelType -->
+			<!-- 
+				modifieddate: 2018-09-28
+				modifiedby: GRa
+				change: 1.2.1 added as an allowed value for the property "prism:channel"
+			-->
+			<!-- 
+				modifieddate: 2020-04-27
+				modifiedby: science\schoutened
+				ticket: https://jira.cbsels.com/projects/VAL/issues/VAL-44
+				change: added ElsevierContentTypes/61, 61.1 (Preprints), 61.2 (Preprint Archive) 
+			-->
+			<!-- 
+				modifieddate: 2020-05-26
+				modifiedby: science\schoutened
+				ticket: https://jira.cbsels.com/projects/VAL/issues/VAL-44
+				change: corrected ElsevierContentTypes/61 (Concept), Added 60.1 (Local definitions), 60.2 (Snippet) 
+			-->
+			<!-- 
+				modifieddate: 2023-05-16
+				modifiedby: science\gopinathr
+				change: corrected ElsevierContentTypes/40 (Concept), Added 40.1.8 (Multimedia Container) 
+			-->
+			<!-- 
+				modifieddate: 2023-08-29
+				modifiedby: science\gopinathr
+				change: corrected ElsevierContentTypes/40 (Concept), Added 40.1.9 (Multimedia ToC) 
+			-->
+		</sat:Satellite>
+		<skos:ConceptScheme
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes">
+			<dct:title>Elsevier Content Types</dct:title>
+			<dct:hasVersion>1.0</dct:hasVersion>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/41"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/42"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/47"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/49"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/51"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/60"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/61"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/70"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierOrganizationalUnit/ST"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierOrganizationalUnit/HS"/>
+			<skos:hasTopConcept
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierProductMarketGroup/648"/>
+
+		</skos:ConceptScheme>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Journal</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.4"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.5"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.6"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Abstract</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.3"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+
+
+
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Book (Non-serial)</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.4"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.5"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+
+
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Grant</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11.4"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Classic Multimedia</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.4"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.5"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.6"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.7"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.8"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.9"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.10"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.11"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.12"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.13"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.14"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.15"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+
+
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Enhancement Fragment</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28.4"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Satellite</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.4"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.6"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.7"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.8"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.9"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.10"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.11"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Document with Simple Structure</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.4"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.5"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.6"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.7"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/41">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Knowledge Organisation System</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/41.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/41.2"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/42">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>News</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/42.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/42.2"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Taxonomy-based Article Collection</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43.4"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>eLearning</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45.4"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Supplemental</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46.4"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46.5"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/47">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Wikipedia</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/47.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Auxiliary</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48.4"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/49">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Patent</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/49.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Enrichment</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.4"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.5"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.6"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/51">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Programming</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/51.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/60">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Generic Multimedia</skos:prefLabel>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/61">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Preprints</skos:prefLabel>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/70">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Generic Artwork</skos:prefLabel>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierAggregationType"/>
+		</skos:Concept>
+
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Journal Article</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.4"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.5"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.6"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.7"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.8"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.9"/>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Journal Issue</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.2.1"/>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Journal</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.3.1"/>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Third Party Journal Article</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.5">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Third Party Journal Issue</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.6">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Third Party Journal</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Input CAR</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.1.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.1.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.1.3"/>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>PubMed/Medline Abstract</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>CAR</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Book Chapter</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.1.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.1.2"/>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Book</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Book Series Volume</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Third Party Book Chapter</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.5">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Third Party Book</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Grant Award</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Grant Opportunity</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Grant Funding Body</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Grant Program</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/11"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Generic Multimedia Asset</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.1.6"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.1.7"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.1.8"/>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Video</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Image</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.5">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Audio</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.6">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Interactive Image</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.7">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Cover</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.8">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Gigapixel Image</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.9">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Multimedia Composite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.10">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Multimedia TOC</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.11">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Time Based Text</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.12">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Patent Cover Image</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.13">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Adaptive Learning Image</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.14">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Adaptive Learning Video</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.15">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Adaptive Learning Interactive 3D</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Enhancement Fragment</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Book Update</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>eAbstract</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Interactive Case Insight</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/28"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Basic Asset Metadata</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Annotation satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Demarcation satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Excerption satellite</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.4"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.5"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.6"/>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.6">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Overlay satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.7">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Membership satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.8">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Sequence satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.9">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Assignment satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.10">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Index satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.11">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Mapping satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Elsevier XHTML</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.6"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.7"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.8"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.9"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.10"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.20"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.21"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.22"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.24"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.25"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.26"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.27"/>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>External Practice Guideline</skos:prefLabel>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2.1"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2.2"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2.3"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2.4"/>
+			<skos:narrower
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2.5"/>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Drug Monograph</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Medical Topic</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.5">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Clinical Trial Document</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.6">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Multimedia Container (Card)</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.7">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Multimedia TOC (Deck)</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/41.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>SKOS Vocabulary</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/41"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/41.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Dictionary</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/41"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/42.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>News Item</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/42"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/42.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Tweet</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/42"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Freestanding Chapter</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Module</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Freestanding Article</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Collection</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/43"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<!--       <skos:Concept rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/44.1">
+            <skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+            <skos:prefLabel>Chemical Compound</skos:prefLabel>
+            <rdf:type rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+        </skos:Concept>-->
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>eLearning course</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Question</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Assessment Test</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Learning Object</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/45"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Supplement</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Table</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Software Artefact</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Application Artefact</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46.5">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>(Semantic) textbox</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/46"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/47.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Wikipedia Extract</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/47"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Correspondence</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Correction</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Peer review</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Technical review</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/48"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/49.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Patent</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/49"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Extracted Content</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>PMC Container (PROPOSED)</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Submission Assessment</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Autostructured Content</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.5">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Author-accepted Manuscript PDF</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50.6">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Manifest</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/50"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/51.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Data driven</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/51"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Journal Article</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Book Series Article</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Yearbooks Article</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Internal Practice Guideline</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.5">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Clinics Article</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.6">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Conference Proceedings</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.7">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Lancet Series</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.8">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Lancet Themed Issue</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.9">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Lancet One-Off</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.2.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Journal Issue</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.2"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.3.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Journal Basedata</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.3"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.1.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Scopus Abstract</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.1.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>EMBASE</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.1.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Medline</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/2.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.1.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Book Chapter</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.1.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Reference Work Article</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<!--        <skos:Concept rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.6.2">
+            <skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+            <skos:prefLabel>Book Serial Collection</skos:prefLabel>
+            <rdf:type rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+        </skos:Concept>
+        <skos:Concept rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.6.3">
+            <skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+            <skos:prefLabel>Yearbooks Collection</skos:prefLabel>
+            <rdf:type rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+        </skos:Concept>
+        <skos:Concept rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.6.5">
+            <skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+            <skos:prefLabel>Clinics Collection</skos:prefLabel>
+            <rdf:type rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+        </skos:Concept>
+        <skos:Concept rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/3.6.10">
+            <skos:inScheme rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+            <skos:prefLabel>Advances Collection</skos:prefLabel>
+            <rdf:type rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+        </skos:Concept>-->
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.1.6">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Netter Anatomy Image</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.1.7">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>PDF</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.1.8">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Podcast Audio</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/23.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Safety Excerption Satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Toxicity Excerption Satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Pharmacokinetic Excerption Satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Metabolizing Enzymes Excerption Satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.5">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Efficacy Excerption Satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5.6">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Activity Excerption Satellite</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/29.5"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Patient Handout</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Q and A</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.6">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Lancet Conference</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.7">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Protocol Review</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.8">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Multimedia Container</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.9">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Multimedia ToC</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.10">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Medical Procedure</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.20">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Evidence Based Monograph</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.21">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Disease and Disorder Brief</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.22">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Core Measure and Core Measures Case Study</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.24">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Clinical Update</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.25">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Guideline</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.26">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Calculator or Tool, Scale</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1.27">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Calculator or Tool, Diagnostics</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.1"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>External Practice Guideline</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Practice Guideline - Summary</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2.3">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Practice Guide Synthesis</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2.4">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Practice Guide Expert Commentary</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2.5">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>CPM Point of Care Guideline</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/40.2"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierChannelType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierOrganizationalUnit/ST">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Organizational Unit Science and Technology</skos:prefLabel>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierOrganizationalUnit/HS">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Organizational Unit Health Sciences</skos:prefLabel>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierProductMarketGroup/648">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>PMG code 648</skos:prefLabel>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/60.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Local definition</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/60"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/60.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Snippet</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/60"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/61.1">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Preprints</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/61"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+		<skos:Concept
+			rdf:about="http://data.elsevier.com/vocabulary/ElsevierContentTypes/61.2">
+			<skos:inScheme
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes"/>
+			<skos:prefLabel>Preprint Archive</skos:prefLabel>
+			<skos:broader
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/61"/>
+			<rdf:type
+				rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentType"/>
+		</skos:Concept>
+	</rdf:RDF>
+</egv:satelliteWrapper>

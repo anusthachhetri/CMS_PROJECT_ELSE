@@ -1,0 +1,71 @@
+JSON Schema 5.0 Data Field,Value from the Source or as determined by Supplier,
+fundingBodyAwardId,not found,0
+grantType,RESEARCH,1
+title ,Repurposing epidrugs for functional enhancement of human pancreatic beta cells,2
+startDate,01-01-2024,3
+endDate,not found,4
+noticeDate,not found,5
+homePage/link,https://www.drwf.org.uk/drwf-research/funded-research/,6
+homepage/modifiedDate,not found,7
+homepage/publishedDate,not found,8
+synopsis,"Insulin-secreting beta cells of the pancreas are what are destroyed or become dysfunctional in diabetes. To restore this functionality, methods have previously included to transplant isolated islets from donor patients, however this has been met with problems of survival of lifelong immune suppression for the patient, and the survival of the implanted islets themselves. Several research groups have made pioneering progress over the last decade by using stem cells originally from the patient, that have a capacity to become any cell in the body, and generating beta cell ‘like’ cells using a cocktail of various compounds over multiple stages of beta cell development in the laboratory.What these cells lack however is their ‘incomplete’ levels of maturity to become a fully functional beta cell, as measured by the amount of insulin produced and their capacity to secrete it into the bloodstream. We hypothesise that the missing element are pathways that regulates the expression of key beta cell genes (and therefore beta cell maturation) in the body, known as epigenetic pathways.We will screen a large number of commercially-available compounds that target these epigenetic pathways known as ‘epidrugs’ and assess their ability to enhance human beta cell maturation in a cellular model system. Our goal is to interrogate the role that these novel epigenetic pathways have on beta cell functional maturation and ultimately to assess their ability to enhance the functionality of stem cell-derived beta cells prior to transplantation into diabetic patients",9
+keyword,not found,10
+fundingDetail/fundingTotal/amount,20000,11
+fundingDetail/fundingTotal/currency,GBP,12
+fundingDetail/installment,not found,13
+funderSchemeType,Funded Research,14
+classification/ ASJC code,"1310,,1311,,1308,,2729",15
+classification/ other codes,not found,16
+classification/ Orgspecific,"Endocrinology,,Nutrition and Dietetics,,Clinical Biochemistry,,Obstetrics and Gynaecology",17
+awardeeDetail/name,Imperial College London,18
+awardeeDetail/fundingBodyOrganizationId,not found,19
+awardeeDetail/role,COORDINATOR,20
+awardeeDetail/departmentName,not found,21
+awardeeDetail/activityType,research organization,22
+awardeeDetail/fundingTotal/amount,0,23
+awardeeDetail/fundingTotal/currency,GBP,24
+awardeeDetail/hasPostalAddress,not found,25
+awardeeDetail/link,not found,26
+awardeeDetail/identifier,ROR,27
+awardeeDetail/vatNumber,not found,28
+awardeeDetail/awardeeAffiliationId,not found,29
+awardeeDetail/affiliationOf/initials,S.,30
+awardeeDetail/affiliationOf/name,Steven Millership,31
+awardeeDetail/affiliationOf/givenName,Steven,32
+awardeeDetail/affiliationOf/familyName,Millership,33
+awardeeDetail/affiliationOf/role,PI,34
+awardeeDetail/affiliationOf/emailAddress,not found,35
+awardeeDetail/affiliationOf/identifier/id/orcid,not found,36
+awardeeDetail/affiliationOf/fundingBodyPersonId,not found,37
+awardeeDetail/affiliationOf/awardeePersonId,not found,38
+licenceInformation/link,https://www.drwf.org.uk/privacy-and-cookie-policy/,39
+relatedFunder/leadFunder,Diabetes Research and Wellness Foundation,40
+relatedFunder/hasFunder,Diabetes Research and Wellness Foundation,41
+relatedOpportunity/grantOpportunityId,not found,42
+relatedOpportunity/title,not found,43
+relatedOpportunity/description,not found,44
+relatedOpportunity/fundingBodyOpportunityId,not found,45
+funds/fundingProjectId,not found,46
+funds/acronym,not found,47
+funds/hasPart/budget,not found,48
+funds/hasPart/fundingBodyProjectId,not found,49
+funds/title,not found,50
+funds/startDate,not found,51
+funds/endDate,not found,52
+funds/link,not found,53
+funds/hasPostalAddress,not found,54
+funds/status,CLOSED,55
+awardee country,GBR,56
+awardee addressLocality,not found,57
+awardee addressPostalCode,not found,58
+awardee addressRegion,not found,59
+awardee postOfficeBoxNumber,not found,60
+awardee streetAddress,not found,61
+funding country,GBR,62
+funding addressLocality,not found,63
+funding addressPostalCode,not found,64
+funding addressRegion,not found,65
+funding postOfficeBoxNumber,not found,66
+funding streetAddress,not found,67
+licenceInformation value,Privacy and Cookie Policy,68
+createdON,1-27-2025,69

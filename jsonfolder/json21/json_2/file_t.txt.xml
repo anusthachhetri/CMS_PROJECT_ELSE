@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="ViewLog.xsl"?><LogReport xmlns:vt="http://www.elsevier.com/xml/apps/qc/v" filename="D:\json_tool_run\D_2_N.json"><Log filename="D:\json_tool_run\D_2_N.json"><time>Vtool:5.93.1 run at Tue Feb 04 18:44:39 IST 2025</time>
+<command-line-options>-Xmx1g -file "D:\\json_tool_run\\D_2_N.json" -log "D:\\json_tool_validation\\file_t.txt" -vjson "grant"</command-line-options>
+<results><total-errors>0</total-errors>
+<total-warnings>0</total-warnings>
+<total-skipped-checks>0</total-skipped-checks>
+</results>
+<time>Vtool:5.93.1 run at Tue Feb 04 18:44:48 IST 2025</time>
+</Log>
+</LogReport>

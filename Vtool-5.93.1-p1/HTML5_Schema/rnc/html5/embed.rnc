@@ -1,0 +1,243 @@
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+
+
+##  RELAX NG Schema for HTML 5: Embedded Content
+
+## Replaced Content
+
+## Images: <img>
+img.elem = element img { img.inner & img.attrs }
+img.attrs =
+  common.attrs
+  & img.attrs.src
+  & img.attrs.srcset?
+  & img.attrs.sizes?
+  & img.attrs.alt?
+  & # ARIA: if alt empty, only allowed role value is "presentation"; check in assertions
+    img.attrs.height?
+  & img.attrs.width?
+  & img.attrs.usemap?
+  & img.attrs.ismap?
+  & img.attrs.border?
+img.attrs.src =
+  attribute src {
+    # common.data.uri.non-empty
+    xsd:string { pattern = "(.+)" }
+  }
+img.attrs.srcset = attribute srcset { string }
+img.attrs.sizes =
+  attribute sizes {
+    # common.data.source.size.list
+    xsd:string { pattern = ".+[vw|em|ex|ch|rem|vw|vh|vmin|vmax|cm|mm|q|in|pc|pt|px]+" }
+  }
+img.attrs.alt = attribute alt { text }
+img.attrs.height =
+  attribute height {
+    # common.data.integer.non-negative
+    xsd:string { pattern = "[0-9]+" }
+  }
+img.attrs.width =
+  attribute width {
+    # common.data.integer.non-negative
+    xsd:string { pattern = "[0-9]+" }
+  }
+img.attrs.usemap =
+  attribute usemap {
+    # common.data.hash-name
+    xsd:string { pattern = "#.+" }
+  }
+img.attrs.ismap = attribute ismap { xsd:string "ismap" | xsd:string "" }
+img.attrs.border = attribute border { string "0" }
+img.inner = empty
+
+## Image with multiple sources: picture
+picture.elem = element picture { picture.inner & picture.attrs }
+picture.attrs = common.attrs
+picture.inner = source.picture.elem*, img.elem
+
+## Picture source: source srcset
+source.picture.elem = element source { source.picture.inner & source.picture.attrs }
+source.picture.attrs =
+  common.attrs
+  & source.picture.attrs.media?
+  & source.picture.attrs.srcset
+  & source.picture.attrs.sizes?
+  & source.picture.attrs.type?
+source.picture.attrs.media =
+  attribute media {
+    # common.data.mediaquery
+    xsd:string { pattern = ".[^ ]+((\sand\s)\((.[\s\S]+)\)?)?\s*" }
+  }
+source.picture.attrs.srcset = attribute srcset { string }
+source.picture.attrs.sizes =
+  attribute sizes {
+    # common.data.source.size.list
+    xsd:string { pattern = "\s(em|ex|ch|rem|vw|vh|vmin|vmax|cm|mm|q|in|pc|pt|px)+" }
+  }
+source.picture.attrs.type =
+  attribute type {
+    # common.data.mimetype
+    xsd:string { pattern = ".[^ ]+/.[^ ]+" }
+  }
+source.picture.inner = empty
+
+## Plug-ins: <embed>
+embed.elem = element embed { embed.inner & embed.attrs }
+embed.attrs =
+  common.attrs
+  & embed.attrs.src?
+  & embed.attrs.type?
+  & embed.attrs.height?
+  & embed.attrs.width?
+  & (common.attrs.aria.landmark.application
+     | common.attrs.aria.landmark.document
+     | common.attrs.aria.role.img
+     | common.attrs.aria.role.presentation)?
+embed.attrs.src =
+  attribute src {
+    # common.data.uri.non-empty
+    common.data.uri
+  }
+embed.attrs.type =
+  attribute type {
+    # common.data.mimetype
+    xsd:string { pattern = ".[^ ]+/.[^ ]+" }
+  }
+embed.attrs.height =
+  attribute height {
+    # common.data.integer.non-negative
+    xsd:string { pattern = "[0-9]+" }
+  }
+embed.attrs.width =
+  attribute width {
+    # common.data.integer.non-negative
+    xsd:string { pattern = "[0-9]+" }
+  }
+embed.inner = empty
+
+## Generic Objects: <object>
+object.elem.flow = element object { object.inner.flow & object.attrs }
+object.elem.phrasing = element object { object.inner.phrasing & object.attrs }
+object.attrs =
+  common.attrs
+  & ((object.attrs.data & object.attrs.type?) | object.attrs.type)
+  & object.attrs.typemustmatch?
+  & # &	object.attrs.classid?
+    # &	object.attrs.codebase?
+    # &	object.attrs.codetype?
+    object.attrs.height?
+  & object.attrs.width?
+  & object.attrs.usemap?
+  & object.attrs.name?
+  & common-form.attrs.form?
+  & (common.attrs.aria.landmark.application
+     | common.attrs.aria.landmark.document
+     | common.attrs.aria.role.img
+     | common.attrs.aria.role.presentation)?
+object.attrs.data =
+  attribute data {
+    # common.data.uri.non-empty
+    xsd:anyURI
+  }
+object.attrs.type =
+  attribute type {
+    # common.data.mimetype
+    xsd:string { pattern = ".[^ ]+/.[^ ]+" }
+  }
+object.attrs.typemustmatch = attribute typemustmatch { string "typemustmatch" | string "" }
+object.attrs.height =
+  attribute height {
+    # common.data.integer.non-negative
+    xsd:string { pattern = "[0-9]+" }
+  }
+object.attrs.width =
+  attribute width {
+    # common.data.integer.non-negative
+    xsd:string { pattern = "[0-9]+" }
+  }
+object.attrs.usemap =
+  attribute usemap {
+    # common.data.hash-name
+    xsd:string { pattern = "#.+" }
+  }
+object.attrs.name =
+  attribute name {
+    # common.data.browsing-context
+    xsd:string { pattern = "([^_].+)" }
+  }
+object.inner.flow = param.elem*, common.inner.transparent.flow
+object.inner.phrasing = param.elem*, common.inner.phrasing
+
+## Initialization Parameters: <param>
+param.elem = element param { param.inner & param.attrs }
+param.attrs =
+  common.attrs
+  & param.attrs.name
+  & param.attrs.value
+  & (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+param.attrs.name = attribute name { string }
+param.attrs.value = attribute value { string }
+param.inner = empty
+
+## 
+## Image Maps
+
+## Map Definition: <map>
+map.elem.flow = element map { map.inner.flow & map.attrs }
+map.elem.phrasing = element map { map.inner.phrasing & map.attrs }
+map.attrs =
+  common.attrs
+  & map.attrs.name
+  & (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+# REVISIT make id required in Schematron
+map.attrs.name = attribute name { string }
+map.inner.flow = common.inner.transparent.flow
+map.inner.phrasing = common.inner.phrasing
+
+## Map Area Definition: <area>
+area.elem = element area { area.inner & area.attrs }
+area.attrs =
+  common.attrs.basic
+  & common.attrs.i18n
+  & common.attrs.present
+  & common.attrs.other
+  & shared-hyperlink.attrs.download?
+  & (area.attrs.alt & shared-hyperlink.attrs.href)?
+  & shared-hyperlink.attrs.target?
+  & shared-hyperlink.attrs.ping?
+  & shared-hyperlink.attrs.rel?
+  & shared-hyperlink.attrs.hreflang?
+  & shared-hyperlink.attrs.type?
+  & area.attrs.shape?
+  & (common.attrs.aria.role.link
+     | common.attrs.aria.role.presentation
+     | common.attrs.aria.role.menuitem)?
+area.attrs.alt = attribute alt { text }
+area.attrs.shape =
+  (area.attrs.shape.rect? & area.attrs.coords.rect)
+  | (area.attrs.shape.circle & area.attrs.coords.circle)
+  | (area.attrs.shape.poly & area.attrs.coords.poly)
+  | area.attrs.shape.default
+area.attrs.shape.rect = attribute shape { string "rect" }
+area.attrs.coords.rect =
+  attribute coords {
+    xsd:token { pattern = "-?[0-9]+,-?[0-9]+,-?[0-9]+,-?[0-9]+" }
+  }
+area.attrs.shape.circle = attribute shape { string "circle" }
+area.attrs.coords.circle =
+  attribute coords {
+    xsd:token { pattern = "-?[0-9]+,-?[0-9]+,[0-9]+" }
+  }
+area.attrs.shape.poly = attribute shape { string "poly" }
+area.attrs.coords.poly =
+  attribute coords {
+    xsd:token {
+      pattern = "-?[0-9]+,-?[0-9]+,-?[0-9]+,-?[0-9]+,-?[0-9]+,-?[0-9]+(,-?[0-9]+,-?[0-9]+)*"
+    }
+  }
+area.attrs.shape.default = attribute shape { string "default" }
+area.inner = empty
+
+## Attributes Common to Embedded Content
+embedded.content.attrs.crossorigin =
+  attribute crossorigin { string "anonymous" | string "use-credentials" | string "" }

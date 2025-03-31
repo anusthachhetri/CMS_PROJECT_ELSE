@@ -1,0 +1,941 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Vtool User Manual: Command-line Options</title>
+<style>
+body {font-family:Times,serif}
+body p, body h1, body h2, body h3, body h4 {margin-left:10px}
+.modified{border-left: thin solid black; margin-left:-5px; padding-left:5px;}
+
+</style>
+</head>
+
+<body>
+
+<div class=Section1>
+
+<h1>Vtool User Manual: Command-line Options</h1>
+
+<p style="margin-bottom:0px"><b>Vtool version: 5.93.1</b></p>
+<p style="margin-bottom:0px"><b>24 December 2024</b></p>
+
+<h2>Introduction</h2>
+
+<p>The Vtool, or validation tool, is Elsevier's quality-check tool for CONTRAST dataset, XML, artwork and PDF files. It integrates the DTD parser and numerous well-defined checks. Datasets at all stages of delivery to Elsevier should be validated by the Vtool. Vtool needs as input the file that is to be checked. The output consists of a log file and fingerprint files that report the errors, warnings and skipped checks and contain other information about the Vtool run. The input file may be an XML file (individual or dataset.xml) or a non-XML file (PDF, image) or a directory. Vtool checks input files of journal articles (JA and CJA DTDs), journal issues, book chapters, book hubs, major reference work chapters, major reference work hubs, epub datasets and Elsevier's Satellite RDF XML files or Satellite Datasets (A300) and individual XHTML files or TFS (XHTML) Datasets. From v5.29.0, the Vtool can be validated on Grant Warehouse input XML files. From v5.26.0 onwards, Vtool process even if directory is given as input. All the files in the given input directory are processed, if datasets are present in the input directory, Vtool process them as usual and processes as dataset. Files/directories which are not included in the dataset.xml are processed separately. Please click this URL <a href="Vtool-user-guide2.htm" target="_blank" title="please click this link to view">Vtool-user-guide2.htm</a> to know about the procedure that needs to be followed to validate <b>Satellite RDF and XHTML in Vtool</b>. From v5.31.0, Vtool validates PharmaPendium Datasets as input. Vtool automatically validates PharmaPendium specific checks if an PharmaPendium (excerption) dataset.xml is given as input. The user needs to create a folder by name <b>satellite-schemas</b> in the same folder where the <i>vtool.jar</i> file is located. The <b>satellite-schemas</b> folder should contain all the schema files (these schema files may be in subfolders) that are required to validate the input XML file. This folder should contain an XML catalog file named <b>satellite-catalog.xml</b>. For more details on <b>satellite-catalog.xml</b> please refer <a href="Vtool-user-guide2.htm" target="_blank" title="please click this link to view">Vtool-user-guide2.htm</a>. The user needs to create a folder by name <b>external-schemas</b> in the same folder where the <i>vtool.jar</i> file is located. The <b>external-schemas</b> folder should contain all the schema files (these schema files may be in subfolders) that are required to validate the input XML file. This folder should contain an XML catalog file named <b>external-catalog.xml</b>. From v5.38.0 vocabulary checks and -nofpdtd option are implemented.
+</p>
+<p>
+<h3>Schematron Validation Process</h3>
+<p>From v5.34.0, Vtool validates XML files based on schematron. Vtool automatically validates Schematron specific checks when <code>-schematron</code> switch is invoked. <code>-schematron</code> can be invoked in two ways one by giving the <bold>*.sch</bold> file path or directory path as input directly. If the path is not provided while using the option <code>-schematron</code>, Vtool will by default search for the configuration file in the following path <br/><b>\external-schemas\schematron\config.xml</b>. Vtool throws error "schematron not found" if there is no configuration file or path of the file given as input does not exists. Currently vtool validates all the input XML files against all the schematron files available. The structure of the config.xml should be as follows:</p> 
+<p style="margin:0"><code>&lt;config&gt;</code></p>
+<p style="margin:0"><code>&#160;&#160;&#160;&lt;schematron-file&gt;</code></p>
+<p style="margin:0"><code>&#160;&#160;&#160;&#160;&#160;&#160;&lt;pathname&gt;schematron_sample/EQTI_v1p0.sch&lt;/pathname&gt;</code></p> 
+<p style="margin:0"><code>&#160;&#160;&#160;&lt;/schematron-file></code></p>
+<p style="margin:0"><code>&lt;/config&gt;</code></p>
+<p>If directory is given as input, all <code>*.sch</code> Schematron file(s) will be used for validation of the XML files. Schematron errors will be processed in the usual way, marked with keyword "schematron" similar to parser errors in the log file and fp XML files.</p>
+
+<h3>SKOS Validation Process</h3>
+<p>From v5.35.0, Vtool validates SKOS files based on SPARQL queries. Each SKOS check throws unique error message for e.g</p>
+
+<p><code>SKOS002a: Duplicate skosxl:prefLabel, skos:prefLabel with same languages are identified and reported.</code></p>
+
+<h3>Vocabulary Validation Process</h3>
+<p>From v5.38.0, Vtool validates xml files using Elsevier standard vocabulary files present at the 'vocabularies' directory in the vtool path. A "config.xml" file should be placed in this directory <b>\vocabularies\config.xml</b>, describing the details about the vocabularies. The structure of the config XML file is as follows:</p>
+<p style="margin:0"><code>&lt;config&gt;</code></p>
+   <p style="margin:0"><code>&#160;&#160;&#160;&lt;vocabulary&gt;</code></p>
+      <p style="margin:0"><code>&#160;&#160;&#160;&#160;&#160;&#160;&lt;vocabulary-uri&gt;http://data.elsevier.com/vocabulary/SciValFunders&lt;/vocabulary-uri&gt;</code></p>
+      <p style="margin:0"><code>&#160;&#160;&#160;&#160;&#160;&#160;&lt;vocabulary-filename&gt;FundRef_v7.2_20140210_satwrapper.rdf&lt;/vocabulary-filename&gt;</code></p>
+    <p style="margin:0"><code>&#160;&#160;&#160;&lt;/vocabulary></code></p>
+    <p style="margin:0"><code>&#160;&#160;&#160;&lt;vocabulary></code></p>
+      <p style="margin:0"><code>&#160;&#160;&#160;&#160;&#160;&#160;&lt;vocabulary-uri&gt;http://data.elsevier.com/vocabulary/Pubname&lt;/vocabulary-uri&gt;</code></p>
+      <p style="margin:0"><code>&#160;&#160;&#160;&#160;&#160;&#160;&lt;vocabulary-filename&gt;Pubname.rdf&lt;/vocabulary-filename&gt;</code></p>
+   <p style="margin:0"><code>&#160;&#160;&#160;&lt;/vocabulary&gt;</code></p>
+<p style="margin:0"><code>&lt;/config&gt;</code></p>
+<p>The vocabulary-uri mentioned in the config file should match with the value of the xpath <code>egv:satelliteWrapper/rdf:RDF/skos:ConceptScheme/@rdf:about</code> in the vocabulary file. A specified XPATH content in the input file is validated against matching content in vocabulary file.</p>
+
+	<h3 id="jsonsec">JSON Validation Process</h3>
+<p>From version 5.44.1, Vtool supports validation on JSON files as input, with the option "-vjson" as additional command-line argument and the input files must have ".json" as their extension. This option "-vjson" is supported with value of json-schema file name, to which json schema the input should be compliance with. If the value is not given, by default 'uploadAPI-generic.schema.json' will be considered for validation. The following three forms of validations are supported:</p>
+         
+	<ul>
+	<li>Well-formedness of JSON, error will be thrown as 'fatal' in the log and fp file</li>
+		<p style="margin-left:15px;">For Example: <span style="color:#FF0033">Error [fatal] [unknown]:</span>&nbsp;<span style="color:gray">input has trailing data after first JSON Text at [Source: java.io.FileInputStream@95215b; line: 2, column: 14]</span></p>
+	<li>Parsing against the json-schema, this is supported by providing the json-schemas file in the 'vtool.jar' path in the directory 'json-schemas'. The error can be identified as 'json-parser' in the log and fp file. The appropriate json-schema file name should be given as input along with '-vjson' option.
+		<p>commandline option sample: 
+			<code>vtool -file json-sample/sample.json -log log.xml -vjson "upload-payload-schema.json"</code></p>
+	</li>
+		<p style="margin-left:15px;">For Example: <span style="color:#FF0033">Error [json-parser] [unknown]:</span>&nbsp;<span style="color:gray">ECMA 262 regex "^bam:ContentObjects$" does not match input string "bam:ContentObject"</span></p>
+<p style="margin-left:15px;">For Example: <span style="color:#FF0033">Error [json-parser] [/bam:hasContentObjects/0/bam:hasAssetMetadata/0/prism:byteCount] [upload-payload-schema.json]:</span>&nbsp;<span style="color:gray">instance type (string) does not match any allowed primitive type (allowed: ["integer"])</span></p>
+
+	<li>Validation against the defined business rules, these can be identified as ids of the checks starting with 'JSON', eg JSON001, JSON002 etc</li>
+		<p style="margin-left:15px;">For Example: <span style="color:#FF0033">Error [JSON001] [unknown]:</span>&nbsp;<span style="color:gray">The PII 'pii:SS0123456701234560' in property 'ecm:identifier' is incorrectly formatted.</span></p>
+    </ul>
+  <h3 id="jsonsec">GRANT Validation Process</h3>
+      <p>From Vtool 5.72.0, vtool with option -vjson with keyword "grant", will start assessing the type of grant and initiate the Grant payload validation.</p>
+	
+<h3>Author Manuscript PDF Validation Process</h3>
+<p>From version 5.46.0, Commandline switch <code>-am</code> is introduced. It is to be used when validating a so-called Author Manuscript PDF file. If the directory is given as input every PDF file in the directory will be considered as Author Manuscript file. The switch can have DOI as argument. XMP checks should not be run when <code>-am</code> is used.</p>
+
+
+
+<h3>Apollo Validation Process</h3>
+
+<p>In the Apollo project, journal articles will follow an automated workflow. The validation in VTool for each Apollo Service is supported from v5.49.1 and invoked by a switch as below and :
+
+<ul>
+<li><code>-ap-pf</code> PreFlight (manifest JSON)</p></li>
+<li><code>-ap-as</code> AutoStructure (S5 XML)</p></li>
+<li><code>-ap-pc</code> PageComposition (S5 PDF)</p></li>
+<li><code>-ap-tp</code> InteractiveCopyEditing (S100 XML)</p></li>
+<li><code>-ap-aa</code> AssessAndNormalizeArtwork</p></li>
+<li><code>-ap-ap</code> CreatePrintArtwork</p></li>
+<li><code>-ap-cp</code> ComposePDF</p></li>
+<li><code>-ap-cs</code> ComposeSemiFinishedPDF</p></li>
+<li><code>-ap-st</code> StampPDF</p></li>
+<li><code>-ap-md</code> CombinedPDF</p></li>
+<li><code>-ap-nn</code> Non-CPC, Artwork, non-CAP files</p></li>
+<li><code>-ap-np</code> Non-CPC Web and Print PDF files</p></li>
+<li><code>-ap-cpc</code> CPC, XML, CAP assets</p></li>
+</ul>
+</p>
+
+<p>An encrypted file by name 'apollo.conf' should exists in the 'vtool.jar' path for VTool to validate the outputs of Apollo services using the above switches.</p>
+
+<p>The switch must contain a path to the so-called manifest file, which is mandatory for the AutoStructure and InteractiveCopyEditing services.</p>
+
+<p> For instance,</p>
+
+<p style="margin-left:30px"><code>vtool -ap-as "/manifest/manifest-433.json" -file 433.xml</code></p>
+
+<p style="margin-left:30px"><code>vtool -ap-pf -file "/manifest/manifest-433.json"</code></p>
+
+<p>In the PreFlight case the manifest file is the file being validated. By default, "apollo.manifest.schema.json" will be considered for schema validation of manifest JSON.</p>
+
+<p>Please refer the guidelines mentioned in the section "<a href="#jsonsec">JSON Validation Process</a>" to validate manifest JSON against the schema</p>
+<h3>SHACL Process</h3>
+<p>From version 5.63.0, Commandline switch <code>-shacl</code> is introduced. It is used to validate .ttl(turtle) file datagraph against .ttl(turtle) file shape graph.The appropriate shape graph file name should be given as input along with '-shacl' option. The error can be identified as 'shacl-parser' in the log and fp file.</p>
+<p>For instance,<p>
+<p style="margin-left:30px"><code>vtool -file data.ttl -log log.xml -shacl shape.ttl</code></p>
+<h3>HTML5 Process</h3>
+<p>From version 5.65.0 HTML5 Validation is introduced. It is used to validate .html or .htm files against RelaxNG schemas and schematron files.Parsing against the RelaxNG and schemetrom, this is supported by providing the html-schemas file in the 'vtool.jar' path in the directory 'HTML5_Schema'. The error can be identified as 'html-parser' for parsing against HTML and 'schematron' for parsing against schematron in the log and fp file. </p>
+<h3>LED (Linked Elsevier Documents) Process</h3>
+<p>From version 5.73.0, HTML5 Validation is introduced to run the Python validation for HTML5+LED document inputs. Python version 3 and above must be installed along with all needed packages mentioned in the "pipfile" to run HTML5+LED documents in VTool. Find below the list of needed Python libraries as per "pipfile" of the validaor:
+
+<ol>
+ <li>pipenv (pip instll pipenv) -> Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first--class citizen, in our world. It automatically creates and manages a virtualenv for your projects, as well as adds/removes packages from your Pipfile as you install/uninstall packages. It also generates the ever--important Pipfile.lock, which is used to produce deterministic builds</li>
+<li>rdflib (pip install rdflib) -> RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information</li>
+<li>ipykernel (pip install ipykernel)</li>
+<li>lxml (pip install lxml) -> lxml is a Pythonic, mature binding for the libxml2 and libxslt libraries. It provides safe and convenient access to these libraries using the ElementTree API</li>
+<li>rdflib-jsonld (pip install rdflib-jsonld) -> rdflib extension adding JSON-LD parser and serializer</li>
+<li>html5lib (pip install html5lib) -> html5lib is a pure-python library for parsing HTML. It is designed to conform to the WHATWG HTML specification, as is implemented by all major web browsers</li>
+<li>beautifulsoup4 (pip install beautifulsoup4) -> Beautiful Soup is a library that makes it easy to scrape information from web pages. It sits atop an HTML or XML parser, providing Pythonic idioms for iterating, searching, and modifying the parse tree</li>
+<li>pyld (pip install PyLD) -> This library is an implementation of the JSON-LD specification in Python</li>
+<li>pyshacl (pip install pyshacl) -> A Python validator for SHACL</li>
+<li>owlrl (pip install owlrl) -> A simple implementation of the OWL2 RL Profile, as well as a basic RDFS inference, on top of RDFLib. Based mechanical forward chaining</li>
+<li>html5validator (pip install html5validator) -> html5validator is a command line tool that tests files for HTML5 validity</li>
+<li>pytidylib (pip install pytidylib) -> 'PyTidyLib' is a Python package that wraps the 'HTML Tidy'_ library</li>
+<li>rfc3987 (pip install rfc3987) -> This module provides regular expressions according to RFC 3986 \93Uniform Resource Identifier (URI): Generic Syntax\94 and RFC 3987 \93Internationalized Resource Identifiers (IRIs)\94, and utilities for composition and relative resolution of references
+<li>HTML-Tidy (pip install html5tidy) <a href="http://binaries.html-tidy.org/" target="_blank">http://binaries.html-tidy.org/</a>. For Windows OS systems, please install HTML TIDY library from http://binaries.html-tidy.org/ and configure the same to the environmental PATH variable</li>
+</ol>  
+The python scripts and dependent JSON files are placed in a folder "led-validator" with a wrapper script "vtool-led-wrapper.py", this folder must be present in the vtool.jar path to process through VTool. New option "-led" is introduced to integrate this validation and input must be with an ".html" extension. Similarly, couple of schema definitions namely, "led.schema.jsonld" and "edm-ontology.jsonld" are configured and adapted locally. Updated versions of these files, "led.schema.jsonld" and "edm-ontology.jsonld" can be adapted by replacing the existing file in the VTool "led-validator" directory. In Windows, please install HTML TIDY library from <a href="http://binaries.html-tidy.org/" target="_blank">http://binaries.html-tidy.org/</a> and configure the same to the environmental PATH variable.</p>
+
+
+<H4>VTool Usage</H4>
+<p style="margin-left:30px"><code>java -jar vtool.jar -file safety_review_abridged.html -log log.xml -forcecheck -led</code></p>
+
+<h3>Global Book Archive</h3>
+<p>
+From version 5.74.0, Archival Validation is introduced to validate Global Archival Files
+<ol>
+<li>In book workflow, after final deliverables to print and online, there is a requirement to pack all the supporting files that's been used in the process of book preparation and hence the same can be used in future, if there is a revised edition of the same book.</li>
+<li>The stage of this process is referred as "Global Book Archive", and all these days, suppliers are expected to pack the required assets in a preferred format and to burn it in a CD-ROMs or DVD's and to ship it to Elsevier for archival process.</li>
+<li>Currently, this process is revamped with a cloud based solution, so that suppliers are expected to deliver the package to archive cloud instead of making CD and shipping it.</li>
+<li>The past record of archived material reveals that there are issues with the packaged assets, which came to light when the archive package was assessed to support new edition or revision. So, it then leads to additional process to resolve those issues.</li>
+<li>Hence, in the revamped approach, the plan is to adopt validation prior to deliver of archive package to the cloud. So that, issues shown up earlier can be addressed up front.</li>
+<li>From verion 5.75.0, the archival directory which contains the transimittal XML and a directory with ISBN number is accepted in the "-file" argument, and S300 dataset XML path must be given in the "-gba" option. The HUB XML must be present in the path as defined the S300 dataset XML.</li>
+<li>An inventory of details of the archive files will be generated in the LOG path in an encrypted JSON format, which can be used for reference and will also be used in VTool for few verification of the archive inputs.</li>
+</ol>
+ </p>
+
+</div>
+<h2>CP/LD Validation</h2>
+
+<p>CP/LD - Content Profile/Linked Data is just a HTML document, with addition metadata stored as JSON. With Vtool v5.89, a prelimnary validation was deployed to check the conformance and wellformedness of HTML and JSON LD structure, to ensure its compaince against its standards.</p>
+
+<H4>VTool Usage</H4>
+<p style="margin-left:30px"><code>java -jar vtool.jar -file transformed.html -log log.xml -forcecheck -cpld</code></p>
+
+
+<h2>Supported platforms</h2>
+
+<p>Vtool works in all platforms that have support for Java Runtime Environment (JRE) 1.8.0 (also known as 8.0) or higher, like MS Windows, Linux, Solaris and Mac OS X.</p>
+
+<h2>Installation</h2>
+<p id="jre5">VTool is developed, compiled and tested using OpenJDK version (v1.8.0) of Java, hence JAVA vesion v1.8.0 or higher is a prerequisite for VTool to work. Recommended OpenJDK can be downloaded at
+<a href="https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=hotspot">https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=hotspot</a>, however, VTool can be processed with any JVM/JRE v1.8.0 or higher.</p>
+
+<p>Vtool can be installed in two ways:</p>
+<h3>Method 1</h3>
+<p><b>Windows</b>: Extract Vtool-5.93.1-install.zip and double-click on Vtool-5.93.1-install.exe to
+install the Vtool. The installation defaults to C:\Program&nbsp;Files\Elsevier\Vtool\. The location can be
+changed in the installer program.</p>
+<p><b>Unix</b>: Unzip all the contents of the Vtool-5.93.1.zip to any installation folder of your choice. To link the startup shell script to /usr/bin/vtool, run <br/>Vtool-5.93.1-Install.sh.&nbsp;You need superuser privilege or you can use &quot;sudo Vtool-5.93.1-Install.sh&quot;.</p>
+
+<p>If JRE is not installed on your computer, you will be directed to download it. If JAVA 1.8 is available in your system as a portable JDK/JVM (downloaded from the URL: <a href="https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=hotspot">https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=hotspot</a>), you have to set the environment "PATH" variable. It is also possible to run this portable JAVA without setting the path in environment variable. During, installation, if JAVA path is not set, VTool will assume that JAVA is not available and prompt to install JAVA. It also has the option to continue VTool installation, if you have a portable JAVA available in your system.</p>
+
+<h3>Method 2</h3>
+
+<p>Extract the entire contents of Vtool-5.93.1.zip to a convenient folder.</p>
+
+<h2>Memory usage</h2>
+
+<p>Vtool may require up to 1024MB virtual memory for handling images. If you have used Method 1 to install Vtool, the maximum Java heap size is set automatically. Otherwise, use <code>java -Xmx1024m</code> to indicate the maximum required Java heap size to the JVM.</p>
+<p>If an XML file had more than 64,000 entities, SAXParseException will be thrown by the Vtool. The parser throws a fatal error once it has reached the entity expansion limit (ie., by default, the limit is set to 64000). This exception can be avoided by adding <code>-DentityExpansionLimit=200000</code> (which will increase the entity expansion limit) to the command line option.</p>
+
+<h3>Vtool 64-bit OS Usage</h3>
+<ul>
+<li>Vtool runs in 32-bit mode normally, but can only address 3 GB of contiguous memory. The switch -Xmx1024m is to set the heap to 1 GB (suitable for PDF files of 500 MB) but this may not be enough, if the PDF file is very large. For very large files that need to be processed in Vtool, the parameter should be set to something suitable (at least three times the file size). The  uncompressed pdf-stream that Vtool creates from the PDF becomes too large for the process to hold in memory as a single piece. </li>
+<li>Vtool requires heap size around 4 GB of memory (ie., -Xmx4096m) to process PDF or any other files larger than 1 GB in 64-bit mode.</li>
+<li>Trying "-Xmx4096m" (or Xmx8192m, or higher in an alike manner) on Windows 7 and a shell that is operating in 64 bit 
+is required to run the tool.</li>
+</ul>
+
+<h2>Functioning</h2>
+
+<p>Vtool can be executed through a command-line interface in which the input file has to be specified.</p>
+<p>Run the Vtool in the command-line as follows:</p>
+<p>If you have used Method 1 for installing Vtool, use</p>
+
+<p><code>vtool [options] [-log stdout|filename] -file inputfile</code></p>
+<p>If you have used Method 2 for installing Vtool, use</p>
+<p><code>java -Xmx1024m -jar vtool.jar [options] [-log stdout|filename] -file inputfile</code></p>
+<p>If an XML file had more than 64,000 entities,</p>
+<p><code>java -Xmx1024m -DentityExpansionLimit=200000 -jar vtool.jar [options] [-log stdout|filename] -file inputfile</code></p>
+
+<p>Either the full path or the relative path
+can be provided as inputs.</p>
+
+<p>Type <code>vtool -help</code> for a complete list of options.</p>
+
+
+
+<h3>Validation mode</h3>
+
+<p>Vtool automatically detects the mode of validation according to the input file. If the dataset.xml file is chosen, Vtool will validate the CONTRAST dataset and each item in the dataset. If an individual file is chosen, Vtool will perform checks appropriate for that item. Vtool 5.93.1 does not use the spec files to determine the mode of validation (CONTRAST mode or file validation mode).</p>
+
+
+
+<h3>Input</h3>
+
+<p>Currently the following types of files are validated:</p>
+
+<p>XML</p>
+
+<p>PDF</p>
+
+<p>Images (JPEG, TIFF, or GIF)</p>
+
+<p>EPUB</p>
+
+<p>JSON</p>
+
+<p>Turtle Files (.ttl)</p>
+
+<p> HTML File(.htm or .html)</p>
+
+
+<h3>Output</h3>
+
+<p>Validation results (errors, warnings, and skipped checks) are written to a log file (<code>*.xml</code>) if it is specified through the <code>-log</code> option; otherwise Vtool defaults to standard output. The names of the log file and validated XML should be different. Vtool generates fingerprint files (<code>*_fp.xml</code>) that contain messages from the log file as well as other system information. The log report can be viewed in a text editor or a browser. A stylesheet is copied along with the log file, which enables you to view the log file in a browser. Click on the links in the log file to view the item concerned.</p>
+
+<h3>How to read the log file</h2>
+<p>The "Summary" section in the log gives an overview of the current run of Vtool. File-paths (with links) of files with errors or warnings are provided under the "File(s) with errors" or "File(s) with warnings" sections. By clicking on a link, you can navigate to the results of the validation pertaining to that file. The "results" consist of (1) the total error count, (2) the total warning count, (3) a message describing each error or warning, (4) a description of the parser or exceptions errors for that particular file and (5) in case of E300 datasets, the description with "epubcheck-parser" or "epubpreflight-parser" denotes the validation errors for EPUB files. The error or warning includes the check-id, error position, and message-text. In addition, for dataset.xml, file-paths for contextual checks are shown. This provides information about which file the error or warning pertains to. Error messages are identified by "<span style="color:red">red</span>" font, and warnings are identified by "<span style="color:#FF00CC">light pink</span>" font. Error and warning message text is in "<span style="color:gray">gray</span>" font.</p>
+
+<p><b>For example</b>, <span style="color:red">Error [XMP602] [unknown] [9783437284502/front/B9783437284502100388/main.pdf]:</span> <span style="color:gray">The number of authors and collaborations in the XMP metadata (0) should be the same as in the XML file (2).</span></p>
+
+<h2>Version</h2>
+
+<p>Version of the Vtool: 5.93.1</p>
+
+
+
+<h2>Options used*</h2>
+
+<table border="1" width="70%">
+   <tr>
+   <td>
+   <p>&nbsp;</p>
+   </td>
+   <td width="30%">
+   <p><b>Options</b></p>
+   </td>
+   <td>
+   <p><b>Usage</b></p>
+   </td>
+  </tr>
+  <tr>
+  <td colspan="3">
+  <p><b><i>Info</i></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>1</p>
+  </td>
+  <td width="30%">
+  <p><code>-version</code></p>
+  </td>
+  <td>
+  <p>Show the Vtool version number and exit</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>2</p>
+  </td>
+  <td>
+  <p><code>-help</code></p>
+  </td>
+  <td>
+  <p>Show usage and exit</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>3</p>
+  </td>
+  <td>
+  <p><code>-file
+  filename</code></p>
+  </td>
+  <td>
+  <p>The name of the file or directory to check (<code>-file</code> is optional if no other options are specified; filename should be enclosed within quotes if it contains white space). If the input is directory, files and subdirectories in the directory are processed. If there is <b>dataset.xml</b> in directory, the corresponding subdirectories to <b>dataset.xml</b> are made to run as dataset. The excluded files and directories are treated as individual process and are made to run. Directory option will check till the last file of last subdirectory in the folder hierarchy. 
+  </p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>4</p>
+  </td>
+  <td>
+  <p><code>-specver</code></p>
+  </td>
+  <td>
+  <p>Show the version of the spec file and exit</p>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="3">
+  <p><b><i>General options</i></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>5</p>
+  </td>
+  <td width="30%">
+  <p><code>-time</code></p>
+  </td>
+  <td>
+  <p>This option displays total runtime in seconds
+  and microseconds</p>
+  </td>
+ </tr>
+  <tr>
+  <td>
+  <p>6</p>
+  </td>
+  <td>
+  <p><code>-withlinking</code></p>
+  </td>
+  <td>
+  <p>Validate cross-references in book datasets</p>
+  </td>
+ </tr>
+  <tr>
+  <td>
+  <p>7</p>
+  </td>
+  <td>
+  <p><code>-forcecheck</code></p>
+  </td>
+  <td>
+  <p>This forces Vtool to do the entire validation
+  even if the input file has not been changed since the last run</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>8</p>
+  </td>
+  <td>
+  <p><code>-nofp</code></p>
+  </td>
+  <td>
+  <p>This option is used to automatically delete the fingerprint file</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>9</p>
+  </td>
+  <td>
+  <p><code>-log
+  filename</code></p>
+  </td>
+  <td>
+  <p>Specify the log file. If this option is
+  omitted, Vtool defaults to standard output</p>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="3">
+  <p><b><i>Check options</i></b></p>
+  </td>
+ </tr>
+  <tr>
+  <td>
+  <p>10</p>
+  </td>
+  <td>
+  <p><code>-spawn</code></p>
+  </td>
+  <td>
+  <p>Validate graphics files and stripins.</br>This option need not be specified if the input file is a  dataset.xml.</br>It needs to be specified only when the input is a main.xml and you want a fingerprint created for the associated graphics files and stripins also (<b>Note:</b> folder structure should follow the CONTRAST standard for -spawn to work)</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>11</p>
+  </td>
+  <td>
+  <p><code>-stripin</code></p>
+  </td>
+  <td>
+  <p>Validate strip-in images for dataset, individual XML with stripin images (<b>Note:</b> folder structure should follow the CONTRAST standard for -stripin to work) and individual stripin image files</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>12</p>
+  </td>
+  <td>
+  <p><code>-bph</code></p>
+  </td>
+  <td>
+  <p>Validate file as a batch-placeholder</p>
+  </td>
+ </tr> 
+ <tr>
+  <td>
+  <p>13</p>
+  </td>
+  <td>
+  <p><code>-skip</code>
+  <i>checkid(s)</i></p>
+  </td>
+  <td>
+  <p>This option allows to skip specified validation
+  checks. A space separated list of checkid's can also be provided with this
+  option, e.g. <code>-skip &quot;CED501
+  CED502&quot;</code>. This option is useful when skipping a check
+  globally regardless of the file identity. To skip checks in a specific file,
+  see <code>-skipbypii</code> option</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>14</p>
+  </td>
+  <td>
+  <p><code>-skipbypii</code> <i>PII:pii_number
+  checkid(s)</i></p>
+  </td>
+  <td>
+  <p>This option allows the user to target <i>skip</i>(s)
+  for a specific XML file.</br><b>Prerequisites:</b> (a) input file should have a unique PII
+  number, (b) PII without parentheses, hyphens, or spaces should be specified</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>15</p>
+  </td>
+  <td>
+  <p><code>-lite</code></p>
+  </td>
+  <td>
+  <p>This option is used to validate the XML as a
+  'Head-only' or 'Head-and-Tail' file</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>16</p>
+  </td>
+  <td>
+  <p><code>-no-xmp</code></p>
+  </td>
+  <td>
+  <p>This option is used to skip XMP checks for a PDF file of Elsevier PDF version 5.2 or less (<b>Note:</b> (i) this option should be used only when the input is an individual PDF file; (ii) this option need not be used when the input is dataset.xml)</p>
+  </td>
+ </tr>
+<tr>
+  <td>
+  <p>17</p>
+  </td>
+  <td>
+  <p><code>-book-metadata</code></p>
+  </td>
+  <td>
+  <p>This option is used to validate the cover image of an O300 dataset (<b>Note:</b> (i) this option should be specified only when the input file is a cover image; (ii) this option need not be used when the input is dataset.xml)</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>18</p>
+  </td>
+  <td>
+  <p><code>-EWXOCS</code></p>
+  </td>
+  <td>
+  <p>This option is used to validate checks on journal or book output datasets.</p>
+  </td>
+ </tr>
+ <tr>
+ <td><p>19</p></td>
+   <td>
+  <p><code>-noimg</code></p>
+  </td>
+  <td>
+  <p>This option is used to skip image checks on journal <br/>or book output datasets. <br/>(<b>Note:</b> This will work only when <code>-EWXOCS</code> option is used and for output datasets only.)</p>
+  </td>
+ </tr>
+ <tr>
+ <td><p>20</p></td>
+   <td>
+  <p><code>-mrw</code></p>
+  </td>
+  <td>
+  <p>This option is used to validate MRW checks on Book <b>5.3.0 DTD</b> <br/>and higher datasets with docsubtype "com" or "enc".</p>
+  </td>
+ </tr>
+ <tr>
+ 	<td><p>21</p></td>
+	<td><p><code>-satellite</code></p></td>
+	<td><p>This option should be used only when the input is an individual satellite RDF XML file.</p></td>
+	</tr>
+<tr>
+ 	<td><p>22</p></td>
+	<td><p><code>-xhtml
+</code></p></td>
+	<td><p>This option should be used only when the input is an individual XHTML file.</p></td>
+	</tr>
+<tr>
+ 	<td><p>23</p></td>
+	<td><p><code>-patentf</code></p></td>
+	<td><p>This option is used to support the Opsbank Excerption workflow checks on CAR files.</p></td>
+	</tr>	
+	<tr>
+ 	<td><p>24</p></td>
+	<td><p><code>-rdf</code></p></td>
+	<td><p>This option is used to validate RDF XML files to detect RDF errors using JENA Application, a Semantic Webframework.</p></td>
+	</tr>	
+	<tr>
+ 	<td><p>25</p></td>
+	<td><p><code>-v</code></p></td>
+	<td><p>This option is used to parse very large XML files.</p></td>
+	</tr>
+         <tr>
+ 	<td><p>26</p></td>
+	<td><p><code>-vcclog</code></p></td>
+	<td><p>This option is used to give the vcclog XML path as input to pharmapendium.</p></td>
+	</tr>
+        <tr>
+ 	<td><p>27</p></td>
+	<td><p><code>-schematron  [filename]</code></p></td>
+	<td><p>This option is used to invoke schematron process, optional *.sch file or directory.</p></td>
+	</tr>
+	<tr>
+        <td><p>28</p></td>
+	<td><p><code>-nofpdtd</code></p></td>
+	<td><p>This option is used to keep the fingerprint file as external DTD.</p></td>
+	</tr>
+	<tr>
+        <td><p>29</p></td>
+	<td><p><code>-vjson [schemaName]</code></p></td>
+	<td><p>This option is used to invoke the JSON validation. JSON schema name can be given as an optional value to vali` the input json against the defined schema</p>
+   <p>vjson without any value considers the generic payload schema and performs VTW payload validation</p>
+   <p>vjson with JSON schema name as value, then consider the JSON schema and performs VTW payload validation</p>
+   <p>vjson with keyword 'grant', will start assessing the type of grant and initiate the Grant payload validation.</p>
+     </td>
+	</tr>
+        <tr>
+        <td><p>30</p></td>
+	<td><p><code>-am</code></p></td>
+	<td><p>This option should be used only when the input is an individual PDF file.</p></td>
+	</tr>
+        <tr>
+        <td><p>31</p></td>
+	<td><p><code>-ap-pf</code></p></td>
+	<td><p>This option is used to validate manifest json for Apollo Preflight</p></td>
+	</tr>
+        <tr>
+        <td><p>32</p></td>
+	<td><p><code>-ap-as &lt;manifest JSON&gt;</code></p></td>
+	<td><p>This option is used to validate xml for Apollo AutoStructure (S5 XML) and must contain manifest JSON path</p></td>
+	</tr>
+        <tr>
+        <td><p>33</p></td>
+	<td><p><code>-ap-pc</code></p></td>
+	<td><p>&lt;Item XML&gt;This option is used to validate pdf for Apollo PageComposition(S5 PDF) and must contain item XML file path.<p><td>
+	</tr>
+        <tr>
+        <td><p>34</p></td>
+	<td><p><code>-ap-aa [-gaimage]</code></p></td>
+	<td><p>This option is used to validate image for Apollo AssessAndNormalizeArtwork, optional gaimage</p>
+	<p>&lt;-assettype&gt;The switch is mandatory.</p></td>
+        </tr>
+        <tr>
+        <td><p>35</p></td>
+	<td><p><code>-ap-tp &lt;manifest JSON&gt;</code></p></td>
+	<td><p>This option is used to validate xml for Apollo InteractiveCopyEditing (S100 XML) and must contain manifest JSON path</p></td>
+	</tr>
+        <tr>
+        <td><p>36</p></td>
+	<td><p><code>-ap-ap [-gaimage]</code></p></td>
+	<td><p>This option is used to validate image for Apollo CreatePrintArtwork, optional gaimage</p>
+		<p>&lt;-assettype&gt;The switch is mandatory.</p></td>
+         </tr>
+	<tr>
+        <td><p>37</p></td>
+	<td><p><code>-gaimage &lt;ISSN or JID&gt;</code></p></td>
+	<td><p>This option is used to validate Graphical Abstract Image for Apollo Service and must contains ISSN or JID value</p></td>
+	</tr>
+        <tr>
+        <td><p>38</p></td>
+	<td><p><code>-ap-cp</code></p></td>
+	<td><p>&lt;Item XML&gt;This option is used to validate pdf for Apollo ComposePDF and must contain item XML file path</p>
+        <p>&lt;-assettype&gt;The switch is mandatory, item XML can be given as input for Web PDF files.</p>  
+	<p>[manifest JSON] The switch can have a manifest JSON path as optional.</p></td>
+	</tr>
+        <tr>
+        <td><p>39</p></td>
+	<td><p><code>-ap-cs</code></p></td>
+	<td><p>This option is used to validate pdf for Apollo ComposeSemiFinishedPDF</p>
+             <p>&lt;-assettype&gt;The switch is mandatory, item XML can be given as input for Web PDF files.</p> 
+</td>
+	</tr>
+        <tr>
+        <td><p>40</p></td>
+	<td><p><code>-ap-st</code></p></td>
+	<td><p>&lt;Item XML&gt;This option is used to validate pdf for Apollo StampPDF and must contain item XML file path</p>
+            <p>&lt;-assettype&gt;The switch is mandatory, item XML can be given as input for Web PDF files.</p> 
+         <p>[manifest JSON] The switch can have a manifest JSON path as optional.</p></td>
+	</tr>
+	<tr>
+        <td><p>41</p></td>
+	<td><p><code>-ap-md</code></p></td>
+	<td><p>This option is used to validate Combined PDF.</p>
+	</tr>
+	<tr>
+        <td><p>42</p></td>
+	<td><p><code>-ap-nn [-gaimage]</code></p></td>
+	<td><p>This option is used to validate for Non-CPC, Artwork, non-CAP files, optional gaimage.</p>
+		<p>&lt;-assettype&gt;The switch is mandatory.</p></td>
+        
+	</tr>
+        <tr>
+        <td><p>43</p></td>
+	<td><p><code>-ap-np</code></p></td>
+	<td><p>This option is used to validate Web and Print PDF for Non-CPC files.</p>
+		<p>&lt;-assettype&gt;The switch is mandatory, item XML can be given as input for Web PDF files.</p></td>
+        
+	</tr>
+        <tr>
+        <td><p>44</p></td>
+	<td><p><code>-ap-cpc</code></p></td>
+	<td><p>This option is used to validate XML files and their CAP assets for CPC.</p>
+	</tr>	 	
+        <tr>
+        <td><p>45</p></td>
+	<td><p><code>-pts</code></p></td>
+	<td><p>PTS Order XML file.</p>
+	</tr>	 	
+        <tr>
+        <td><p>46</p></td>
+	<td><p><code>-vgraph</code></p></td>
+	<td><p>To use the validation-graph created by VTool during payload JSON validation (vtl-mnf json path or value "no" is allowed).</p>
+	</tr>
+        <tr>
+        <td><p>47</p></td>
+	<td><p><code>-shacl &lt;shapegraph&gt;</code></p></td>
+	<td><p>This option is used to validate datagraph against shapegraph.</p>
+	</tr>
+        <tr>
+        <td><p>48</p></td>
+	<td><p><code>-servicecall &lt;JSON&gt;</code></p></td>
+	<td><p>This option is used to retrieve the stage, JSON File is mandatory.</p>
+	</tr>
+        <tr>
+        <td><p>49</p></td>
+	<td><p><code>-led</code></p></td>
+	<td><p>This option is used to validate HTML5+LED document inputs.</p>
+	</tr>
+        <tr>
+        <td><p>50</p></td>
+	<td><p><code>-gba</code></p></td>
+	<td><p>This option is used to validate Global Book Archive deliverables, S300 'dataset.xml' path must be given as input.</p>
+	</tr>
+		<tr>
+        <td><p>51</p></td>
+	<td><p><code>-cct</code></p></td>
+	<td><p>This option is used to validate CCT (Commissioned Content Translation) project deliverables.</p>
+	</tr>	 	
+		<tr>
+        <td><p>52</p></td>
+	<td><p><code>-submres</code></p></td>
+	<td><p>This option is used to supply supporting manuscript assets from submission platform.</p></td>
+	</tr>	 	
+		<tr>
+        <td><p>53</p></td>
+	<td><p><code>-cpld</code></p></td>
+	<td><p>This option is used to validate the CP/LD assets.</p></td>
+	</tr>	 	
+ 	 	
+</table>
+<p>*<code>-global</code> is currently ignored.<br/>Deprecated options are given below.</p>
+
+
+
+
+<h3>Deprecated options</h3>
+
+<table border="1" width="30%">
+ <tr>
+  <td>
+  <p><code>-ead</code></p>
+  </td>
+  <td>
+  <p><code>-newline</code></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><code>-contrastmode</code></p>
+  </td>
+  <td>
+  <p><code>-loose</code></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><code>-spec</code></p>
+  </td>
+  <td>
+  <p><code>-yoas</code></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><code>-leave</code></p>
+  </td>
+  <td>
+  <p><code>-mrw</code></p>
+  </td>
+ </tr>
+<tr>
+  <td>
+  <p><code>-spinoff</code></p>
+  </td>
+  <td>
+  <p><code>-dtdver</code></p>
+  </td>
+</tr>
+<tr>
+  <td>
+  <p><code>-pii</code></p>
+  </td>
+  <td>
+  <p><code>-doi</code></p>
+  </td>
+</tr>
+<tr>
+  <td>
+  <p><code>-aid</code></p>
+  </td>
+  <td>
+  <p><code>-jid</code></p>
+  </td>
+ </tr>
+<tr>
+  <td>
+  <p><code>-docsubtype</code></p>
+  </td>
+  <td>
+  <p><code>-res</code></p>
+  </td>
+ </tr>
+  <td>
+  <p><code>-optimized</code></p>
+  </td>
+   <td>
+  <p><code>-bookmarks</code></p>
+  </td>
+
+ </tr>
+<tr>
+  <td>
+  <p><code>-thumbnails</code></p>
+  </td>
+    <td>
+  <p><code>-totalpages</code></p>
+  </td>
+
+ </tr>
+<tr>
+  <td>
+  <p><code>-openmode</code></p>
+  </td>
+    <td>
+  <p><code>-item</code></p>
+  </td>
+
+ </tr>
+<tr>
+  <td>
+  <p><code>-pages</code></p>
+  </td>
+    <td>
+  <p><code>-nopiidoi</code></p>
+  </td>
+
+ </tr>
+<tr>
+  <td>
+  <p><code>-physpag</code></p>
+  </td>
+    <td>
+  <p><code>-nodoi</code></p>
+  </td>
+</tr>
+</table>
+
+
+<h2>Examples</h2>
+
+<h3>Windows: Check a dataset and save an error log</h3>
+
+<p><code>vtool -log your.log -file dataset.xml</code></p>
+
+<p>Directory as INPUT: <code>vtool -log your.log -file c:/samples/test</code></p>
+
+
+<p><code>vtool -log &quot;C:\Documents and
+Settings\name\My Documents\dataset-logs\log1\your.log&quot; -file
+&quot;C:\Documents and Settings\name\My Documents\dataset-samples\dataset.xml&quot;</code></p>
+
+<h3>Unix: Check an individual XML file, skip a check, and save an error log</h3>
+
+<p><code>vtool -skip &quot;IDS503&quot; -log your.log
+-file main.xml</code></p>
+
+<p>Directory as INPUT: <code>vtool -log your.log -file /home/samples/test</code></p>
+
+
+<p><code>vtool -skip &quot;IDS503&quot; -log
+&quot;/home/name/logs/your.log&quot; -file &quot;/home/name/XML-samples/main.xml&quot;</code></p>
+
+<h3>Windows: Check a dataset and skip particular checks for specific files</h3>
+
+<p><code>vtool -skipbypii
+&quot;PII:S1551741106000611 IDS503 PII:S1551741106000635 ABS501 CED502&quot;
+-file dataset.xml</code></p>
+
+<p><code>vtool -skipbypii
+&quot;PII:S1551741106000611 IDS503 PII:S1551741106000635 ABS501 CED502&quot;
+-file &quot;C:\Documents and Settings\name\My Documents\dataset-samples\dataset.xml&quot;</code></p>
+
+<h3>Unix: Check an individual PDF file</h3>
+
+<p><code>vtool main.pdf</code></p>
+
+<p><code>vtool &quot;/home/name/pdf-samples/main.pdf&quot;</code></p>
+
+<h3>Windows: Check an artwork file and save an error log</h3>
+
+<p><code>vtool -log your.log -file gr1.jpg</code></p>
+
+<p><code>vtool -log &quot;C:\Documents and
+Settings\name\My Documents\artwork-samples\your.log&quot; -file
+&quot;C:\Documents and Settings\name\My Documents\artwork-samples\gr1.jpg&quot;</code></p>
+
+<h3>Unix: Check an individual XML file on CD-ROM and save an error log</h3>
+<p><code>vtool -log your.log -file main.xml</code></p>
+<p><code>vtool -log &quot;/home/name/logs/your.log&quot; -file &quot;/cdrom/XML-samples/main.xml&quot;</code></p>
+
+<h2>Bug reports</h2>
+<p><b>What to do with problems (possibly bugs):</b>
+<ol><li>Check that Java version is 1.8.0+ (i.e. 8.0+)</li>
+<li>Check where the vtool.jar file is installed</li>
+<li>Check if the folder containing vtool.jar also contains a folder named &quot;jar&quot; that contains other library jar files and a folder named &quot;specs&quot; that contains the spec files</li>
+<li>Check the settings/context: is the hard disk full? Is there enough memory?</li>
+<li>Check the command-line options</li>
+<li>Report the problem/bug. We are interested in the following information:
+	<dl><dt>Operating system</dt>
+		<dd>Type of computer<br/>
+		Windows 98/NT/2000/XP/Vista/7? Network environment?<br/>
+		Service pack version installed<br/>
+		How much memory does your computer have?<br/>
+		How big are the main partitions?</dd>
+	<dt>Where is the vtool.jar installed? (C:, D:, E:,...)</dt>
+        <dt>Java runtime version</dt>
+	<dt>Description of the bug</dt>
+		<dd>Input material
+			<dl><dt>XML/PDF/Image file for Vtool</dt></dl>
+		Log files, or if none seem to be available a &quot;screendump&quot;<br/>
+		Are there any fingerprint files (<code>*_fp.xml</code>) produced? If so please attach the relevant fingerprint file</dd></dl></ol></p>
+
+<p><b>Known problems:</b> 
+<ol><li><p>A Java exception is thrown for image files of very large size. To handle this, increase the Java heap size using the <code>-Xmx</code> option.</p></li>
+<li><p>If an XML file had more than 64,000 entities, SAXParseException will be thrown by the Vtool. The parser throws a fatal error once it has reached the entity expansion limit (ie., by default, the limit is set to 64000). This exception can be avoided by adding <code>-DentityExpansionLimit=200000</code> (which will increase the entity expansion limit) to the command line option.</p></li>
+<li><p>If a JPEG image file with color model CMYK, Exception will be thrown by the Vtool.</p></li>
+<li><p>If a TIFF image file with unsupported compression type, Exception Unsupported compression type for non-bilevel data will be thrown by the vtool.  </p></li>
+</ol></p>
+
+<p>Please report problems to Quality Assessment Suite Squad, Elsevier (e-mail: <a href="mailto:G.Rajasekaran@elsevier.com">G.Rajasekaran@elsevier.com</a>).</p>
+<h3>Customized function to get error/warning counts (available from v5.66.1)</h3>
+<p>Total error count and warning count can be extracted by methods getTotalErrorCount() and getTotalWarningCount() when vtool is used as library provided all the dependencies should be relative to vtool jar path.</p> 
+<p><code>Vtool vtool = new Vtool(arguments);</code></p>
+<p><code>vool.process();</code></p>
+<p><code>System.out.println(vtool.getTotalErrorCount() + " " + vtool.getTotalWarningCount());</code></p>
+
+<h3>Vtool can be used as library to access vtool from external java class (available from v5.71.0)</h3>
+<p>Vtool is used as library provided all the dependencies should be relative to vtool jar path. </p> 
+<p><code>VtoolLibrary vtool = new VtoolLibrary(args);</code></p>
+<p><code>System.out.println(vtool.getTotalErrorCount() + " " + vtool.getTotalWarningCount());</code></p>
+<p>By default <code>-file inputfile</code> is mandatory input for vtool, in addition to that <code>-log logpath</code> is mandatory in arguments while vtool is used as library.
+
+<h2>Acknowledgments</h2>
+
+<p>The Vtool developers wish to acknowledge the use of the following software:</p>
+
+<p><ol><li>Saxon XSLT and XQuery Processor from Saxonica Limited (see <a href="http://www.saxonica.com/" target="_blank">http://www.saxonica.com/</a>)</li><li>PDFBox and FontBox (see <a href="http://pdfbox.apache.org/" target="_blank">http://pdfbox.apache.org/</a>)</li><li>Sanselan, MimeUtil and Resolver (see <a href="http://www.fightingquaker.com/sanselan/" target="_blank">http://www.fightingquaker.com/sanselan/</a>, <a href="http://www.apache.org/licenses/" target="_blank">http://www.apache.org/licenses/</a>)</li><li>Epubcheck project (see <a href="http://code.google.com/p/epubcheck/" target="_blank">http://code.google.com/p/epubcheck/</a>)</li><li>JENA - A Semantic Web Framework for Java (see <a href="http://jena.sourceforge.net/index.html" target="_blank">http://jena.sourceforge.net/index.html</a>)</li>
+<li>json-schema-validator - A java framework for validating JSON against JSON Schema (see <a href="https://github.com/fge/json-schema-validator" target="_blank">https://github.com/fge/json-schema-validator</a>)</li>
+<li>Jayway JsonPath library for Java (see <a href="https://github.com/jayway/JsonPath" target="_blank">https://github.com/jayway/JsonPath</a>)</li>
+<li>YAML parser and emitter for JAVA programming language (see <a href="https://code.google.com/p/snakeyaml/" target="_blank">https://code.google.com/p/snakeyaml/</a>)</li>
+<li>SHACL library to validate datagraph against shape graph (see <a href="https://github.com/TopQuadrant/shacl" target="_blank">https://github.com/TopQuadrant/shacl</a>)</li>
+<li>To extract information from media (video and audio) files (see <a href="http://jcodec.org/" target="_blank">http://jcodec.org</a>)</li>
+
+
+</ol></p>
+
+
+<h2>Conclusion</h2>
+
+<p>This manual is meant for users who run the Vtool through a command-line
+interface. The API for the Vtool will also be available in the future.</p>
+
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+{
+	"batchId": "052ca216-622a-4691-93a6-53190064fc72",
+	"ingestionId": "ddf8309c-fe1b-4613-86ac-81a1986d185e",
+	"fundingBodyId": 805089398,
+	"homePage": "https://spbu.ru",
+	"status": "ACTIVE",
+	"preferredName": [{
+		"language": "en",
+		"value": "St Petersburg University"
+	}, {
+		"language": "ru",
+		"value": "Санкт-Петербургский государственный университет"
+	}, {
+		"language": "cn",
+		"value": "圣彼得堡国立大学"
+	}],
+	"acronym": [{
+		"language": "en",
+		"value": "SPbU"
+	}, {
+		"language": "ru",
+		"value": "СПбГУ"
+	}, {
+		"language": "cn",
+		"value": "圣大"
+	}],
+	"abbrevName": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ru",
+		"value": "NOTFOUND"
+	}, {
+		"language": "cn",
+		"value": "NOTFOUND"
+	}],
+	"alternateName": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ru",
+		"value": "NOTFOUND"
+	}, {
+		"language": "cn",
+		"value": "NOTFOUND"
+	}],
+	"financeType": "GOV",
+	"activityType": "GOVFED",
+	"profitabilityType": "NONPROF",
+	"country": "RUS",
+	"state": "Saint Petersburg",
+	"identifier": [{
+		"type": "CROSSREFID",
+		"value": "NOTFOUND"
+	}],
+	"description": [{
+		"abstract": {
+			"language": "en",
+			"value": "St Petersburg University (SPbU) is one of the largest scientific and educational centers in Europe and the world. Today, over 24,000 students are studying here, with more than 15 major laboratories and 23 resource centers that are part of the country's leading Research Park. The University boasts a rich history - SPbU is rightfully called the first university of Russia."
+		},
+		"source": "https://guide-en.spbu.ru/"
+	}, {
+		"abstract": {
+			"language": "ru",
+			"value": "Санкт-Петербургский государственный университет — один из крупнейших научно-образовательных центров в Европе и мире. Сегодня здесь учатся более 24 тысяч студентов, созданы более 15 крупных лабораторий и 22 ресурсных центра, входящих в ведущий Научный парк страны. Университет обладает богатейшей историей — только СПбГУ может по праву носить имя первого университета России."
+		},
+		"source": "https://guide.spbu.ru/"
+	}, {
+		"abstract": {
+			"language": "cn",
+			"value": "圣彼得堡国立大学是欧洲和世界著名的科研文教中心之一。今天,这里有2.4万多名学生,15多个大型实验室和22个资源中心构成了全国领先的科技园。我校拥有丰富的历史——可谓名副其实俄罗斯第一所大学。"
+		},
+		"source": "https://guide-cn.spbu.ru"
+	}],
+	"awardSuccessRate": {
+		"percentage": 0,
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ru",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "cn",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}]
+	},
+	"establishment": {
+		"establishmentYear": 1724,
+		"country": "RUS",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "In January 1724, the decree signed by Peter the Great established the Academy with University and Gymnasium as its part which trained future specialists for the Academy. That's when the history of the university education in Russia started. It was the era of the Academic University. Till the end of the 18th century, the University was within the Academy. During this period, educational and scientific traditions were established."
+			},
+			"source": "https://english.spbu.ru/about/history"
+		}, {
+			"abstract": {
+				"language": "ru",
+				"value": "СПбГУ был основан по указу императора Петра I, и сегодня Санкт-Петербургский университет — единственный вуз России, отметивший свое 300-летие. За три века истории в Университете учились и работали тысячи выдающихся ученых, общественных, государственных и политических деятелей, писателей, художников и музыкантов: Дмитрий Менделеев, Александр Попов, Иван Тургенев, Петр Столыпин, Иван Павлов, Дмитрий Мамин-Сибиряк, Василий Докучаев, Александр Блок, Михаил Врубель, Михаил Глинка, Николай Рерих, Лев Ландау, Леонид Канторович, Владимир Путин, Дмитрий Медведев и другие."
+			},
+			"source": "https://spbu.ru/history"
+		}, {
+			"abstract": {
+				"language": "cn",
+				"value": "圣彼得堡国立大学是俄罗斯第一所大学。 它是由彼得一世皇帝的法令成立的，当今圣彼得堡大学是俄罗斯唯一庆祝其成立290周年的大学。 在圣大三个世纪的历史中，数千的杰出科学家、公众、国家和政治人物、作家、艺术家和音乐家在圣大学习和工作：德米特里 ·门捷列夫、亚历山大·波波夫、伊万·屠格涅夫、彼得·斯托雷平、伊万·巴甫洛、德米特里·马明-西比里亚克、瓦西里·多库切夫、亚历山大·布洛克、米哈伊尔·弗鲁贝尔、米哈伊尔·格林卡、尼古拉斯·洛里奇、列夫·朗道、弗拉基米尔·普京，德米特里·梅德韦杰夫和其他人。"
+			},
+			"source": "https://chinese.spbu.ru/history"
+		}]
+	},
+	"fundingPolicy": [{
+		"abstract": {
+			"language": "en",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "ru",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "cn",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}],
+	"contactInformation": {
+		"link": "https://english.spbu.ru/about/departments-and-administrative-staff",
+		"hasPostalAddress": {
+			"addressCountry": "RUS",
+			"addressRegion": "Saint Petersburg.",
+			"addressLocality": "St. Petersburg.",
+			"addressPostalCode": "199034",
+			"postOfficeBoxNumber": "NOTFOUND",
+			"streetAddress": "7-9 Universitetskaya Embankment."
+		}
+	},
+	"relation": {
+		"partOf": [0],
+		"hasPart": [0],
+		"affiliatedWith": [0],
+		"renamedAs": [0],
+		"continuationOf": [0],
+		"mergedWith": [0],
+		"incorporatedInto": [0],
+		"mergerOf": [0],
+		"incorporates": [0],
+		"isReplacedBy": [0],
+		"replaces": [0],
+		"splitFrom": [0],
+		"splitInto": [0]
+	},
+	"vatNumber": "NOTFOUND",
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://spbu.ru",
+		"createdOn": "2024-10-23T06:35:17.720Z",
+		"lastUpdateOn": "2024-10-23T06:35:17.721Z",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": 1,
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	},
+	"registry": {
+		"termsOfUse": {
+			"source": [""]
+		},
+		"fundingBodyDataset": {
+			"collectionCode": "SUP004",
+			"extended": false,
+			"tier": 4,
+			"source": [{
+				"name": "St Petersburg University",
+				"url": "https://spbu.ru",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"opportunityDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"awardDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"publicationDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOT FOUND",
+				"url": "NOT FOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-10-23T06:35:17.721Z",
+				"captureEnd": "2024-10-23T06:35:17.721Z"
+			}]
+		}
+	}
+}

@@ -1,0 +1,21 @@
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+
+a:documentation [ " RELAX NG Schema for HTML 5: Web Application Features" ]
+a:documentation [ "Removed patterns that are not alldwed in Elseviers Core Profile" ]
+
+## Additional On-Demand Information: details
+details.elem = element details { details.inner & details.attrs }
+details.attrs =
+  common.attrs
+  & details.attrs.open?
+  & (common.attrs.aria.implicit.group
+     | # aria-expanded must be true if open attr present; check by assertions
+       common.attrs.aria.role.group)?
+details.attrs.open = attribute open { string "open" | string "" }
+details.inner = summary.elem, common.inner.flow
+
+## Caption/summary for details element: summary
+summary.elem = element summary { summary.inner & summary.attrs }
+summary.attrs = common.attrs & (common.attrs.aria.implicit.button | common.attrs.aria.role.button)?
+summary.inner =
+  common.inner.phrasing | h1.elem | h2.elem | h3.elem | h4.elem | h5.elem | h6.elem | hgroup.elem

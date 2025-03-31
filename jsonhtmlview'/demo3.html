@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 10px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .key {
+            font-weight: bold;
+            color: #00457c;
+        }
+        .value {
+            margin-left: 20px;
+            color: #555;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+        .nested {
+            margin-left: 20px;
+            border-left: 2px solid #ddd;
+            padding-left: 10px;
+        }
+        pre {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+    </style>
+    <script>
+        function toggleVisibility(element) {
+            const target = element.nextElementSibling;
+            if (target.classList.contains('hidden')) {
+                target.classList.remove('hidden');
+                element.textContent = '[-]';
+            } else {
+                target.classList.add('hidden');
+                element.textContent = '[+]';
+            }
+        }
+
+        function renderJSON(obj, parentElement) {
+            for (const key in obj) {
+                const value = obj[key];
+                const div = document.createElement('div');
+                
+                if (typeof value === 'object' && value !== null) {
+                    const toggle = document.createElement('span');
+                    toggle.textContent = '[+]';
+                    toggle.classList.add('toggle');
+                    toggle.onclick = () => toggleVisibility(toggle);
+                    
+                    const nestedContainer = document.createElement('div');
+                    nestedContainer.classList.add('nested', 'hidden');
+                    
+                    div.innerHTML = `<span class="key">${key}:</span>`;
+                    div.appendChild(toggle);
+                    div.appendChild(nestedContainer);
+                    
+                    renderJSON(value, nestedContainer);
+                } else {
+                    div.innerHTML = `<span class="key">${key}:</span> <span class="value">${value}</span>`;
+                }
+
+                parentElement.appendChild(div);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const jsonData = {
+                "batchId": "7780b6ce-4959-4a1d-b7fc-be2ecdfba6fa",
+                "ingestionId": "2024308f-7782-40ba-a518-2e5c557ac9d5",
+                "grantOpportunityId": 300024469,
+                "status": "INACTIVE",
+                "title": [
+                    {
+                        "language": "en",
+                        "value": "MS in Clinical Investigation"
+                    }
+                ],
+                "homePage": {
+                    "link": "https://ictr.wisc.edu/graduate-program-in-clinical-investigation/",
+                    "modifiedDate": "2018-11-20T00:00:00"
+                },
+                "subjectMatter": [
+                    {
+                        "abstract": {
+                            "language": "en",
+                            "value": "<ul><li>Lead to translation...</li></ul>"
+                        },
+                        "source": "https://ictr.wisc.edu/..."
+                    }
+                ],
+                "contactInformation": [
+                    {
+                        "link": "https://ictr.wisc.edu/",
+                        "hasPostalAddress": {
+                            "addressCountry": "usa",
+                            "addressRegion": "WI",
+                            "addressLocality": "Madison",
+                            "addressPostalCode": "53705",
+                            "streetAddress": "750 Highland Avenue"
+                        },
+                        "contactPerson": [
+                            {
+                                "initials": "S.",
+                                "givenName": "Sally",
+                                "familyName": "Wedde",
+                                "emailAddress": "studentinquiry@ictr.wisc.edu"
+                            }
+                        ]
+                    }
+                ],
+                "opportunityDate": {
+                    "cycle": [
+                        {
+                            "index": 1,
+                            "label": "Cycle 1",
+                            "proposal": [
+                                {
+                                    "limitation": "SPECIFIED",
+                                    "date": "2022-02-01T00:00:00",
+                                    "required": true
+                                }
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "label": "Cycle 2",
+                            "proposal": [
+                                {
+                                    "limitation": "SPECIFIED",
+                                    "date": "2024-02-01T12:46:00",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            };
+
+            const container = document.querySelector('.container');
+            renderJSON(jsonData, container);
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>JSON Viewer</h1>
+    </div>
+</body>
+</html>

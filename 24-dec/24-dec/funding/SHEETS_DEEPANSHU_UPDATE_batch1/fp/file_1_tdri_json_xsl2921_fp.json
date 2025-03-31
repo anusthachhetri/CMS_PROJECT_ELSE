@@ -1,0 +1,28 @@
+{"fingerprints": {
+    "signature": "7e183f01f2af64539f20672ad0d67ba0",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "file_1_tdri.json",
+            "checksum": "ba28c7d84d5c73e867f192b5a77a1805"
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "total-errors": 0
+        },
+        "info": {
+            "date": "2024/12/24",
+            "os": "Windows 10 version 10.0",
+            "time": "18:41",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.92.1",
+                "specset-version": "2.92.1"
+            },
+            "ingestion-version": "6.6.0",
+            "commandline": "-Xmx1024m -DentityExpansionLimit=200000 -file \"D:\\ML\\files\\JSOn\\latest\\24-dec\\SHEETS_DEEPANSHU_UPDATE_batch1\\file_1_tdri.json\" -log \"DD:\\ML\\files\\JSOn\\latest\\24-dec\\SHEETS_DEEPANSHU_UPDATE_batch1\\file_1_tdri.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

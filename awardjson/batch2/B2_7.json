@@ -1,0 +1,190 @@
+{
+	"batchId": "8aa5bf3c-306f-49bd-b489-b7d5f6b52edf",
+	"ingestionId": "dc78e061-55a7-4d11-8740-9d774f6320fb",
+	"grantAwardId": 807710424,
+	"fundingBodyAwardId": "NOT FOUND",
+	"hasInstallment": [0],
+	"hasWorkPackage": [0],
+	"title": [{
+		"language": "en",
+		"value": "A new generation of the lithium battery: assembly of the all-solid-state system"
+	}, {
+		"language": "pl",
+		"value": "Baterie litowe nowej generacji: montaż pełnego ogniwa z komponentów w fazie stałej"
+	}],
+	"identifier": [{
+		"type": "DOI",
+		"value": "NOT FOUND"
+	}],
+	"startDate": "2018-05-01T00:00:00",
+	"grantType": "RESEARCH",
+	"funderSchemeType": "NOT FOUND",
+	"homePage": {
+		"link": "https://www.fnp.org.pl/en/homing-grant-winners-competition-52018/"
+	},
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "NOT FOUND"
+		},
+		"source": "https://www.fnp.org.pl/en/homing-grant-winners-competition-52018/"
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "NOT FOUND"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "NOT FOUND"
+		},
+		"source": "NOT FOUND"
+	}],
+	"funds": [{
+		"fundingBodyProjectId": "NOT FOUND",
+		"hasPart": [{
+			"fundingBodyProjectId": "NOT FOUND",
+			"budget": [{
+				"currency": "PLN",
+				"amount": 799916
+			}]
+		}],
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"acronym": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "POL",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "NOT FOUND",
+			"addressPostalCode": "02-611",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "WARSAW"
+		},
+		"link": "https://www.fnp.org.pl/en/homing-grant-winners-competition-52018/",
+		"budget": [{
+			"currency": "PLN",
+			"amount": 799916
+		}],
+		"status": "CLOSED"
+	}],
+	"fundingDetail": {
+		"installment": [{
+			"index": 0,
+			"grantAwardInstallmentId": 1,
+			"financialYearStart": 0,
+			"financialYearEnd": 0,
+			"fundedAmount": [{
+				"currency": "PLN",
+				"amount": 799916
+			}]
+		}],
+		"fundingTotal": [{
+			"currency": "PLN",
+			"amount": 799916
+		}]
+	},
+	"awardeeDetail": [{
+		"awardeeAffiliationId": "807710424_A_0",
+		"name": [{
+			"language": "en",
+			"value": "University of Louisville"
+		}],
+		"role": "PARTICIPANT",
+		"fundingTotal": [{
+			"currency": "PLN",
+			"amount": 799916
+		}],
+		"fundingBodyOrganizationId": "NOT FOUND",
+		"vatNumber": "NOT FOUND",
+		"link": "NOT FOUND",
+		"hasPostalAddress": {
+			"addressCountry": "USA",
+			"addressRegion": "NOT FOUND",
+			"addressLocality": "WARSAW",
+			"addressPostalCode": "NOT FOUND",
+			"postOfficeBoxNumber": "NOT FOUND",
+			"streetAddress": "NOT FOUND"
+		},
+		"identifier": [{
+			"type": "DUNS",
+			"value": "NOT FOUND"
+		}],
+		"departmentName": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"activityType": "NOT FOUND",
+		"affiliationOf": [{
+			"awardeePersonId": "807710424_P_0",
+			"name": [{
+				"language": "en",
+				"value": "Dominika Ziółkowska"
+			}],
+			"role": "PI",
+			"initials": "D",
+			"givenName": "Dominika",
+			"familyName": "Ziółkowska",
+			"emailAddress": "NOT FOUND",
+			"identifier": [{
+				"type": "ORCID",
+				"value": "NOT FOUND"
+			}],
+			"fundingBodyPersonId": "NOT FOUND"
+		}]
+	}],
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Materials Chemistry",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2505"
+			}
+		}
+	}, {
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Energy Engineering and Power Technology",
+			"orgSpecificClassification": "NOT FOUND",
+			"identifier": {
+				"type": "ASJC",
+				"value": "2102"
+			}
+		}
+	}],
+	"relatedOpportunity": [{
+		"grantOpportunityId": 0,
+		"fundingBodyOpportunityId": "NOT FOUND",
+		"title": [{
+			"language": "en",
+			"value": "NOT FOUND"
+		}],
+		"description": "NOT FOUND"
+	}],
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "foundation for Polish Science"
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "NOT FOUND",
+			"sourceText": "foundation for Polish Science"
+		}]
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.fnp.org.pl/en/homing-grant-winners-competition-52018/",
+		"createdOn": "2024-12-01T15:09:33",
+		"lastUpdateOn": "2024-12-01T15:09:33",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "1",
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	}
+}

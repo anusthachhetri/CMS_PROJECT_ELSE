@@ -1,0 +1,102 @@
+
+{
+    "batchId": "1256bf3a-0506-4caa-8835-706cf0aad42b",
+    "ingestionId": "a9be7f8f-d31a-4fe7-b165-4fbc0d95c14c",
+    "grantAwardId": 447487735,
+    "fundingBodyAwardId": "Not Available",
+    "title": [
+      {
+        "language": "en",
+        "value": "Grief Counseling Center"
+      }
+    ],
+    "startDate": "2023-01-01T00:00:00",
+    "grantType": "RESEARCH",
+    "homePage": {
+      "link": "https://jgbf.org/product/hosparus-inc/"
+    },
+    "synopsis": [
+      {
+        "abstract": {
+          "language": "en",
+          "value": "For the construction of a new Grief Counseling Center."
+        },
+        "source": "https://jgbf.org/product/hosparus-inc/"
+      }
+    ],
+    "licenseInformation": [
+      {
+        "abstract": {
+          "language": "en",
+          "value": "Copyright Â© 2024 James Graham Brown Foundation"
+        },
+        "source": "https://jgbf.org/"
+      }
+    ],
+    "fundingDetail": {
+      "fundingTotal": [
+        {
+          "currency": "USD",
+          "amount": 500000
+        }
+      ]
+    },
+    "awardeeDetail": [
+      {
+        "awardeeAffiliationId": "447487735_A_0",
+        "name": [
+          {
+            "language": "en",
+            "value": "Hosparus, Inc."
+          }
+        ],
+        "role": "COORDINATOR"
+      }
+    ],
+    "classification": [
+      {
+        "type": "Annotation",
+        "hasSubject": {
+          "preferredLabel": "Social Sciences",
+          "identifier": {
+            "type": "ASJC",
+            "value": "3300"
+          }
+        }
+      }
+    ],
+    "relatedOpportunity": [
+      {
+        "grantOpportunityId": 300066024,
+        "fundingBodyOpportunityId": "Not Available",
+        "title": [
+          {
+            "language": "en",
+            "value": "QUALITY OF LIFE"
+          }
+        ],
+        "description": "Quality of Life"
+      }
+    ],
+    "relatedFunder": {
+      "leadFunder": {
+        "fundingBodyId": 100001010
+      },
+      "hasFunder": [
+        {
+          "fundingBodyId": 100001010
+        }
+      ]
+    },
+    "hasProvenance": {
+      "wasAttributedTo": "SUP001",
+      "derivedFrom": "https://jgbf.org/product/hosparus-inc/",
+      "createdOn": "2024-02-01T23:56:15",
+      "contactPoint": "xxxx@xxxx.com",
+      "version": "0",
+      "hidden": false,
+      "defunct": false,
+      "status": "NEW"
+    }
+  }
+  

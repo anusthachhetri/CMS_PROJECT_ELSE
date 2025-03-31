@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <define name="html.elem">
+    <a:documentation> RELAX NG Schema for HTML 5: Global Structure &amp; Metadata Core Profile</a:documentation>
+    <a:documentation>Root Element: html</a:documentation>
+    <element name="html">
+      <interleave>
+        <ref name="html.inner"/>
+        <ref name="html.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  <define name="html.attrs">
+    <ref name="common.attrs"/>
+  </define>
+  <define name="html.inner">
+    <ref name="head.elem"/>
+    <ref name="body.elem"/>
+  </define>
+  <define name="head.elem">
+    <a:documentation>Metadata Container: head</a:documentation>
+    <element name="head">
+      <interleave>
+        <ref name="head.inner"/>
+        <ref name="head.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  <define name="head.attrs">
+    <interleave>
+      <ref name="common.attrs"/>
+      <optional>
+        <choice>
+          <ref name="common.attrs.aria.role.presentation"/>
+          <ref name="common.attrs.aria.role.menuitem"/>
+        </choice>
+      </optional>
+    </interleave>
+  </define>
+
+  <define name="head.inner">
+    <a:documentation>redefinition of the content model of element head according to the Core Profile</a:documentation>
+    <ref name="meta.charset.elem"/>
+    <optional>
+      <ref name="base.elem"/>
+    </optional>
+    <ref name="title.elem"/>
+    <oneOrMore>
+      <choice>
+        <ref name="link.elem"/>
+        <ref name="meta.elem"/>
+      </choice>
+    </oneOrMore>
+    <optional><ref name="script.jsonld.elem"/></optional>
+    <optional><ref name="style.elem"/></optional>
+  </define>
+
+  <define name="script.jsonld.elem">
+    <a:documentation>strict definition of script</a:documentation>
+    <element name="script">
+      <attribute name="type">
+        <value type="string">application/ld+json</value>
+      </attribute>
+      <optional>
+        <ref name="script.attrs.src"/>
+      </optional>
+      <text/>
+    </element>
+  </define>
+
+  <define name="body.elem">
+    <a:documentation>Content Container: body</a:documentation>
+    <element name="body">
+      <interleave>
+        <ref name="body.inner"/>
+        <ref name="body.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  <define name="body.attrs">
+    <interleave>
+      <ref name="common.attrs"/>
+      <optional>
+        <choice>
+          <ref name="common.attrs.aria.landmark.application"/>
+          <ref name="common.attrs.aria.landmark.document"/>
+          <ref name="common.attrs.aria.role.presentation"/>
+          <ref name="common.attrs.aria.implicit.document"/>
+        </choice>
+      </optional>
+     <!-- deleted on* body attrs -->
+    </interleave>
+  </define>
+  <define name="body.inner">
+    <ref name="common.inner.flow"/>
+  </define>
+ <!-- deleted patterns for body on* attrs -->
+  <define name="title.elem">
+    <a:documentation>Document Title: &lt;title&gt;</a:documentation>
+    <element name="title">
+      <interleave>
+        <ref name="title.inner"/>
+        <ref name="title.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  <define name="title.attrs">
+    <interleave>
+      <ref name="common.attrs.basic"/>
+      <ref name="common.attrs.i18n"/>
+      <ref name="common.attrs.present"/>
+      <ref name="common.attrs.other"/>
+      <optional><ref name="common.attrs.rdfa.no-content-no-property"/></optional>
+      <ref name="title.attrs.prop.dctitle"/>
+      <optional>
+        <ref name="common.attrs.rdfa.content"/>
+      </optional>
+      <optional>
+        <choice>
+          <ref name="common.attrs.aria.role.presentation"/>
+          <ref name="common.attrs.aria.role.menuitem"/>
+        </choice>
+      </optional>
+    </interleave>
+  </define>
+
+  <define name="title.attrs.prop.dctitle">
+    <attribute name="property">
+      <data type="Name">
+        <param name="pattern">\c+:title</param>
+      </data>
+    </attribute>
+  </define>
+  <define name="title.inner">
+    <text/>
+  </define>
+  
+  <define name="base.elem">
+    <a:documentation>Base URI: base</a:documentation>
+    <element name="base">
+      <interleave>
+        <ref name="base.inner"/>
+        <ref name="base.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  <define name="base.attrs">
+    <interleave>
+      <ref name="common.attrs.basic"/>
+      <ref name="common.attrs.i18n"/>
+      <ref name="common.attrs.present"/>
+      <ref name="common.attrs.other"/>
+      <choice>
+        <interleave>
+          <ref name="base.attrs.href"/>
+          <optional>
+            <ref name="base.attrs.target"/>
+          </optional>
+        </interleave>
+        <ref name="base.attrs.target"/>
+      </choice>
+      <optional>
+        <choice>
+          <ref name="common.attrs.aria.role.presentation"/>
+          <ref name="common.attrs.aria.role.menuitem"/>
+        </choice>
+      </optional>
+    </interleave>
+  </define>
+  <define name="base.attrs.href">
+    <attribute name="href">
+      <ref name="common.data.uri"/>
+    </attribute>
+  </define>
+  <define name="base.attrs.target">
+    <attribute name="target">
+      <!-- common.data.browsing-context-or-keyword -->
+      <data type="string">
+        <param name="pattern"
+          >()|([^_].*)|(_[bB][lL][aA][nN][kK])|(_[sS][eE][lL][fF])|(_[pP][aA][rR][eE][nN][tT])|(_[tT][oO][pP])</param>
+      </data>
+    </attribute>
+  </define>
+  <define name="base.inner">
+    <empty/>
+  </define>
+  
+  <define name="link.elem">
+    <a:documentation>relations: link</a:documentation>
+    <element name="link">
+      <interleave>
+        <ref name="link.inner"/>
+        <ref name="link.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  
+  <define name="link.attrs">
+    <a:documentation>link must have a @href and @property. @rel is optional</a:documentation>
+    <!-- copy of link.rdfa.attrs.metadata
+      TODO: do we allow the other attributes?
+    -->
+    <interleave>
+      <ref name="common.attrs.basic"/>
+      <ref name="common.attrs.i18n"/>
+      <ref name="common.attrs.present"/>
+      <ref name="common.attrs.other"/>
+      <ref name="link.attrs.property"/>
+      <ref name="link.attrs.href"/>
+      <optional><ref name="common.attrs.rdfa.no-content-no-property"/></optional>
+      <optional><ref name="common.attrs.rdfa.rev"/></optional>
+      <optional><ref name="shared-hyperlink.attrs.hreflang"/></optional>
+      <optional><ref name="shared-hyperlink.attrs.media"/></optional>
+      <optional><ref name="shared-hyperlink.attrs.type"/></optional>
+      <optional><ref name="referrerpolicy"/></optional>
+      <optional><ref name="link.attrs.sizes"/></optional>
+      <optional><ref name="link.attrs.color"/></optional>
+      <optional><ref name="link.attrs.scope"/></optional>
+      <optional><ref name="link.attrs.updateviacache"/></optional>
+      <optional><ref name="link.attrs.workertype"/></optional>
+      <optional>
+        <!-- 	link.attrs.title included in common.attrs -->
+        <ref name="embedded.content.attrs.crossorigin"/>
+      </optional>
+      <optional>
+        <choice>
+          <ref name="common.attrs.aria.role.link"/>
+          <ref name="common.attrs.aria.role.presentation"/>
+          <ref name="common.attrs.aria.role.menuitem"/>
+        </choice>
+      </optional>
+    </interleave>
+  </define>
+
+  <define name="link.attrs.property">
+    <attribute name="property">
+      <data type="Name"/>   
+    </attribute>
+  </define>
+  
+  <define name="link.attrs.href">
+    <attribute name="href">
+      <ref name="common.data.uri"/>
+    </attribute>
+  </define>
+  
+  <define name="link.attrs.rel">
+    <attribute name="rel">
+      <choice>
+        <data type="string">
+          <param name="pattern"
+            >alternate|author|dns-prefetch|help|icon|license|mask-icon|next|pingback|preconnect|prefetch|preload|prerender|prev|search|serviceworker|stylesheet</param>
+        </data>
+      </choice>
+    </attribute>
+  </define>
+  <define name="link.attrs.as">
+    <attribute name="as">
+      <choice>
+        <value type="string" />
+        <value type="string">document</value>
+        <value type="string">embed</value>
+        <value type="string">font</value>
+        <value type="string">image</value>
+        <value type="string">manifest</value>
+        <value type="string">media</value>
+        <value type="string">object</value>
+        <value type="string">report</value>
+        <value type="string">script</value>
+        <value type="string">serviceworker</value>
+        <value type="string">sharedworker</value>
+        <value type="string">style</value>
+        <value type="string">worker</value>
+        <value type="string">xslt</value>
+      </choice>
+    </attribute>
+  </define>
+  <define name="link.attrs.integrity">
+    <attribute name="integrity">
+      <!-- common.data.integrity -->
+      <data type="string">
+        <param name="pattern">sha256-.+|sha384-.+|sha512-.+</param>
+      </data>
+    </attribute>
+  </define>
+  <define name="link.attrs.nonce">
+    <attribute name="nonce">
+      <data type="string" datatypeLibrary=""/>
+    </attribute>
+  </define>
+  <define name="link.attrs.sizes">
+    <attribute name="sizes">
+      <choice>
+        <value type="string" datatypeLibrary="">any</value>
+        <list>
+          <oneOrMore>
+            <data type="string">
+              <param name="pattern">[1-9][0-9]*x[1-9][0-9]*</param>
+            </data>
+          </oneOrMore>
+        </list>
+      </choice>
+    </attribute>
+  </define>
+  <define name="link.attrs.color">
+    <attribute name="color">
+      <!-- common.data.color -->
+      <data type="string">
+        <param name="pattern">^#([A-Fa-f0-9]{6})$</param>
+      </data>
+    </attribute>
+  </define>
+  <define name="link.attrs.scope">
+    <attribute name="scope">
+      <ref name="common.data.uri"/>
+    </attribute>
+  </define>
+  <define name="link.attrs.updateviacache">
+    <attribute name="updateviacache">
+      <choice>
+        <value type="string" datatypeLibrary="">imports</value>
+        <value type="string" datatypeLibrary="">all</value>
+        <value type="string" datatypeLibrary="">none</value>
+      </choice>
+    </attribute>
+  </define>
+  <define name="link.attrs.workertype">
+    <attribute name="workertype">
+      <choice>
+        <value type="string" datatypeLibrary="">classic</value>
+        <value type="string" datatypeLibrary="">module</value>
+      </choice>
+    </attribute>
+  </define>
+  <define name="link.inner">
+    <empty/>
+  </define>
+  <define name="style.elem">
+    <a:documentation>Global Style: &lt;style&gt;</a:documentation>
+    <element name="style">
+      <interleave>
+        <ref name="style.inner"/>
+        <ref name="style.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  <define name="style.attrs">
+    <interleave>
+      <ref name="common.attrs"/>
+      <optional><ref name="style.attrs.type"/></optional>
+      <optional><ref name="style.attrs.media"/></optional>
+      <optional><ref name="style.attrs.nonce"/></optional>
+      <optional>
+        <!-- 	style.attrs.title included in common.attrs -->
+        <choice>
+          <ref name="common.attrs.aria.role.presentation"/>
+          <ref name="common.attrs.aria.role.menuitem"/>
+        </choice>
+      </optional>
+    </interleave>
+  </define>
+  <define name="style.attrs.type">
+    <attribute name="type">
+      <!-- common.data.mimetype -->
+      <data type="string">
+        <param name="pattern">.[^ ]+/.[^ ]+</param>
+      </data>
+    </attribute>
+  </define>
+  <define name="style.attrs.media">
+    <attribute name="media">
+      <!-- common.data.mediaquery -->
+      <data type="string">
+        <param name="pattern">[^{]+(\{([\s\S]+)?)\s*</param>
+      </data>
+    </attribute>
+  </define>
+  <define name="style.attrs.nonce">
+    <attribute name="nonce">
+      <data type="string" datatypeLibrary=""/>
+    </attribute>
+  </define>
+  <define name="style.inner">
+    <ref name="common.inner.anything"/>
+  </define>  
+  <define name="meta.elem">
+    <element name="meta">
+      <ref name="meta.attrs"/>
+      <ref name="meta.inner"/>
+    </element>
+  </define>
+  
+  <define name="meta.attrs">
+    <!-- copy of meta.property.attrs 
+    TODO: do we allow the other attributes?
+    -->
+    <interleave>
+      <ref name="common.attrs.basic"/>
+      <ref name="common.attrs.i18n"/>
+      <ref name="common.attrs.present"/>
+      <ref name="common.attrs.other"/>
+      <optional><ref name="meta.attrs.name"/></optional>
+      <ref name="meta.attrs.property"/>
+      <ref name="meta.attrs.content"/>
+      <optional><ref name="common.attrs.rdfa.no-content-no-property"/></optional>
+      <optional>
+        <choice>
+          <ref name="common.attrs.aria.role.presentation"/>
+          <ref name="common.attrs.aria.role.menuitem"/>
+        </choice>
+      </optional>
+    </interleave>
+  </define>
+  
+  <define name="meta.attrs.property">
+    <attribute name="property">
+      <data type="Name"/>       
+    </attribute>
+  </define>
+  <define name="meta.attrs.name">
+    <attribute name="name">
+      <data type="string">
+            <param name="pattern">(.+)</param>
+      </data>
+    </attribute>
+  </define>
+  <define name="meta.attrs.content">
+    <attribute name="content">
+      <data type="string" />
+    </attribute>
+  </define>
+  
+  <!-- TODO: clean up meta patterns -->
+  
+  <define name="meta.name.elem">
+    <a:documentation>Name-Value Metadata: &lt;meta name&gt;</a:documentation>
+    <element name="meta">
+      <interleave>
+        <ref name="meta.inner"/>
+        <ref name="meta.name.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  <define name="meta.name.attrs">
+    <interleave>
+      <ref name="common.attrs.basic"/>
+      <ref name="common.attrs.i18n"/>
+      <ref name="common.attrs.present"/>
+      <ref name="common.attrs.other"/>
+      <ref name="meta.name.attrs.name"/>
+      <ref name="meta.name.attrs.content"/>
+      <!-- no microdata -->
+      <optional>
+        <choice>
+          <ref name="common.attrs.aria.role.presentation"/>
+          <ref name="common.attrs.aria.role.menuitem"/>
+        </choice>
+      </optional>
+    </interleave>
+  </define>
+  <define name="meta.name.attrs.name">
+    <attribute name="name">
+      <data type="string">
+           <param name="pattern">(.+)</param>
+      </data>
+    </attribute>
+  </define>
+  <define name="meta.name.attrs.content">
+    <attribute name="content">
+      <data type="string" />
+    </attribute>
+  </define>
+  <define name="meta.inner">
+    <empty/>
+  </define>  
+  <define name="meta.charset.elem">
+    <a:documentation>Inline Character Encoding Statement for HTML: &lt;meta charset&gt;</a:documentation>
+    <element name="meta">
+      <interleave>
+        <ref name="meta.inner"/>
+        <ref name="meta.charset.attrs"/>
+      </interleave>
+    </element>
+  </define>
+  <define name="meta.charset.attrs">
+    <interleave>
+      <ref name="common.attrs.basic"/>
+      <ref name="common.attrs.i18n"/>
+      <ref name="common.attrs.present"/>
+      <ref name="common.attrs.other"/>
+      <ref name="meta.charset.attrs.charset"/>
+      <optional>
+        <choice>
+          <ref name="common.attrs.aria.role.presentation"/>
+          <ref name="common.attrs.aria.role.menuitem"/>
+        </choice>
+      </optional>
+    </interleave>
+  </define>
+  <define name="meta.charset.attrs.charset">
+    <attribute name="charset">
+      <interleave>
+        <data type="string">
+          <param name="pattern">[uU][tT][fF]-8</param>
+        </data>
+      </interleave>
+    </attribute>
+  </define>
+</grammar>

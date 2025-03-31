@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="http://www.w3.org/1999/xhtml" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  xmlns:dcterms="http://purl.org/dc/terms/" xmlns:pav="http://purl.org/pav/" xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:h="http://www.w3.org/1999/xhtml">
+
+  <include href="html5/common.rng">
+    <pav:createdBy>Elsevier, Quality Assessment Suite Squad</pav:createdBy>
+    <pav:version>0.3</pav:version>
+    <pav:createdOn>2018-04-18</pav:createdOn>
+    <pav:lastUpdateOn>2018-09-05</pav:lastUpdateOn>
+    <a:documentation>
+      <h:article xmlns="http://www.w3.org/1999/xhtml">
+        <h1>RELAX NG Schema for HTML 5 Core Profile</h1>
+        <div>
+          <h2>version history</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>0.1</td>
+                <td>2018-01-01</td>
+                <td>Initial draft</td>
+              </tr>
+              <tr>
+                <td>0.2</td>
+                <td>2018-04-03</td>
+                <td>Based on March version of Core Profile</td>
+              </tr>
+              <tr>
+                <td>0.3</td>
+                <td>2018-09-07</td>
+                <td>reinstalled data-* for clean separation of syntax and semantics</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <p>Extended documentation and design at <a href="https://confluence.cbsels.com/display/CPROFILES/Core+Profile">Confluence CProfile page on Core Profile</a>.</p>
+        </div>
+      </h:article>
+    </a:documentation>
+
+  </include>
+
+  <start>
+    <a:documentation>Language Definitions</a:documentation>
+    <ref name="html.elem"/>
+  </start>
+  <include href="html5/meta.rng"/>
+  <include href="html5/phrase.rng"/>
+  <include href="html5/block.rng"/>
+  <include href="html5/sectional.rng"/>
+  <include href="html5/structural.rng"/>
+  <include href="html5/revision.rng"/>
+  <include href="html5/embed.rng"/>
+  <include href="html5/ruby.rng"/>
+  <include href="html5/media.rng"/>
+  <include href="html5/core-scripting.rng"/>
+  <include href="html5/tables.rng"/>
+  <include href="html5/form-datatypes.rng"/>
+  <include href="html5/web-forms.rng"/>
+  <include href="html5/web-forms2.rng"/>
+  <include href="html5/applications.rng"/>
+  <include href="html5/data.rng"/>
+  <include href="html5/rdfa.rng"/>
+  <include href="html5/aria.rng"/>
+  <!--include href="html5/microdata.rng"/-->
+  <!--<include href="html5/web-components.rng"/>-->
+
+  <include href="svg11/svg11.rng">
+    <a:documentation>SVG</a:documentation>
+  </include>
+
+  <include href="mathml3/mathml3.rng">
+    <a:documentation>MathML3</a:documentation>
+  </include>
+</grammar>

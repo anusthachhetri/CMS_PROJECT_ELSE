@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Manifest validation schema for Content Profiler instances",
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": {"type": [
+        "object",
+        "string"
+      ]}
+    },
+    "@id": {"$ref": "#/definitions/URIid"},
+    "@type": {
+      "type": "string",
+      "pattern": "^mnf:Manifest$"
+    },
+    "dct:title": {"$ref": "definitions/mnf.schema.json#/definitions/dct:title"},
+    "mnf:hasServiceOutput": {"$ref": "#/definitions/mnf:hasServiceOutput"}
+  },
+  "required": [
+    "@type",
+    "@id",
+    "@context",
+    "mnf:hasServiceOutput"
+  ],
+  "additionalProperties": true,
+  "definitions": {
+    "mnf:hasServiceOutput": {
+      "title": "All mnf:ServiceOutput objects of a Content Profile",
+      "type": "array",
+      "items": {"$ref": "#/definitions/ServiceOutputModel"}
+    },
+    "ServiceOutputModel": {
+      "title": "Service output object of the Content Profiler",
+      "description": "Service Output object properties",
+      "type": "object",
+      "required": ["@id","@type","prov:wasAttributedTo","prov:generatedAtTime","mnf:hasFile","mnf:hasCO"],
+      "additionalProperties": false,
+      "properties": {
+        "@type": {
+          "type": "array",
+          "items": [{
+            "type": "string",
+            "enum": [
+              "mnf:ServiceOutput",
+              "cpf:ContentProfile"
+            ]
+          },{
+            "type": "string",
+            "enum": [
+              "mnf:ServiceOutput",
+              "cpf:ContentProfile"
+            ]
+          }],
+          "additionalItems": false
+        },
+        "@context": {"$ref": "#/definitions/SOcontext"},
+        "@id": {"$ref": "#/definitions/URIid"},
+        "prov:wasAttributedTo": {"$ref": "definitions/mnf.schema.json#/definitions/prov:wasAttributedTo"},
+        "prov:generatedAtTime": {"$ref": "definitions/mnf.schema.json#/definitions/prov:generatedAtTime"},
+        "prov:wasGeneratedBy": {"$ref": "definitions/mnf.schema.json#/definitions/prov:wasGeneratedBy"},
+        "dct:title": {"$ref": "definitions/mnf.schema.json#/definitions/dct:title"},
+        "dct:description": {"$ref": "definitions/mnf.schema.json#/definitions/dct:description"},
+        "mnf:hasFile": {"$ref": "#/definitions/mnf:hasFile"},
+        "mnf:hasCO": {"$ref": "definitions/mnf.schema.json#/definitions/mnf:hasCO"}
+      }
+    },
+    "mnf:hasFile": {
+      "title": "Content Profile assets in the payload. A set of standard asset properties, enhanced with properties using the crdf:namespace",
+      "description": "array of asset objects",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "patternProperties": {"^cpf:.*":{}},
+        "required": ["@type","@id"],
+        "properties": {
+          "@id":{"$ref":"#/definitions/URIid"},
+          "@type": {"$ref": "#/definitions/typeIsCpfFile"},
+          "dct:isFormatOf": {"$ref": "definitions/mnf.schema.json#/definitions/dct:isFormatOf"},
+          "prism:byteCount": {"$ref": "definitions/mnf.schema.json#/definitions/prism:byteCount"},
+          "dct:format": {"$ref": "definitions/mnf.schema.json#/definitions/dct:format"},
+          "bam:filename": {"$ref": "definitions/mnf.schema.json#/definitions/bam:filename"},
+          "bam:assetVersion": {"$ref": "definitions/mnf.schema.json#/definitions/bam:assetVersion"},
+          "bam:assetType": {"$ref": "definitions/mnf.schema.json#/definitions/bam:assetType"},
+          "cpf:numberOfEquations":{"$ref":"#/definitions/cpf:numberOfEquations"},
+          "cpf:spansMultiplePages":{"$ref":"#/definitions/cpf:spansMultiplePages"}
+        }
+      }
+    },
+    "cpf:numberOfEquations":{
+      "type":"integer"
+    },
+    "cpf:spansMultiplePages":{
+      "type":"boolean"
+    },
+    "typeIsCpfFile": {
+      "type": "array",
+      "items": [{
+            "type": "string",
+            "enum": [
+              "mnf:Asset",
+              "cpf:File"
+            ]
+          },{
+            "type": "string",
+            "enum": [
+              "mnf:Asset",
+              "cpf:File"
+            ]
+          }]
+    },
+    "URIid": {
+      "type": "string",
+      "format": "uri"
+    },
+    "SOcontext": {
+      "description": "allowed namespace definitions in Manifest",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {"cpf": {
+        "type": "string",
+        "pattern": "^http://vtw.elsevier.com/data/ns/properties/ContentProfile-1/$"
+      }}
+    }
+  }
+}

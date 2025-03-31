@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toolbox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #f5a142; 
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .toolbox {
+            background-color: #ffcc80;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color:white;
+            height:50px;
+        }
+        .box {
+            background-color: white;
+            color:black;
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px 0;
+            
+        }
+        .box a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+           
+        }
+        .box a:hover {
+            background-color:white;
+        }
+        .box:hover {
+            background-color: #ffcc80; 
+        }
+        .main-div{
+           background-color: #fcf7f2 !important;
+           
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <header class="header">
+        <h3>AI, JSON Tools</h3>
+    </header>
+
+    <div class="toolbox">
+         <h5> Pick Your Tool  From Section</h5>
+    </div>
+
+    <div class="container mt-4 main-div">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box">
+                   
+                     {% comment %} <a href="{{ external_url }}" target="_blank" rel="noopener noreferrer">Url Extractor</a>  {% endcomment %}
+                     <a href="{{ external_url_1 }}" target="_blank" rel="noopener noreferrer">Url Extractor</a> 
+                    </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{{ external_url_2 }}" target="_blank" rel="noopener noreferrer">Awards/Opportunity/Grants Extractor</a> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{{ external_url_3 }}" target="_blank" rel="noopener noreferrer">ASJC Code Matcher</a> 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{{ external_url_4}}" target="_blank" rel="noopener noreferrer">Special Chracter Remover From Json</a> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{% url 'upload_file' %}">Json Creater</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{% url 'scraper_tool' %}">Web Scraper Tool</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{% url 'web_scraper_tool' %}">Awardee Data Scrapper</a> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{% url 'asjc_matcher' %}">Asjc Modified</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{% url 'csv_validator' %}">spcl_ch_csv</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{% url 'selenium_scrapper' %}">Selenium Scrapper</a> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{% url 'toolbox' %}">Tool</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{% url 'toolbox' %}">Tool</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

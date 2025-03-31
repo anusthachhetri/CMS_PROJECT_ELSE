@@ -1,0 +1,28 @@
+{"fingerprints": {
+    "signature": "4dc12ce41d39098996a69363aaaf2581",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "D_test_cleaned.json",
+            "checksum": "e7460656c357332acab81923d2aa7566"
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "total-errors": 0
+        },
+        "info": {
+            "date": "2025/02/08",
+            "os": "Windows 10 version 10.0",
+            "time": "22:12",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.93.1",
+                "specset-version": "2.93.1"
+            },
+            "ingestion-version": "6.8.0",
+            "commandline": "-file \"X:\\json_project_1\\jsonfolder\\D_test_cleaned.json\" -log \"X:\\json_project_1\\jsonfolder\\fllll.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

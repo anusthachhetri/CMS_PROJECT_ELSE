@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Generic Manifest validation schema",
+  "properties": {
+    "@context": {"$ref": "definitions/mnf.schema.json#/definitions/contextIsMnf"},
+    "@id": {"$ref": "definitions/mnf.schema.json#/definitions/@URIid"},
+    "@type": {
+    "$ref": "definitions/mnf.schema.json#/definitions/typeIsMnfManifest"
+    },
+    "dct:title": {"$ref": "definitions/mnf.schema.json#/definitions/dct:title"},
+    "mnf:hasServiceOutput": {"$ref": "definitions/mnf.schema.json#/definitions/mnf:hasServiceOutput"}
+  },
+  "required": [
+    "@type",
+    "@id",
+    "@context",
+    "mnf:hasServiceOutput"
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,233 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f9;
+            }
+            header {
+                background-color: #f5a142;
+                color: white;
+                text-align: center;
+                padding: 15px;
+            }
+            .dashboard-stats {
+                display: flex;
+                justify-content: space-around;
+                margin: 20px;
+                flex-wrap: wrap;
+            }
+            .stat-card {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 15%;
+                text-align: center;
+                margin: 10px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .stat-card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            }
+            .stat-card h3 {
+                margin: 0;
+                font-size: 2em;
+            }
+            .stat-card p {
+                margin: 5px 0;
+            }
+            .stat-icon {
+                font-size: 2.5em;
+                color: #f5a142;
+                margin-bottom: 10px;
+            }
+            table {
+                width: 100%;
+                margin-top: 30px;
+                border-collapse: collapse;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+            th, td {
+                padding: 12px;
+                text-align: left;
+            }
+            th {
+                background-color: #f5a142;
+                color: black;
+            }
+            tr:hover {
+                background-color: #ffcc80;
+            }
+            /* Flexbox to display both charts in a row */
+             /* .charts-container {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+                background-color:#f5a142;
+            }
+            .chart-container, .pie-chart-container {
+                width: 48%;
+            }  */
+            .charts-container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 20px;
+                gap: 20px;
+            }
+            
+            .chart-container {
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 48%;
+                text-align: center;
+            }
+            
+            .bar-chart img,
+            .pie-chart img {
+                width: 100%; /* Ensure they fill their containers */
+                height: 400px; /* Set an equal height for both charts */
+                object-fit: contain; /* Preserve aspect ratio */
+            }
+            
+        </style>
+    </head>
+    <body>
+    
+    <header>
+        <h1>Dashboard For Source Data</h1>
+    </header>
+    
+    <!-- Dashboard Stats -->
+    <div class="dashboard-stats">
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-users"></i></div>
+            <h3>{{ total_users }}</h3>
+            <p>Active Users</p>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-database"></i></div>
+            <h3>{{ total_sources }}</h3>
+            <p>Total Sources</p>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
+            <h3>{{ total_files }}</h3>
+            <p>Total Files</p>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-hourglass-half"></i></div>
+            <h3>{{ qa_pending }}</h3>
+            <p>QA Pending</p>
+        </div>
+         <!-- <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>{{ completed_tasks }}</h3>
+            <p>Completed Tasks</p>
+        </div>  -->
+          <!--ingest file only in  prod ui-->
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-file"></i></div>
+            <h3>{{ ingest_prod_files }}</h3>
+            <p>Ingested PROD  Files</p>
+         </div>
+
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-tasks"></i></div>
+            <h3>{{ in_progress_tasks }}</h3>
+            <p>In Progress Tasks</p>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-thumbs-up"></i></div>
+            <h3>{{ accepted_files }}</h3>
+            <p>Accepted Files</p>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-thumbs-down"></i></div>
+            <h3>{{ rejected_files }}</h3>
+            <p>Rejected Files</p>
+         </div>
+           <!--stattic only in ui-->
+           <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-file"></i></div>
+            <h3>{{ rejected_files }}</h3>
+            <p>File Type:Awards,Funding Body,Opportunity</p>
+         </div>
+
+         <!--ingest file only in  uat ui-->
+         <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-file"></i></div>
+            <h3>{{ total_ingested_files }}</h3>
+            <p>Ingested UAT  File </p>
+         </div>
+      
+        
+    </div>
+    
+    <!-- User Metrics Table -->
+    <h1 style="text-align: center; background-color: #f5a142; height:60px;color:white;">Metrics Of All The  Users</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Row No.</th>
+                <th>Assigned To</th>
+                <th>Total Files</th>
+                <th>Accepted</th>
+                <th>Rejected</th>
+                <th>In Progress</th>
+                <th>Reprocessing</th>
+                <th>QA Name</th>
+              
+            </tr>
+        </thead>
+        <tbody>
+            {% for user, metrics in user_metrics %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ user }}</td>
+                <td>{{ metrics.total_files }}</td>
+                <td>{{ metrics.accepted }}</td>
+                <td>{{ metrics.rejected }}</td>
+                <td>{{ metrics.in_progress }}</td>
+                <td>{{ metrics.reprocessing }}</td>
+                <td>{{ metrics.qa_name }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h1 style="text-align: center; background-color: #f5a142; height:60px;color:white;">User Work Distribution Ratio</h1>
+    <!-- Flexbox Container for Bar Chart and Pie Chart -->
+    <div class="charts-container">
+        <h1 style=" background-color: #ffcc80; color:white;"> Work Distribution </h1>
+        <!-- Display the Bar Chart -->
+        <div class="chart-container bar-chart">
+            <h2>Tasks per User (Bar Chart)</h2>
+            <img src="data:image/png;base64,{{ chart_data|safe }}" alt="Task Distribution Bar Chart">
+        </div>
+    
+        <!-- Display the Pie Chart -->
+        <div class="chart-container pie-chart">
+            <h2>User Work Distribution (Pie Chart)</h2>
+            <img src="data:image/png;base64,{{ pie_chart_data|safe }}" alt="User Work Distribution Pie Chart">
+        </div>
+    </div>
+    
+    
+    </body>
+    </html>
+    

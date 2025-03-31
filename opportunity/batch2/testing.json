@@ -1,0 +1,216 @@
+{
+	"batchId": "99997068-e9cb-4667-b337-088fe5c94f6a",
+	"ingestionId": "f79bff89-e128-4095-b968-47fe03f6e515",
+	"grantOpportunityId": 803051191,
+	"status": "INACTIVE",
+	"title": [{
+		"language": "en",
+		"value": "Charles Fleming Senior Scientist Award"
+	}],
+	"fundingBodyOpportunityId": "0",
+	"homePage": {
+		"link": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/charles-fleming-fund/charles-fleming-senior-scientist-award/",
+		"publishedDate": "2024-10-29T15:41:32",
+		"modifiedDate": "2024-10-29T15:41:32"
+	},
+	"grantType": "RESEARCH",
+	"funderSchemeType": "The Charles Fleming Senior Scientist Award scheme",
+	"numberOfAwards": 0,
+	"duration": {
+		"durationExpression": "1 year",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "1 year"
+			},
+			"source": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/charles-fleming-fund/charles-fleming-senior-scientist-award/"
+		}]
+	},
+	"repeatingOpportunity": "True",
+	"subjectMatter": [{
+		"abstract": {
+			"language": "en",
+			"value": "The Charles Fleming Senior Scientist Award is an annual grant of up to $10,000 provided by the Royal Society Te Apārangi to support senior scientists in New Zealand research institutions. The award funds research-related expenses that go beyond typical institutional support, such as collaboration travel, specialized methodologies, and research assistance. This funding enhances the research capabilities of the recipient and their team, with applications evaluated by the Academy Executive Committee. The 2025 round will open next year."
+		},
+		"source": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/charles-fleming-fund/charles-fleming-senior-scientist-award/"
+	}],
+	"synopsis": [{
+		"abstract": {
+			"language": "en",
+			"value": "Eligibility for the Charles Fleming Senior Scientist Award requires applicants to be senior scientists affiliated with a New Zealand research institution (e.g., a university, Crown Research Institute, or polytechnic). The award supports individuals who seek funding for research-related expenses beyond what their institution would typically cover. This includes travel, specialized methodologies, or research assistance, all aimed at advancing the applicant’s research impact."
+		},
+		"source": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/charles-fleming-fund/charles-fleming-senior-scientist-award/"
+	}],
+	"instruction": [{
+		"abstract": {
+			"language": "en",
+			"value": "Please provide the nomination electronically to: awards@royalsociety.org.nz.All applications must be signed. If an electronic signature is not available, please sign and fax or post the signature page to the Director– Academy Operations, Royal Society of New Zealand, no later than 31 March.All applications will be acknowledged within a fortnight of receipt."
+		},
+		"source": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/charles-fleming-fund/charles-fleming-senior-scientist-award/"
+	}],
+	"keyword": [{
+		"language": "en",
+		"value": "RESEARCH GRANT"
+	}, {
+		"language": "en",
+		"value": "SENIOR SCIENTIST"
+	}, {
+		"language": "en",
+		"value": "RESEARCH ASSISTANCE"
+	}],
+	"licenseInformation": [{
+		"abstract": {
+			"language": "en",
+			"value": "© 2024 - Royal Society of New Zealand Te Apārangi"
+		},
+		"source": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/charles-fleming-fund/charles-fleming-senior-scientist-award/"
+	}],
+	"relatedOpportunity": {
+		"relatedTo": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NOTSPECIFIED"
+			}],
+			"description": "NOTSPECIFIED"
+		}],
+		"replacedBy": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NA"
+			}],
+			"description": ""
+		}],
+		"replaces": [{
+			"grantOpportunityId": 0,
+			"fundingBodyOpportunityId": "",
+			"title": [{
+				"language": "en",
+				"value": "NA"
+			}],
+			"description": ""
+		}]
+	},
+	"relatedFunder": {
+		"leadFunder": {
+			"fundingBodyId": 0,
+			"sourceId": "",
+			"sourceText": "Marsden Fund,Royal Society Te Apārangi Medals and Awards,Rutherford Discovery Fellowships"
+		},
+		"hasFunder": [{
+			"fundingBodyId": 0,
+			"sourceId": "",
+			"sourceText": ""
+		}]
+	},
+	"classification": [{
+		"type": "Classification",
+		"hasSubject": {
+			"preferredLabel": "Research assistance",
+			"identifier": {
+				"type": "ASJC",
+				"value": "1102"
+			}
+		}
+	}],
+	"associatedAmount": {
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "10000"
+			},
+			"source": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/charles-fleming-fund/charles-fleming-senior-scientist-award/"
+		}],
+		"ceiling": [{
+			"currency": "NZD",
+			"amount": "10000"
+		}],
+		"estimatedTotal": [{
+			"currency": "NZD",
+			"amount": "10000"
+		}],
+		"floor": [{
+			"currency": "NZD",
+			"amount": "0"
+		}]
+	},
+	"contactInformation": [{
+		"link": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/charles-fleming-fund/charles-fleming-senior-scientist-award/",
+		"hasPostalAddress": {
+			"addressCountry": "NZL",
+			"addressRegion": "NZL",
+			"addressLocality": "Wellington",
+			"addressPostalCode": "NOTSPECIFIED",
+			"streetAddress": "Royal Society Te Apārangi\n11 Turnbull St\nThorndon, Wellington 6011\nAotearoa - New Zealand"
+		},
+		"contactPerson": [{
+			"initials": "NOTSPECIFIED",
+			"givenName": "NOTSPECIFIED",
+			"familyName": "NOTSPECIFIED",
+			"emailAddress": "enquiries@royalsociety.org.nz"
+		}]
+	}],
+	"opportunityLocation": [{
+		"country": "NZL"
+	}],
+	"opportunityDate": {
+		"expirationDateDetail": {
+			"date": "2025-01-01T00:00:00",
+			"description": {
+				"abstract": {
+					"language": "en",
+					"value": "NOTSPECIFIED"
+				},
+				"source": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/charles-fleming-fund/charles-fleming-senior-scientist-award/"
+			}
+		},
+		"cycle": [{
+			"index": 1,
+			"label": "Submission Deadline"
+		}]
+	},
+	"eligibilityClassification": {
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "whether microbes,predicting the shaking response to large earthquakes,Agronomy and Crop Science"
+			},
+			"source": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/charles-fleming-fund/charles-fleming-senior-scientist-award/"
+		}],
+		"limitedSubmission": {
+			"limitation": "NOTSPECIFIED"
+		},
+		"individualEligibility": {
+			"limitation": "LIMITED",
+			"applicantType": ["DEGREE", "NEWFACULTY"],
+			"degreeRequirement": ["PHD"]
+		},
+		"organisationEligibility": {
+			"limitation": "NOTSPECIFIED"
+		},
+		"citizenship": {
+			"limitation": "NOTLIMITED"
+		},
+		"regionSpecific": {
+			"limitation": "NOTSPECIFIED"
+		},
+		"restrictionScope": {
+			"limitation": "LIMITED",
+			"restriction": ["NOMINATIONONLY"]
+		}
+	},
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/charles-fleming-fund/charles-fleming-senior-scientist-award/",
+		"createdOn": "2024-10-29T15:41:32",
+		"lastUpdateOn": "2024-10-29T15:41:32",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": "0",
+		"hidden": "False",
+		"defunct": "False",
+		"status": "NEW"
+	}
+}

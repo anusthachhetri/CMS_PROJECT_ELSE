@@ -1,0 +1,3523 @@
+[ {
+  "@id" : "http://schema.org/Class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://meta.schema.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A class, also often called a 'Type'; equivalent to rdfs:Class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Intangible"
+  } ]
+}, {
+  "@id" : "http://schema.org/Intangible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://meta.schema.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Intangible"
+  } ]
+}, {
+  "@id" : "http://schema.org/category",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Property"
+  }, {
+    "@id" : "http://schema.org/Class"
+  } ]
+}, {
+  "@id" : "http://schema.org/domainIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Property"
+  } ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://meta.schema.org/"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a property to a class that is (one of) the type(s) the property is expected to be used on."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "domainIncludes"
+  } ]
+}, {
+  "@id" : "http://schema.org/inverseOf",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Property"
+  } ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://meta.schema.org/"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alumniOf' properties are inverseOf each other. Some properties don't have explicit inverses; in these situations RDFa and JSON-LD syntax for reverse properties can be used."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inverseOf"
+  } ]
+}, {
+  "@id" : "http://schema.org/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/rangeIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Property"
+  } ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://meta.schema.org/"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a property to a class that constitutes (one of) the expected type(s) for values of the property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "rangeIncludes"
+  } ]
+}, {
+  "@id" : "http://schema.org/supersededBy",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Class"
+  }, {
+    "@id" : "http://schema.org/Enumeration"
+  }, {
+    "@id" : "http://schema.org/Property"
+  } ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://meta.schema.org/"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Enumeration"
+  }, {
+    "@id" : "http://schema.org/Property"
+  }, {
+    "@id" : "http://schema.org/Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a term (i.e. a property, class or enumeration) to one that supersedes it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "supersededBy"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : "Elsevier Enterprise Data Model (EDM)",
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : "edm",
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : "https://data.elsevier.com/schema/edm/",
+  "http://purl.org/dc/terms/description" : "The Enterprise Data Model (EDM) is a fundamental component of the reference architecture of the enterprise and a part of the URA (Unified reference Architecture). It sets the foundation for a data ecosystem that aims to spans the whole of Elsevier, to enable connectivity and insight, and help value to be achieved.  The EDM establish a core set of entity types for across the organisation in a consistent manner such as People and Organisations, and foundational business and product concepts such as Product, Customer. Author and Editor.  The EDM seeks only to include abstractions of the key relationships and properties, and not to represent the full complexity of all possible scenarios. The Enterprise Data Model does not include highly specialised entity types that are only of interest to a very specific domain (e.g. Bioassay), instead these are expected to be included in domain models, which are mapped to the EDM. The EDM also seeks to provide the upper ontology that connects data silos, leading towards a Linked Data view of the enterprise and enterprise data.",
+  "http://www.w3.org/2002/07/owl#versionInfo" : "v1.2",
+  "http://purl.org/dc/terms/created" : "2018-02-18",
+  "http://purl.org/dc/terms/modified" : "2019-07-11",
+  "http://purl.org/pav/lastUpdateOn" : "2019-10-22T17:14:19+01:00",
+  "http://purl.org/dc/terms/source" : "https://confluence.cbsels.com/display/arch/Enterprise+Data+Model",
+  "http://www.w3.org/2002/07/owl#versionIRI" : "https://data.elsevier.com/schema/edm/1.2/",
+  "http://www.w3.org/2002/07/owl#priorVersion" : "https://data.elsevier.com/schema/edm/1.1/",
+  "http://www.w3.org/ns/dcat#keyword" : [ "URA", "Top ontology" ],
+  "http://www.w3.org/ns/dcat#theme" : [ "Architecture" ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An undertaking by one or more Actors, with a specific purpose, usually over a defined period of time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Super-class of entities, such as Person and Organisation or a Software Agent, that may have legal rights, and/or a legal existence, and can undertake a Role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Affiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Relationship between two Persons and/or Organizations that indicates a connection that does not include a transfer of entitlements."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Affiliation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Relationship"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Agreement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A negotiated and typically legally binding arrangement between Actors as to a course of action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Agreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/AnatomicalStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any part of a body, typically a component of an anatomical system including organs, tissues, and cells."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Anatomical Structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Article",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A short-form Work on a particular subject or theme. Often intended for publication in a Journal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Association",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A directional Relationship between two Persons and/or Organizations that indicates a transfer or propagation of entitlements from one to the other."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Association"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Relationship"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The function of creating or contributing to a Work such as a Book or an Article."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/Awardee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The function of receiving a Grant Award. This role can be played by an Organization or Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Awardee"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/BiomedicalResearch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Research studies and experiments relating to human and veterinary medicine or health, including lab experiments, observational studies and interventional trials and registries, randomized, controlled or not."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Biomedical Research"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Experiment"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Book",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Work containing a detailed exploration of a particular subject. Typically a long form Work containing a sequence of Chapters. Will be assigned an ISBN identifier."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/BookSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Work comprising a set and/or series of related Books."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Book Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/CarePlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Work describing a care protocol or approach. More specifically, a care plan is a written plan of interprofessional processes of care representing the patient and family's individual needs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Care Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Chapter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A main division of a piece of writing that forms part of a Book and may also be referenced individually."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/ClinicalOverview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A synoptic content document for a disease or condition."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/ClinicalTrial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Experiments performed in clinical research including trials of drugs, devices and procedures often regulated and requiring consent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Clinical Trial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/BiomedicalResearch"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Collaboration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The action of working together, such as to produce Work(s)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Collaboration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  } ]
+},  {
+  "@id" : "https://data.elsevier.com/schema/edm/Comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Comment comprises observations and opinions pertaining to a Work that are associated with particular locations in the Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A class of Entities that classify other Entities, and the relationships between other Entities, so that similar and related Entities can be recognized, and to allow potential relationships to be deduced. The instances of this class are generally organised into vocabularies, taxonomies and list of values."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Conference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A gathering of Persons who meet at an arranged place and time in order to discuss or engage in some common interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Conference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/ConferenceContribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Work presented at a Conference. It can include synoptic Work like posters and abstracts as well as full-length papers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ConferenceContribution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/ConferencePaper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A full-length Article that has been presented at a conference and included in Conference Proceedings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Conference Paper"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/ConferenceContribution"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/ConferencePoster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A synoptic Work presented at a Conference usually with a printed poster."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Conference Poster"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/ConferenceContribution"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/ConferenceProceedings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A collection of Works presented at a Conference (or other type of Activity)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Conference Proceedings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/Contract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A written agreement, especially one concerning employment, sales, or tenancy, that is intended to be enforceable by law. Eg: a publishing contract. The contract can be associated with Persons or Organizations, Products, Works and Services may be related to it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Agreement"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Course",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A unit of education aimed at fulfilling learning objectives whereby Person(s) acquire some knowledge and understanding of a given Concept."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Course"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Customer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The function of purchasing Products by an Actor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Customer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A collection of related sets of information that is composed of separate elements but can be manipulated as a unit by a computer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Drug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any substance or combination of substances that is used or studied for some intentional pharmacological effect; administered as an aid in the diagnosis, treatment, or prevention of disease or other abnormal condition, for the relief of pain or suffering, to control or improve any physiologic or pathologic condition or that alters the function of the body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/DrugDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A work containing information about a drug, its indication, dosing, contraindication and adverse effects. This may include amongst others drug reports, drug monographs and drug approval documents."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Drug Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/DrugTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Anything within a living organism to which a drug is directed or binds to resulting in a change in its behavior or function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Drug Target"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Editor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The function of selecting selecting and curating material for inclusion in a Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Editor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/EducationProfessional",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The function of a Person providing education services and related activities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Education Professional"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/EducationProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The function of an Organization providing education services and related activities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Education Provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Experiment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An experiment is a procedure carried out to support, refute, or validate a hypothesis or in order to investigate and explore phenomena."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Experiment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Funder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A role that played by an Organisation or Person who provides funding."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Funder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/GrantAward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An agreement where a monetary resource is issued to a person or organization by another funding person or organization to perform research activities, often for a particular project. The award document would be a work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Grant Award"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Agreement"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/GrantOpportunity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A monetary resource persons may apply for, which has conditions applicants must adhere to to receive funding."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Grant Opportunity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Agreement"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A grouping of multiple Persons and/or Organizations where the group is a non-legal entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/HealthProfessional",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The function of a Person providing healthcare services and related activities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Health Professional"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/HealthProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The function of an Organization providing healthcare services and related activities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Health Provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Issue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An ordered set of published Articles of a Journal with additional material such as table of contents, advertisements and editorial letters."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Issue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Journal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A periodical where the primary content is scholarly articles. It behaves as a container for Articles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Journal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/License",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An agreement specifying the conditions of use of Work(s) Product(s) or Service(s) by unnamed Agent(s)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "License"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Agreement"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The geographic location expressed as a set of coordinates."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/MarketingCampaing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A marketing activity, aimed at a segment of Organizations and Persons, intended to drive awareness, engagement and sales."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Marketing Campaign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/MedicalCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A condition affecting the functioning of the (human) body whether mentally or physically."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medical Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/MedicalDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An instrument, apparatus, implant, in vitro reagent, or other similar item, or accessory which is intended for use in the diagnosis of disease or other conditions, or in the cure, mitigation, treatment, or prevention of disease, in human or other animals which does not achieve its primary intended purposes through chemical action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medical Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/MedicalGuideline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A medical guideline is a document with the aim of guiding decisions and includes criteria regarding diagnosis, management, and treatment in specific areas of healthcare."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medical Guideline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/MedicalProcedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A series of steps by which a desired medical outcome is ideally accomplished."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medical Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/MedicalTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A test that may be utilized to help diagnosis, and for monitoring and assessment of medical conditions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medical Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalProcedure"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any level of Organization engaged in many different ways from purchasing Products, involvement in creating Works either directly or indirectly - such as by providing funding or setting regulations.  An Organization may have relationships with other Organizations and with Persons."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Participation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Actor participating in an Activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Participation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Relationship"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Patent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A document describing an invention which assigns rights to an inventor (Person and/or Organization)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Patent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Patient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person receiving or registered to receive medical treatment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/PatientEducation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any materials such as documents, pamphlets or videos aimed at Patients providing information about a medical condition, treatment or drug."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PatientEducation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual human being.  A Person can be engaged in many different ways, from using and purchasing Products, or being a potential user of Products, through being involved in the process of creating Works, having various relationships with other People and Organizations, to being a significant individual in their field."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/PostalAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A collection of information such as city and street name used to describe the location associated with an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Postal Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Location"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Marketable Works and Services that are offered for purchase to multiple Persons and Organizations (Customers). Products drive the revenue that enables the company to be successful."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An activity involving one or more participants for the sake of researching or achieving a given objective, with a start date (and eventual end date)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Organization or Person engaging in the dissemination of Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Publisher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/Relationship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Super-class of entities, including Association and Affiliation, that describe a relationship between Entities with defined semantics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Relationship"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/ResearchData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Data that is the outcome of research activities that includes research results in a relatively raw form frequently lacking a narrative."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Research Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Researcher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The function of performing research or working on a research project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Researcher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Review",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A critique of a Work written by a Reviewer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Reviewer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The function of reviewing a Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reviewer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A function performed by an Actor in Relation to a Work or an Activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Schema",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A data structure described in a formal language that may include constraints that the underlying data (in a DataSet) must fulfil."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Schema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A function or capability that can be performed. A Service can be offered for sale as a part of a Product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/SoftwareAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A computer program that acts without requiring direct input from humans."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Software Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Student",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The function of a Person receiving education services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Student"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A function of being the subject or topic of another entity. A Concept can be the topic of a Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Relationship"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Substance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A substance is a form of matter having broadly consistent chemical composition and characteristic properties whose origin may be biological, mineral or chemical."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Substance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Thing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A superclass entity for the Enterprise Data Model, not intended to be directly used as a class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/User",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Actor, typically Person, that interacts with a Service or Product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Vocabulary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A collection of Concepts, also called Knowledge Organizing System (KOS) that may include hierarchies and relations between Concepts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Vocabulary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/Work",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An article, book or other similar creative item.  A Work can take many different forms including a wide variety of articles, images, and data sets.  Works can span a wide range of sizes, from small digests, through to multi-part constructs like encyclopedias and journals. Works can be offered for sale as a part of a Product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/WorkingPaper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A scientific Work that has not undergone peer-review such as a preprint or article that may never be published as an official publication."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Working Paper"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The summary of the Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "abstract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/description"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/acronym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The acronym of an Organization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "acronym"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/label"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/addressCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The country used in postal addresses.\nFor other uses of country please use edm:country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "address country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/locationLabel"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/addressLocality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The locality such as the settlement name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "address locality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/locationLabel"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/addressRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The administrative region or area used in postal addresses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "address region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/locationLabel"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/adverseEffectOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalCondition"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The MedicalCondition is the adverse effect or side effect of the Drug."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "adverse effect of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasAdverseEffect"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/affiliationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Organization is linked to the Person without transferring entitlements to that Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affiliation of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasAffiliation"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/alternateLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An alternate label for the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "alternate label"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/label"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/alternateName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  },{
+    "@id" : "https://data.elsevier.com/schema/edm/Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An alternate name for the Actor or Product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "alternate name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/name"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/altitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The height of a Thing above a reference level, especially above sea level or above the earth's surface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "altitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/locationLabel"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/associatedAnatomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalCondition"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/AnatomicalStructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The MedicalCondition is connected to the AnatomicalStructure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "associated anatomy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/relatedCondition"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/associatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Person or Organization is linked to the Organization with transfer of entitlements from the Organization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "associated with"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasAssociation"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/authorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Person is the Author of the Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "author of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasAuthor"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/availableOnlineDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The date the Work was made available online for the first time. The availableOnlineDate may apply to any Work including those that have not been, and may never be, formally published by a publisher such as WorkingPapers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "available online date"
+  } ],"http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/date"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/awardedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/GrantAward"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The GrantAward is awarded to a Person or Organization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "awarded to"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasAward"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/birthDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The date a Person was born."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "birthdate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/date"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/brand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The brand associated with the Product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "brand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/name"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/casNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Substance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A numerical identifier assigned by the Chemical Abstracts Service (CAS) to every chemical substance described in the open scientific literature."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CAS number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/checksum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Dataset"
+  },{
+    "@id" : "https://data.elsevier.com/schema/edm/ResearchData"
+  }  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A checksum of the data following RFC 6920."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "checksum"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/commentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Comment"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  }],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Comment is associated with the Work or a particular segment of the Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "comment of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasComment"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/contextOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Agreement"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity provides context for the Agreement or Role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "context of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasContext"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/contraIndicationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalCondition"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalProcedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The MedicalCondition is an indication that the Drug or MedicalProcedure should not be used."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contraindication of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasContraIndication"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/copyrightLine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The copyright line of the Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "copyright line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/copyrightYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The copyright year of the Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "copyright year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/date"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The country associated with the entity.\nFor postal addresses use edm:addressCountry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/locationLabel"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/createdDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The date or time the Work was created."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "created date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/date"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/creatorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Actor is the creator of the Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "creator of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasCreator"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The date associated with the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/derivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Work is derived from another Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "derived from"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasDerivation"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A description associated with an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/deviceUsed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalDevice"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalProcedure"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "MedicalDevice used in MedicalProcedure or Role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "device used"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/usesDevice"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/doi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Digital Object Identifier or DOI is a persistent resolvable identifier used to identify objects such as journal articles, research data and reviews."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "doi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The duration of an Activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "duration"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/edition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The edition of the Book."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "edition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/editorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Person is an Editor of the Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "editor of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasEditor"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/emailAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The email address of a Person or Organization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "email address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/endDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Agreement"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Relationship"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The end date associated with the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "end date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/date"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/endPage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The end page of the Work such as an Article or Chapter as part of a larger Work such as a journal Issue or Book."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "end page"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/familyName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The family name of a Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "family name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/name"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/follows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Actor follows the output and actions of another Actor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "follows"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasFollower"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The format of an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "format"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/funds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/GrantAward"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/GrantOpportunity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Organization or a Person funds another entity by providing financial contribution."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "funds"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/hasFunder"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/givenName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The given name of a Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "given name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/name"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasAdverseEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Drug has as adverse effect (side effect) the MedicalCondition."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has adverse effect"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasAffiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Person is linked to the Organization without transfer of entitlements from that given Organization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has affiliation"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasAssociation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Organization linked to the Organization or Person with transfer of entitlement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has association"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasAuthor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Work is authored by a Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has author"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasAward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/GrantAward"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity is awarded a GrantAward."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has award"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasComment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Work or a segment of the Work has an associated Comment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/commentOf"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/hasContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Agreement"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Agreement or Role is the context for the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has context"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasContraIndication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalProcedure"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Drug or MedicalProcedure should not be used for this MedicalCondition."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has contraindication"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasCreator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Actor is the creator of the Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has creator"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasDerivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Work has derivations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has derivation"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasEditor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Work is edited by a Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has editor"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasFollower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Actor is followed by another Actor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has follower"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasFunder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/GrantAward"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/GrantOpportunity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity is funded by an Organization or Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has funder"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasIndication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalProcedure"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The use of the Drug or MedicalProcedure is indicated for this MedicalCondition."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has indication"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/indicationOf"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity has a geographic location associated with it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has location"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Group"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Group or Organization has Person as Member."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has member"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/memberOf"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/GrantAward"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Activity or GrantAward has a Work as outcome. For example, an article describing the outcomes of an experiment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has outcome"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/outcomeOf"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity has another entity as its part."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has part"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/partOf"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasParticipant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Agreement"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Activity or Agreement has participants."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has participant"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/participates"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasPostalAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity has a PostalAddress associated with it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has postal address"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasPublisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Work is published by an Organization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has publisher"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/publisherOf"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/hasReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Work is associated with its Review."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has review"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/reviewOf"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasReviewer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Work is associated with the Person who performed the Review."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has reviewer"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/reviewerOf"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Actor has a particular Role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has role"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/roleOf"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasSchema",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Dataset"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Vocabulary"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Schema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Dataset, or Vocabulary is based on the Schema."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has schema"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/schemaOf"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/hasSubject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity has as Subject the Concept."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has subject"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/subjectOf"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/homePage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The home page of an entity or associated with an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "homepage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/honorific",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Honorific or title associated with a Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "honorific"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/label"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The identifier contains any kind of identifier used to represent the specific entity. Note that the identifier must be used for identifiers that represent the entity and not identifiers that represent its containers or parts. For example: the edm:isbn attribute applies to a book therefore the chapter of a book should not have edm:isbn amongst its attributes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/imprint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The publisher imprint of the Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "imprint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/inchi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Substance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The International Chemical Identifier (InChI) is a textual identifier for chemical Substances, designed to provide a standard way to encode molecular information and to facilitate the search for such information in databases and on the web."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "InChI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/inchiKey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Substance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The hashed version of the International Chemical Identifier (InChI) used for Substances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "InChI key"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/includedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Service"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Substance"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Product"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  },{
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  }  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity of a given type is included in another entity of a given type. For example: a Work is included in a Product, a Substance is included in a Drug."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "included in"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/includes"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/includes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Product"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Service"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Substance"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity includes other types of entity(ies). For example: a Product includes Works or Services; Drug includes Substances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "includes"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/includedIn"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/indicationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalCondition"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalProcedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The MedicalCondition is a basis of indication to prescribe the Drug or the MedicalProcedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "indication of"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/initials",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The initials of a Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "initials"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/name"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/isbn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The isbn of a Book. Note: If the entity is a Chapter use edm:partOfISBN to store the ISBN of the parent Book. This attribute is used to provide the identifier of the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isbn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/issn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Journal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The issn of a Journal. Note: If the entity is an Article use edm:partOfISSN to store the ISSN of the parent Journal. This attribute is used to provide the identifier of the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "issn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/issueLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Article is identifiable as having a particular Issue number or Issue name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "issue label"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The label associated with the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "label"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The language in which the Work is written."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#language"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/latitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A geographic coordinate that specifies the north-south position of a point on the Earth's surface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "latitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/locationLabel"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/link",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A webpage associated with the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "link"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/locationLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The location as a piece of text where the Activity is held.\nUse the Location entity type when coordinates are separated out. See attributes that are linked with Location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "location label"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The logo associated with the Product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "logo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/longitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A geographic coordinate that specifies the east-west position of a point on the Earth's surface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "longitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/locationLabel"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/mayInteractWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Drug may interact with another Drug."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "may interact with"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/mayInteractWith"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/memberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Group"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Person is a member of a Group or Organization."
+  }, {
+    "@value" : "member of"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/mentionedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity is mentioned in the Work. For example an Experiment is described in an Article."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mentioned in"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/mentions"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/mentions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "he Work mentions the entity. For example an Article describes an Experiment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mentions"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/modifiedDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The date or time the Work was modified."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "modified date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/date"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  },{
+    "@id" : "https://data.elsevier.com/schema/edm/Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of an Actor or Product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/label"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/offeredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Product"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Product is offered by an Actor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "offered by"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/offers"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/offers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Actor offers the Product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "offers"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/orcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The orcid id of a Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "orcid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/originated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Organization is the origin (through people creating or authoring) of a Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "originated"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/originatedAt"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/originatedAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Work is originated at an Organization (through people creating or authoring)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "originated at"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/outcomeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/GrantAward"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Work is the outcome of an Activity or GrantAward."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "outcome of"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/pageRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The range of pages the Work occupies within the context of a larger Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "page range"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/partOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity is part of another entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "part of"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/partOfISBN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The ISBN of the Book the Chapter is part of. Note: If the entity is a Book use edm:isbn. This attribute provides a shortcut without including the Book as entity associated through the edm:partOf relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "part of ISBN"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/partOfISSN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Article"
+  },
+  {
+    "@id" : "https://data.elsevier.com/schema/edm/ConferenceContribution"
+  }  ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The ISSN of the Journal the Article, or ConferenceContribution is part of. Note: If the entity is a Journal use edm:issn. This attribute provides a shortcut without including the Journal as entity associated through the edm:partOf relation.."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "part of ISSN"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/participates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Agreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Actor participates in an Activity or Agreement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "participates"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/pii",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Elsevier specific identifier used for Works such as Article, Chapter and ConferenceContribution published by Elsevier."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "pii"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/postOfficeBoxNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A uniquely addressable lockable box located on the premises of a post office station included in a postal address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "post office box number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/locationLabel"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/postalAddressLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The postal address as a single piece of text associated with an entity.\nUse the PostalAddress entity type when the address elements are separated out. See attributes that are linked to PostalAddress."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "postal address label"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/locationLabel"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/postalCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A series of letters, digits or both the specifies a geographic location included in a postal address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "postal code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/locationLabel"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/preferredLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The preferred label for an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "preferred label"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/label"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/preferredName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The preferred name for an Actor, notably an Organization or a Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "preferred name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/name"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/providedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Service"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Service is provided by an Actor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "provided by"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/provides"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/provides",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Actor provides a Service."
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/publishedDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The date or time the Work was published for the first time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "published date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/date"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/publisherOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Organization is the publisher of the Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "publisher of"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/pui",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The identifier associated with the Work such as an Article, Chapter or ConferenceContribution in a form that doesn't include the main text of the Work. This identifier is used within Elsevier."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "pui"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/purchasedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Product"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Product is purchased by an Organization or Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "purchased by"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/purchases"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/purchases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Organization or Person purchases a Product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "purchases"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/reaxysRN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Substance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The identifier of a compound (Substance) in Reaxys."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reaxys RN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/referencedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Work is referenced by another Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "referenced by"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/references"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/references",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Work references another Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "references"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/relatedCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/AnatomicalStructure"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The AnatomicalStructure has a MedicalCondition associated with it. For instance the head is linked to headache."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "related condition"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/relatedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Generic relationship that exists between two entities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "related to"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/relatedTo"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/releaseDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The release date of a Product or product model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "release date"
+  } ],"http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/date"
+  } ]
+},{
+  "@id" : "https://data.elsevier.com/schema/edm/reviewOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Review"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Review associated with the reviewed Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "review of"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/reviewerOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Person"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Person who performed the Review associated with the reviewed Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reviewer of"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/ringgoldIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The identifier of an organization in Ringgold."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ringgold identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/roleOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+ "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ],   
+  "http://schema.org/rangeIncludes" : [ {
+   "@id" : "https://data.elsevier.com/schema/edm/Actor"
+  } ], 
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Role associated with the Actor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "role of"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/schemaOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Schema"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Dataset"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Vocabulary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Schema is associated with the work most notably for Vocabularies or Datasets."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "schema of"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/smiles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Substance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The simplified molecular-input line-entry system (SMILES) is a specification in form of a line notation for describing the structure of chemical species using short ASCII strings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SMILES"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/startDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Activity"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Agreement"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Relationship"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The start date associated with the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "start date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/date"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/startPage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The start page of the Work such as an Article or Chapter as part of a larger Work such as a journal Issue or Book."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "start page"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/streetAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The location of a building, apartment or other structure on a street or thoroughfare."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "street address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/locationLabel"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/subjectOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Concept"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Concept is associated with the entity as its Subject."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "subject of"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/swissProtId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/AnatomicalStructure"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/DrugTarget"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The identifier under which the protein is known in the Swiss-Prot database. Proteins often feature as DrugTargets and data may include the Swiss-Prot identifier."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Swiss-Prot Id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/identifier"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/targetedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/DrugTarget"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The DrugTarget is targeted by the Drug."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "targeted by"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/targets"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/targets",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/DrugTarget"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Drug targets to the DrugTarget."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "targets"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The title of a Work such as a Book or a composition. Not to be confused with the honorific of a Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/label"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/trialOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalDevice"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalProcedure"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/ClinicalTrial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The effect of the MedicalDevice, Drug or MedicalProcedure is studied in the ClinicalTrial."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "trial of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/trialed"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/trialed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/ClinicalTrial"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Drug"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalDevice"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalProcedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The ClinicalTrial is conducted to study the effect of a MedicalDevice, Drug or MedicalProcedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "trialed"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/usesDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalProcedure"
+  }, {
+    "@id" : "https://data.elsevier.com/schema/edm/Role"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The MedicalProcedure, or Role uses MedicalDevice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "uses device"
+  } ]
+}, {
+  "@id" : "https://data.elsevier.com/schema/edm/volume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://data.elsevier.com/schema/edm/Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The volume of the Work associated with multi-volume Works such as BookSeries or Issue in Journals."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "volume"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+} ]

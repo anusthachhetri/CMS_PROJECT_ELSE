@@ -1,0 +1,234 @@
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+
+
+##  RELAX NG Schema for HTML 5: Global Structure & Metadata Core Profile
+
+## Root Element: html
+html.elem = element html { html.inner & html.attrs }
+html.attrs = common.attrs
+html.inner = head.elem, body.elem
+
+## Metadata Container: head
+head.elem = element head { head.inner & head.attrs }
+head.attrs = common.attrs & (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+
+## redefinition of the content model of element head according to the Core Profile
+head.inner =
+  meta.charset.elem,
+  base.elem?,
+  title.elem,
+  (link.elem | meta.elem)+,
+  script.jsonld.elem?,
+  style.elem?
+
+## strict definition of script
+script.jsonld.elem =
+  element script {
+    attribute type { xsd:string "application/ld+json" },
+    script.attrs.src?,
+    text
+  }
+
+## Content Container: body
+body.elem = element body { body.inner & body.attrs }
+body.attrs =
+  common.attrs
+  & ((common.attrs.aria.landmark.application
+      | common.attrs.aria.landmark.document
+      | common.attrs.aria.role.presentation
+      | common.attrs.aria.implicit.document)?)
+    # deleted on* body attrs
+    
+body.inner = common.inner.flow
+# deleted patterns for body on* attrs
+
+## Document Title: <title>
+title.elem = element title { title.inner & title.attrs }
+title.attrs =
+  common.attrs.basic
+  & common.attrs.i18n
+  & common.attrs.present
+  & common.attrs.other
+  & common.attrs.rdfa.no-content-no-property?
+  & title.attrs.prop.dctitle
+  & common.attrs.rdfa.content?
+  & (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+title.attrs.prop.dctitle =
+  attribute property {
+    xsd:Name { pattern = "\c+:title" }
+  }
+title.inner = text
+
+## Base URI: base
+base.elem = element base { base.inner & base.attrs }
+base.attrs =
+  common.attrs.basic
+  & common.attrs.i18n
+  & common.attrs.present
+  & common.attrs.other
+  & ((base.attrs.href & base.attrs.target?) | base.attrs.target)
+  & (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+base.attrs.href = attribute href { common.data.uri }
+base.attrs.target =
+  attribute target {
+    # common.data.browsing-context-or-keyword
+    xsd:string {
+      pattern =
+        "()|([^_].*)|(_[bB][lL][aA][nN][kK])|(_[sS][eE][lL][fF])|(_[pP][aA][rR][eE][nN][tT])|(_[tT][oO][pP])"
+    }
+  }
+base.inner = empty
+
+## relations: link
+link.elem = element link { link.inner & link.attrs }
+
+## link must have a @href and @property. @rel is optional
+link.attrs =
+  # copy of link.rdfa.attrs.metadata
+  # TODO: do we allow the other attributes?
+  common.attrs.basic
+  & common.attrs.i18n
+  & common.attrs.present
+  & common.attrs.other
+  & link.attrs.property
+  & link.attrs.href
+  & common.attrs.rdfa.no-content-no-property?
+  & common.attrs.rdfa.rev?
+  & shared-hyperlink.attrs.hreflang?
+  & shared-hyperlink.attrs.media?
+  & shared-hyperlink.attrs.type?
+  & referrerpolicy?
+  & link.attrs.sizes?
+  & link.attrs.color?
+  & link.attrs.scope?
+  & link.attrs.updateviacache?
+  & link.attrs.workertype?
+  & # link.attrs.title included in common.attrs
+    embedded.content.attrs.crossorigin?
+  & (common.attrs.aria.role.link
+     | common.attrs.aria.role.presentation
+     | common.attrs.aria.role.menuitem)?
+link.attrs.property = attribute property { xsd:Name }
+link.attrs.href = attribute href { common.data.uri }
+link.attrs.rel =
+  attribute rel {
+    xsd:string {
+      pattern =
+        "alternate|author|dns-prefetch|help|icon|license|mask-icon|next|pingback|preconnect|prefetch|preload|prerender|prev|search|serviceworker|stylesheet"
+    }
+  }
+link.attrs.as =
+  attribute as {
+    xsd:string ""
+    | xsd:string "document"
+    | xsd:string "embed"
+    | xsd:string "font"
+    | xsd:string "image"
+    | xsd:string "manifest"
+    | xsd:string "media"
+    | xsd:string "object"
+    | xsd:string "report"
+    | xsd:string "script"
+    | xsd:string "serviceworker"
+    | xsd:string "sharedworker"
+    | xsd:string "style"
+    | xsd:string "worker"
+    | xsd:string "xslt"
+  }
+link.attrs.integrity =
+  attribute integrity {
+    # common.data.integrity
+    xsd:string { pattern = "sha256-.+|sha384-.+|sha512-.+" }
+  }
+link.attrs.nonce = attribute nonce { string }
+link.attrs.sizes =
+  attribute sizes {
+    string "any"
+    | list {
+        xsd:string { pattern = "[1-9][0-9]*x[1-9][0-9]*" }+
+      }
+  }
+link.attrs.color =
+  attribute color {
+    # common.data.color
+    xsd:string { pattern = "^#([A-Fa-f0-9]{6})$" }
+  }
+link.attrs.scope = attribute scope { common.data.uri }
+link.attrs.updateviacache =
+  attribute updateviacache { string "imports" | string "all" | string "none" }
+link.attrs.workertype = attribute workertype { string "classic" | string "module" }
+link.inner = empty
+
+## Global Style: <style>
+style.elem = element style { style.inner & style.attrs }
+style.attrs =
+  common.attrs
+  & style.attrs.type?
+  & style.attrs.media?
+  & style.attrs.nonce?
+  & # style.attrs.title included in common.attrs
+    (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+style.attrs.type =
+  attribute type {
+    # common.data.mimetype
+    xsd:string { pattern = ".[^ ]+/.[^ ]+" }
+  }
+style.attrs.media =
+  attribute media {
+    # common.data.mediaquery
+    xsd:string { pattern = "[^{]+(\{([\s\S]+)?)\s*" }
+  }
+style.attrs.nonce = attribute nonce { string }
+style.inner = common.inner.anything
+meta.elem = element meta { meta.attrs, meta.inner }
+meta.attrs =
+  # copy of meta.property.attrs 
+  # TODO: do we allow the other attributes?
+  common.attrs.basic
+  & common.attrs.i18n
+  & common.attrs.present
+  & common.attrs.other
+  & meta.attrs.name?
+  & meta.attrs.property
+  & meta.attrs.content
+  & common.attrs.rdfa.no-content-no-property?
+  & (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+meta.attrs.property = attribute property { xsd:Name }
+meta.attrs.name =
+  attribute name {
+    xsd:string { pattern = "(.+)" }
+  }
+meta.attrs.content = attribute content { xsd:string }
+# TODO: clean up meta patterns
+
+## Name-Value Metadata: <meta name>
+meta.name.elem = element meta { meta.inner & meta.name.attrs }
+meta.name.attrs =
+  common.attrs.basic
+  & common.attrs.i18n
+  & common.attrs.present
+  & common.attrs.other
+  & meta.name.attrs.name
+  & meta.name.attrs.content
+  & # no microdata
+    (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+meta.name.attrs.name =
+  attribute name {
+    xsd:string { pattern = "(.+)" }
+  }
+meta.name.attrs.content = attribute content { xsd:string }
+meta.inner = empty
+
+## Inline Character Encoding Statement for HTML: <meta charset>
+meta.charset.elem = element meta { meta.inner & meta.charset.attrs }
+meta.charset.attrs =
+  common.attrs.basic
+  & common.attrs.i18n
+  & common.attrs.present
+  & common.attrs.other
+  & meta.charset.attrs.charset
+  & (common.attrs.aria.role.presentation | common.attrs.aria.role.menuitem)?
+meta.charset.attrs.charset =
+  attribute charset {
+    xsd:string { pattern = "[uU][tT][fF]-8" }
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Validator & Fixer</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; }
+        textarea { width: 100%; height: 250px; }
+        .error { color: red; }
+        .success { color: green; }
+        .json-box { display: flex; gap: 20px; }
+        .json-section { flex: 1; }
+    </style>
+</head>
+<body>
+
+    <h2>🔍 JSON Validator & Fixer</h2>
+
+    <form action="{% url 'json_validator' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="json_file" accept=".json" required>
+        <button type="submit">Upload & Validate</button>
+    </form>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if is_valid %}
+        <h3 class="success">✅ JSON file is valid! No restricted characters found.</h3>
+        <details>
+            <summary>🔍 View JSON</summary>
+            <textarea readonly>{{ original_json }}</textarea>
+        </details>
+    {% elif errors %}
+        <h3 class="error">⚠️ Restricted characters found:</h3>
+        <ul>
+            {% for err in errors %}
+                <li>{{ err }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if original_json and fixed_json %}
+        <h3>🔍 Original vs Fixed JSON</h3>
+        <div class="json-box">
+            <div class="json-section">
+                <h4>📝 Original JSON</h4>
+                <textarea readonly>{{ original_json }}</textarea>
+            </div>
+            <div class="json-section">
+                <h4>✅ Fixed JSON</h4>
+                <textarea readonly>{{ fixed_json }}</textarea>
+            </div>
+        </div>
+
+        <h3>📥 Download Fixed JSON</h3>
+        <a href="data:application/json;charset=utf-8,{{ fixed_json|urlencode }}" download="{{ filename }}">
+            <button>Download Fixed JSON</button>
+        </a>
+    {% endif %}
+
+</body>
+</html>

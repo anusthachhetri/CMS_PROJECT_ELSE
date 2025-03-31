@@ -1,0 +1,43 @@
+{"fingerprints": {
+    "signature": "cf58d38173f267c8c06c34ce0be614fb",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "D_2_cleaned.json",
+            "checksum": "db5d1210803c31530584608b9ef713d5"
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "message": [
+                {
+                    "file": "X:\\json_project_1\\jsonfolder\\D_2_cleaned.json",
+                    "id": "grant-parser",
+                    "type": "error",
+                    "content": "com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDateTime` from String \"01-01-2024\": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '01-01-2024' could not be parsed at index 0"
+                },
+                {
+                    "record-id": 89152238,
+                    "id": "GWH-GRT106a",
+                    "position": "[0]$['startDate']",
+                    "type": "error",
+                    "content": "The date is not properly formatted."
+                }
+            ],
+            "total-errors": 2
+        },
+        "info": {
+            "date": "2025/02/08",
+            "os": "Windows 10 version 10.0",
+            "time": "21:55",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.93.1",
+                "specset-version": "2.93.1"
+            },
+            "ingestion-version": "6.8.0",
+            "commandline": "-file \"X:\\json_project_1\\jsonfolder\\D_2_cleaned.json\" -log \"X:\\json_project_1\\jsonfolder\\fllll.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

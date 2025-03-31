@@ -1,0 +1,198 @@
+{
+	"batchId": "06931fb4-c70f-44ad-b205-623e0cc27a4d",
+	"ingestionId": "8f6edbdc-48d7-4a6c-a748-761502b9c7d6",
+	"fundingBodyId": 805020907,
+	"homePage": "https://www.trdf.co.il/eng/fundinfo.php?id=959",
+	"status": "ACTIVE",
+	"preferredName": [{
+		"language": "en",
+		"value": "Roche Organ Transplantation Research Foundation"
+	}, {
+		"language": "he",
+		"value": "קרן מחקר להשתלות איברי רוש - ROTRF"
+	}],
+	"acronym": [{
+		"language": "en",
+		"value": "ROTRF"
+	}, {
+		"language": "he",
+		"value": "NOTFOUND"
+	}],
+	"abbrevName": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}, {
+		"language": "he",
+		"value": "NOTFOUND"
+	}],
+	"alternateName": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}, {
+		"language": "he",
+		"value": "NOTFOUND"
+	}],
+	"financeType": "PRI",
+	"activityType": "FOUNDA",
+	"profitabilityType": "NONPROF",
+	"country": "CHE",
+	"state": "NOTFOUND",
+	"identifier": [{
+		"type": "CROSSREFID",
+		"value": "NOTFOUND"
+	}],
+	"description": [{
+		"abstract": {
+			"language": "en",
+			"value": "The ROTRF supports important and innovative research projects relevant to organ transplantation, particularly where there is an unmet medical need. The ROTRF priority is to support clinically oriented research projects, such as observational clinical studies or studies that use human transplant samples for laboratory examinations, and focusing on understanding the pathogenesis and prevention of human transplantation diseases, including organ injury and rejection, viral infection, and late graft deterioration."
+		},
+		"source": "https://www.trdf.co.il/eng/fundinfo.php?id=959"
+	}, {
+		"abstract": {
+			"language": "he",
+			"value": "קרן ROTRF תומכת בפרויקטים מחקריים חשובים וחדשניים הרלוונטיים להשתלות איברים, במיוחד בתחומים שבהם יש צורך רפואי שלא נענה. עדיפות הקרן היא לתמוך בפרויקטים מחקריים הממוקדים קלינית, כגון מחקרים קליניים תצפיתיים או מחקרים המשתמשים בדגימות השתלה אנושיות לבדיקות מעבדה, תוך התמקדות בהבנת מנגנוני הפתוגנזה ומניעת מחלות הקשורות להשתלות, כולל פגיעה באיברים ודחייה, זיהומים ויראליים והידרדרות מאוחרת של שתלים."
+		},
+		"source": "https://www.trdf.co.il/eng/fundinfo.php?id=959"
+	}],
+	"awardSuccessRate": {
+		"percentage": 0,
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "he",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}]
+	},
+	"establishment": {
+		"establishmentYear": 0,
+		"country": "CHE",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "NOTFOUND"
+			},
+			"source": "NOTFOUND"
+		}, {
+			"abstract": {
+				"language": "he",
+				"value": "NOTFOUND"
+			},
+			"source": "NOTFOUND"
+		}]
+	},
+	"fundingPolicy": [{
+		"abstract": {
+			"language": "en",
+			"value": "The ROTRF may consider funding research that addresses related clinical issues in non-transplant patients, including hepatitis C infection and other viral infections, and inflammatory processes relevant to human organ transplantation. These related clinical issues should demonstrate their relevance to disease phenotypes in organ transplant patients. The Trustees will also consider funding studies that investigate transplant populations, ethics, organ preservation and allocation, and healthcare delivery. Moreover, the ROTRF will welcome research in new emerging technologies that examine the pathogenesis of human disease states in organ transplantation. If animal models are used to complement the clinical research, a higher priority will be given to those that simulate pathological states and mechanisms operating in human organ transplantation."
+		},
+		"source": "https://www.trdf.co.il/eng/fundinfo.php?id=959"
+	}, {
+		"abstract": {
+			"language": "he",
+			"value": "קרן ROTRF עשויה לשקול מימון מחקרים המתמקדים בבעיות קליניות קשורות אצל מטופלים שאינם מושתלים, כולל זיהום בנגיף הפטיטיס C וזיהומים נגיפיים אחרים, וכן תהליכים דלקתיים הרלוונטיים להשתלות איברים אנושיים. בעיות קליניות קשורות אלו צריכות להוכיח את הרלוונטיות שלהן לתופעות מחלה בקרב מטופלים מושתלי איברים. הנאמנים ישקלו גם מימון מחקרים הבוחנים אוכלוסיות של מושתלים, אתיקה, שימור איברים והקצאתם, וכן מתן שירותי בריאות. בנוסף, הקרן תעודד מחקרים בטכנולוגיות חדשות ומתקדמות הבוחנות את הפתוגנזה של מצבי מחלה בהשתלות איברים אנושיים. אם נעשה שימוש במודלים של בעלי חיים כדי להשלים את המחקר הקליני, תינתן עדיפות גבוהה יותר למודלים המדמים מצבים פתולוגיים ומנגנונים המתרחשים בהשתלות איברים אנושיות."
+		},
+		"source": "https://www.trdf.co.il/eng/fundinfo.php?id=959"
+	}],
+	"contactInformation": {
+		"hasPostalAddress": {
+			"addressCountry": "CHE",
+			"addressRegion": "NOTFOUND",
+			"addressLocality": "Meggen",
+			"addressPostalCode": "CH-6045",
+			"postOfficeBoxNumber": "222",
+			"streetAddress": "ROTRF, P.O. Box 222"
+		}
+	},
+	"relation": {
+		"partOf": [0],
+		"hasPart": [0],
+		"affiliatedWith": [0],
+		"renamedAs": [0],
+		"continuationOf": [0],
+		"mergedWith": [0],
+		"incorporatedInto": [0],
+		"mergerOf": [0],
+		"incorporates": [0],
+		"isReplacedBy": [0],
+		"replaces": [0],
+		"splitFrom": [0],
+		"splitInto": [0]
+	},
+	"vatNumber": "NOTFOUND",
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.trdf.co.il/eng/fundinfo.php?id=959",
+		"createdOn": "2024-12-22T07:06:42.766Z",
+		"lastUpdateOn": "2024-12-22T07:06:42.766Z",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": 1,
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	},
+	"registry": {
+		"termsOfUse": {
+			"source": ["NOTFOUND"]
+		},
+		"fundingBodyDataset": {
+			"collectionCode": "SUP004",
+			"extended": false,
+			"tier": 4,
+			"source": [{
+				"name": "Roche Organ Transplantation Research Foundation - ROTRF",
+				"url": "https://www.trdf.co.il/eng/fundinfo.php?id=959",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-12-22T07:06:42.766Z",
+				"captureEnd": "2024-12-22T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"opportunityDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOTFOUND",
+				"url": "NOTFOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-12-22T07:06:42.766Z",
+				"captureEnd": "2024-12-22T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"awardDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOTFOUND",
+				"url": "NOTFOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-12-22T07:06:42.766Z",
+				"captureEnd": "2024-12-22T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"publicationDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOTFOUND",
+				"url": "NOTFOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-12-22T07:06:42.766Z",
+				"captureEnd": "2024-12-22T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		}
+	}
+}

@@ -1,0 +1,485 @@
+{
+	"batchId": "",
+	"ingestionId": "",
+	"fundingBodyId": 85145078,
+	"homePage": "https://www.wa.gov.au/",
+	"status": "ACTIVE",
+	"preferredName": [{
+		"language": "en",
+		"value": "Government of Western Australia"
+	}, {
+		"language": "ne",
+		"value": "पश्चिमी अष्ट्रेलियाको सरकार"
+	}, {
+		"language": "fr",
+		"value": "Gouvernement de l'Australie Occidentale"
+	}, {
+		"language": "de",
+		"value": "Regierung von Westaustralien"
+	}, {
+		"language": "zh",
+		"value": "西澳大利亚州政府"
+	}, {
+		"language": "ar",
+		"value": "حكومة أستراليا الغربية"
+	}, {
+		"language": "hi",
+		"value": "पश्चिमी ऑस्ट्रेलिया सरकार"
+	}, {
+		"language": "ru",
+		"value": "Правительство Западной Австралии"
+	}, {
+		"language": "pt",
+		"value": "Governo da Austrália Ocidental"
+	}, {
+		"language": "ja",
+		"value": "西オーストラリア州政府"
+	}],
+	"acronym": [{
+		"language": "en",
+		"value": "WA Government"
+	}, {
+		"language": "ne",
+		"value": "NOTFOUND"
+	}, {
+		"language": "fr",
+		"value": "Gouvernement de WA"
+	}, {
+		"language": "de",
+		"value": "WA-Regierung"
+	}, {
+		"language": "zh",
+		"value": "WA政府"
+	}, {
+		"language": "ar",
+		"value": "حكومة WA"
+	}, {
+		"language": "hi",
+		"value": "डब्ल्यूए सरकार"
+	}, {
+		"language": "ru",
+		"value": "Правительство WA"
+	}, {
+		"language": "pt",
+		"value": "Governo WA"
+	}, {
+		"language": "ja",
+		"value": "WA政府"
+	}],
+	"abbrevName": [{
+		"language": "en",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ne",
+		"value": "NOTFOUND"
+	}, {
+		"language": "fr",
+		"value": "NOTFOUND"
+	}, {
+		"language": "de",
+		"value": "NOTFOUND"
+	}, {
+		"language": "zh",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ar",
+		"value": "NOTFOUND"
+	}, {
+		"language": "hi",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ru",
+		"value": "NOTFOUND"
+	}, {
+		"language": "pt",
+		"value": "NOTFOUND"
+	}, {
+		"language": "ja",
+		"value": "NOTFOUND"
+	}],
+	"alternateName": [{
+		"language": "en",
+		"value": "Western Australian Government"
+	}, {
+		"language": "ne",
+		"value": "पश्चिमी अष्ट्रेलियाको सरका"
+	}, {
+		"language": "fr",
+		"value": "Gouvernement de l'Australie-Occidentale"
+	}, {
+		"language": "de",
+		"value": "Regierung von Westaustralien"
+	}, {
+		"language": "zh",
+		"value": "西澳大利亚政府"
+	}, {
+		"language": "ar",
+		"value": "حكومة أستراليا الغربية"
+	}, {
+		"language": "hi",
+		"value": "पश्चिमी ऑस्ट्रेलिया सरकार"
+	}, {
+		"language": "ru",
+		"value": "Правительство Западной Австралии"
+	}, {
+		"language": "pt",
+		"value": "Governo da Austrália Ocidental"
+	}, {
+		"language": "ja",
+		"value": "西オーストラリア政府"
+	}],
+	"financeType": "GOV",
+	"activityType": "GOVFED",
+	"country": "AUS",
+	"state": "Western Australia",
+	"identifier": [{
+		"type": "CROSSREFID",
+		"value": "NOTFOUND"
+	}],
+	"description": [{
+		"abstract": {
+			"language": "en",
+			"value": "Government (or Executive Government as it is formally known) in Western Australia includes the Cabinet, the Executive Council and the Public Sector."
+		},
+		"source": "https://www.wa.gov.au/"
+	}, {
+		"abstract": {
+			"language": "ne",
+			"value": "पश्चिमी अस्ट्रेलियामा सरकार (वा कार्यकारी सरकार जसलाई औपचारिक रूपमा चिनिन्छ) मा मन्त्रिपरिषद्, कार्यकारी परिषद् र सार्वजनिक क्षेत्र समावेश हुन्छन्"
+		},
+		"source": "https://www.wa.gov.au/"
+	}, {
+		"abstract": {
+			"language": "fr",
+			"value": "Le gouvernement (ou gouvernement exécutif comme on l'appelle officiellement) en Australie occidentale comprend le Cabinet, le Conseil exécutif et le secteur public"
+		},
+		"source": "https://www.wa.gov.au/"
+	}, {
+		"abstract": {
+			"language": "de",
+			"value": "Die Regierung (oder Exekutivregierung, wie sie offiziell genannt wird) in Westaustralien umfasst das Kabinett, den Exekutivrat und den öffentlichen Sektor"
+		},
+		"source": "https://www.wa.gov.au/"
+	}, {
+		"abstract": {
+			"language": "zh",
+			"value": "西澳大利亚州的政府（正式名称为行政政府）包括内阁、行政委员会和公共部门"
+		},
+		"source": "https://www.wa.gov.au/"
+	}, {
+		"abstract": {
+			"language": "ar",
+			"value": "تشمل الحكومة (أو الحكومة التنفيذية كما تُعرف رسميًا) في غرب أستراليا مجلس الوزراء والمجلس التنفيذي والقطاع العام"
+		},
+		"source": "https://www.wa.gov.au/"
+	}, {
+		"abstract": {
+			"language": "hi",
+			"value": "पश्चिमी ऑस्ट्रेलिया में सरकार (या औपचारिक रूप से कार्यकारी सरकार के रूप में जानी जाती है) में मंत्रिमंडल, कार्यकारी परिषद और सार्वजनिक क्षेत्र शामिल ह"
+		},
+		"source": "https://www.wa.gov.au/"
+	}, {
+		"abstract": {
+			"language": "ru",
+			"value": "Правительство (или Исполнительное правительство, как его официально называют) в Западной Австралии включает Кабинет министров, Исполнительный совет и государственный сектор."
+		},
+		"source": "https://www.wa.gov.au/"
+	}, {
+		"abstract": {
+			"language": "pt",
+			"value": "O Governo (ou Governo Executivo, como é formalmente conhecido) na Austrália Ocidental inclui o Gabinete, o Conselho Executivo e o Setor Público"
+		},
+		"source": "https://www.wa.gov.au/"
+	}, {
+		"abstract": {
+			"language": "ja",
+			"value": "西オーストラリア州の政府（正式には行政政府）には、内閣、行政評議会、公共部門が含まれます。"
+		},
+		"source": "https://www.wa.gov.au/"
+	}],
+	"awardSuccessRate": {
+		"percentage": 0,
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ne",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "fr",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "de",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "zh",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ar",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "hi",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ru",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "pt",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ja",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}]
+	},
+	"establishment": {
+		"establishmentYear": 0,
+		"country": "AUS",
+		"description": [{
+			"abstract": {
+				"language": "en",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ne",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "fr",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "de",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "zh",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ar",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "hi",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ru",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "pt",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}, {
+			"abstract": {
+				"language": "ja",
+				"value": "NOTFOUND"
+			},
+			"source": ""
+		}]
+	},
+	"fundingPolicy": [{
+		"abstract": {
+			"language": "en",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "ne",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "fr",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "de",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "zh",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "ar",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "hi",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "ru",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "pt",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}, {
+		"abstract": {
+			"language": "ja",
+			"value": "NOTFOUND"
+		},
+		"source": ""
+	}],
+	"contactInformation": {
+		"hasPostalAddress": {
+			"addressCountry": "AUS",
+			"addressRegion": "Western Australia",
+			"addressLocality": "NOTFOUND",
+			"addressPostalCode": "NOTFOUND",
+			"postOfficeBoxNumber": "NOTFOUND",
+			"streetAddress": "NOTFOUND"
+		}
+	},
+	"relation": {
+		"partOf": [0],
+		"hasPart": [0],
+		"affiliatedWith": [0],
+		"renamedAs": [0],
+		"continuationOf": [0],
+		"mergedWith": [0],
+		"incorporatedInto": [0],
+		"mergerOf": [0],
+		"incorporates": [0],
+		"isReplacedBy": [0],
+		"replaces": [0],
+		"splitFrom": [0],
+		"splitInto": [0]
+	},
+	"vatNumber": "NOTFOUND",
+	"hasProvenance": {
+		"wasAttributedTo": "SUP004",
+		"derivedFrom": "https://www.wa.gov.au/",
+		"createdOn": "2024-11-21T07:06:42.766Z",
+		"lastUpdateOn": "2024-11-21T07:06:42.766Z",
+		"contactPoint": "robin.bhandari@highwirepress.com",
+		"version": 1,
+		"hidden": false,
+		"defunct": false,
+		"status": "UPDATE"
+	},
+	"registry": {
+		"termsOfUse": {
+			"source": ["NOTFOUND"]
+		},
+		"fundingBodyDataset": {
+			"collectionCode": "SUP004",
+			"extended": false,
+			"tier": 4,
+			"source": [{
+				"name": "Australian Research Council",
+				"url": "https://www.wa.gov.au/",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-11-21T07:06:42.766Z",
+				"captureEnd": "2024-11-21T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"opportunityDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOTFOUND",
+				"url": "NOTFOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-11-21T07:06:42.766Z",
+				"captureEnd": "2024-11-21T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"awardDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOTFOUND",
+				"url": "NOTFOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-11-21T07:06:42.766Z",
+				"captureEnd": "2024-11-21T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		},
+		"publicationDataset": {
+			"capture": false,
+			"collectionCode": "SUP004",
+			"source": [{
+				"name": "NOTFOUND",
+				"url": "NOTFOUND",
+				"status": "ACTIVE",
+				"frequency": "SIGNAL-BASED",
+				"captureStart": "2024-11-21T07:06:42.766Z",
+				"captureEnd": "2024-11-21T07:06:42.766Z",
+				"comment": "NOTFOUND"
+			}]
+		}
+	}
+}

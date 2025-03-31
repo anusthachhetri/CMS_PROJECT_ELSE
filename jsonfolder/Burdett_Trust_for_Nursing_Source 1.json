@@ -1,0 +1,389 @@
+[
+    {
+        "batchId": "",
+        "ingestionId": "",
+        "grantAwardId": 81212420,
+        "fundingBodyAwardId": "not found",
+        "hasInstallment": [
+            0
+        ],
+        "hasWorkPackage": [
+            0
+        ],
+        "title": [
+            {
+                "language": "en",
+                "value": "High Impact Interventions  Cerebrovascular Accident (CVA)",
+                "hasProvenance": {
+                    "createdOn": "2/18/2025",
+                    "createdBy": "MPS",
+                    "createdWith": "MPS SERVICES"
+                }
+            }
+        ],
+        "identifier": [
+            {
+                "type": "DOI",
+                "value": "not found"
+            }
+        ],
+        "noticeDate": "Not Found",
+        "startDate": "1/1/2024",
+        "endDate": "Not Found",
+        "grantType": "PROGRAM,,TRAINING",
+        "funderSchemeType": "Grant Programmes",
+        "homePage": {
+            "link": "https://www.btfn.org.uk/wp-content/uploads/2024/11/High-Impact-Interventions-%E2%80%93-Cerebrovascular-Accident-CVA-2024.pdf",
+            "publishedDate": "Not Found",
+            "modifiedDate": "Not Found"
+        },
+        "synopsis": [
+            {
+                "abstract": {
+                    "language": "en",
+                    "value": "phela u phelise is a nurse-led community based stroke prevention\nand management intervention aimed at minimizing the impact and\nextent of stroke in Lesotho",
+                    "hasProvenance": {
+                        "createdOn": "2/18/2025",
+                        "createdBy": "MPS",
+                        "createdWith": "MPS SERVICES"
+                    }
+                },
+                "source": "https://www.btfn.org.uk/wp-content/uploads/2024/11/High-Impact-Interventions-%E2%80%93-Cerebrovascular-Accident-CVA-2024.pdf"
+            }
+        ],
+        "keyword": [
+            {
+                "language": "en",
+                "value": "Not Found",
+                "hasProvenance": {
+                    "createdOn": "2/18/2025",
+                    "createdBy": "MPS",
+                    "createdWith": "MPS SERVICES"
+                }
+            }
+        ],
+        "licenseInformation": [
+            {
+                "abstract": {
+                    "language": "en",
+                    "hasProvenance": {
+                        "createdOn": "2/18/2025",
+                        "createdBy": "MPS",
+                        "createdWith": "MPS SERVICES"
+                    },
+                    "value": "Privacy & Cookie Policy,© 2025 The Burdett Trust for Nursing."
+                },
+                "source": "https://www.btfn.org.uk/privacy-cookie-policy/"
+            }
+        ],
+        "funds": [
+            {
+                "fundingBodyProjectId": "not found",
+                "hasPart": [
+                    {
+                        "fundingBodyProjectId": "not found",
+                        "budget": [
+                            {
+                                "currency": "GBP",
+                                "amount": 0
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "language": "en",
+                        "value": "High Impact Interventions  Cerebrovascular Accident (CVA)",
+                        "hasProvenance": {
+                            "createdOn": "2/18/2025",
+                            "createdBy": "MPS",
+                            "createdWith": "MPS SERVICES"
+                        }
+                    }
+                ],
+                "acronym": "not found",
+                "endDate": "Not Found",
+                "hasPostalAddress": {
+                    "addressCountry": "GBR",
+                    "addressRegion": "not found",
+                    "addressLocality": "not found",
+                    "addressPostalCode": "not found",
+                    "postOfficeBoxNumber": "not found",
+                    "streetAddress": "not found"
+                },
+                "link": "not found",
+                "budget": [
+                    {
+                        "currency": "GBP",
+                        "amount": 0
+                    }
+                ],
+                "status": "OPEN"
+            }
+        ],
+        "fundingDetail": {
+            "installment": [
+                {
+                    "index": 0,
+                    "grantAwardInstallmentId": 1,
+                    "financialYearStart": 0,
+                    "financialYearEnd": 0,
+                    "fundedAmount": [
+                        {
+                            "currency": "GBP",
+                            "amount": 0
+                        }
+                    ]
+                }
+            ],
+            "fundingTotal": [
+                {
+                    "currency": "GBP",
+                    "amount": 87639
+                }
+            ]
+        },
+        "awardeeDetail": [
+            {
+                "activityType": "Not Found",
+                "affiliationOf": [
+                    {
+                        "awardeePersonId": "81212420_P_0",
+                        "emailAddress": "Not Found",
+                        "familyName": "Not Found",
+                        "fundingBodyPersonId": "not found",
+                        "givenName": "Not Found",
+                        "identifier": [
+                            {
+                                "type": "ORCID",
+                                "value": "Not Found"
+                            }
+                        ],
+                        "initials": "Not Found",
+                        "name": [
+                            {
+                                "language": "en",
+                                "value": "Not Found"
+                            }
+                        ],
+                        "role": "Not Found",
+                        "sourceRole": "not found"
+                    }
+                ],
+                "awardeeAffiliationId": "81212420_A_0",
+                "departmentName": [
+                    {
+                        "language": "en",
+                        "value": "Not Found",
+                        "hasProvenance": {
+                            "createdOn": "2/18/2025",
+                            "createdBy": "MPS",
+                            "createdWith": "MPS SERVICES"
+                        }
+                    }
+                ],
+                "fundingBodyOrganizationId": "not found",
+                "fundingTotal": [
+                    {
+                        "amount": 0,
+                        "currency": "GBP"
+                    }
+                ],
+                "hasPostalAddress": {
+                    "addressCountry": "GBR",
+                    "addressLocality": "not found",
+                    "addressPostalCode": "not found",
+                    "addressRegion": "not found",
+                    "postOfficeBoxNumber": "not found",
+                    "streetAddress": "not found"
+                },
+                "identifier": [
+                    {
+                        "type": "not found",
+                        "value": "not found"
+                    }
+                ],
+                "link": "not found",
+                "name": [
+                    {
+                        "language": "en",
+                        "value": "East London NHS Foundation Trust"
+                    }
+                ],
+                "role": "Coordinator",
+                "sourceRole": "not found",
+                "vatNumber": "not found"
+            },
+            {
+                "activityType": "Not Found",
+                "affiliationOf": [
+                    {
+                        "awardeePersonId": "81212420_P_1",
+                        "emailAddress": "Not Found",
+                        "familyName": "Not Found",
+                        "fundingBodyPersonId": "not found",
+                        "givenName": "Not Found",
+                        "identifier": [
+                            {
+                                "type": "ORCID",
+                                "value": "Not Found"
+                            }
+                        ],
+                        "initials": "Not Found",
+                        "name": [
+                            {
+                                "language": "en",
+                                "value": "Not Found"
+                            }
+                        ],
+                        "role": "Not Found",
+                        "sourceRole": "not found"
+                    }
+                ],
+                "awardeeAffiliationId": "81212420_A_1",
+                "departmentName": [
+                    {
+                        "language": "en",
+                        "value": "Not Found",
+                        "hasProvenance": {
+                            "createdOn": "2/18/2025",
+                            "createdBy": "MPS",
+                            "createdWith": "MPS SERVICES"
+                        }
+                    }
+                ],
+                "fundingBodyOrganizationId": "not found",
+                "fundingTotal": [
+                    {
+                        "amount": 0,
+                        "currency": "GBP"
+                    }
+                ],
+                "hasPostalAddress": {
+                    "addressCountry": "GBR",
+                    "addressLocality": "not found",
+                    "addressPostalCode": "not found",
+                    "addressRegion": "not found",
+                    "postOfficeBoxNumber": "not found",
+                    "streetAddress": "not found"
+                },
+                "identifier": [
+                    {
+                        "type": "not found",
+                        "value": "not found"
+                    }
+                ],
+                "link": "not found",
+                "name": [
+                    {
+                        "language": "en",
+                        "value": "National University Of Lesotho (NUL)"
+                    }
+                ],
+                "role": "Coordinator",
+                "sourceRole": "not found",
+                "vatNumber": "not found"
+            }
+        ],
+        "classification": [
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Nursing",
+                    "identifier": {
+                        "value": "2900",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Cardiology and Cardiovascular Medicine",
+                    "identifier": {
+                        "value": "2705",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Medicine",
+                    "identifier": {
+                        "value": "2700",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Health Policy",
+                    "identifier": {
+                        "value": "2719",
+                        "type": "ASJC"
+                    }
+                }
+            },
+            {
+                "type": "Annotation",
+                "hasSubject": {
+                    "preferredLabel": "Health Information Management",
+                    "identifier": {
+                        "value": "3605",
+                        "type": "ASJC"
+                    }
+                }
+            }
+        ],
+        "relatedOpportunity": [
+            {
+                "grantOpportunityId": 0,
+                "fundingBodyOpportunityId": "not found",
+                "title": [
+                    {
+                        "language": "en",
+                        "value": "not found",
+                        "hasProvenance": {
+                            "createdOn": "2/18/2025",
+                            "createdBy": "MPS",
+                            "createdWith": "MPS SERVICES"
+                        }
+                    }
+                ],
+                "description": "not found"
+            }
+        ],
+        "relatedFunder": {
+            "leadFunder": {
+                "fundingBodyId": 82346797,
+                "sourceId": "not found",
+                "sourceText": "not found"
+            },
+            "hasFunder": [
+                {
+                    "fundingBodyId": 0,
+                    "sourceId": "not found",
+                    "sourceText": "not found"
+                }
+            ]
+        },
+        "hasProvenance": {
+            "wasAttributedTo": "SUP005",
+            "derivedFrom": "https://www.btfn.org.uk/wp-content/uploads/2024/11/High-Impact-Interventions-%E2%80%93-Cerebrovascular-Accident-CVA-2024.pdf",
+            "createdOn": "2025-02-19T13:07:26",
+            "lastUpdateOn": "2025-02-19T13:07:26",
+            "contactPoint": "robin.bhandari@highwirepress.com",
+            "version": "0",
+            "hidden": false,
+            "defunct": false,
+            "status": "NEW"
+        },
+        "options": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+        }
+    }
+]

@@ -1,0 +1,217 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Definitions for CUReport properties",
+  "description": "This schema contains the generic definitions for the CU report as used in the Apollo Manifest. Do not use standalone",
+  "definitions": {
+    "typeIsCU": {
+      "type": "string",
+      "pattern": "^pf:CUReport$"
+    },
+    "contextIsCU": {
+      "type": "object",
+      "items": {"properties": {"cu": {
+        "type": "string",
+        "pattern": "^http://vtw.elsevier.com/data/ns/properties/Manifest/PreFlight-1/$"
+      }}}
+    },
+    "cu:title": {
+      "title": "title",
+      "type": "boolean"
+    },
+    "cu:author_group": {
+      "title": "author group",
+      "type": "boolean"
+    },
+    "name": {
+      "title": "figure name",
+      "type": "string"
+    },
+    "id": {
+      "title": "id",
+      "type": "string"
+    },
+    "cu:affiliations": {
+      "title": "affiliations",
+      "type": "boolean"
+    },
+    "cu:corresponding_author_address": {
+      "title": "corresponding author address",
+      "type": "boolean"
+    },
+    "cu:corresponding_author_email_address": {
+      "title": "corresponding author email address",
+      "type": "boolean"
+    },
+    "cu:abstract": {
+      "title": "abstract",
+      "type": "boolean"
+    },
+    "cu:keywords": {
+      "title": "keywords",
+      "type": "boolean"
+    },
+    "cu:line_numbering": {
+      "title": "line numbering",
+      "type": "boolean"
+    },
+    "cu:page_count": {
+      "title": "page count",
+      "type": "integer"
+    },
+    "cu:word_count": {
+      "title": "word count",
+      "type": "integer"
+    },
+    "cu:table_count": {
+      "title": "table count",
+      "type": "integer"
+    },
+    "cu:editable_table_count": {
+      "title": "editable table count",
+      "type": "integer"
+    },
+    "cu:missing_figures": {
+      "title": "missing figures list",
+      "description": "array of missing_figures",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_tables": {
+      "title": "missing tables list",
+      "description": "array of missing tables",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_references": {
+      "title": "missing references list",
+      "description": "array of missing_references",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_scheme": {
+      "title": "missing scheme list",
+      "description": "array of missing scheme",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_table_caption": {
+      "title": "missing table caption list",
+      "description": "array of missing table caption",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_figure_caption": {
+      "title": "missing figure caption list",
+      "description": "array of missing_figure_caption",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_scheme_caption": {
+      "title": "missing scheme caption list",
+      "description": "array of missing_scheme_caption",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_citation_for_tables": {
+      "title": "missing_citation_for_tables list",
+      "description": "array of missing_citation_for_tables",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_citation_for_figures": {
+      "title": "missing citation for figures list",
+      "description": "array of missing_citation_for_figures",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_citation_for_references": {
+      "title": "missing citation for references list",
+      "description": "array of missing_citation_for_references",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    },
+    "cu:missing_citation_for_schemes": {
+      "title": "missing citation for schemes list",
+      "description": "array of missing_citation_for_schemes",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "name": {"$ref": "#/definitions/name"}
+        }
+      }
+    }
+  }
+}

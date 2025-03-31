@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QA Frequently Ask Questions(FAQ)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        header {
+            background-color:#f5a142; /* Bootstrap primary blue */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Ensure numbering appears in the accordion */
+        .accordion-item {
+            counter-increment: section;
+        }
+
+        .accordion-header button::before {
+            content: counter(section) ". ";
+            font-weight: bold;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <!-- Header Section -->
+    <header>
+        QA Frequently Ask Questions(FAQ)
+    </header>
+
+    <div class="container mt-4">
+        <div class="accordion mt-4" id="qaAccordion">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                       <b> FunderSchemeType</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#qaAccordion">
+                    <div class="accordion-body">
+                        <p>funderSchemeType": "Networking" - this will be available at source. Need to put appropriate value.
+                            the type of funding provided for an award, as stated in the announcement. It is 
+                            determined from the original funder text, which may appear in the program area, title, category, or 
+                            section headings. This helps classify awards into specific 
+                            grant types for accurate data capture.<br>
+                          <b>Example: </b>  "grantType": GRANT and "funderSchemeType": Standard Research Grant Figure 61 -
+                             An NSF award, capture the amount 43993. Figure 62 - CIHR Award, capture 242472 as totalAmount and 
+                             four different installment amounts per fiscal year respectively.
+                             Funding Data Capture Guidelines - JSON Version 7.8 ©Elsevier 79 
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                       <b> keyword</b>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+                    <div class="accordion-body">
+                        <p>Each Keyword should be individual,
+                            "keyword": ["language": "en",  "value": "Cultural narratives"] Do not create Keyword by your own capture
+                             the keyword only  if they  available in the site.FB can also refer to tags, topics, categories, 
+                             areas, and subjects. Capture the English keywords first and other language keywords when available,
+                              except for during
+                             automated awards capture.<br><br>
+                        <b> Example:</b>   Keyword [
+{
+	"language": "en",
+	"value": "architecture culture"
+	
+},<br>
+{
+	 "language": "en",
+	 "value": "economic development"
+	 
+}
+]
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                    <b>ASJC codes</b>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+                    <div class="accordion-body">
+                       <p> <b>Asjc code were missing </b>so for that  Supplier assigns a maximum of eight codes according to the
+                         rules.See ASJC Codes List for the 
+                        complete list of ASJC codes<br>
+                        ASJC codes classify research opportunities based on subject areas, with up to eight codes assigned. 
+                        First, read the full announcement and extract keywords from the title, synopsis, and funding body details. 
+                        Then, match relevant subcategories from the ASJC Codes List. If more than eight codes apply, use top-level 
+                        “00” codes to group disciplines. Assign general codes only if the
+                         announcement explicitly supports all scientific research.<br>
+                         <b>Example:</b><br>
+                         classification":[
+                         {
+                             "type":"Classification",
+                             "hasSubject":{
+                                 "preferredLabel":"Agronomy and Crop Science",
+                                 "orgSpecificClassification":"NOT FOUND",
+                                 "identifier":{"type":"ASJC","value":"1102"}
+                                }
+
+                                },
+                         
+                    
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        <b>Currency</b>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+                    <div class="accordion-body">
+                        <p> currency contains a value
+                            indicating the award currency. If the currency type is not specified, 
+                            use the currency for the country of the FB awarding
+                            the opportunity or award.<br>
+                            <b> Example: </b>currency": "NZD",
+                            "amount": 45000 The source is from NSW, Australia. Hence the currency value should be AUD.
+                             Not NZD.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                        <b>fundingBodyAwardId</b>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+                    <div class="accordion-body">
+                        Identifier used by a funder to uniquely identify specific awarded grants. Special care should be taken 
+                        as many funders refer to awards as funded projects. <br>
+                        MCSON-20-102_agency_Marie Curie<br>
+                        MCRGS-20171219-8004_agency_Marie Curie<br>
+                        <b>Example</b> Correct Data:MCSON-20-102<br>
+                        MCRGS-20171219-8004
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                        <b>awardeeAffiliationId- critical</b>
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+                    <div class="accordion-body">
+                       <p>awardeeAffiliationId" not found,awardeeAffiliationId is a generated identifier for each institution given 
+                        an award. The supplier creates the awardeeaffiliationId value by capturing the grantAwardId value, followed
+                         by _A_(sequence number), where sequence number begins at "0" <br>
+                        <b> example: </b><br>
+                        "awardeeAffiliationId": "100009932169_A_0" <br>
+                        "awardeeAffiliationId": "100009932170_A_1"</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Accordion Item 7 -->
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                        <b>awardeePersonId</b>
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+                    <div class="accordion-body">
+                        <b> awardeePersonId not found."awardeePersonId": "NOT FOUND",</b>
+                            "name": [
+                              {
+                                "language": "en",
+                                "value": "Jason Taylor"
+                              }]
+                     It was a quote by Jason taylor who is an artist. NOT AWARDEE.  <br>
+                     awardeePersonId is a generated identifier for each instance of an awarded person 
+                            or researcher. The supplier creates the awardeePersonId value by capturing the grantAwardId value, followed 
+                            by _P_(sequence number), where sequence number begins at "0" <br>
+                          <b>Example: </b>  "awardeePersonId": "100009932169_P_0" <br>
+                            "awardeePersonId": "100009932170_P_1”
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                        <b>awardeeDetail -critical </b>
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+                    <div class="accordion-body">
+                    <p>awardeeDetails to be dealt differently as mentioned<br>
+                    
+                   Awardee Detail stores information about award recipients, which can be individuals or institutions. 
+                 If multiple awardees exist, each is recorded separately. For institutions, the name is captured as it 
+                appears in the source using StringWithLanguage, 
+                including language variations if available.<br>
+            <b>Example:</b> {
+                "awardeeAffiliationId": "501434069253_A_0",
+                "name": [
+                  {
+                    "language": "en",
+                    "value": "RMIT University"
+                  }	
+                ],
+                "role": "COORDINATOR",
+                "identifier": [
+                  {
+                    "type": "SCOPUSINSTITUTIONID",
+                    "value": "60011362",
+                    "hasProvenance": {
+                      "wasAttributedTo": "mHub",
+                      "createdOn": "2024-08-26T03:13:40",
+                      "lastUpdatedOn": "2024-08-26T03:13:40",
+                      "derivedFrom": "501434069253",
+                      "version": "1"
+                    }
+                  }
+                ],
+                "activityType": "Research Organization",
+                "affiliationOf": [
+                  {
+                    "awardeePersonId": "501434069253_P_1",
+                    "name": [
+                      {
+                        "language": "en",
+                        "value": "Elena Ivanova"
+                      }
+                    ],
+                    "role": "PI",
+                    "initials": "E.",
+                    "givenName": "Elena",
+                    "familyName": "Ivanova",
+                    "identifier": [
+                      {
+                        "type": "SCOPUSAUTHORID",
+                        "value": "7201869966",
+                        "hasProvenance": {
+                          "wasAttributedTo": "mHub",
+                          "createdOn": "2024-08-26T03:13:40",
+                          "lastUpdatedOn": "2024-08-26T03:13:40",
+                          "derivedFrom": "501434069253",
+                          "version": "1"
+                        }
+                    </b></p>
+                    </div>
+                </div>
+            </div>
+
+              <!-- Accordion Item 9-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                        <b>homePage*(Link) critical</b>
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+                    <div class="accordion-body">
+                        <p> HomePage is used to capture the source URL from which the opportunity or grant information 
+                            was obtained. In the property link, capture the URL that points to the webpage 
+                            containing the official overview of the opportunity or grant<br>
+                            <b>Example: </b>"link" : "https://www.grants.gov/web/grants/view-opportunity.html?oppId=320798",
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Accordion Item 10-->
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
+                      <b>Role</b>
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+                    <div class="accordion-body">
+                       <p>role is used to indicate the role of the awarded institution 
+                        in the project if provided by the FB. <br>
+                         The default value is "COORDINATOR".<br>
+                        Values can be only "COORDINATOR", "PARTICIPANT", "COLLABORATOR"<br>
+                        <b>Example</b><br> 
+                        "funderSchemeType": "Ulysses"
+                         "awardeeDetail": [
+                            {
+                              "awardeeAffiliationId": "806144534_A_0",
+                              "name": [
+                                {
+                                  "language": "en",
+                                  "value": "University of Galway"
+                                }
+                              ],
+                              "role": "COORDINATOR",
+                              "identifier": [
+                                {
+                                  "type": "SCOPUSINSTITUTIONID",
+                                  "value": "60008539",
+                                  "hasProvenance": {
+                                    "wasAttributedTo": "mHub",
+                                    "createdOn": "2024-05-19T17:03:01",
+                                    "lastUpdatedOn": "2024-05-19T17:03:01",
+                                    "derivedFrom": "806144534",
+                                    "version": "1"
+                                  }
+                                }
+                              ],
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 11 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven">
+                        <b>modifiedDate</b>
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+                    <div class="accordion-body">
+                      <p>Do not capture this property when the opportunity or grant does not 
+                        contain information about a modification date.</p>
+                        <p>modifiedDate contains the date the opportunity or grant record was modified on the sponsor website. 
+                            Variations include date updated, date revised, and last update.<br>
+                        <b>Example: </b>"modifiedDate": "2019-09-20T01:00:00"</p>
+
+                    </div>
+                </div>
+            </div>
+ <!-- Accordion Item 12 -->
+ <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTweleve">
+            <b>publishedDate</b>
+        </button>
+    </h2>
+    <div id="collapseTweleve" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+        <div class="accordion-body">
+         <p>Do not capture this property when the opportunity or grant does not contain 
+            information about a modification date.</p>
+            publishedDate contains the date the opportunity or grant was released (first made public) 
+            by the funder. Variations include: release date, 
+            posted date, publication date, and created date.<br>
+            <b>Example</b>"publishedDate": "2019-09-20T01:00:00",
+        </div>
+    </div>
+</div>
+
+<!-- Accordion Item 13 -->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen">
+            <b>Awardee</b>
+        </button>
+    </h2>
+    <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+        <div class="accordion-body">
+          <p>Awardees within the institution who received the award or will work on the funded project are 
+            captured in the property affiliationOf.
+            Awardees within the institution who received the award or will work on the funded project 
+            are captured in the property affiliationOf.</p>
+            <b>Example:</b>example. Note: When updating granted awards, the designated PI 
+            could change for many reasons, best practice is to capture the current PI as the PI and move 
+            previous PI to coPI. This method is used for NIH awards. Note: If the source indicates multiple
+             affiliations without direct link to the awardee person, 
+            supplier captures "Not available" in the property affiliationOf.
+            <b>If only person awardees are mentioned without an institution affiliation, supplier captures 
+            "Not available" in the property affiliationOf.</b >
+        </div>
+    </div>
+</div>
+
+<!-- Accordion Item 14 -->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen">
+            <b>Person awardee type: role</b>
+        </button>
+    </h2>
+    <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+        <div class="accordion-body">
+          <p><b>Example:</b>"PI" The "PI" is the principal or primary investigator. The principal investigator 
+            is the project leader who is (legally) responsible for the research project. The PI may share 
+            responsibility with co-principal investigators; each is captured in a separate affiliationOf property.. 
+            A project may have more than one PI; each is captured in a separate affiliationOf property.<br>
+            "PI" The "PI" is the principal or primary investigator. The principal investigator is the project leader 
+            who is (legally) responsible for the research project. 
+            The PI may share responsibility with co-principal investigators; each is captured in a separate affiliationOf property.. A project may have more than one PI; 
+            each is captured in a separate affiliationOf property.<br>
+            "coPI" The "coPI" is the co-principal investigator. Together with the PI, co-principal investigators are (legally) responsible for the research project. A project may have several co-principal investigators; 
+            each is captured in a separate affiliationOf property. <br>
+            "PS" The "PS" is the primary supervisor. This person is supervising the research project. 
+            Use if the source mentions this role. 
+           
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Accordion Item 15 -->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen">
+            <b>Classification</b>
+        </button>
+    </h2>
+    <div id="collapseFifteen" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+        <div class="accordion-body">
+          <p>Classification contains classification types and codes for an opportunity or award.
+             Classifications refers to the vocabularies that are applied to opportunities or awards in order to 
+             classify or categorize these records on their type, research area, funding mechanism, or focus area. Property 
+            type indicates the type of classifications captured. </p>
+             two main types: 
+                Annotation,Classification<br>
+                <b> Example</b> 
+                "classification" : [
+                {"type": "Annotation",
+                 "hasSubject": {
+                 "preferredLabel": "Multidisciplinary",
+                 "identifier": {"value": "1000", "type": "ASJC"}}}
+                 {"type": "Classification",
+                 "hasSubject": {
+                 "preferredLabel": "Mathematical and Physical Sciences",
+                 "identifier": {"value": "47.049", "type": "CFDA"}}}]
+                
+        </div>
+    </div>
+</div>
+<!-- Accordion Item 16 -->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen">
+            <b>Notice Date</b>
+        </button>
+    </h2>
+    <div id="collapseSixteen" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+        <div class="accordion-body">
+        <p>
+            If not available, need not be populated
+             noticeDate contains the date on which the decision is made or published. 
+        </p>
+        </div>
+    </div>
+</div>
+<!-- Accordion Item 17 -->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen">
+            <b>Start Date, End Date
+                </b>
+        </button>
+    </h2>
+    <div id="collapseSeventeen" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+        <div class="accordion-body">
+        <p> In Which date the Project start and same for Project end date.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Accordion Item 18 -->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen">
+            <b> Copyright source</b>
+        </button>
+    </h2>
+    <div id="collapseEighteen" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+        <div class="accordion-body">
+        <p> Some FBs require that Elsevier cite the FB license when using their data in a commercial product. Use property 
+            licenseInformation to capture information attributing the data to the FB. Capture all data in the
+             available fields.<br>
+    
+            </p>
+            <b>Example:</b>
+            "licenseInformation": [{ "abstract": { "language": "en", "value": "© European Union"} 
+            "source": https://cordis.europa.eu/about/legal/en}]
+        </div>
+    </div>
+</div>
+<!-- Accordion Item 19 -->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen">
+            <b>grantType -Critical</b>
+        </button>
+    </h2>
+    <div id="collapseNineteen" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+        <div class="accordion-body">
+        <p>grantType is used to capture the value most relevant to the award type
+            Property grantType contains only the opportunity type that is distributed by the funder
+             in a structured manner. </p>
+        </div>
+    </div>
+</div>
+<!-- Accordion Item 20 -->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwenty">
+            <b>relatedFunder* -critical</b>
+        </button>
+    </h2>
+    <div id="collapseTwenty" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+        <div class="accordion-body">
+        <p>For relatedFunder, capture FBs that have financed the award that resulted in this publication, such as: 
+            leadfunder, hasFunder <br>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Accordion Item 21-->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyone">
+            <b>hasProvenance</b>
+        </button>
+    </h2>
+    <div id="collapseTwentyone" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+        <div class="accordion-body">
+        <p>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Accordion Item 22-->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentytwo">
+            <b>Awardee person names -critical</b>
+        </button>
+    </h2>
+    <div id="collapseTwentytwo" class="accordion-collapse collapse" data-bs-parent="#qaAccordion">
+        <div class="accordion-body">
+        <p>
+            Capture the name of the awardee as in the source.
+Make source if you  understand the first and last name correctly for a person ,
+ General rule person name after a comma will be the first name.<br>
+ <b>Example:</b>Prof latham, John
+
+            </p>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
+

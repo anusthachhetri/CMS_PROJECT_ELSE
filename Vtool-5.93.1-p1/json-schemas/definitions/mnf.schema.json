@@ -1,0 +1,249 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Schema containing the generic manifest propertie using mnf:namespace",
+  "definitions": {
+    "mnf:hasServiceOutput": {
+      "title": "All mnf:ServiceOutput objects of a mnf:Manifest",
+      "type": "array",
+      "items": {"$ref": "#/definitions/ServiceOutputObject"}
+    },
+    "ServiceOutputObject": {
+      "title": "Service output object",
+      "description": "Service Output object properties",
+      "type": "object",
+      "required": [
+        "@id",
+        "@type",
+        "mnf:hasFile"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "@type": {"$ref": "#/definitions/typeIsMnfServiceOutput"},
+        "@context": {
+          "type": [
+            "array",
+            "object"
+          ],
+          "items": {"type": [
+            "object",
+            "string"
+          ]}
+        },
+        "@id": {"$ref": "#/definitions/@URIid"},
+        "prov:wasAttributedTo": {"$ref": "#/definitions/prov:wasAttributedTo"},
+        "prov:generatedAtTime": {"$ref": "#/definitions/prov:generatedAtTime"},
+        "prov:wasGeneratedBy": {"$ref": "#/definitions/prov:wasGeneratedBy"},
+        "dct:title": {"$ref": "#/definitions/dct:title"},
+        "dct:description": {"$ref": "#/definitions/dct:description"},
+        "mnf:hasFile": {"$ref": "#/definitions/mnf:hasFile"},
+        "mnf:hasSequence": {"$ref": "#/definitions/mnf:hasSequence"},
+        "mnf:hasCO": {"$ref": "#/definitions/mnf:hasCO"}
+      }
+    },
+    "mnf:hasSequence": {
+      "title": "sequence of any set objects as defined in the mnf:ServiceOutput.",
+      "type": "array",
+      "required": ["@list"],
+      "properties": {"@list": {"type": "array"}}
+    },
+    "mnf:hasFile": {
+      "title": "Manifest assets in the payload",
+      "description": "array of asset objects",
+      "type": "array",
+      "items": {"$ref": "#/definitions/FileObject"}
+    },
+    "FileObject": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "@type",
+        "@id"
+      ],
+      "properties": {
+        "@type": {"anyOf": [
+          {"$ref": "#/definitions/typeIsMnfFile"},
+          {
+            "type": "array",
+            "items": [{"type": "string"}]
+          }
+        ]},
+        "dct:isFormatOf": {"$ref": "#/definitions/dct:isFormatOf"},
+        "prism:byteCount": {"$ref": "#/definitions/prism:byteCount"},
+        "dct:format": {"$ref": "#/definitions/dct:format"},
+        "bam:assetVersion": {"$ref": "#/definitions/bam:assetVersion"},
+        "prov:generatedAtTime": {"$ref": "#/definitions/prov:generatedAtTime"},
+        "prov:wasGeneratedBy": {"$ref": "#/definitions/prov:wasGeneratedBy"},
+        "prov:wasAttributedTo": {"$ref": "#/definitions/prov:wasAttributedTo"},
+        "dct:requires": {"$ref": "#/definitions/dct:requires"},
+        "bam:pixelsHigh": {"$ref": "#/definitions/bam:pixelsHigh"},
+        "bam:pixelsWide": {"$ref": "#/definitions/bam:pixelsWide"},
+        "bam:duration": {"$ref": "#/definitions/bam:duration"},
+        "dct:conformsTo": {"$ref": "#/definitions/dct:conformsTo"},
+        "bam:filename": {"$ref": "#/definitions/bam:filename"},
+        "bam:pageCount": {"$ref": "#/definitions/bam:pageCount"}
+      }
+    },
+    "mnf:hasCO": {
+      "title": "Array of all COs",
+      "description": "Array of all COs to be created by Service contributing to the Manifest",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "@type",
+          "@id"
+        ],
+        "properties": {
+          "@type": {
+            "type": "string",
+            "pattern": "^mnf:CO$"
+          },
+          "@id": {"$ref": "#/definitions/@URIid"},
+          "dct:type": {"$ref": "#/definitions/dct:type"},
+          "dct:title": {"$ref": "#/definitions/dct:title"},
+          "bam:subtype": {"$ref": "#/definitions/bam:subtype"},
+          "bam:label": {"$ref": "#/definitions/bam:label"},
+          "dct:isPartOf": {"$ref": "#/definitions/dct:isPartOf"}
+        }
+      }
+    },
+    "@URIid": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@Stringid": {"type": "string"},
+    "typeIsMnfManifest": {
+      "type": "string",
+      "pattern": "^mnf:Manifest$"
+    },
+    "typeIsMnfServiceOutput": {
+      "description": "@type of ServiceOutput is a string or a array of strings; first one must be mnf:ServiceOutput",
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^mnf:ServiceOutput$"
+        },
+        {
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "enum": ["mnf:ServiceOutput"]
+            },
+            {"type": "string"}
+          ],
+          "additionalItems": false
+        }
+      ]
+    },
+    "typeIsMnfFile": {
+      "type": "string",
+      "pattern": "^mnf:File$"
+    },
+    "typeIsMnfAsset": {
+      "type": "string",
+      "pattern": "^mnf:Asset$"
+    },
+    "contextIsMnf": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "^http://vtw.elsevier.com/metadata/context.jsonld$"
+        },
+        {
+          "type": "object",
+          "required": ["mnf"],
+          "additionalItems": false,
+          "properties": {"mnf": {"pattern": "^http://vtw.elsevier.com/data/ns/Formats/Manifest-1/$"}}
+        }
+      ]
+    },
+    "bam:assetType": {
+      "title": "type of asset",
+      "description": "value is always UPPERCASE",
+      "type": "string",
+      "pattern": "^[A-Z\\-]*$"
+    },
+    "bam:assetVersion": {
+      "title": "md5 of asset",
+      "type": "string"
+    },
+    "bam:duration": {"type": "integer"},
+    "bam:filename": {
+      "title": "name",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bam:label": {"type": "string"},
+    "bam:pageCount": {
+      "title": "page count",
+      "description": "https://confluence.cbsels.com/display/VUD/bam%3ApageCount",
+      "type": "integer",
+      "minimum": 1
+    },
+    "bam:pixelsHigh": {"type": "integer"},
+    "bam:pixelsWide": {"type": "integer"},
+    "bam:subtype": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^http://data.elsevier.com/vocabulary/.*$"
+    },
+    "prov:generatedAtTime": {
+      "title": "date-time of creation of asset",
+      "type": "string",
+      "format": "date-time"
+    },
+    "prov:wasGeneratedBy": {
+      "title": "date-time of creation",
+      "type": "string",
+      "format": "uri"
+    },
+    "prov:wasAttributedTo": {
+      "title": "date-time of creation",
+      "type": "string",
+      "format": "uri"
+    },
+    "dct:conformsTo": {
+      "title": "Standards that assets conforms to",
+      "type": "string"
+    },
+    "dct:description": {"type": "string"},
+    "prism:byteCount": {
+      "title": "byte count",
+      "type": "integer"
+    },
+    "dct:format": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "pattern": "^[a-z0-9]*/[A-z0-9\\-\\.\\+]*$"
+    },
+    "dct:isFormatOf": {
+      "title": "CO of asset",
+      "type": "string"
+    },
+    "dct:isPartOf": {
+      "type": ["array"],
+      "items": [{
+        "type": "string",
+        "format": "uri"
+      }]
+    },
+    "dct:title": {
+      "title": "title",
+      "type": "string"
+    },
+    "dct:type": {
+      "title": "content type",
+      "type": "string",
+      "format": "uri",
+      "pattern": "^http://data.elsevier.com/vocabulary/.*$"
+    },
+    "dct:requires": {"type": "array"}
+  }
+}

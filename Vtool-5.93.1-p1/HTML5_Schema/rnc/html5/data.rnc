@@ -1,0 +1,67 @@
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+
+# #####################################################################
+
+##  RELAX NG Schema for HTML 5: Static Data Markup                    #
+# #####################################################################
+## Time: <time>
+time.elem = element time { time.inner & time.attrs }
+time.attrs = common.attrs & common.attrs.aria?
+time.inner = text
+# Cannot enforce textContent format here
+
+## Time with datetime attribute: <time datetime>
+time.datetime.elem = element time { time.datetime.inner & time.datetime.attrs }
+time.datetime.attrs = common.attrs & time.attrs.datetime & common.attrs.aria?
+time.attrs.datetime = attribute datetime { xsd:dateTime }
+time.datetime.inner = common.inner.phrasing
+
+## Data: <data>
+data.elem = element data { data.inner & data.attrs }
+data.attrs = common.attrs & data.attrs.value & common.attrs.aria?
+data.attrs.value = attribute value { string }
+data.inner = common.inner.phrasing
+
+## Scalar Gauge: <meter>
+meter.elem = element meter { meter.inner & meter.attrs }
+meter.attrs =
+  common.attrs
+  & meter.attrs.value
+  & meter.attrs.min?
+  & meter.attrs.low?
+  & meter.attrs.high?
+  & meter.attrs.max?
+  & meter.attrs.optimum?
+  & (common.attrs.aria.implicit.progressbar | common.attrs.aria.role.progressbar)?
+meter.attrs.value =
+  attribute value {
+    # common.data.float
+    xsd:string { pattern = "-?[0-9]+(\.[0-9]+)?([eE]-?[0-9]+)?" }
+  }
+meter.attrs.min =
+  attribute min {
+    # common.data.float
+    xsd:string { pattern = "-?[0-9]+(\.[0-9]+)?([eE]-?[0-9]+)?" }
+  }
+meter.attrs.low =
+  attribute low {
+    # common.data.float
+    xsd:string { pattern = "-?[0-9]+(\.[0-9]+)?([eE]-?[0-9]+)?" }
+  }
+meter.attrs.high =
+  attribute high {
+    # common.data.float
+    xsd:string { pattern = "-?[0-9]+(\.[0-9]+)?([eE]-?[0-9]+)?" }
+  }
+meter.attrs.max =
+  attribute max {
+    # common.data.float
+    xsd:string { pattern = "-?[0-9]+(\.[0-9]+)?([eE]-?[0-9]+)?" }
+  }
+meter.attrs.optimum =
+  attribute optimum {
+    # common.data.float
+    xsd:string { pattern = "-?[0-9]+(\.[0-9]+)?([eE]-?[0-9]+)?" }
+  }
+meter.inner = common.inner.phrasing
+# Cannot enforce textContent format here

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Source Metadata</title>
+    <style>
+        /* Basic reset */
+        body, h1, h2, form {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #f5a142;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color:#f5a142;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        /* Form container styling */
+        .form-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 30px;  /* Horizontal gap of 30px and vertical gap of 20px */
+            max-width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;  /* Increased padding for better input appearance */
+            margin-bottom: 20px;  /* Adds spacing between fields */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            grid-column: span 2;
+            padding: 12px;
+            background-color:#f5a142;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;  /* Adds space above the button */
+        }
+
+        button:hover {
+            background-color: #e3ba88;
+        }
+
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <!-- Header -->
+    <header>
+        <h1>Source Information  Input</h1>
+    </header>
+
+    <!-- Form Container -->
+    <div class="form-container">
+        <h2>Enter Source Metadata</h2>
+
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+           
+            {% comment %} <div>
+                <label for="import_url">URL:</label>
+                {{ form.import_url }}
+            </div> {% endcomment %}
+            <div>
+                <label for="import_url">URL:</label>
+                <input type="url" name="import_url" id="import_url" value="{{ form.import_url.value }}" required>
+            </div>
+            
+            <div>
+                <label for="date_of_arrival">Date of Arrival:</label>
+                {{ form.date_of_arrival }}
+            </div>
+
+            <div>
+                <label for="assigned_to">Assigned SME:</label>
+                {{ form.assigned_to }}
+            </div>
+
+            <div>
+                <label for="frequency_of_site_updates">Frequency of Site Updates:</label>
+                {{ form.frequency_of_site_updates }}
+            </div>
+
+            <div>
+                <label for="site_last_checked">Site Last Checked:</label>
+                {{ form.site_last_checked }}
+            </div>
+
+            <div>
+                <label for="source_file_upload">Award Mapping Source File </label>
+                {{ form.source_file_upload }}
+            </div>
+
+            <div>
+                <label for="json_file_name">JSON File Name:</label>
+                {{ form.json_file_name }}
+            </div>
+
+            <div>
+                <label for="json_upload_date">JSON Upload Date:</label>
+                {{ form.json_upload_date }}
+            </div>
+
+            <div>
+                <label for="sup_id">SUP ID:</label>
+                {{ form.sup_id }}
+            </div>
+
+            <div>
+                <label for="sme_comments">SME Comments:</label>
+                {{ form.sme_comments }}
+            </div>
+
+            <div>
+                <label for="screenshots_taken">Screenshots Taken:</label>
+                {{ form.screenshots_taken }}
+            </div>
+
+            <!-- New Fields for QA -->
+            <div>
+                <label for="qa_comment">QA Comment:</label>
+                {{ form.qa_comment }}
+            </div>
+
+            <div>
+                <label for="qa_name">QA Name:</label>
+                {{ form.qa_name }}
+            </div>
+            <div>
+                <label for="file_status">File Status</label>
+                {{ form.file_status }}
+            </div>
+            <div>
+                <label for="qa_issue">QA Issue:</label>
+                {{ form.qa_issue }}
+            </div>
+           
+
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>2024 JSON App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

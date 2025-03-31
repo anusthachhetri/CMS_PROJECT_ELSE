@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="ViewLog.xsl"?><LogReport xmlns:vt="http://www.elsevier.com/xml/apps/qc/v" filename="X:\json_project_1\jsonfolder\D_2_cleaned.json"><Log filename="X:\json_project_1\jsonfolder\D_2_cleaned.json"><time>Vtool:5.93.1 run at Fri Feb 07 12:40:54 IST 2025</time>
+<command-line-options>-file "X:\json_project_1\jsonfolder\D_2_cleaned.json" -log "X:\json_project_1\jsonfolder\file_t.txt" -vjson "grant"</command-line-options>
+<results><message file="X:\json_project_1\jsonfolder\D_2_cleaned.json" id="grant-parser" type="error">com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDateTime` from String "01-01-2024": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '01-01-2024' could not be parsed at index 0</message>
+<message id="GWH-GRT106a" type="error" position="[0]$['startDate']" record-id="89152238">The date is not properly formatted.</message>
+<total-errors>2</total-errors>
+<total-warnings>0</total-warnings>
+<total-skipped-checks>0</total-skipped-checks>
+</results>
+<time>Vtool:5.93.1 run at Fri Feb 07 12:42:42 IST 2025</time>
+</Log>
+</LogReport>

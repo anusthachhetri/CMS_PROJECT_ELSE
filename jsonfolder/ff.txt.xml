@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="ViewLog.xsl"?><LogReport xmlns:vt="http://www.elsevier.com/xml/apps/qc/v" filename="X:\json_project_1\jsonfolder\Burdett_Trust_for_Nursing_Source 1.json"><Log filename="X:\json_project_1\jsonfolder\Burdett_Trust_for_Nursing_Source 1.json"><time>Vtool:5.93.1 run at Wed Feb 19 18:16:30 IST 2025</time>
+<command-line-options>-file "X:\json_project_1\jsonfolder\Burdett_Trust_for_Nursing_Source 1.json" -log "X:\json_project_1\jsonfolder\ff.txt" -vjson "grant"</command-line-options>
+<results><message file="X:\json_project_1\jsonfolder\Burdett_Trust_for_Nursing_Source 1.json" id="grant-parser" type="error">net.minidev.json.JSONArray cannot be cast to net.minidev.json.JSONObject</message>
+<message id="GWH-GRT110" type="error">This document contains carriage return characters.</message>
+<total-errors>2</total-errors>
+<total-warnings>0</total-warnings>
+<total-skipped-checks>0</total-skipped-checks>
+</results>
+<time>Vtool:5.93.1 run at Wed Feb 19 18:16:35 IST 2025</time>
+</Log>
+</LogReport>
