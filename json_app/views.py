@@ -22,6 +22,15 @@ def home(request):
 
 
 
+#######################tool csv to json creator###################
+from django.shortcuts import render
+
+def csv_to_json_view(request):
+    return render(request, 'csv_json_converter.html')
+
+
+
+
 #####################scrapper tool#######################################################
 ######################################################################################3
 
@@ -2711,12 +2720,20 @@ def file_ingestion(request):
                     url += "/bulk"
 
                 headers = {
-                    "accept": "application/json",
+                    "accept": "application/json",  
                     "callbackUrl": "https://callbackapi-elsevier.mpsinsight.com/callbackapi/callback",
-                    "Content-Type": "application/json",
+                    "Content-Type": "application/json", 
                     "batchId": batch_id,
                     "Authorization": f"Bearer {global_token}",
                 }
+                
+                # headers = {
+                #     "accept": "application/json",  
+                #     "callbackUrl": "https://callbackapi-elsevier.mpsinsight.com/callbackapi/callback",
+                #     "batchId": batch_id,
+                #     "Content-Type": "text/plain", 
+                #     "Authorization": f"Bearer {global_token}",
+                # }                
 
                 try:
                     response = requests.post(url, headers=headers, data=file.read())
@@ -2796,17 +2813,88 @@ def store_ingestion_details(user_name, ingestion_id, ingestion_item_id, batch_id
 ####################code for displaying ingestion details in table view in ui##################################
 from django.shortcuts import render
 from .models import IngestionLog
+from django.contrib.auth.decorators import login_required
+from datetime import datetime, time
+from django.utils.dateparse import parse_date
 
 @login_required
 def ingestion_logs_view(request):
-    # Fetch all ingestion logs from the database
+    start_date = request.GET.get('start_date')
+    end_date = request.GET.get('end_date')
     ingestion_logs = IngestionLog.objects.all()
+    filtered = False
+
+    if start_date:
+        from datetime import datetime, time
+        from django.utils.dateparse import parse_date
+        start = parse_date(start_date)
+        if start:
+            ingestion_logs = ingestion_logs.filter(created_at__gte=datetime.combine(start, time.min))
+            filtered = True
+
+    if end_date:
+        end = parse_date(end_date)
+        if end:
+            ingestion_logs = ingestion_logs.filter(created_at__lte=datetime.combine(end, time.max))
+            filtered = True
 
     context = {
-        'ingestion_logs': ingestion_logs
+        'ingestion_logs': ingestion_logs,
+        'start_date': start_date,
+        'end_date': end_date,
+        'filtered': filtered,
     }
     return render(request, 'ingestion_logs.html', context)
 
+################download button #####################
+
+
+def download_ingestion_logs(request):
+    start_date_str = request.GET.get('start_date')
+    end_date_str = request.GET.get('end_date')
+
+    logs = IngestionLog.objects.all()
+
+    if start_date_str:
+        start_date = parse_date(start_date_str)
+        if start_date:
+            start_datetime = datetime.combine(start_date, time.min)
+            logs = logs.filter(created_at__gte=start_datetime)
+
+    if end_date_str:
+        end_date = parse_date(end_date_str)
+        if end_date:
+            end_datetime = datetime.combine(end_date, time.max)
+            logs = logs.filter(created_at__lte=end_datetime)
+
+    logs = logs.values(
+        'ingestion_id', 'ingestion_item_id', 'batch_id', 'status', 'created_at'
+    )
+
+    df = pd.DataFrame(list(logs))
+
+    if df.empty:
+        return HttpResponse("No data available for the selected date range.", content_type="text/plain")
+
+    df['created_at'] = pd.to_datetime(df['created_at']).dt.tz_localize(None)
+
+    df.rename(columns={
+        'ingestion_id': 'Ingestion ID',
+        'ingestion_item_id': 'Ingestion Item ID',
+        'batch_id': 'Batch ID',
+        'status': 'Status',
+        'created_at': 'Timestamp'
+    }, inplace=True)
+
+    response = HttpResponse(
+        content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+    )
+    response['Content-Disposition'] = 'attachment; filename="ingestion_logs.xlsx"'
+
+    with pd.ExcelWriter(response, engine='openpyxl') as writer:
+        df.to_excel(writer, index=False, sheet_name='Ingestion Logs')
+
+    return response
 
 
 
@@ -3114,18 +3202,104 @@ def reserve_ingestion_log(user_name, ingestion_id, ingestion_item_id, batch_id):
     )
 
 ####################code for displaying ingestion details in table view in ui##################################
+# from django.shortcuts import render
+# from .models import IngestProd
+
+# @login_required
+# def ingest_prod_view(request):
+#     """Fetch all ingestion logs and render them in a table UI."""
+#     ingest_logs = IngestProd.objects.all()  # Get logs sorted by latest entries
+
+#     context = {
+#         "ingest_logs": ingest_logs
+#     }
+#     return render(request, "ingest_prod_logs.html", context) 
 from django.shortcuts import render
 from .models import IngestProd
+from django.contrib.auth.decorators import login_required
+from datetime import datetime, time
+from django.utils.dateparse import parse_date
 
 @login_required
 def ingest_prod_view(request):
-    """Fetch all ingestion logs and render them in a table UI."""
-    ingest_logs = IngestProd.objects.all()  # Get logs sorted by latest entries
+    start_date = request.GET.get('start_date')  
+    end_date = request.GET.get('end_date')
+    ingest_logs = IngestProd.objects.all()
+    filters = False
+
+    if start_date:
+        from datetime import datetime, time
+        from django.utils.dateparse import parse_date
+        start = parse_date(start_date)
+        if start:
+            ingest_logs = ingest_logs.filter(created_at__gte=datetime.combine(start, time.min))
+            filters = True
+
+    if end_date:
+        end = parse_date(end_date)
+        if end:
+            ingest_logs = ingest_logs.filter(created_at__lte=datetime.combine(end, time.max))
+            filters = True
 
     context = {
-        "ingest_logs": ingest_logs
+        'ingest_logs': ingest_logs,
+        'start_date': start_date,
+        'end_date': end_date,
+        'filters': filters,
     }
-    return render(request, "ingest_prod_logs.html", context) 
+    return render(request, 'ingest_prod_logs.html', context)
+
+################download button #####################
+
+
+def download__Prod_ingestion_logs(request):
+    start_date_str = request.GET.get('start_date')
+    end_date_str = request.GET.get('end_date')
+
+    logs = IngestProd.objects.all()
+
+    if start_date_str:
+        start_date = parse_date(start_date_str)
+        if start_date:
+            start_datetime = datetime.combine(start_date, time.min)
+            logs = logs.filter(created_at__gte=start_datetime)
+
+    if end_date_str:
+        end_date = parse_date(end_date_str)
+        if end_date:
+            end_datetime = datetime.combine(end_date, time.max)
+            logs = logs.filter(created_at__lte=end_datetime)
+
+    logs = logs.values(
+        'ingestion_id', 'ingestion_item_id', 'batch_id', 'status', 'created_at'
+    )
+
+    df = pd.DataFrame(list(logs))
+
+    if df.empty:
+        return HttpResponse("No data available for the selected date range.", content_type="text/plain")
+
+    df['created_at'] = pd.to_datetime(df['created_at']).dt.tz_localize(None)
+
+    df.rename(columns={
+        'ingestion_id': 'Ingestion ID',
+        'ingestion_item_id': 'Ingestion Item ID',
+        'batch_id': 'Batch ID',
+        'status': 'Status',
+        'created_at': 'Timestamp'
+    }, inplace=True)
+
+    response = HttpResponse(
+        content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+    )
+    response['Content-Disposition'] = 'attachment; filename="ingest_logs.xlsx"'
+
+    with pd.ExcelWriter(response, engine='openpyxl') as writer:
+        df.to_excel(writer, index=False, sheet_name='Ingestion Prod Logs')
+
+    return response
+
+
 
 
 
@@ -3335,38 +3509,38 @@ def dashboard_view(request):
 
 #json creator  code ##############################
 
-import os
-import json
-from django.shortcuts import render
-from .forms import CSVInputForm
-from .utils import process_csv_to_json
-@login_required
-def upload_file(request):
-    if request.method == 'POST':
-        form = CSVInputForm(request.POST, request.FILES)  # Include request.FILES
-        if form.is_valid():
-            csv_file = form.cleaned_data['csv_file']  # Get the uploaded file
-            output_directory = form.cleaned_data['output_directory']
+# import os
+# import json
+# from django.shortcuts import render
+# from .forms import CSVInputForm
+# # from .utils import process_csv_to_json
+# @login_required
+# def upload_file(request):
+#     if request.method == 'POST':
+#         form = CSVInputForm(request.POST, request.FILES)  # Include request.FILES
+#         if form.is_valid():
+#             csv_file = form.cleaned_data['csv_file']  # Get the uploaded file
+#             output_directory = form.cleaned_data['output_directory']
 
-            os.makedirs(output_directory, exist_ok=True)  # Ensure output directory exists
+#             os.makedirs(output_directory, exist_ok=True)  # Ensure output directory exists
 
-            # Save the uploaded file to the output directory
-            csv_file_path = os.path.join(output_directory, csv_file.name)
-            with open(csv_file_path, 'wb+') as destination:
-                for chunk in csv_file.chunks():
-                    destination.write(chunk)
+#             # Save the uploaded file to the output directory
+#             csv_file_path = os.path.join(output_directory, csv_file.name)
+#             with open(csv_file_path, 'wb+') as destination:
+#                 for chunk in csv_file.chunks():
+#                     destination.write(chunk)
 
-            # Process the CSV file
-            json_filename = os.path.splitext(csv_file.name)[0] + '.json'
-            json_output_path = os.path.join(output_directory, json_filename)
+#             # Process the CSV file
+#             json_filename = os.path.splitext(csv_file.name)[0] + '.json'
+#             json_output_path = os.path.join(output_directory, json_filename)
 
-            process_csv_to_json(csv_file_path, json_output_path)
+#             process_csv_to_json(csv_file_path, json_output_path)
 
-            return render(request, 'upload_file.html', {'form': form, 'success': True, 'cleaned_json_path': json_output_path})
-    else:
-        form = CSVInputForm()
+#             return render(request, 'upload_file.html', {'form': form, 'success': True, 'cleaned_json_path': json_output_path})
+#     else:
+#         form = CSVInputForm()
 
-    return render(request, 'upload_file.html', {'form': form})
+#     return render(request, 'upload_file.html', {'form': form})
 
 
 ################ending the json creator code#####################
@@ -3376,6 +3550,7 @@ def upload_file(request):
 
 ################# v tool code ##########################
 #########################################################################
+
 from django.contrib import messages
 from django.views.decorators.http import require_POST
 import subprocess 
@@ -3405,3 +3580,39 @@ def run_java_tool(request):
         messages.error(request, f"Error running tool: {e.stderr}")
    
     return redirect('qa_process')
+
+
+
+#########################id generator#########################
+###############################################################
+
+import os
+from django.shortcuts import render
+from django.http import FileResponse, Http404
+from django.contrib import messages
+from .utils import process_bulk_json_folder
+
+
+def bulk_json_process_view(request):
+    if request.method == 'POST':
+        folder_path = request.POST.get('folder_path')
+
+        if not folder_path or not os.path.isdir(folder_path):
+            messages.error(request, "❌ Invalid folder path.")
+        else:
+            try:
+                csv_path = process_bulk_json_folder(folder_path)
+                file_id = os.path.basename(csv_path)
+                messages.success(request, "✅ JSON files processed successfully!")
+                return render(request, 'bulk_json.html', {'csv_file': file_id, 'folder': folder_path})
+            except Exception as e:
+                messages.error(request, f"❌ Error: {str(e)}")
+
+    return render(request, 'bulk_json.html')
+
+
+def download_csv(request, folder, file_id):
+    csv_path = os.path.join(folder, file_id)
+    if os.path.exists(csv_path):
+        return FileResponse(open(csv_path, 'rb'), as_attachment=True, filename=file_id)
+    raise Http404("CSV not found")

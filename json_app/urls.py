@@ -50,12 +50,24 @@ from .views import ingestion_prod
 from .views import ingestion_main_temp
 from .views import ingestion_logs_view
 from .views import ingest_prod_view
+from .views import csv_to_json_view
 
 
+from .views import download_ingestion_logs
+from .views import  download__Prod_ingestion_logs
+
+from .views import download_json
+from .views import download_csv
+# from .views import  process_json_view
+from .views import  bulk_json_process_view
 
 
 
 urlpatterns = [
+
+    path('bulk-json/', bulk_json_process_view, name='bulk_json'),
+
+    path('download-csv/<path:folder>/<str:file_id>/', download_csv, name='download_csv'),
   
   
     path('update_json/', views.update_json, name='update_json'), 
@@ -125,7 +137,7 @@ urlpatterns = [
       
     path('pdf-viewer/', views.pdf_viewer, name='pdf_viewer'),
       
-    path('upload_file/', views.upload_file, name='upload_file'),
+    # path('upload_file/', views.upload_file, name='upload_file'),
      
      
      
@@ -154,8 +166,24 @@ urlpatterns = [
 
     path('ingest_prod_logs/', ingest_prod_view, name='ingest_prod_logs'),
 
+    path('csv_json_converter/', csv_to_json_view, name='csv_json_converter'),
+    
+
+    path('download-ingestion-logs/', download_ingestion_logs, name='download_ingestion_logs'),
+   
+    path('download-ingestion-prod-logs/', download__Prod_ingestion_logs, name='download__Prod_ingestion_logs'),
+
+
+    #  path('idgenerator/', process_json_view, name='idgenerator'), #grantward id generator
+
+
+     path('download/json/', download_json, name='download_json'),
+    #  path('download/csv/',  download_csv, name='download_csv'),
+
+     
 
 ]
+
 
 
 

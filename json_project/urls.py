@@ -89,7 +89,7 @@ urlpatterns = [
   path('pdf-viewer/', views.pdf_viewer, name='pdf_viewer'),
    
    
-  path('upload_file/', views.upload_file, name='upload_file'), #route for json creater
+#   path('upload_file/', views.upload_file, name='upload_file'), #route for json creater
     
     
   path("qa_process/", views.qa_process, name="qa_process"),  #QA PROCESS
