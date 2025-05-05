@@ -1,0 +1,29 @@
+{"fingerprints": {
+    "signature": "9789c284c7e3772e407c4c698358cd1f",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "merged_output.txt",
+            "checksum": "23de19acab7a1a0b713d08f1380ce48a",
+            "total-processed-record": 5
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "total-errors": 0
+        },
+        "info": {
+            "date": "2025/04/15",
+            "os": "Windows 10 version 10.0",
+            "time": "10:36",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.94.1",
+                "specset-version": "2.94.1"
+            },
+            "ingestion-version": "6.8.0",
+            "commandline": "-Xmx1g -file \"D:\\\\NDJSON\\\\NDJSON\\\\merged_output.txt\" -log \"D:\\\\NDJSON\\\\NDJSON\\\\merged_log.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

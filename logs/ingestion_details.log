@@ -27463,3 +27463,405 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'bulk_json' not found. 'bulk_
 2025-04-10 15:47:09,365 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
 2025-04-10 15:47:09,394 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
 2025-04-10 15:47:09,538 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 16:02:08,179 - WARNING - Not Found: /toolbox/static/files/awards_id.csv
+2025-04-10 16:02:50,385 - WARNING - Not Found: /toolbox/files/awards_id.csv
+2025-04-10 16:03:38,295 - WARNING - Not Found: /toolbox/static/files/awards_id.csv
+2025-04-10 16:04:13,810 - WARNING - Not Found: /json_app/static/files/awards_id.csv
+2025-04-10 16:04:24,015 - WARNING - Not Found: /json_app/static/files/awards_id.csv
+2025-04-10 16:04:29,650 - WARNING - Not Found: /json_app/static/files/
+2025-04-10 16:23:02,198 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 16:23:02,526 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 16:23:03,105 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 16:23:03,343 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 16:23:03,462 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 16:29:19,457 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-04-10 16:29:19,775 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-04-10 16:29:20,076 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-04-10 16:29:20,259 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-04-10 16:29:20,358 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-04-10 16:30:45,359 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 16:30:45,495 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 16:30:45,540 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 16:30:46,057 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 16:30:46,238 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:11:49,531 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:11:49,638 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:11:49,687 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:11:49,807 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:11:49,893 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:14:25,993 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 17:14:26,188 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 17:14:28,505 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 17:14:28,909 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 17:14:28,928 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 17:41:27,349 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:41:27,408 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:41:27,414 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:41:27,425 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:41:27,711 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:43:34,302 - INFO - Use pytorch device_name: cpu
+2025-04-10 17:43:34,302 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-10 17:43:36,762 - INFO - Use pytorch device_name: cpu
+2025-04-10 17:43:36,763 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-10 17:43:37,732 - INFO - Use pytorch device_name: cpu
+2025-04-10 17:43:37,732 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-10 17:43:37,789 - INFO - Use pytorch device_name: cpu
+2025-04-10 17:43:37,789 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-10 17:43:38,160 - INFO - Use pytorch device_name: cpu
+2025-04-10 17:43:38,160 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-10 17:43:53,832 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:43:53,918 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:43:55,358 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:43:55,755 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:43:55,763 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 17:46:31,520 - WARNING - Not Found: /save-file-entry/
+2025-04-10 17:48:43,575 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-04-10 17:48:44,064 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-04-10 17:48:44,410 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-04-10 17:48:44,564 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-04-10 17:48:44,727 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-04-10 17:52:08,585 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 17:52:08,951 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 17:52:08,993 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 17:52:09,162 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 17:52:09,335 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-10 18:03:47,296 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 18:03:47,745 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 18:03:47,772 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 18:03:47,865 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-10 18:03:47,949 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-11 12:02:47,847 - WARNING - Not Found: /favicon.ico
+2025-04-11 12:03:05,326 - INFO - ====== WebDriver manager ======
+2025-04-11 12:03:06,771 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-11 12:03:07,021 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-11 12:03:07,192 - INFO - Driver [C:\Users\mac012593\.wdm\drivers\chromedriver\win64\134.0.6998.165\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-11 12:03:15,993 - ERROR - Internal Server Error: /toolbox/selenium_scrapper/
+Traceback (most recent call last):
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 1259, in scrapper_views
+    data = scrape_all_pages(url)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 1204, in scrape_all_pages
+    time.sleep(3)
+    ^^^^^^^^^^
+AttributeError: type object 'datetime.time' has no attribute 'sleep'
+2025-04-11 12:26:47,338 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-11 14:14:59,445 - WARNING - Not Found: /favicon.ico
+2025-04-11 14:15:08,303 - WARNING - Not Found: /favicon.ico
+2025-04-15 10:17:00,467 - WARNING - Not Found: /favicon.ico
+2025-04-15 10:20:27,713 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-15 10:20:27,720 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-15 10:51:49,364 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-15 10:51:50,066 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-15 10:52:45,001 - INFO - Form submitted by user: 
+2025-04-15 10:52:46,430 - INFO - User:  - Token generated successfully!
+2025-04-15 10:52:57,203 - INFO - Form submitted by user: 
+2025-04-15 10:52:57,212 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp.json
+2025-04-15 10:52:58,611 - INFO - User:  - Batch ID: 9893ff36-4f51-432c-a2c8-5937acd52724
+2025-04-15 10:54:16,290 - INFO - Form submitted by user: 
+2025-04-15 10:54:18,998 - ERROR - User:  - Failed to ingest file: {"batchId":"9893ff36-4f51-432c-a2c8-5937acd52724","status":"ALL_FAILED","failedLineDetail":[{"lineNumber":1,"message":"The provided batchID doesn't have a corresponding valid raw data file.","record":null}],"successLineDetail":[]}
+2025-04-15 10:57:56,362 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-15 10:57:56,522 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-15 11:00:37,340 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-15 11:00:37,365 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 10:09:37,342 - WARNING - Not Found: /downloadlog/
+2025-04-16 10:09:50,080 - WARNING - Forbidden (CSRF token missing or incorrect.): /login/
+2025-04-16 10:10:24,053 - INFO - Form submitted by user: 
+2025-04-16 10:10:28,035 - INFO - User:  - Token generated successfully!
+2025-04-16 10:10:36,206 - INFO - Form submitted by user: 
+2025-04-16 10:10:36,224 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_sdQvpR2.json
+2025-04-16 10:10:36,728 - INFO - User:  - Batch ID: 07a0df9f-521d-44ee-a668-e73fdeea6ad9
+2025-04-16 10:11:56,590 - INFO - Form submitted by user: 
+2025-04-16 10:36:14,626 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 10:42:28,531 - WARNING - Not Found: /downloadlog/
+2025-04-16 10:44:56,966 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 10:45:59,923 - INFO - Form submitted by user: 
+2025-04-16 10:46:01,148 - INFO - User:  - Token generated successfully!
+2025-04-16 10:46:29,451 - INFO - Form submitted by user: 
+2025-04-16 10:46:29,464 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\link_new_1_json_xsl2921_fp.json
+2025-04-16 10:46:30,195 - ERROR - User:  - Batch creation failed. Response: {"message":"Signature comparison failure...","statusCode":412}
+2025-04-16 10:46:46,117 - INFO - Form submitted by user: 
+2025-04-16 10:46:46,370 - INFO - User:  - Token generated successfully!
+2025-04-16 10:46:54,677 - INFO - Form submitted by user: 
+2025-04-16 10:46:54,693 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\link_new_1_json_xsl2921_fp_fBE45r3.json
+2025-04-16 10:46:55,411 - ERROR - User:  - Batch creation failed. Response: {"message":"Signature comparison failure...","statusCode":412}
+2025-04-16 10:48:02,120 - INFO - Form submitted by user: 
+2025-04-16 10:48:03,106 - INFO - User:  - Token generated successfully!
+2025-04-16 10:48:12,455 - INFO - Form submitted by user: 
+2025-04-16 10:48:12,467 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\link_new_1_json_xsl2921_fp_7ZZmtAQ.json
+2025-04-16 10:48:13,221 - ERROR - User:  - Batch creation failed. Response: {"message":"Signature comparison failure...","statusCode":412}
+2025-04-16 10:49:52,192 - INFO - Form submitted by user: 
+2025-04-16 10:49:53,147 - INFO - User:  - Token generated successfully!
+2025-04-16 10:50:05,963 - INFO - Form submitted by user: 
+2025-04-16 10:50:05,975 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\link_new_1_json_xsl2921_fp_Z9OI338.json
+2025-04-16 10:50:06,861 - ERROR - User:  - Batch creation failed. Response: {"message":"Signature comparison failure...","statusCode":412}
+2025-04-16 10:50:39,131 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 10:51:23,465 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 10:52:58,038 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 10:58:49,245 - INFO - Form submitted by user: 
+2025-04-16 10:58:50,400 - INFO - User:  - Token generated successfully!
+2025-04-16 10:59:16,844 - INFO - Form submitted by user: 
+2025-04-16 10:59:16,929 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_aaDGtTC.json
+2025-04-16 10:59:17,910 - INFO - User:  - Batch ID: d867582a-09df-4948-8d5a-4b9ffbb9d48f
+2025-04-16 11:02:53,166 - INFO - Form submitted by user: 
+2025-04-16 11:04:54,585 - INFO - Form submitted by user: 
+2025-04-16 11:04:55,495 - INFO - User:  - Token generated successfully!
+2025-04-16 11:22:36,709 - INFO - Form submitted by user: 
+2025-04-16 11:22:37,797 - INFO - User:  - Token generated successfully!
+2025-04-16 11:23:21,053 - INFO - Form submitted by user: 
+2025-04-16 11:23:21,066 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_vUgwq5K.json
+2025-04-16 11:23:22,138 - INFO - User:  - Batch ID: 71835bd5-9b6e-4f0e-b74b-af36409af1d3
+2025-04-16 11:23:44,599 - INFO - Form submitted by user: 
+2025-04-16 11:23:45,322 - INFO - User:  - Token generated successfully!
+2025-04-16 11:23:53,336 - INFO - Form submitted by user: 
+2025-04-16 11:23:53,345 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\mapped_output_row_10_84285481_json_xsl2941_fp.json
+2025-04-16 11:23:54,147 - INFO - User:  - Batch ID: 2aeaa18c-f295-4d45-a64a-2a69e67630cc
+2025-04-16 11:24:05,555 - INFO - Form submitted by user: 
+2025-04-16 11:24:06,636 - ERROR - User:  - Failed to ingest file: {"type":"about:blank","title":"Unsupported Media Type","status":415,"detail":"Content-Type 'text/plain' is not supported.","instance":"//award"}
+2025-04-16 11:24:27,861 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 11:25:45,763 - INFO - Form submitted by user: 
+2025-04-16 11:25:46,710 - INFO - User:  - Token generated successfully!
+2025-04-16 11:26:01,315 - INFO - Form submitted by user: 
+2025-04-16 11:26:01,326 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\mapped_output_row_10_84285481_json_xsl2941_fp_7EkhE8t.json
+2025-04-16 11:26:02,127 - INFO - User:  - Batch ID: 385a64bc-f78d-4f83-be95-8836aed5d06b
+2025-04-16 11:26:16,277 - INFO - Form submitted by user: 
+2025-04-16 11:26:16,770 - INFO - User:  - Timestamp: 2025-04-16 11:26:16.770738 - Ingestion ID: b0265d15-5a3f-49ba-8972-1933ec40df3e, ID: 84285481, Batch ID: 385a64bc-f78d-4f83-be95-8836aed5d06b
+2025-04-16 11:26:50,465 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 11:30:33,542 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 11:36:00,617 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 11:47:17,975 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 11:56:41,000 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 11:57:31,415 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 11:58:29,123 - INFO - Form submitted by user: 
+2025-04-16 11:58:29,924 - ERROR - Internal Server Error: /toolbox/ingestion_template/
+Traceback (most recent call last):
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mac012593\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\urllib3\connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000002B40411A010>: Failed to resolve 'uat.business.api.elsevier.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='uat.business.api.elsevier.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002B40411A010>: Failed to resolve 'uat.business.api.elsevier.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 2602, in file_ingestion
+    global_token = oauth_token(key, secret)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 2574, in oauth_token
+    response = requests.post(url, headers=headers, data=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='uat.business.api.elsevier.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002B40411A010>: Failed to resolve 'uat.business.api.elsevier.com' ([Errno 11001] getaddrinfo failed)"))
+2025-04-16 12:02:00,344 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 12:04:46,071 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 12:04:46,237 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 12:06:30,191 - WARNING - Not Found: /t
+2025-04-16 12:06:39,186 - INFO - Form submitted by user: 
+2025-04-16 12:06:41,656 - INFO - User:  - Token generated successfully!
+2025-04-16 12:07:03,347 - INFO - Form submitted by user: 
+2025-04-16 12:07:03,467 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\mapped_output_row_10_84285481_json_xsl2941_fp_8wq1WP5.json
+2025-04-16 12:07:05,205 - INFO - User:  - Batch ID: 32dd8f53-58cc-452e-a9e0-99ce3a07a14f
+2025-04-16 12:07:48,711 - INFO - Form submitted by user: 
+2025-04-16 12:07:49,952 - INFO - User:  - Timestamp: 2025-04-16 12:07:49.952470 - Ingestion ID: 2351a598-b2b0-4124-a893-820745347d6a, ID: 84285481, Batch ID: 32dd8f53-58cc-452e-a9e0-99ce3a07a14f
+2025-04-16 12:30:50,396 - WARNING - Not Found: /favicon.ico
+2025-04-16 12:31:18,917 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-16 12:31:19,137 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-16 12:39:16,642 - INFO - Form submitted by user: 
+2025-04-16 12:39:18,718 - INFO - User:  - Token generated successfully!
+2025-04-16 12:39:32,032 - INFO - Form submitted by user: 
+2025-04-16 12:39:32,197 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_YeXJvMO.json
+2025-04-16 12:39:33,699 - INFO - User:  - Batch ID: 8446d220-720b-45bc-b251-8ace3c3848cd
+2025-04-16 12:45:58,937 - INFO - Form submitted by user: 
+2025-04-16 12:46:01,086 - ERROR - User:  - Failed to ingest file: {"batchId":"8446d220-720b-45bc-b251-8ace3c3848cd","status":"ALL_FAILED","failedLineDetail":[{"lineNumber":1,"message":"The provided batchID doesn't have a corresponding valid raw data file.","record":null}],"successLineDetail":[]}
+2025-04-16 12:47:01,351 - INFO - Form submitted by user: 
+2025-04-16 12:47:02,131 - INFO - User:  - Token generated successfully!
+2025-04-16 12:47:12,808 - INFO - Form submitted by user: 
+2025-04-16 12:47:12,817 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_RGjwNT2.json
+2025-04-16 12:47:14,421 - INFO - User:  - Batch ID: 1b1fceb9-5903-43ff-bab0-ae0a98c1b1ff
+2025-04-16 12:48:56,040 - INFO - Form submitted by user: 
+2025-04-16 12:49:13,358 - WARNING - Not Found: /favicon.ico
+2025-04-16 12:53:29,112 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 13:54:16,160 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-16 14:05:48,576 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-04-16 14:11:35,354 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 14:15:59,326 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 14:20:58,159 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 14:23:46,263 - INFO - Form submitted by user: 
+2025-04-16 14:23:47,935 - INFO - User:  - Token generated successfully!
+2025-04-16 14:24:58,313 - INFO - Form submitted by user: 
+2025-04-16 14:24:58,443 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\mapped_output_row_10_84285481_json_xsl2941_fp_NnKM31Q.json
+2025-04-16 14:24:59,294 - INFO - User:  - Batch ID: 7f7eba80-28b0-4a38-aee2-fd4e78220ca2
+2025-04-16 14:25:11,209 - INFO - Form submitted by user: 
+2025-04-16 14:25:14,474 - INFO - User:  - Ingested single item ID: 84285481 (Batch ID: 7f7eba80-28b0-4a38-aee2-fd4e78220ca2)
+2025-04-16 14:38:26,118 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 14:38:26,285 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 14:41:07,118 - INFO - Form submitted by user: 
+2025-04-16 14:41:08,204 - INFO - User:  - Token generated successfully!
+2025-04-16 14:41:23,990 - INFO - Form submitted by user: 
+2025-04-16 14:41:24,132 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\mapped_output_row_10_84285481_json_xsl2941_fp_8re0Ytc.json
+2025-04-16 14:41:24,688 - INFO - User:  - Batch ID: b7682603-eaf0-445e-a340-542af4cace2c
+2025-04-16 14:42:19,479 - INFO - Form submitted by user: 
+2025-04-16 14:42:20,908 - INFO - User:  - Timestamp: 2025-04-16 14:42:20.908165 - Ingestion ID: f4366909-ec03-4feb-a8f6-b29b7571fc8e, ID: 84285481, Batch ID: b7682603-eaf0-445e-a340-542af4cace2c
+2025-04-16 15:18:03,935 - INFO - Form submitted by user: 
+2025-04-16 15:18:04,856 - INFO - User:  - Token generated successfully!
+2025-04-16 15:18:39,992 - INFO - Form submitted by user: 
+2025-04-16 15:18:40,000 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_lxrCi7L.json
+2025-04-16 15:18:41,049 - INFO - User:  - Batch ID: 08b554b9-954e-4285-b7e4-105d45df8c44
+2025-04-16 15:29:52,969 - INFO - Form submitted by user: 
+2025-04-16 17:20:04,796 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 17:20:04,888 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 17:20:04,885 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 18:28:06,589 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 18:28:08,172 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-16 18:28:08,214 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 09:54:03,457 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 09:54:03,920 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 09:54:03,933 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 10:01:48,349 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 10:01:48,568 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 10:01:48,750 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 10:01:49,683 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 10:06:09,528 - INFO - Form submitted by user: 
+2025-04-17 10:06:11,878 - INFO - User:  - Token generated successfully!
+2025-04-17 10:06:32,304 - INFO - Form submitted by user: 
+2025-04-17 10:06:32,376 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_XiFdhzr.json
+2025-04-17 10:06:33,805 - INFO - User:  - Batch ID: f5ffe721-6373-4b24-aedc-025d73aaad68
+2025-04-17 10:08:47,986 - INFO - Form submitted by user: 
+2025-04-17 10:47:21,396 - INFO - Form submitted by user: 
+2025-04-17 10:47:22,333 - INFO - User:  - Token generated successfully!
+2025-04-17 10:47:30,012 - INFO - Form submitted by user: 
+2025-04-17 10:47:30,020 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_lJ0MQZY.json
+2025-04-17 10:47:31,347 - INFO - User:  - Batch ID: 4ffda470-e8c2-4685-866c-ba4639f3bd45
+2025-04-17 10:53:04,065 - INFO - Form submitted by user: 
+2025-04-17 11:03:19,196 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 11:03:19,326 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 11:03:19,444 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 11:03:19,523 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 11:05:20,367 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 11:05:20,572 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 11:05:20,682 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 11:05:20,803 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 14:12:25,376 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 14:17:44,933 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 14:19:06,653 - INFO - Form submitted by user: 
+2025-04-17 14:19:08,297 - INFO - User:  - Token generated successfully!
+2025-04-17 14:19:41,790 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 14:28:20,585 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-17 14:42:47,024 - INFO - Form submitted by user: 
+2025-04-17 14:42:48,434 - INFO - User:  - Token generated successfully!
+2025-04-17 14:43:13,133 - INFO - Form submitted by user: 
+2025-04-17 14:43:13,148 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_IFy75EB.json
+2025-04-17 14:43:13,950 - INFO - User:  - Batch ID: b47d9ffe-6c19-4be3-a904-4861948a5140
+2025-04-17 14:54:31,199 - INFO - Form submitted by user: 
+2025-04-17 14:54:34,152 - ERROR - User:  - Failed ingestion response: {"batchId":"b47d9ffe-6c19-4be3-a904-4861948a5140","status":"ALL_FAILED","failedLineDetail":[{"lineNumber":1,"message":"The provided batchID doesn't have a corresponding valid raw data file.","record":null}],"successLineDetail":[]}
+2025-04-17 14:57:19,801 - INFO - Form submitted by user: 
+2025-04-17 14:57:20,796 - INFO - User:  - Token generated successfully!
+2025-04-17 14:57:28,770 - INFO - Form submitted by user: 
+2025-04-17 14:57:28,779 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_0DpjT3L.json
+2025-04-17 14:57:29,633 - INFO - User:  - Batch ID: 2930cd0e-045c-47c1-9e0d-c1220ab5c7c4
+2025-04-17 14:59:00,123 - INFO - Form submitted by user: 
+2025-04-17 14:59:02,928 - ERROR - User:  - Failed ingestion response: {"batchId":"2930cd0e-045c-47c1-9e0d-c1220ab5c7c4","status":"ALL_FAILED","failedLineDetail":[{"lineNumber":1,"message":"The provided batchID doesn't have a corresponding valid raw data file.","record":null}],"successLineDetail":[]}
+2025-04-17 15:00:49,973 - INFO - Form submitted by user: 
+2025-04-17 15:00:51,316 - INFO - User:  - Token generated successfully!
+2025-04-17 15:01:02,053 - INFO - Form submitted by user: 
+2025-04-17 15:01:02,063 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_njvrAv7.json
+2025-04-17 15:01:03,505 - INFO - User:  - Batch ID: 02d768c7-09ba-4ab3-8e90-4f4f4080d881
+2025-04-17 15:02:26,964 - INFO - Form submitted by user: 
+2025-04-17 15:11:52,089 - INFO - Form submitted by user: 
+2025-04-17 15:11:53,111 - INFO - User:  - Token generated successfully!
+2025-04-17 15:12:00,342 - INFO - Form submitted by user: 
+2025-04-17 15:12:00,351 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_wM9JoxN.json
+2025-04-17 15:12:01,187 - INFO - User:  - Batch ID: 58a646e6-ac50-4fc4-ba29-fb2828c5fa04
+2025-04-17 15:12:16,676 - INFO - Form submitted by user: 
+2025-04-17 15:12:19,920 - ERROR - User:  - Failed ingestion response: {"batchId":"58a646e6-ac50-4fc4-ba29-fb2828c5fa04","status":"ALL_FAILED","failedLineDetail":[{"lineNumber":1,"message":"The provided batchID doesn't have a corresponding valid raw data file.","record":null}],"successLineDetail":[]}
+2025-04-30 14:29:42,675 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-04-30 14:38:51,488 - INFO - Form submitted by user: 
+2025-04-30 14:38:52,245 - INFO - User:  - Token generated successfully!
+2025-04-30 14:57:35,954 - INFO - Form submitted by user: 
+2025-04-30 14:57:36,749 - INFO - User:  - Token generated successfully!
+2025-04-30 15:34:11,226 - INFO - Form submitted by user: 
+2025-04-30 15:34:12,057 - INFO - User:  - Token generated successfully!
+2025-04-30 15:34:27,376 - INFO - Form submitted by user: 
+2025-04-30 15:34:27,392 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_WqFDYjn.json
+2025-04-30 15:34:28,926 - INFO - User:  - Batch ID: efce5787-b7b7-4341-aad3-4ab65c36c5cc
+2025-04-30 16:00:14,084 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-05-02 17:05:55,449 - INFO - Form submitted by user: 
+2025-05-02 17:05:55,914 - INFO - User:  - Token generated successfully!
+2025-05-02 17:06:09,696 - INFO - Form submitted by user: 
+2025-05-02 17:06:09,705 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_E4suMS7.json
+2025-05-02 17:06:10,469 - INFO - User:  - Batch ID: 4e8be551-3253-4315-a0e3-1eb1f2c5150a
+2025-05-02 17:45:51,542 - INFO - Form submitted by user: 
+2025-05-02 17:45:52,281 - INFO - User:  - Token generated successfully!
+2025-05-02 17:46:04,486 - INFO - Form submitted by user: 
+2025-05-02 17:46:04,496 - INFO - File saved at: D:\Elsevier-Project-CMS\media\uploads\merged_output_txt_xsl2941_fp_SkSKoOV.json
+2025-05-02 17:46:04,776 - INFO - User:  - Batch ID: 0b5d6bf7-96bb-4e1e-8bc8-93e150d3d17c
+2025-05-02 17:47:31,483 - INFO - Form submitted by user: 
+2025-05-02 18:02:39,093 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.

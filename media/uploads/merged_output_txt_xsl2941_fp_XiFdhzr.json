@@ -1,0 +1,29 @@
+{"fingerprints": {
+    "signature": "1b401a57aed1a745c5c468ac1f60af85",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "merged_output.txt",
+            "checksum": "d7f63aadd57bcaef555bb0a4135987a3",
+            "total-processed-record": 4
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "total-errors": 0
+        },
+        "info": {
+            "date": "2025/04/17",
+            "os": "Windows 10 version 10.0",
+            "time": "10:01",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.94.1",
+                "specset-version": "2.94.1"
+            },
+            "ingestion-version": "6.8.0",
+            "commandline": "-Xmx1g -file \"D:\\\\json_tool_run\\\\merged_output.txt\" -log \"D:\\\\json_tool_validation\\\\file_t.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

@@ -1,0 +1,28 @@
+{"fingerprints": {
+    "signature": "a3791811d3d1e39fe8d366b983863529",
+    "fingerprint": {
+        "item-info": {
+            "item-name": "mapped_output_row_10_84285481.json",
+            "checksum": "2e79ec7f02fe07150bcbf73bfe86f7f5"
+        },
+        "results": {
+            "total-skipped-checks": 0,
+            "total-warnings": 0,
+            "total-errors": 0
+        },
+        "info": {
+            "date": "2025/04/16",
+            "os": "Windows 10 version 10.0",
+            "time": "11:20",
+            "program": {
+                "json-config-version": "v1.0.2 15 Dec 2022",
+                "name": "Vtool",
+                "version": "5.94.1",
+                "specset-version": "2.94.1"
+            },
+            "ingestion-version": "6.8.0",
+            "commandline": "-Xmx1g -file \"C:\\\\Users\\\\mac012593\\\\Downloads\\\\DBUK files\\\\new\\\\d\\\\mapped_output_row_10_84285481.json\" -log \"C:\\\\Users\\\\mac012593\\\\Downloads\\\\DBUK files\\\\new\\\\file_t.txt\" -vjson \"grant\""
+        }
+    },
+    "xmlns:vt": "http://www.elsevier.com/xml/apps/qc/v"
+}}

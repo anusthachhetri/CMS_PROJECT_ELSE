@@ -63,7 +63,11 @@ from .views import  bulk_json_process_view
 
 
 
+
+
 urlpatterns = [
+       
+
 
     path('bulk-json/', bulk_json_process_view, name='bulk_json'),
 
@@ -179,6 +183,9 @@ urlpatterns = [
 
      path('download/json/', download_json, name='download_json'),
     #  path('download/csv/',  download_csv, name='download_csv'),
+
+
+    
 
      
 

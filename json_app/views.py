@@ -2676,93 +2676,104 @@ def file_ingestion(request):
                 except Exception as e:
                     context["message"] = "An error occurred while saving the file."
                     logging.exception(f"User: {user_name} - Exception: {e}")
-                #with open(temp_file_path, 'rb') as file:
-                #    files = {'file': file}
-                #    response = requests.post(
-                #        "https://uat.business.api.elsevier.com/v1/funding-ingestion/vtool",
-                #        headers=headers,
-                #        files=files,
-                        
-                #    )
-                   
-
-                #if response.status_code == 200:
-                #    batch_id = response.json().get("batchId")
-                #    if batch_id:
-                #        context["batch_id"] = batch_id
-                #        context["message"] = f"Batch created successfully! Batch ID: {batch_id}"
-                #        log_message = f"User: {user_name} - Batch created successfully! Batch ID: {batch_id}"
-                ##        logging.info(log_message)
-                 #   else:
-                 #       context["message"] = "Batch creation successful but no batch ID returned."
-                 #       logging.warning(f"User: {user_name} - Batch creation successful but no batch ID returned.")
-                #else:
-                #    context["message"] = f"Failed to create batch. Response Code: {response.status_code}"
-                #    logging.error(f"User: {user_name} - Failed to create batch. Response Code: {response.status_code}")
 
             elif action == "ingest_file":
-                if not global_token:
-                    context["message"] = "Token is not available. Please generate a token first."
-                    return render(request, "ingestion_template.html", context)
+                        if not global_token:
+                            context["message"] = "Token is not available. Please generate a token first."
+                            return render(request, "ingestion_template.html", context)
 
-                ingestion_type = form.cleaned_data["ingestion_type"]
-                batch_id = request.POST.get("batch_id")
-                file = request.FILES.get("json_location")
-                data_type = form.cleaned_data["data_type"]
+                        ingestion_type = form.cleaned_data["ingestion_type"]
+                        batch_id = request.POST.get("batch_id")
+                        file = request.FILES.get("json_location")
+                        data_type = form.cleaned_data["data_type"]
 
-                if not file:
-                    context["message"] = "No file provided for ingestion."
-                    return render(request, "ingestion_template.html", context)
+                        if not file:
+                            context["message"] = "No file provided for ingestion."
+                            return render(request, "ingestion_template.html", context)
 
-                base_url = "https://uat.business.api.elsevier.com/v1/funding-ingestion"
-                url = f"{base_url}/{data_type}"
-                if ingestion_type == "batch":
-                    url += "/bulk"
+                        base_url = "https://uat.business.api.elsevier.com/v1/funding-ingestion"
+                        url = f"{base_url}/{data_type}"
 
-                headers = {
-                    "accept": "application/json",  
-                    "callbackUrl": "https://callbackapi-elsevier.mpsinsight.com/callbackapi/callback",
-                    "Content-Type": "application/json", 
-                    "batchId": batch_id,
-                    "Authorization": f"Bearer {global_token}",
-                }
-                
-                # headers = {
-                #     "accept": "application/json",  
-                #     "callbackUrl": "https://callbackapi-elsevier.mpsinsight.com/callbackapi/callback",
-                #     "batchId": batch_id,
-                #     "Content-Type": "text/plain", 
-                #     "Authorization": f"Bearer {global_token}",
-                # }                
+                        # Adjust URL and headers based on ingestion type
+                        if ingestion_type == "batch":
+                            url += "/bulk"
+                            headers = {
+                                "accept": "application/json",
+                                "callbackUrl": "https://callbackapi-elsevier.mpsinsight.com/callbackapi/callback",
+                                "batchId": batch_id,
+                                "Content-Type": "text/plain",
+                                "Authorization": f"Bearer {global_token}",
+                            }
+                        else:
+                            headers = {
+                                "accept": "application/json",
+                                "callbackUrl": "https://callbackapi-elsevier.mpsinsight.com/callbackapi/callback",
+                                "Content-Type": "application/json",
+                                "batchId": batch_id,
+                                "Authorization": f"Bearer {global_token}",
+                            }
 
-                try:
-                    response = requests.post(url, headers=headers, data=file.read())
-                    ingestion_response = response.json()
+                        try:
+                            response = requests.post(url, headers=headers, data=file.read())
 
-                    ingestion_id = ingestion_response.get("ingestionId")
-                    ingestion_item_id = ingestion_response.get("id")
+                            if response.status_code == 200:
+                                ingestion_response = response.json()
+                                ingestion_id = ingestion_response.get("ingestionId")
+                                timestamp = datetime.now()  # Capture timestamp for logging
 
-                    if ingestion_id and ingestion_item_id:
-                        log_message = (
-                            f"User: {user_name} - Timestamp: {datetime.now()} - "
-                            f"Ingestion ID: {ingestion_id}, ID: {ingestion_item_id}, Batch ID: {batch_id}"
-                        )
-                        logging.info(log_message)
-                        
-                        # Store details in the database
-                        store_ingestion_details(user_name, ingestion_id, ingestion_item_id, batch_id)
+                                if ingestion_type == "batch":
+                                    items = ingestion_response.get("items", [])
 
-                    if response.status_code == 200:
-                        context["message"] = "File ingested successfully!"
-                    else:
-                        context["message"] = f"Failed to ingest file: {response.text}"
-                        logging.error(f"User: {user_name} - Failed to ingest file: {response.text}")
+                                    for item in items:
+                                        item_id = item.get("id")
+                                        # Log for each batch item
+                                        log_message = (
+                                            f"User: {user_name} - Timestamp: {timestamp} - "
+                                            f"Ingestion ID: {ingestion_id}, ID: {item_id}, Batch ID: {batch_id}"
+                                        )
+                                        logging.info(log_message)
 
-                except Exception as e:
-                    context["message"] = "An error occurred during file ingestion."
-                    logging.exception(f"User: {user_name} - Exception occurred during file ingestion: {e}")
-                    
- # Step 5: Check Ingestion Status
+                                        # Store each item in the database
+                                        IngestionLog.objects.create(
+                                            user_name=user_name,
+                                            ingestion_id=ingestion_id,
+                                            ingestion_item_id=item_id,
+                                            batch_id=batch_id,
+                                            status="Success",
+                                            created_at=timestamp
+                                        )
+
+                                else:  # Single item ingestion
+                                    ingestion_item_id = ingestion_response.get("id")
+                                    # Log for single item ingestion
+                                    log_message = (
+                                        f"User: {user_name} - Timestamp: {timestamp} - "
+                                        f"Ingestion ID: {ingestion_id}, ID: {ingestion_item_id}, Batch ID: {batch_id}"
+                                    )
+                                    logging.info(log_message)
+
+                                    # Store the single item in the database
+                                    IngestionLog.objects.create(
+                                        user_name=user_name,
+                                        ingestion_id=ingestion_id,
+                                        ingestion_item_id=ingestion_item_id,
+                                        batch_id=batch_id,
+                                        status="Success",
+                                        created_at=timestamp
+                                    )
+
+                                context["message"] = "File ingested successfully!"
+
+                            else:
+                                context["message"] = f"Failed to ingest file: {response.text}"
+                                logging.error(f"User: {user_name} - Failed ingestion response: {response.text}")
+
+                        except Exception as e:
+                            context["message"] = "An error occurred during file ingestion."
+                            logging.exception(f"User: {user_name} - Exception occurred during ingestion: {e}")
+
+
+# Step 5: Check Ingestion Status
             elif action == "check_ingestion_status":
                 ingestion_id = request.POST.get("ingestion_id")
                 data_type = request.POST.get("data_type")
@@ -3050,110 +3061,157 @@ def ingestion_prod(request):
                     context["message"] = "An error occurred while saving the file."
                     logging.exception(f"User: {user_name} - Exception: {e}")
 
-            # elif action == "create_batch":
+            
+            # elif action == "ingest_file":
             #     if not global_token:
             #         context["message"] = "Token is not available. Please generate a token first."
             #         return render(request, "ingestemp_prod.html", context)
 
-            #     uploaded_file = request.FILES.get("file_location")
-            #     if not uploaded_file:
-            #         context["message"] = "No file uploaded."
+            #     ingestion_type = form.cleaned_data["ingestion_type"]
+            #     batch_id = request.POST.get("batch_id")
+            #     file = request.FILES.get("json_location")
+            #     data_type = form.cleaned_data["data_type"]
+
+            #     if not file:
+            #         context["message"] = "No file provided for ingestion."
             #         return render(request, "ingestemp_prod.html", context)
 
+            #     base_url = "https://business.api.elsevier.com/v1/funding-ingestion"
+            #     url = f"{base_url}/{data_type}"
+            #     if ingestion_type == "batch":
+            #         url += "/bulk"
+
             #     headers = {
+            #         "accept": "application/json",
+            #         "callbackUrl": "https://callbackapi-elsevier.mpsinsight.com/callbackapi/callback",
+            #         "Content-Type": "application/json",
+            #         "batchId": batch_id,
             #         "Authorization": f"Bearer {global_token}",
-            #         "accept": "*/*",
-
             #     }
-            #     if not os.path.exists(default_storage.location):
-            #         os.makedirs(default_storage.location, exist_ok=True)
 
-            #     # temp_file_path = os.path.join(default_storage.location, uploaded_file.name)
-            #     # if not os.path.exists(default_storage.location):
-            #     #     os.makedirs(default_storage.location)
+            #     try:
+            #         response = requests.post(url, headers=headers, data=file.read())
+            #         ingestion_response = response.json()
 
-            #     # with default_storage.open(temp_file_path, 'wb+') as temp_file:
-            #     #     for chunk in uploaded_file.chunks():
-            #     #         temp_file.write(chunk)
+            #         ingestion_id = ingestion_response.get("ingestionId")
+            #         ingestion_item_id = ingestion_response.get("id")
 
-            #     with open(temp_file_path, 'rb') as file:
-            #         files = {'file': file}
-            #         response = requests.post(
-            #             "https://business.api.elsevier.com/v1/funding-ingestion/vtool",
-            #             headers=headers,
-            #             files=files,
-                        
-            #         )
-                   
-
-            #     if response.status_code == 200:
-            #         batch_id = response.json().get("batchId")
-            #         if batch_id:
-            #             context["batch_id"] = batch_id
-            #             context["message"] = f"Batch created successfully! Batch ID: {batch_id}"
-            #             log_message = f"User: {user_name} - Batch created successfully! Batch ID: {batch_id}"
+            #         if ingestion_id and ingestion_item_id:
+            #             log_message = (
+            #                 f"User: {user_name} - Timestamp: {datetime.now()} - "
+            #                 f"Ingestion ID: {ingestion_id}, ID: {ingestion_item_id}, Batch ID: {batch_id}"
+            #             )
             #             logging.info(log_message)
-            #         else:
-            #             context["message"] = "Batch creation successful but no batch ID returned."
-            #             logging.warning(f"User: {user_name} - Batch creation successful but no batch ID returned.")
-            #     else:
-            #         context["message"] = f"Failed to create batch. Response Code: {response.status_code}"
-            #         logging.error(f"User: {user_name} - Failed to create batch. Response Code: {response.status_code}")
-
-            elif action == "ingest_file":
-                if not global_token:
-                    context["message"] = "Token is not available. Please generate a token first."
-                    return render(request, "ingestemp_prod.html", context)
-
-                ingestion_type = form.cleaned_data["ingestion_type"]
-                batch_id = request.POST.get("batch_id")
-                file = request.FILES.get("json_location")
-                data_type = form.cleaned_data["data_type"]
-
-                if not file:
-                    context["message"] = "No file provided for ingestion."
-                    return render(request, "ingestemp_prod.html", context)
-
-                base_url = "https://business.api.elsevier.com/v1/funding-ingestion"
-                url = f"{base_url}/{data_type}"
-                if ingestion_type == "batch":
-                    url += "/bulk"
-
-                headers = {
-                    "accept": "application/json",
-                    "callbackUrl": "https://callbackapi-elsevier.mpsinsight.com/callbackapi/callback",
-                    "Content-Type": "application/json",
-                    "batchId": batch_id,
-                    "Authorization": f"Bearer {global_token}",
-                }
-
-                try:
-                    response = requests.post(url, headers=headers, data=file.read())
-                    ingestion_response = response.json()
-
-                    ingestion_id = ingestion_response.get("ingestionId")
-                    ingestion_item_id = ingestion_response.get("id")
-
-                    if ingestion_id and ingestion_item_id:
-                        log_message = (
-                            f"User: {user_name} - Timestamp: {datetime.now()} - "
-                            f"Ingestion ID: {ingestion_id}, ID: {ingestion_item_id}, Batch ID: {batch_id}"
-                        )
-                        logging.info(log_message)
                         
-                        # Store details in the database
-                        reserve_ingestion_log(user_name, ingestion_id, ingestion_item_id, batch_id)
+            #             # Store details in the database
+            #             reserve_ingestion_log(user_name, ingestion_id, ingestion_item_id, batch_id)
 
-                    if response.status_code == 200:
-                        context["message"] = "File ingested successfully!"
-                    else:
-                        context["message"] = f"Failed to ingest file: {response.text}"
-                        logging.error(f"User: {user_name} - Failed to ingest file: {response.text}")
+            #         if response.status_code == 200:
+            #             context["message"] = "File ingested successfully!"
+            #         else:
+            #             context["message"] = f"Failed to ingest file: {response.text}"
+            #             logging.error(f"User: {user_name} - Failed to ingest file: {response.text}")
 
-                except Exception as e:
-                    context["message"] = "An error occurred during file ingestion."
-                    logging.exception(f"User: {user_name} - Exception occurred during file ingestion: {e}")
-                    
+            #     except Exception as e:
+            #         context["message"] = "An error occurred during file ingestion."
+            #         logging.exception(f"User: {user_name} - Exception occurred during file ingestion: {e}")
+            elif action == "ingest_file":
+                        if not global_token:
+                            context["message"] = "Token is not available. Please generate a token first."
+                            return render(request, "ingestemp_prod.html", context)
+
+                        ingestion_type = form.cleaned_data["ingestion_type"]
+                        batch_id = request.POST.get("batch_id")
+                        file = request.FILES.get("json_location")
+                        data_type = form.cleaned_data["data_type"]
+
+                        if not file:
+                            context["message"] = "No file provided for ingestion."
+                            return render(request, "ingestemp_prod.html", context)
+
+                        base_url = "https://business.api.elsevier.com/v1/funding-ingestion"
+                        url = f"{base_url}/{data_type}"
+
+                        # Adjust URL and headers based on ingestion type
+                        if ingestion_type == "batch":
+                            url += "/bulk"
+                            headers = {
+                                "accept": "application/json",
+                                "callbackUrl": "https://callbackapi-elsevier.mpsinsight.com/callbackapi/callback",
+                                "batchId": batch_id,
+                                "Content-Type": "text/plain",
+                                "Authorization": f"Bearer {global_token}",
+                            }
+                        else:
+                            headers = {
+                                "accept": "application/json",
+                                "callbackUrl": "https://callbackapi-elsevier.mpsinsight.com/callbackapi/callback",
+                                "Content-Type": "application/json",
+                                "batchId": batch_id,
+                                "Authorization": f"Bearer {global_token}",
+                            }
+
+                        try:
+                            response = requests.post(url, headers=headers, data=file.read())
+
+                            if response.status_code == 200:
+                                ingestion_response = response.json()
+                                ingestion_id = ingestion_response.get("ingestionId")
+                                timestamp = datetime.now()  # Capture timestamp for logging
+
+                                if ingestion_type == "batch":
+                                    items = ingestion_response.get("items", [])
+
+                                    for item in items:
+                                        item_id = item.get("id")
+                                        # Log for each batch item
+                                        log_message = (
+                                            f"User: {user_name} - Timestamp: {timestamp} - "
+                                            f"Ingestion ID: {ingestion_id}, ID: {item_id}, Batch ID: {batch_id}"
+                                        )
+                                        logging.info(log_message)
+
+                                        # Store each item in the database
+                                        IngestProd.objects.create(
+                                            user_name=user_name,
+                                            ingestion_id=ingestion_id,
+                                            ingestion_item_id=item_id,
+                                            batch_id=batch_id,
+                                            status="Success",
+                                            created_at=timestamp
+                                        )
+
+                                else:  # Single item ingestion
+                                    ingestion_item_id = ingestion_response.get("id")
+                                    # Log for single item ingestion
+                                    log_message = (
+                                        f"User: {user_name} - Timestamp: {timestamp} - "
+                                        f"Ingestion ID: {ingestion_id}, ID: {ingestion_item_id}, Batch ID: {batch_id}"
+                                    )
+                                    logging.info(log_message)
+
+                                    # Store the single item in the database
+                                    IngestProd.objects.create(
+                                        user_name=user_name,
+                                        ingestion_id=ingestion_id,
+                                        ingestion_item_id=ingestion_item_id,
+                                        batch_id=batch_id,
+                                        status="Success",
+                                        created_at=timestamp
+                                    )
+
+                                context["message"] = "File ingested successfully!"
+
+                            else:
+                                context["message"] = f"Failed to ingest file: {response.text}"
+                                logging.error(f"User: {user_name} - Failed ingestion response: {response.text}")
+
+                        except Exception as e:
+                            context["message"] = "An error occurred during file ingestion."
+                            logging.exception(f"User: {user_name} - Exception occurred during ingestion: {e}")
+
+
+                          
  # Step 5: Check Ingestion Status
             elif action == "check_ingestion_status":
                 ingestion_id = request.POST.get("ingestion_id")
@@ -3616,3 +3674,7 @@ def download_csv(request, folder, file_id):
     if os.path.exists(csv_path):
         return FileResponse(open(csv_path, 'rb'), as_attachment=True, filename=file_id)
     raise Http404("CSV not found")
+
+
+
+

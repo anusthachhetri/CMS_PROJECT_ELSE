@@ -106,7 +106,8 @@ from django.utils.timezone import now
 class IngestionLog(models.Model):
     #_id = models.AutoField()
     user_name = models.CharField(max_length=255, default=None)
-    ingestion_id = models.CharField(max_length=255, unique=True)
+    # ingestion_id = models.CharField(max_length=255, unique=True)
+    ingestion_id = models.CharField(max_length=255)  # Removed unique=True
     ingestion_item_id = models.CharField(max_length=255, null=True, blank=True)
     batch_id = models.CharField(max_length=255, null=True, blank=True)
     status = models.CharField(max_length=50, default="Pending")
@@ -117,6 +118,10 @@ class IngestionLog(models.Model):
 
     class Meta:
         db_table = "ingestion_log"
+
+
+
+        
 
 
 
@@ -138,6 +143,10 @@ class IngestProd(models.Model):
 
     class Meta:
         db_table = "ingestprod"
+
+
+
+
 
 
 
@@ -171,7 +180,6 @@ class IngestProd(models.Model):
 
 
 
-    
 
 
 

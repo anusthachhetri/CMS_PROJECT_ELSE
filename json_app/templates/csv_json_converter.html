@@ -108,7 +108,8 @@
                     const delimiters = [",", ";", "\t"];
                     let detectedDelimiter = delimiters.find(delim => rows[0].includes(delim)) || ",";
                     let entry = {};
-                    rows.forEach(row => {
+                    rows.forEach((row, index) => {
+                        if (index === 0) return; // Skip header row
                         const parts = row.split(detectedDelimiter).map(value => {
                             return value.trim().replace(/^"|"$/g, '').replace(/,$/, '').replace(/\\"/g, '').normalize("NFC");
                         });
@@ -140,19 +141,21 @@
 
                     let AwardIdGen = CreateAwardID(baseID, entry["title"], entry["synopsis"], fileInput.files[0].name);
 
-                    // Prepare data for MongoDB insertion
-                    const mongoData = {
+                    // Store values in local storage
+                    const localStorageKey = `file_${file.name}`;
+                    const fileData = {
                         baseID: baseID + 1,
                         title: entry["title"] || "NOT FOUND",
                         synopsis: entry["synopsis"] || "NOT FOUND",
                         filename: file.name,
                         awardID: AwardIdGen
                     };
+                    localStorage.setItem(localStorageKey, JSON.stringify(fileData));
+                    
+                    
 
-                    // Send data to Python backend for MongoDB insertion
-                   
 
-                    // Format date
+                   // Format date
                     function formatDate(dateString) {
                         if (!dateString || dateString.toLowerCase() === "not found") return null;
 
@@ -165,7 +168,7 @@
                         // Split date based on expected formats MM/DD/YYYY, DD/MM/YYYY, MM-DD-YYYY, or DD-MM-YYYY
                         const parts = dateString.split(/[-\/]/).map(part => part.trim());
                         if (parts.length !== 3) return null; // Return null if format is incorrect
-
+                        
                         let day, month, year;
 
                         // Determine format based on the first part (day or month)
