@@ -1417,18 +1417,13 @@ def qa_checklist(request):
 @login_required
 def toolbox(request):
     # External URLs
-    external_url_1 = "http://fa-macmillanlearning.highwire.org:8502/"
-    external_url_2 = "http://fa-macmillanlearning.highwire.org:8501/"
-    external_url_3 =  "http://fa-macmillanlearning.highwire.org:8503/"
-
-    external_url_4 =  "http://fa-macmillanlearning.highwire.org:8504/"
+    external_url_1 = "http://35.245.126.111/extractor/"
+    
 
     # Pass these external URLs to the template
     return render(request, 'toolbox.html', {
         'external_url_1': external_url_1,
-        'external_url_2': external_url_2,
-        'external_url_3': external_url_3,
-        'external_url_4': external_url_4,
+       
         
     })
 

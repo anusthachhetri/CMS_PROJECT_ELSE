@@ -27865,3 +27865,182 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='uat.business.api.
 2025-05-02 17:46:04,776 - INFO - User:  - Batch ID: 0b5d6bf7-96bb-4e1e-8bc8-93e150d3d17c
 2025-05-02 17:47:31,483 - INFO - Form submitted by user: 
 2025-05-02 18:02:39,093 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-05-06 14:44:53,860 - INFO - D:\Elsevier-Project-CMS\json_app\models.py changed, reloading.
+2025-05-06 17:05:50,565 - INFO - D:\Elsevier-Project-CMS\json_project\settings.py changed, reloading.
+2025-07-11 13:02:20,342 - INFO - ====== WebDriver manager ======
+2025-07-11 13:02:24,188 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 13:02:24,369 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 13:02:24,508 - INFO - There is no [win64] chromedriver "137.0.7151.119" for browser google-chrome "137.0.7151" in cache
+2025-07-11 13:02:24,508 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 13:02:24,938 - INFO - WebDriver version 137.0.7151.119 selected
+2025-07-11 13:02:24,941 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-11 13:02:24,941 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-11 13:02:25,017 - INFO - Driver downloading response is 200
+2025-07-11 13:02:26,178 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 13:02:26,617 - INFO - Driver has been saved in cache [C:\Users\mac012593\.wdm\drivers\chromedriver\win64\137.0.7151.119]
+2025-07-11 13:02:35,105 - ERROR - Internal Server Error: /toolbox/selenium_scrapper/
+Traceback (most recent call last):
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 1259, in scrapper_views
+    data = scrape_all_pages(url)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 1204, in scrape_all_pages
+    time.sleep(3)
+    ^^^^^^^^^^
+AttributeError: type object 'datetime.time' has no attribute 'sleep'
+2025-07-11 13:03:14,889 - INFO - ====== WebDriver manager ======
+2025-07-11 13:03:16,569 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 13:03:16,718 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 13:03:16,908 - INFO - Driver [C:\Users\mac012593\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-11 13:03:20,797 - ERROR - Internal Server Error: /toolbox/selenium_scrapper/
+Traceback (most recent call last):
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 1259, in scrapper_views
+    data = scrape_all_pages(url)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 1204, in scrape_all_pages
+    time.sleep(3)
+    ^^^^^^^^^^
+AttributeError: type object 'datetime.time' has no attribute 'sleep'
+2025-07-11 14:37:57,111 - WARNING - Not Found: /ieee_log/
+2025-07-11 14:38:09,017 - WARNING - Not Found: /application-config/
+2025-07-11 14:38:10,838 - WARNING - Not Found: /log_file_config/
+2025-07-15 10:30:35,542 - WARNING - Not Found: /favicon.ico
+2025-07-15 10:31:17,845 - INFO - ====== WebDriver manager ======
+2025-07-15 10:31:19,847 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 10:31:20,873 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 10:31:21,162 - INFO - There is no [win64] chromedriver "138.0.7204.94" for browser google-chrome "138.0.7204" in cache
+2025-07-15 10:31:21,162 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 10:31:22,137 - INFO - WebDriver version 138.0.7204.94 selected
+2025-07-15 10:31:22,142 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/win32/chromedriver-win32.zip
+2025-07-15 10:31:22,142 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/win32/chromedriver-win32.zip
+2025-07-15 10:31:22,364 - INFO - Driver downloading response is 200
+2025-07-15 10:31:25,339 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-15 10:31:26,072 - INFO - Driver has been saved in cache [C:\Users\mac012593\.wdm\drivers\chromedriver\win64\138.0.7204.94]
+2025-07-15 10:31:32,334 - ERROR - Internal Server Error: /toolbox/selenium_scrapper/
+Traceback (most recent call last):
+  File "d:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 1259, in scrapper_views
+    data = scrape_all_pages(url)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 1204, in scrape_all_pages
+    time.sleep(3)
+    ^^^^^^^^^^
+AttributeError: type object 'datetime.time' has no attribute 'sleep'
+2025-07-15 10:35:42,474 - WARNING - Not Found: /ieee_log/
+2025-07-15 16:15:06,946 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-07-15 16:17:31,009 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-07-15 16:18:37,732 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-07-15 16:26:11,326 - WARNING - Not Found: /extractor
+2025-07-15 16:32:23,799 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-07-15 16:32:23,811 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-07-15 17:07:47,798 - WARNING - Not Found: /downloadlog/
+2025-07-15 17:16:01,173 - ERROR - Internal Server Error: /toolbox/toolbox/
+Traceback (most recent call last):
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 1424, in toolbox
+    return render(request, 'toolbox.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'bulk_jsonr' not found. 'bulk_jsonr' is not a valid view function or pattern name.
+2025-07-15 17:16:09,284 - ERROR - Internal Server Error: /toolbox/toolbox/
+Traceback (most recent call last):
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\json_app\views.py", line 1424, in toolbox
+    return render(request, 'toolbox.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elsevier-Project-CMS\.venv\Lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'bulk_jsonr' not found. 'bulk_jsonr' is not a valid view function or pattern name.
+2025-07-15 17:36:25,385 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-07-15 17:36:26,458 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-07-15 17:37:13,646 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-07-15 17:37:13,795 - INFO - D:\Elsevier-Project-CMS\json_app\urls.py changed, reloading.
+2025-07-15 18:05:32,121 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.
+2025-07-15 18:05:32,160 - INFO - D:\Elsevier-Project-CMS\json_app\views.py changed, reloading.

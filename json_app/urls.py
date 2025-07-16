@@ -147,12 +147,14 @@ urlpatterns = [
      
 
     path('scraper/', scraper_view, name='scraper_tool'),
+    
      
     path('web-scraper/', web_scraper_view, name='web_scraper_tool'),
       
     path('asjc-matcher/', asjc_matcher_view, name='asjc_matcher'),
        
     path("csv-validator/", csv_validator_view, name="csv_validator"),
+
        
     path("selenium_scrapper/", scrapper_views, name="selenium_scrapper"),
     path("selenium_scrapper/download-csv/", download_csv, name="download_csv"),   
